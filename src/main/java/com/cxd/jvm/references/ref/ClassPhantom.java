@@ -41,7 +41,7 @@ public class ClassPhantom {
             }
             if(obj != null) {
                 //因为虚引用的指示对象总是不可到达的，所以此方法总是返回 null
-                System.out.println("Object for SoftReference is " + obj.get());
+                System.out.println("Object for phantomReference is " + obj.get());
                 try {
                     Field referent = Reference.class.getDeclaredField("referent");
                     referent.setAccessible(true);
@@ -62,7 +62,7 @@ public class ClassPhantom {
      * @throws InterruptedException
      */
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("创建一个软引用--->");
+        System.out.println("创建一个软引用");
 
         Referred strong = new Referred();
         PhantomReference<Referred> soft = new PhantomReference<>(strong, phantomQueue);
@@ -70,7 +70,7 @@ public class ClassPhantom {
 
         collect();
 
-        System.out.println("删除引用--->");
+        System.out.println("切断强引用");
 
         strong = null;
         collect();

@@ -13,6 +13,12 @@ import java.util.List;
 public class ClassSoft {
 
     public static class Referred {
+        /**
+         * 不是必须实现，和Strong不同。
+         * 实现该方法是为了追踪GC
+         * 实现后也会被当作Finalizer
+         * @throws Throwable
+         */
         @Override
         protected void finalize() throws Throwable {
             System.out.println("Referred对象被垃圾收集");
@@ -20,7 +26,7 @@ public class ClassSoft {
 
         @Override
         public String toString() {
-            return "Referred";
+            return "I am Referred";
         }
     }
 
@@ -51,18 +57,21 @@ public class ClassSoft {
                 }
                 System.out.println("Object for SoftReference is " + obj.get());
             }
-        };
+        }
     }
 
     static ReferenceQueue<Referred> softQueue = new ReferenceQueue<>();
 
     /**
+     * JVM配置
      * -Xms4m -Xmx4m
+     * -XX:+PrintGCDetails -Xloggc:/Users/childe/logs/gc-f.log
+     * 务必加上该参数，以确定collect方法后GC被执行
      * @param args
      * @throws InterruptedException
      */
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("创建一个软引用--->");
+        System.out.println("创建软引用");
 
         Referred strong = new Referred();
         SoftReference<Referred> soft = new SoftReference<>(strong,softQueue);
@@ -70,13 +79,14 @@ public class ClassSoft {
 
         ClassSoft.collect();
 
-        System.out.println("删除引用--->");
+        System.out.println("切断强引用");
 
         strong = null;
         ClassSoft.collect();
 
-        System.out.println("开始堆占用");
+        System.out.println("GC之前，软引用值：" + soft.get().toString());
 
+        System.out.println("开始堆占用");
         try {
             List<byte[]> bytes = new ArrayList<>();
             while (true) {
