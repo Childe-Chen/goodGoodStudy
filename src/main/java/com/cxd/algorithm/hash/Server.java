@@ -12,7 +12,7 @@ public class Server {
 
     Server(String name) {
         this.name = name;
-        entries = new HashMap<Entry, Entry>();
+        entries = new HashMap<>();
     }
 
     public void put(Entry e) {

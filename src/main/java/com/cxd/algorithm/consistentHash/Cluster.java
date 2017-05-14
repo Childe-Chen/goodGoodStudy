@@ -24,6 +24,9 @@ public class Cluster {
         if (servers.isEmpty())
             return null;
 
+        /**
+         * 顺时针找到离该hash最近的slot（server）
+         */
         if (!servers.containsKey(hash)) {
             SortedMap<Integer, Server> tailMap = servers.tailMap(hash);
             hash = tailMap.isEmpty() ? servers.firstKey() : tailMap.firstKey();
