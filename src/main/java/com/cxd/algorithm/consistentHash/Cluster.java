@@ -1,28 +1,31 @@
 package com.cxd.algorithm.consistentHash;
 
-/**
- * Created by childe on 2017/5/5.
- */
+
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+/**
+ * 缓存集群
+ * Created by childe on 2017/5/14.
+ */
 public class Cluster {
     private static final int SERVER_SIZE_MAX = 1024;
 
-    private SortedMap<Integer, Server> servers = new TreeMap<Integer, Server>();
+    private SortedMap<Integer, Server> servers = new TreeMap<>();
     private int size = 0;
 
     public void put(Entry e) {
-        routeServer(e.hashCode()).put(e);
+        routeServer(e.getKey().hashCode()).put(e);
     }
 
-    public Entry get(Entry e) {
-        return routeServer(e.hashCode()).get(e);
+    public Entry get(String key) {
+        return routeServer(key.hashCode()).get(key);
     }
 
-    public Server routeServer(int hash) {
-        if (servers.isEmpty())
+    private Server routeServer(int hash) {
+        if (servers.isEmpty()){
             return null;
+        }
 
         /**
          * 顺时针找到离该hash最近的slot（server）
@@ -35,8 +38,9 @@ public class Cluster {
     }
 
     public boolean addServer(Server s) {
-        if (size >= SERVER_SIZE_MAX)
+        if (size >= SERVER_SIZE_MAX) {
             return false;
+        }
 
         servers.put(s.hashCode(), s);
 

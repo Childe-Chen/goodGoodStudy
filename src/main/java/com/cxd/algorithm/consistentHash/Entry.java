@@ -1,7 +1,8 @@
 package com.cxd.algorithm.consistentHash;
 
 /**
- * Created by childe on 2017/5/5.
+ * 缓存实体
+ * Created by childe on 2017/5/14.
  */
 public class Entry {
     private String key;
@@ -10,12 +11,11 @@ public class Entry {
         this.key = key;
     }
 
-    @Override
-    public String toString() {
+    public String getKey() {
         return key;
     }
 
-    public int hashCode() {
-        return key.hashCode();
+    public void setKey(String key) {
+        this.key = key;
     }
 }
