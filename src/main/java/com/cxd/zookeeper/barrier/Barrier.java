@@ -1,5 +1,6 @@
-package com.cxd.zookeeper;
+package com.cxd.zookeeper.barrier;
 
+import com.cxd.zookeeper.SyncPrimitive;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;

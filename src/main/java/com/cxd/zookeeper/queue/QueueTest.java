@@ -1,5 +1,6 @@
-package com.cxd.zookeeper;
+package com.cxd.zookeeper.queue;
 
+import com.cxd.zookeeper.SyncPrimitive;
 import org.apache.zookeeper.KeeperException;
 
 /**

@@ -8,14 +8,14 @@ import java.io.IOException;
 
 public class SyncPrimitive implements Watcher {
 
-    static ZooKeeper zk = null;
-    static Integer mutex;
+    protected static ZooKeeper zk = null;
+    protected static Integer mutex;
 
     public static String address = "localhost:2181";
 
-    String root;
+    protected String root;
 
-    SyncPrimitive(String address) {
+    protected SyncPrimitive(String address) {
         if(zk == null){
             try {
                 System.out.println("Starting ZK:");

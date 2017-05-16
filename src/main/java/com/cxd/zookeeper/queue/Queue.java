@@ -1,9 +1,10 @@
-package com.cxd.zookeeper;
+package com.cxd.zookeeper.queue;
 
 /**
  * Created by childe on 2017/5/2.
  */
 
+import com.cxd.zookeeper.SyncPrimitive;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs;
