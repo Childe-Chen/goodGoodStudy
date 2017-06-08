@@ -6,7 +6,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Created by childe on 2017/5/16.
  */
 public class FakeLimitedResource {
+
     private final AtomicBoolean inUse = new AtomicBoolean(false);
+
     public void use() throws InterruptedException {
         // 真实环境中我们会在这里访问/维护一个共享的资源
         //这个例子在使用锁的情况下不会非法并发异常IllegalStateException

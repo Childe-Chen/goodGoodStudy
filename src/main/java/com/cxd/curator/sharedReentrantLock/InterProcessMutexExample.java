@@ -14,8 +14,8 @@ import java.util.concurrent.TimeUnit;
  * Created by childe on 2017/5/16.
  */
 public class InterProcessMutexExample {
-    private static final int QTY = 5;
-    private static final int REPETITIONS = QTY * 10;
+    private static final int QTY = 1;
+    private static final int REPETITIONS = QTY * 1;
     private static final String PATH = "/examples/locks";
 
     public static void main(String[] args) throws Exception {
