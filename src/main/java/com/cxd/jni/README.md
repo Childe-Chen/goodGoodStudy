@@ -7,7 +7,7 @@ javah com.cxd.jni.TestJNI(此处是第一步生成的class文件)
 3. 用C语言来实现函数
 创建TestJNI.c文件，实现 com_cxd_jni_TestJNI 文件中的方法
 
-4. 生成的库文件
+4. 生成的库文件(使用make.sh)
 库文件名要遵循：lib+文件名＋扩展名 的原则，JVM加载的时候按照此原则查找库文件
 ```java
 static {
