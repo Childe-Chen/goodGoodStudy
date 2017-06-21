@@ -15,10 +15,15 @@
 出货器：Shipper implements EventHandler,Module
 
 事件：Event--getType()
+
 		|PayEvent  支付事件
+
 		|RefundEvent 退币事件
+
 		|CommditySelectedEvent 商品选择事件
+
 		|ShipEvent 出货事件
+
 		|ContinuePayEvent 金额不足，继续支付事件
 
 事件枚举：EventEnum
