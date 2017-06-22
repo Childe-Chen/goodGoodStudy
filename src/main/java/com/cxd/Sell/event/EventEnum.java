@@ -8,7 +8,9 @@ public enum EventEnum {
     REFUND ("退币事件",(short)1),
     COMMDITY_SELECTED ("商品选择事件",(short)2),
     SHIP ("出货事件",(short)3),
-    CONTINUE_PAY ("金额不足，继续支付事件",(short)4);
+    CONTINUE_PAY ("金额不足，继续支付事件",(short)4),
+    NOT_FOUND_COMMODITY ("金额不足，继续支付事件",(short)6),
+    NO_STOCK("库存不足事件",(short)5);
 
     private String description;
     private Short type;

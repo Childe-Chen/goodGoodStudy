@@ -1,6 +1,7 @@
 package com.cxd.Sell.pay;
 
 import com.cxd.Sell.event.Event;
+import com.cxd.Sell.event.EventEnum;
 
 /**
  * Created by childe on 2017/6/21.
@@ -17,7 +18,12 @@ public class QRCodePay extends Pay {
     }
 
     @Override
-    public Event[] getInterestEvent() {
-        return new Event[0];
+    public EventEnum[] getInterestEvent() {
+        return new EventEnum[0];
+    }
+
+    @Override
+    public void commit() {
+
     }
 }

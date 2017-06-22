@@ -4,16 +4,16 @@ import com.cxd.Sell.event.Event;
 import com.cxd.Sell.event.EventEnum;
 
 /**
- * Created by childe on 2017/6/21.
+ * Created by childe on 2017/6/22.
  */
-public class RefundEvent extends Event {
-    public RefundEvent(String msg) {
+public class NotFoundEvent extends Event {
+    public NotFoundEvent(String msg) {
         super();
         super.setMsg(msg);
     }
 
     @Override
     public EventEnum getEventType() {
-        return EventEnum.REFUND;
+        return EventEnum.NOT_FOUND_COMMODITY;
     }
 }

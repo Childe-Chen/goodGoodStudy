@@ -5,7 +5,12 @@ package com.cxd.Sell.event;
  */
 public interface EventHandler {
 
-    void handle(Event e);
+    void handle(Event e) throws Exception;
 
-    Event[] getInterestEvent();
+    EventEnum[] getInterestEvent();
+
+    /**
+     * 将修改后的拷贝数据写回
+     */
+    void commit();
 }

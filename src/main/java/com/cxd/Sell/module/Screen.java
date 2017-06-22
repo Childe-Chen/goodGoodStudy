@@ -1,6 +1,7 @@
 package com.cxd.Sell.module;
 
 import com.cxd.Sell.event.Event;
+import com.cxd.Sell.event.EventEnum;
 import com.cxd.Sell.event.EventHandler;
 import com.cxd.Sell.module.Module;
 
@@ -16,8 +17,8 @@ public class Screen implements EventHandler,Module {
     }
 
     @Override
-    public Event[] getInterestEvent() {
-        return new Event[0];
+    public EventEnum[] getInterestEvent() {
+        return new EventEnum[]{EventEnum.COMMDITY_SELECTED};
     }
 
     @Override
@@ -27,6 +28,11 @@ public class Screen implements EventHandler,Module {
 
     @Override
     public void off() {
+
+    }
+
+    @Override
+    public void commit() {
 
     }
 }
