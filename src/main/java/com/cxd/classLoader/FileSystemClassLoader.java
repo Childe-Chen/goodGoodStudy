@@ -5,8 +5,7 @@ import java.io.*;
 /**
  * Created by childe on 2017/6/27.
  */
-public class FileSystemClassLoader extends ClassLoader
-{
+public class FileSystemClassLoader extends ClassLoader {
     private String rootDir;
 
     public FileSystemClassLoader(String rootDir){

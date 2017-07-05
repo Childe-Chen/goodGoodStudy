@@ -12,18 +12,26 @@ public class TestClassIdentity {
         FileSystemClassLoader fileSystemClassLoader = new FileSystemClassLoader("/Users/childe/Documents/workspace/goodGoodStudy/target/classes");
         FileSystemClassLoader fileSystemClassLoader1 = new FileSystemClassLoader("/Users/childe/Documents/workspace/goodGoodStudy/target/classes");
         try {
-//            Class<?> c = fileSystemClassLoader.findClass("com.cxd.classLoader.Sample");
+            Class<?> c = fileSystemClassLoader.loadClass("com.cxd.classLoader.Sample");
 
 //            Class<?> c3 = fileSystemClassLoader.findClass("com.cxd.classLoader.Sample");
 
 //            System.out.println(Sample.class.isAssignableFrom(c));
 //            System.out.println(c.getClassLoader());
 
+            //因为Sample通过委派是会被系统类加载器加载的，所以即使new出来两个自定义加载器，两个类依然是同一个（可将Sample移动到父类加载不到的位置再次尝试）
 //            Class<?> c2 = fileSystemClassLoader1.loadClass("com.cxd.classLoader.Sample");
 //
+//            System.out.println(c.isAssignableFrom(c2));
 //            Object o2 = c2.newInstance();
+//
+//            Method method = c.getMethod("setSample", java.lang.Object.class);
+//            Object o1 = c.newInstance();
+//            method.invoke(o1,o2);
 
+            //forName会执行类中的static块(初始化)
 //            Class<?> c1 = Class.forName("com.cxd.classLoader.Sample");
+//            System.out.println(c1.isAssignableFrom(c));
 //            System.out.println(Sample.class.isAssignableFrom(c1));
 //            System.out.println(c1.getClassLoader());
 
@@ -36,9 +44,8 @@ public class TestClassIdentity {
 //            Object o1 = c1.newInstance();
 //            method.invoke(o,o1);
 
-            //java.lang.SecurityException: Prohibited package name: java.lang
-//            Class<?> c = fileSystemClassLoader.findClass("java.lang.String");
-//            System.out.println(c.isAssignableFrom(String.class));
+            //加载rt.jar中存在的类。java.lang.SecurityException: Prohibited package name: java.lang
+//          fileSystemClassLoader.findClass("java.lang.String");
         } catch (Exception e) {
             e.printStackTrace();
         }
