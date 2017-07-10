@@ -7,13 +7,12 @@ import java.util.*;
  */
 public class TreeMapTest {
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 5; i++) {
             System.out.println("==========" + i + "==========");
             TreeMap<Integer,Integer> treeMap = treeMaptest();
             HashMap<Integer,Integer> hashMap = hashMaptest();
             getKey(treeMap,hashMap);
         }
-
     }
 
     private static TreeMap treeMaptest() {

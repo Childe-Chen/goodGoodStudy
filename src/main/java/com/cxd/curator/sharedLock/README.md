@@ -1,0 +1,1 @@
+替换掉sharedReentrantLock.ReentrantLocks类中InterProcessMutex替换为InterProcessSemaphoreMutex，即可实现锁的单次获取。
