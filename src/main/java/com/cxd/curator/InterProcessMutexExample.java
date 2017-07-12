@@ -3,6 +3,7 @@ package com.cxd.curator;
 import com.cxd.curator.FakeLimitedResource;
 import com.cxd.curator.reentrantReadWriteLock.ReadWriteReentrantLocks;
 import com.cxd.curator.sharedReentrantLock.ReentrantLocks;
+import com.cxd.curator.sharedSemaphore.Semaphore;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
@@ -17,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * Created by childe on 2017/5/16.
  */
 public class InterProcessMutexExample {
-    private static final int QTY = 1;
+    private static final int QTY = 2;
     private static final int REPETITIONS = 1;
     private static final String PATH = "/examples/locks";
 
@@ -32,8 +33,8 @@ public class InterProcessMutexExample {
 
             CuratorFramework client = CuratorFrameworkFactory.newClient("localhost:2181", new ExponentialBackoffRetry(3000, 3));
 //            final Locks example = new ReentrantLocks(client, PATH, resource, "Client " + index);
-            final Locks example = new ReadWriteReentrantLocks(client, PATH, resource, "Client " + index);
-
+//            final Locks example = new ReadWriteReentrantLocks(client, PATH, resource, "Client " + index);
+            final Locks example = new Semaphore(client,PATH,"Client" + index, 10);
             service.submit(()->{
                 try {
                     client.start();

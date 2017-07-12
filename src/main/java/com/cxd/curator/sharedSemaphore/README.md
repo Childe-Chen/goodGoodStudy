@@ -1,1 +1,8 @@
 Semaphore 通常用于限制可以访问某些资源（物理或逻辑的）的线程数目。
+InterProcessSemaphoreV2 也基于InterProcessMutex实现，每次调用semaphore.acquire(5);时，
+会尝试到指定目录创建临时节点（并不会检查是否超过当前对打契约数）
+如果在指定时间内没有创建完成指定的数量，则断开与临时节点的链接，从而达到释放锁的目的；
+如果没有设定时间，会不停重试直到创建成功。
+
+建议使用SharedCount去限制最大契约，SharedCount会监听加锁目录的变化，InterProcessSemaphoreV2 获取租约前会对租约做检查，
+如果不使用SharedCount限制最大租约，可能会出现最大租约不一致的情况，导致不必要的网络开销或等待。
