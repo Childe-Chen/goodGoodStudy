@@ -1,10 +1,9 @@
-package com.cxd.curator.sharedReentrantLock;
+package com.cxd.curator.lock.sharedReentrantLock;
 
-import com.cxd.curator.FakeLimitedResource;
-import com.cxd.curator.Locks;
+import com.cxd.curator.lock.FakeLimitedResource;
+import com.cxd.curator.lock.Locks;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
-import org.apache.curator.framework.recipes.locks.InterProcessSemaphoreMutex;
 
 import java.util.concurrent.TimeUnit;
 

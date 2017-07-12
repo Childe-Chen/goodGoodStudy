@@ -1,15 +1,13 @@
-package com.cxd.curator;
+package com.cxd.curator.lock;
 
-import com.cxd.curator.FakeLimitedResource;
-import com.cxd.curator.reentrantReadWriteLock.ReadWriteReentrantLocks;
-import com.cxd.curator.sharedReentrantLock.ReentrantLocks;
-import com.cxd.curator.sharedSemaphore.Semaphore;
+import com.cxd.curator.lock.reentrantReadWriteLock.ReadWriteReentrantLocks;
+import com.cxd.curator.lock.sharedReentrantLock.ReentrantLocks;
+import com.cxd.curator.lock.sharedSemaphore.Semaphore;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.curator.utils.CloseableUtils;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;

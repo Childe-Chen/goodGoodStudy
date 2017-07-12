@@ -1,4 +1,4 @@
-package com.cxd.curator;
+package com.cxd.curator.lock;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

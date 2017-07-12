@@ -1,6 +1,6 @@
-package com.cxd.curator.sharedSemaphore;
+package com.cxd.curator.lock.sharedSemaphore;
 
-import com.cxd.curator.Locks;
+import com.cxd.curator.lock.Locks;
 import com.google.common.util.concurrent.MoreExecutors;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.recipes.locks.InterProcessSemaphoreV2;

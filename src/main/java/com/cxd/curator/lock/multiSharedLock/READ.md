@@ -1,0 +1,2 @@
+InterProcessMultiLock
+组合锁，可以将不同InterProcessLock的实现组合成一个锁，加锁和解锁保证原子性和事务性，即：只要一个失败则加锁失败并释放已经获取的锁

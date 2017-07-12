@@ -1,4 +1,4 @@
-package com.cxd.curator;
+package com.cxd.curator.lock;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
