@@ -1,0 +1,2 @@
+v1 velocity实现
+velocity实现起来简单，不需要自己定义渲染语法，但需要开发熟悉velocity基本语法

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sotiy namespace="sotiy1">
+
+    <select id="getDemo">
+        select * from order
+        where id=${id}
+        #if($!{statusList})
+            and status in (
+            #foreach($temp in $!{statusList})
+                $temp
+            #end
+            )
+        #end
+    </select>
+
+
+    <select id="getDemo1">
+        select * from order where no=${no}
+    </select>
+
+</sotiy>

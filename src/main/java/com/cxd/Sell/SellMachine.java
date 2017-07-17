@@ -25,11 +25,7 @@ public class SellMachine {
             if (!f.isDirectory()) { // should not be file , but a directory
                 continue;
             }
-            String[] files = f.list(new FilenameFilter() {
-                public boolean accept(File file, String s) {
-                    return s.endsWith(".class");
-                }
-            });
+            String[] files = f.list((File file, String s) -> s.endsWith(".class"));
 
             for (String classFileName : files) {
                 String className = classFileName.substring(0, classFileName.length() - 6);
