@@ -1,0 +1,1 @@
+依照[官方文档](http://groovy-lang.org/single-page-documentation.html)做包隔离

@@ -1,3 +1,3 @@
-设计中... ...
+只需要实现查询功能，使用groovy的Eval来做动态条件判断
 
-实现模仿Mybatis。
+模仿Mybatis。
