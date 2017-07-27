@@ -1,6 +1,6 @@
-package com.cxd.solrVelocity.statement;
+package com.cxd.solrWay.statement;
 
-import com.cxd.solrVelocity.parse.v1.statementParser.StatementParser;
+import com.cxd.solrWay.parse.v1.statementParser.StatementParser;
 import org.dom4j.Document;
 import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;

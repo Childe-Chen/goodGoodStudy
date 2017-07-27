@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.parse.v1.solrParser;
+package com.cxd.solrWay.parse.v1.solrParser;
 
 import org.apache.velocity.app.VelocityEngine;
 

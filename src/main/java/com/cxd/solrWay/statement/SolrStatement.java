@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.statement;
+package com.cxd.solrWay.statement;
 
 /**
  *

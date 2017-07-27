@@ -1,7 +1,7 @@
-package com.cxd.solrVelocity.parse.v1.solrParser;
+package com.cxd.solrWay.parse.v1.solrParser;
 
-import com.cxd.solrVelocity.utils.BeanUtil;
-import com.cxd.solrVelocity.statement.SolrStatement;
+import com.cxd.solrWay.utils.BeanUtil;
+import com.cxd.solrWay.statement.SolrStatement;
 import org.apache.velocity.VelocityContext;
 
 import java.io.StringWriter;

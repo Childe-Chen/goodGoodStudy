@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.constants;
+package com.cxd.solrWay.constants;
 
 /**
  * Created by childe on 2017/7/14.

@@ -1,6 +1,6 @@
-package com.cxd.solrVelocity.statement;
+package com.cxd.solrWay.statement;
 
-import com.cxd.solrVelocity.exception.SotiyKeyDuplicateException;
+import com.cxd.solrWay.exception.SotiyKeyDuplicateException;
 
 import java.util.HashMap;
 import java.util.Map;

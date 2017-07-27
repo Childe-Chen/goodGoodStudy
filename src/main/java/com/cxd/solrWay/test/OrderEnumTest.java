@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.test;
+package com.cxd.solrWay.test;
 
 /**
  * Created by childe on 2017/7/17.

@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.test;
+package com.cxd.solrWay.test;
 
 import java.util.List;
 

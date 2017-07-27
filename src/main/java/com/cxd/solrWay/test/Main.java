@@ -1,8 +1,8 @@
-package com.cxd.solrVelocity.test;
+package com.cxd.solrWay.test;
 
-import com.cxd.solrVelocity.parse.v1.solrParser.SolrQueryParser;
-import com.cxd.solrVelocity.statement.SolrStatement;
-import com.cxd.solrVelocity.statement.StatementFactory;
+import com.cxd.solrWay.parse.v1.solrParser.SolrQueryParser;
+import com.cxd.solrWay.statement.SolrStatement;
+import com.cxd.solrWay.statement.StatementFactory;
 
 import java.util.ArrayList;
 import java.util.List;

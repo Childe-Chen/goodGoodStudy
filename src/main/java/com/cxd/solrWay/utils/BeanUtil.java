@@ -1,4 +1,4 @@
-package com.cxd.solrVelocity.utils;
+package com.cxd.solrWay.utils;
 
 import java.lang.reflect.Method;
 import java.util.Map;

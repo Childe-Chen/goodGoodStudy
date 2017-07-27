@@ -1,11 +1,11 @@
-package com.cxd.solrVelocity.parse.v1.statementParser;
+package com.cxd.solrWay.parse.v1.statementParser;
 
-import com.cxd.solrVelocity.constants.SotiyConstant;
-import com.cxd.solrVelocity.exception.SotiyAttrNotExistsException;
-import com.cxd.solrVelocity.exception.SotiyAttrValueIllegalException;
-import com.cxd.solrVelocity.exception.SotiyLabeIllegalException;
-import com.cxd.solrVelocity.statement.SolrStatement;
-import com.cxd.solrVelocity.statement.StatementFactory;
+import com.cxd.solrWay.constants.SotiyConstant;
+import com.cxd.solrWay.exception.SotiyAttrNotExistsException;
+import com.cxd.solrWay.exception.SotiyAttrValueIllegalException;
+import com.cxd.solrWay.exception.SotiyLabeIllegalException;
+import com.cxd.solrWay.statement.SolrStatement;
+import com.cxd.solrWay.statement.StatementFactory;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;
