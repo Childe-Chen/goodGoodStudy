@@ -1,7 +1,7 @@
 package com.cxd.solrWay.test;
 
 import com.cxd.solrWay.parse.v1.solrParser.SolrQueryParser;
-import com.cxd.solrWay.statement.SolrStatement;
+import com.cxd.solrWay.parse.v1.statement.SolrStatementV1;
 import com.cxd.solrWay.statement.StatementFactory;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class Main {
         statusList.add("2");
         statusList.add("3");
         orderVo.setStatusList(statusList);
-        SolrStatement solrStatement = StatementFactory.getStatement("sotiy1.getDemo");
+        SolrStatementV1 solrStatement = StatementFactory.getStatementV1("sotiy1.getDemo");
         System.out.println(SolrQueryParser.parse(solrStatement,orderVo));
     }
 }

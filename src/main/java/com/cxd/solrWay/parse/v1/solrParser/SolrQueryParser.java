@@ -1,7 +1,7 @@
 package com.cxd.solrWay.parse.v1.solrParser;
 
 import com.cxd.solrWay.utils.BeanUtil;
-import com.cxd.solrWay.statement.SolrStatement;
+import com.cxd.solrWay.parse.v1.statement.SolrStatementV1;
 import org.apache.velocity.VelocityContext;
 
 import java.io.StringWriter;
@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class SolrQueryParser {
 
-    public static String parse(SolrStatement statement, Object o) {
+    public static String parse(SolrStatementV1 statement, Object o) {
         Map<String,Object> param = new HashMap<>();
         param = BeanUtil.populateMap(param,o);
         VelocityContext context = new VelocityContext(param);

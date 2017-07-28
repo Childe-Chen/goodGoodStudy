@@ -1,6 +1,7 @@
 package com.cxd.solrWay.statement;
 
 import com.cxd.solrWay.exception.SotiyKeyDuplicateException;
+import com.cxd.solrWay.parse.v1.statement.SolrStatementV1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,8 +29,8 @@ public class StatementFactory {
         id2StatementMap.put(solrStatement.getKey(), solrStatement);
     }
 
-    public static SolrStatement getStatement(String key) {
-        SolrStatement solrStatement = id2StatementMap.get(key);
+    public static SolrStatementV1 getStatementV1(String key) {
+        SolrStatementV1 solrStatement = (SolrStatementV1)id2StatementMap.get(key);
 
         return solrStatement;
     }

@@ -1,10 +1,6 @@
 package com.cxd.solrWay.statement;
 
-/**
- *
- * Created by childe on 2017/7/14.
- */
-public class SolrStatement {
+public abstract class SolrStatement {
 
     //文件路径
     private String path;
@@ -15,23 +11,12 @@ public class SolrStatement {
     //id
     private String id;
 
-    //语句
-    private String statement;
-
     public String getPath() {
         return path;
     }
 
     public void setPath(String path) {
         this.path = path;
-    }
-
-    public String getStatement() {
-        return statement;
-    }
-
-    public void setStatement(String statement) {
-        this.statement = statement;
     }
 
     public String getNamespace() {

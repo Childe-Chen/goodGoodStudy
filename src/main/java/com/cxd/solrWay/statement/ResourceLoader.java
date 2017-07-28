@@ -1,7 +1,9 @@
 package com.cxd.solrWay.statement;
 
+import com.cxd.solrWay.constants.ElementConstant;
 import com.cxd.solrWay.parse.v1.statementParser.StatementParser;
 import org.dom4j.Document;
+import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -63,10 +65,15 @@ public class ResourceLoader {
             Document document = reader.read(is);
 
             if (document == null) {
-                logger.error("Load Sotiy file error, {}",path);
+                logger.error("Load template file error, {}",path);
             }
 
-            StatementParser.parseStatement(document);
+            Element root = document.getRootElement();
+            if (root.getName().equals(ElementConstant.SOTIY)) {
+                StatementParser.parseStatement(document);
+            } else if (root.getName().equals(ElementConstant.SOOVY)) {
+                //此处目标为SPI
+            }
 
         } catch (Exception e) {
             logger.error(e.getMessage(),e);
