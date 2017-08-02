@@ -19,9 +19,9 @@ import java.util.Enumeration;
  * Created by childe on 2017/7/14.
  */
 public class ResourceLoader {
-    static Logger logger = LoggerFactory.getLogger(ResourceLoader.class);
+    final static Logger logger = LoggerFactory.getLogger(ResourceLoader.class);
 
-    static String PATH = "solr.template";
+    final static String PATH = "solr.template";
 
     static void load() {
         Enumeration<URL> resources = null;
