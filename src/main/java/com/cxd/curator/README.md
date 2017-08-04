@@ -8,3 +8,6 @@ curator-recipes工程下通过区分不同的包，封装了以下几个功能�
 5. locks 分布式锁（例子参见lock包）
 6. queue 分布式队列
 7. shared 共享值，结合lock使用（参见学习lock包下Semaphore）
+
+
+http://colobu.com/2014/12/15/zookeeper-recipes-by-example-7/
