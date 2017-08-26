@@ -8,15 +8,56 @@
         #if($!{statusList})
             and status in (
             #foreach($temp in $!{statusList})
-                $temp
+                $temp,$velocityCount
             #end
             )
         #end
+        <include prefix=' _query_:"{!parent which=type:p} ' suffix='"'>
+             #foreach($temp in $!{statusList})
+                AND $temp,$velocityCount
+            #end
+        </include>
     </select>
 
 
     <select id="getDemo1">
         select * from order where no=${no}
+    </select>
+
+    <select id="querySolrCommodityByParams">
+        #if(${entityId})
+            entity_id:${entityId}
+        #end
+        #if(${isValid})
+            AND is_valid:1
+        #end
+        #if(${status})
+            #if(${isVisibleOnly} == 0)
+                AND NOT _query_:{!terms f=status}1,4
+            #else
+            AND status:${status}
+            #end
+        #end
+        #if(${searchCode})
+            AND (name:${searchCode} OR spell:*${searchCode}* OR tag:${searchCode} OR brand:*${searchCode}*
+            #if(${barCodeSearch})
+                OR ({!parent which="type:p"}sku_bar_code:*${searchCode}*)
+            #end
+            )
+        #end
+        <include prefix=' _query_:"{!parent which=type:p}' suffix='"'>
+            #if(${isValid})
+                sku_is_valid:1
+            #end
+            #if(${standardInnerCode})
+                AND sku_standard_inner_code:${standardInnerCode}
+            #elseif(${categoryId} &amp;&amp; ${categoryId} == '0')
+                AND sku_standard_category_id:""
+            #end
+            #if(${barCode})
+                AND sku_bar_code:${barCode}
+            #end
+        </include>
     </select>
 
 </sotiy>

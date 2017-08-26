@@ -19,9 +19,9 @@ public class Main {
         List<String> statusList = new ArrayList<>(3);
         statusList.add("1");
         statusList.add("2");
-        statusList.add("3");
+        statusList.add("你是是是%¥#W");
         orderVo.setStatusList(statusList);
-        SolrStatementV1 solrStatement = StatementFactory.getStatementV1("sotiy1.getDemo");
-        System.out.println(SolrQueryParser.parse(solrStatement,orderVo));
+        SolrStatementV1 solrStatement = StatementFactory.getStatementV1("sotiy1.querySolrCommodityByParams");
+        System.out.print(SolrQueryParser.parse(solrStatement,orderVo) + "\n");
     }
 }

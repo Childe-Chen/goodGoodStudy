@@ -14,4 +14,6 @@ public class ElementConstant {
     public static final String SELECT = "select";
 
     public static final String ID = "id";
+
+    public static final String INCLUDE = "include";
 }

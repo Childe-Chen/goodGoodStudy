@@ -18,6 +18,21 @@ public class SolrQueryParser {
         Map<String,Object> param = new HashMap<>();
         param = BeanUtil.populateMap(param,o);
         VelocityContext context = new VelocityContext(param);
+        String result = getRenderResult(statement, context);
+        //目前只有一级一次嵌套
+        if (statement.getSubStatement() != null ) {
+            String sub = getRenderResult(statement.getSubStatement(), context).trim();
+            if (sub != null || sub.length() > 0) {
+                if (sub.startsWith("AND") || sub.startsWith("and")) {
+                    sub = sub.substring(3);
+                }
+                result = result + statement.getSubPrefix() +  sub + statement.getSubSuffix();
+            }
+        }
+        return result;
+    }
+
+    private static String getRenderResult(SolrStatementV1 statement, VelocityContext context) {
         Writer writer = new StringWriter();
         VelocityEngineFactory.newVelocityEngine().evaluate(context,writer,statement.getKey(),statement.getStatement());
         return writer.toString();

@@ -1,5 +1,6 @@
 package com.cxd.solrWay.parse.v1.statementParser;
 
+import com.cxd.solrWay.constants.AttributeConstant;
 import com.cxd.solrWay.constants.ElementConstant;
 import com.cxd.solrWay.exception.SotiyAttrNotExistsException;
 import com.cxd.solrWay.exception.SotiyAttrValueIllegalException;
@@ -51,18 +52,56 @@ public class StatementParser {
                 throw new SotiyLabeIllegalException(ElementConstant.NAMESPACE + "空间下，存在非法标签：" + name);
             }
 
-            String statement = ele.getTextTrim();
 
             SolrStatementV1 solrStatement = new SolrStatementV1();
             solrStatement.setNamespace(namespace);
             solrStatement.setId(id);
-            solrStatement.setStatement(statement);
             solrStatement.setPath(doc.getPath());
             if (logger.isWarnEnabled()) {
                 logger.warn(solrStatement.getStatement());
             }
+
+            handleInclude(ele, solrStatement);
+
+            solrStatement.setStatement(ele.getTextTrim());
+
             StatementFactory.put(solrStatement);
         }
 
+    }
+
+    private static void handleInclude(Element ele, SolrStatementV1 solrStatement) throws SotiyAttrValueIllegalException {
+        Element includeEle = ele.element(ElementConstant.INCLUDE);
+
+        if (includeEle == null) {
+            return;
+        }
+
+        if (includeEle.getTextTrim() == null || includeEle.getTextTrim().length() == 0) {
+            return;
+        }
+
+        SolrStatementV1 sub = new SolrStatementV1();
+        sub.setId(solrStatement.getId());
+        sub.setNamespace(solrStatement.getNamespace());
+        sub.setPath(solrStatement.getPath());
+
+        sub.setStatement(includeEle.getTextTrim());
+        solrStatement.setSubStatement(sub);
+
+        Attribute prefix = includeEle.attribute(AttributeConstant.PREFIX);
+        if (prefix == null || prefix.getValue() == null || prefix.getValue().length() == 0) {
+            throw new SotiyAttrValueIllegalException(ElementConstant.NAMESPACE + "空间下，" + sub.getId() + "."+ AttributeConstant.PREFIX + "未配置!");
+        }
+        solrStatement.setSubPrefix(prefix.getValue());
+
+        Attribute suffix = includeEle.attribute(AttributeConstant.SUFFIX);
+        if (suffix == null || suffix.getValue() == null || suffix.getValue().length() == 0) {
+            throw new SotiyAttrValueIllegalException(ElementConstant.NAMESPACE + "空间下，" + sub.getId() + "."+ AttributeConstant.SUFFIX + "未配置!");
+        }
+
+        solrStatement.setSubSuffix(suffix.getValue());
+
+        ele.remove(includeEle);
     }
 }
