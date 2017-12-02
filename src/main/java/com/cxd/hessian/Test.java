@@ -17,15 +17,15 @@ public class Test {
         System.out.println(json);
 
 
-        Woman woman= com.alibaba.fastjson.JSONObject.parseObject(json,Woman.class);
-
-        System.out.println(woman);
-
-        byte[] hessianByte = HessianUtil.serialize(man);
-
-        System.out.println(new String(hessianByte));
-
-        com.cxd.hessian.pojo.Man womanHessian = (com.cxd.hessian.pojo.Man) HessianUtil.deserialize(hessianByte);
-        System.out.println(womanHessian);
+//        Woman woman= com.alibaba.fastjson.JSONObject.parseObject(json,Woman.class);
+//
+//        System.out.println(woman);
+//
+//        byte[] hessianByte = HessianUtil.serialize(man);
+//
+//        System.out.println(new String(hessianByte));
+//
+//        com.cxd.hessian.pojo.Man womanHessian = (com.cxd.hessian.pojo.Man) HessianUtil.deserialize(hessianByte);
+//        System.out.println(womanHessian);
     }
 }

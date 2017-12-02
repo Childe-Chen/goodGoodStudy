@@ -60,4 +60,47 @@
         </include>
     </select>
 
+    <select id="querySolrSpuWithSkuList">
+        #if(${entityId} &amp;&amp; ${entityId} != '')
+            entity_id:${entityId}
+        #end
+        #if(${valid})
+            AND is_valid:1
+        #end
+        #if(${status} &amp;&amp; ${status} != '')
+            AND status:${status}
+        #end
+        #if(${searchCode} &amp;&amp; ${searchCode} != '')
+            AND (name:${searchCode} OR spell:*${searchCode}* OR tag:${searchCode} OR brand:${searchCode}
+        #if(${barCodeSearch} &amp;&amp; ${barCodeSearch} != '')
+            OR ({!parent which="type:p"}sku_bar_code:*${searchCode}*)
+        #end
+        )
+        #end
+        <include prefix=' AND _query_:"{!parent which=type:p}' suffix='"'>
+            #if(${valid})
+                sku_is_valid:1
+            #end
+            #if(${standardInnerCode} &amp;&amp; ${standardInnerCode} != '')
+                AND sku_standard_inner_code:${standardInnerCode}
+            #elseif(${categoryId} &amp;&amp; ${categoryId} == '0')
+                AND sku_standard_category_id:\"\"
+            #end
+            #if(${barCode} &amp;&amp; ${barCode} != '')
+                AND sku_bar_code:${barCode}
+            #end
+            #if(${adCodes} &amp;&amp; ${isVisibleOnly} != 1)
+                AND (({!terms f=ad_codes}#foreach($temp in $!{adCodes})#if($velocityCount > 1),#end$temp#end
+            #if(${sellerEntityIds})
+                AND -{!terms f=entity_id}#foreach($temp in $!{sellerEntityIds})#if($velocityCount > 1),#end$temp#end
+            #end
+            )
+            #if(${planNos}  &amp;&amp; ${planNos.size()} > 0 ) OR {!terms f=plan_nos}#foreach($temp in $!{planNos})#if($velocityCount > 1),#end$temp#end
+            #end)
+            #elseif(${isVisibleOnly} == 1)
+                AND #if(${planNos}  &amp;&amp; ${planNos.size()} > 0 ) {!terms f=plan_nos}#foreach($temp in $!{planNos})#if($velocityCount > 1),#end$temp#end#end
+            #end
+        </include>
+    </select>
+
 </sotiy>
