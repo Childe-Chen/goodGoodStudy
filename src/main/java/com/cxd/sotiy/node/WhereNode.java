@@ -18,7 +18,7 @@ public class WhereNode extends AbstractNode {
     }
 
     @Override
-    public void setTrim(boolean trim) {
+    public void setTrim(Boolean trim) {
         //不需要设置
     }
 

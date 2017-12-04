@@ -1,6 +1,11 @@
 package com.cxd.sotiy.handler.node;
 
+import com.cxd.solrWay.constants.ElementConstant;
+import com.cxd.sotiy.constants.AttributeConstant;
+import com.cxd.sotiy.constants.NodeConstant;
 import com.cxd.sotiy.node.AbstractNode;
+import com.cxd.sotiy.node.FieldNode;
+import com.cxd.sotiy.statement.AbstractStatement;
 import org.dom4j.Element;
 
 /**
@@ -12,7 +17,24 @@ import org.dom4j.Element;
 public class FieldHandler implements INodeHandler {
 
     @Override
-    public AbstractNode doHandle(Element element) {
-        return null;
+    public AbstractNode doHandle(Element element, AbstractStatement statement) {
+        Element fieldEle = element.element(NodeConstant.FIELD);
+
+        AbstractNode fieldNode = new FieldNode();
+
+        if (fieldEle == null) {
+            fieldNode.setPreCondition("*");
+            statement.setField(fieldNode.getPretreatmentBuffer().toString());
+            return fieldNode;
+        }
+
+        fieldNode.setPrefix(fieldEle.attributeValue(AttributeConstant.PREFIX));
+        fieldNode.setSuffix(fieldEle.attributeValue(AttributeConstant.SUFFIX));
+        fieldNode.setTrim(Boolean.valueOf(fieldEle.attributeValue(AttributeConstant.TRIM)));
+        fieldNode.setPreCondition(fieldEle.getText());
+
+        statement.setField(fieldNode.getPretreatmentBuffer().toString());
+
+        return fieldNode;
     }
 }

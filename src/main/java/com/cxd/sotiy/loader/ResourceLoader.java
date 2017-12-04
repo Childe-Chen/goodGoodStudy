@@ -1,11 +1,9 @@
 package com.cxd.sotiy.loader;
 
-import com.cxd.solrWay.constants.ElementConstant;
-import com.cxd.solrWay.parse.v1.statementParser.StatementParser;
+import com.cxd.sotiy.exception.AbstractSotiyException;
 import com.cxd.sotiy.handler.document.IDocumentHandler;
 import com.cxd.sotiy.handler.document.XmlDocumentHandler;
 import org.dom4j.Document;
-import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,36 +44,28 @@ public class ResourceLoader {
 
 
             try {
-                loadStatement(url.getPath(), files);
+                loadFile(url.getPath(), files);
             } catch (Exception e) {
-                logger.error("Load statement fail, please check!");
+                logger.error(e.getMessage(),e);
                 break;
             }
         }
     }
 
-    private void loadStatement(String pathPre, String[] files) {
+    private void loadFile(String pathPre, String[] files) throws AbstractSotiyException {
         SAXReader reader = new SAXReader();
         for (int i = 0; i < files.length; i++) {
-            loadDocument(pathPre + File.separator + files[i],reader);
+            handleFile(pathPre + File.separator + files[i],reader);
         }
     }
 
-    private void loadDocument(String path,SAXReader reader) {
+    private void handleFile(String path, SAXReader reader) throws AbstractSotiyException {
         InputStream is = null;
+        Document document = null;
 
         try {
             is = new FileInputStream(path);
-            Document document = reader.read(is);
-
-            if (document == null) {
-                logger.error("Load template file error, {}",path);
-            }
-
-            IDocumentHandler documentHandler = new XmlDocumentHandler();
-            documentHandler.handle(document);
-
-
+            document = reader.read(is);
         } catch (Exception e) {
             logger.error(e.getMessage(),e);
         } finally {
@@ -87,6 +77,9 @@ public class ResourceLoader {
                 }
             }
         }
+
+        IDocumentHandler documentHandler = new XmlDocumentHandler();
+        documentHandler.handle(document,path);
     }
 
 }

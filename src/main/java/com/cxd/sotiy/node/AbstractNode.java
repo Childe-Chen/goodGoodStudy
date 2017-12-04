@@ -35,6 +35,9 @@ public abstract class AbstractNode  implements NullObject{
     }
 
     public void setPrefix(String prefix) {
+        if (prefix == null) {
+            return;
+        }
         this.prefix = prefix;
     }
 
@@ -43,15 +46,14 @@ public abstract class AbstractNode  implements NullObject{
     }
 
     public void setSuffix(String suffix) {
+        if (suffix == null) {
+            return;
+        }
         this.suffix = suffix;
     }
 
     public boolean isTrim() {
         return trim;
-    }
-
-    public void setTrim(boolean trim) {
-        this.trim = trim;
     }
 
     public Boolean getTrim() {
@@ -67,6 +69,9 @@ public abstract class AbstractNode  implements NullObject{
     }
 
     public void setPreCondition(String preCondition) {
+        if (preCondition == null) {
+            return;
+        }
         this.preCondition = preCondition;
     }
 

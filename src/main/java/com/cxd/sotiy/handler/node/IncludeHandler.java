@@ -1,6 +1,7 @@
 package com.cxd.sotiy.handler.node;
 
 import com.cxd.sotiy.node.AbstractNode;
+import com.cxd.sotiy.statement.AbstractStatement;
 import org.dom4j.Element;
 
 /**
@@ -11,7 +12,7 @@ import org.dom4j.Element;
  **/
 public class IncludeHandler implements INodeHandler {
     @Override
-    public AbstractNode doHandle(Element element) {
+    public AbstractNode doHandle(Element element, AbstractStatement statement) {
         return null;
     }
 }

@@ -2,6 +2,7 @@ package com.cxd.sotiy.handler.node;
 
 import com.cxd.sotiy.node.AbstractNode;
 import com.cxd.sotiy.node.NullNode;
+import com.cxd.sotiy.statement.AbstractStatement;
 import org.dom4j.Element;
 
 /**
@@ -12,13 +13,26 @@ import org.dom4j.Element;
  **/
 public interface INodeHandler {
 
-    default AbstractNode handle(Element element) {
+    /**
+     * 解析elemnt
+     * @param element
+     * @param statement
+     * @return
+     */
+    default AbstractNode handle(Element element, AbstractStatement statement) {
         if (element == null) {
             return NullNode.getNullNode();
         }
 
-        return doHandle(element);
+        //执行解析，解析操作element的副本
+        return doHandle((Element)element.clone(), statement);
     }
 
-    AbstractNode doHandle(Element element);
+    /**
+     * 执行解析
+     * @param element
+     * @param statement
+     * @return
+     */
+    AbstractNode doHandle(Element element, AbstractStatement statement);
 }
