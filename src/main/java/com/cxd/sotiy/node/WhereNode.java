@@ -11,20 +11,20 @@ import java.util.stream.Collectors;
  **/
 public class WhereNode extends AbstractNode {
 
-    private LinkedList<AbstractNode> nodeList = new LinkedList<>();
-
-    public void addNode(AbstractNode node) {
-        nodeList.add(node);
-    }
-
+//    private LinkedList<AbstractNode> nodeList = new LinkedList<>();
+//
+//    public void addNode(AbstractNode node) {
+//        nodeList.add(node);
+//    }
+//
     @Override
     public void setTrim(Boolean trim) {
-        //不需要设置
+        super.setTrim(Boolean.TRUE);
     }
-
-    @Override
-    public StringBuffer getPretreatmentBuffer() {
-        setPreCondition(nodeList.parallelStream().map(node -> node.getPretreatmentBuffer()).collect(Collectors.joining()));
-        return super.getPretreatmentBuffer();
-    }
+//
+//    @Override
+//    public StringBuffer getPretreatmentBuffer() {
+//        setPreCondition(nodeList.parallelStream().map(node -> node.getPretreatmentBuffer()).collect(Collectors.joining()));
+//        return super.getPretreatmentBuffer();
+//    }
 }

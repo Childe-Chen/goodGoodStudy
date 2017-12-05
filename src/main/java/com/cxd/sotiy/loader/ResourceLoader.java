@@ -16,19 +16,19 @@ import java.net.URL;
 import java.util.Enumeration;
 
 /**
- * Created by childe on 2017/7/14.
+ * @author childe
  */
 public class ResourceLoader {
-    final static Logger logger = LoggerFactory.getLogger(ResourceLoader.class);
+    final static Logger LOGGER = LoggerFactory.getLogger(ResourceLoader.class);
 
     final static String PATH = "solr.template";
 
-    void load() {
+    public void load() {
         Enumeration<URL> resources = null;
         try {
             resources = ResourceLoader.class.getClassLoader().getResources(PATH);
         } catch (IOException e) {
-            logger.error(e.getMessage(),e);
+            LOGGER.error(e.getMessage(),e);
         }
 
         while (resources.hasMoreElements()) {
@@ -46,7 +46,7 @@ public class ResourceLoader {
             try {
                 loadFile(url.getPath(), files);
             } catch (Exception e) {
-                logger.error(e.getMessage(),e);
+                LOGGER.error(e.getMessage(),e);
                 break;
             }
         }
@@ -67,13 +67,13 @@ public class ResourceLoader {
             is = new FileInputStream(path);
             document = reader.read(is);
         } catch (Exception e) {
-            logger.error(e.getMessage(),e);
+            LOGGER.error(e.getMessage(),e);
         } finally {
             if (is != null) {
                 try {
                     is.close();
                 } catch (IOException e) {
-                    logger.error(e.getMessage(),e);
+                    LOGGER.error(e.getMessage(),e);
                 }
             }
         }

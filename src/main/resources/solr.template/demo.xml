@@ -1,69 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<sotiy namespace="sotiy1">
-
-    <select id="getDemo">
-        select * from order
-        where id=${id}
-        #if($!{statusList})
-            and status in (
-            #foreach($temp in $!{statusList})
-                $temp,$velocityCount
-            #end
-            )
-        #end
-        <include prefix=' _query_:"{!parent which=type:p} ' suffix='"'>
-             #foreach($temp in $!{statusList})
-                AND $temp,$velocityCount
-            #end
-        </include>
-    </select>
-
-
-    <select id="getDemo1">
-        select * from order where no=${no}
-    </select>
-
-    <select id="querySolrCommodityByParams">
-        #if(${entityId})
-            entity_id:${entityId}
-        #end
-        #if(${isValid})
-            AND is_valid:1
-        #end
-        #if(${status})
-            #if(${isVisibleOnly} == 0)
-                AND NOT _query_:{!terms f=status}1,4
-            #else
-            AND status:${status}
-            #end
-        #end
-        #if(${searchCode})
-            AND (name:${searchCode} OR spell:*${searchCode}* OR tag:${searchCode} OR brand:*${searchCode}*
-            #if(${barCodeSearch})
-                OR ({!parent which="type:p"}sku_bar_code:*${searchCode}*)
-            #end
-            )
-        #end
-        <include prefix=' _query_:"{!parent which=type:p}' suffix='"'>
-            #if(${isValid})
-                sku_is_valid:1
-            #end
-            #if(${standardInnerCode})
-                AND sku_standard_inner_code:${standardInnerCode}
-            #elseif(${categoryId} &amp;&amp; ${categoryId} == '0')
-                AND sku_standard_category_id:""
-            #end
-            #if(${barCode})
-                AND sku_bar_code:${barCode}
-            #end
-        </include>
-    </select>
-
+<sotiy namespace="com.cxd.sotiy.test.Commodity">
     <select id="querySolrSpuWithSkuList">
         <field>name,id</field>
         <from>solrIndex</from>
         <where>
+            <include>
             #if(${entityId} &amp;&amp; ${entityId} != '')
                 entity_id:${entityId}
             #end
@@ -80,6 +22,7 @@
             #end
             )
             #end
+            </include>
             <include prefix=' AND _query_:"{!parent which=type:p}' suffix='"'>
                 #if(${valid})
                     sku_is_valid:1
@@ -98,11 +41,11 @@
                             <foreach expression="$temp in $!{adCodes}" trim="true" prefix="{!terms f=ad_codes}">
                                 #if($velocityCount > 1),#end$temp
                             </foreach>
-                            #if(${sellerEntityIds})
-                                    <foreach expression="$temp in $!{sellerEntityIds}" trim="true" prefix="AND -{!terms f=entity_id}">
-                                        #if($velocityCount > 1),#end$temp
-                                    </foreach>
-                            #end
+                            <include prefix=" #if(${sellerEntityIds})" suffix="#end" trim="true">
+                                <foreach expression="$temp in $!{sellerEntityIds}" trim="true" prefix="AND -{!terms f=entity_id}">
+                                    #if($velocityCount > 1),#end$temp
+                                </foreach>
+                            </include>
                             )
                             #if(${planNos}  &amp;&amp; ${planNos.size()} > 0 ) OR {!terms f=plan_nos}#foreach($temp in $!{planNos})#if($velocityCount > 1),#end$temp#end
                             #end)

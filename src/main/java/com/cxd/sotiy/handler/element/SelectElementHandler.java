@@ -1,5 +1,6 @@
 package com.cxd.sotiy.handler.element;
 
+import com.cxd.sotiy.constants.NodeConstant;
 import com.cxd.sotiy.factory.NodeHandlerFactory;
 import com.cxd.sotiy.handler.node.INodeHandler;
 import com.cxd.sotiy.statement.AbstractStatement;
@@ -22,7 +23,7 @@ public class SelectElementHandler implements IElementHandler {
 
         List<INodeHandler> nodeHandlerList = NodeHandlerFactory.getNodeHandlerList();
 
-        nodeHandlerList.stream().forEach(nodeHandler -> nodeHandler.handle(ele,selectStatement));
+        nodeHandlerList.stream().forEach(nodeHandler -> nodeHandler.handle((Element)ele.clone(),selectStatement));
 
         return selectStatement;
     }

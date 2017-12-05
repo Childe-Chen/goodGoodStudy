@@ -31,7 +31,7 @@ public interface IDocumentHandler {
 
         Element root = document.getRootElement();
         if (!root.getName().equals(ElementConstant.SOTIY)) {
-            logger.error("File of {} root element is not support");
+            logger.error("File of {} root element is not support", path);
             return;
         }
 

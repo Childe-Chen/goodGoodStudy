@@ -12,18 +12,18 @@ import java.util.stream.Collectors;
  **/
 public class IncludeNode extends AbstractNode {
 
-    private List<AbstractNode> nodeList = new LinkedList<>();
-
-    public void addNode(AbstractNode node) {
-        nodeList.add(node);
-    }
-
-    @Override
-    public StringBuffer getPretreatmentBuffer() {
-        if (!getPreCondition().equals("")) {
-            return super.getPretreatmentBuffer();
-        }
-        setPreCondition(nodeList.parallelStream().map(node -> node.getPretreatmentBuffer()).collect(Collectors.joining()));
-        return super.getPretreatmentBuffer();
-    }
+//    private List<AbstractNode> nodeList = new LinkedList<>();
+//
+//    public void addNode(AbstractNode node) {
+//        nodeList.add(node);
+//    }
+//
+//    @Override
+//    public StringBuffer getPretreatmentBuffer() {
+//        if (!getPreCondition().equals("")) {
+//            return super.getPretreatmentBuffer();
+//        }
+//        setPreCondition(nodeList.parallelStream().map(node -> node.getPretreatmentBuffer()).collect(Collectors.joining()));
+//        return super.getPretreatmentBuffer();
+//    }
 }

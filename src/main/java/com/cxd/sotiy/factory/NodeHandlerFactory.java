@@ -18,8 +18,6 @@ public class NodeHandlerFactory {
 
         nodeHandlerList.add(new FieldHandler());
         nodeHandlerList.add(new FromHandler());
-        nodeHandlerList.add(new ForeachHandler());
-        nodeHandlerList.add(new IncludeHandler());
         //一定在最后
         nodeHandlerList.add(new WhereHandler());
 

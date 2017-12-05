@@ -19,13 +19,13 @@ public interface INodeHandler {
      * @param statement
      * @return
      */
-    default AbstractNode handle(Element element, AbstractStatement statement) {
+    default Element handle(Element element, AbstractStatement statement) {
         if (element == null) {
-            return NullNode.getNullNode();
+            return element;
         }
 
-        //执行解析，解析操作element的副本
-        return doHandle((Element)element.clone(), statement);
+        //执行解析，解析操作element
+        return doHandle(element, statement);
     }
 
     /**
@@ -34,5 +34,5 @@ public interface INodeHandler {
      * @param statement
      * @return
      */
-    AbstractNode doHandle(Element element, AbstractStatement statement);
+    Element doHandle(Element element, AbstractStatement statement);
 }

@@ -15,23 +15,23 @@ import org.dom4j.Element;
  **/
 public class FromHandler implements INodeHandler {
     @Override
-    public AbstractNode doHandle(Element element, AbstractStatement statement) {
+    public Element doHandle(Element element, AbstractStatement statement) {
         Element fromEle = element.element(NodeConstant.FROM);
 
         AbstractNode fromNode = new FromNode();
 
         if (fromEle == null) {
             statement.setField(fromNode.getPretreatmentBuffer().toString());
-            return fromNode;
+            return element;
         }
 
         fromNode.setPrefix(fromEle.attributeValue(AttributeConstant.PREFIX));
         fromNode.setSuffix(fromEle.attributeValue(AttributeConstant.SUFFIX));
-        fromNode.setTrim(Boolean.valueOf(fromEle.attributeValue(AttributeConstant.TRIM)));
+        fromNode.setTrim(Boolean.valueOf(fromEle.attributeValue(AttributeConstant.TRIM,"true")));
         fromNode.setPreCondition(fromEle.getText());
 
         statement.setCollection(fromNode.getPretreatmentBuffer().toString());
 
-        return fromNode;
+        return element;
     }
 }

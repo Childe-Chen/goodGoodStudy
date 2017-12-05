@@ -17,7 +17,7 @@ import org.dom4j.Element;
 public class FieldHandler implements INodeHandler {
 
     @Override
-    public AbstractNode doHandle(Element element, AbstractStatement statement) {
+    public Element doHandle(Element element, AbstractStatement statement) {
         Element fieldEle = element.element(NodeConstant.FIELD);
 
         AbstractNode fieldNode = new FieldNode();
@@ -25,16 +25,16 @@ public class FieldHandler implements INodeHandler {
         if (fieldEle == null) {
             fieldNode.setPreCondition("*");
             statement.setField(fieldNode.getPretreatmentBuffer().toString());
-            return fieldNode;
+            return element;
         }
 
         fieldNode.setPrefix(fieldEle.attributeValue(AttributeConstant.PREFIX));
         fieldNode.setSuffix(fieldEle.attributeValue(AttributeConstant.SUFFIX));
-        fieldNode.setTrim(Boolean.valueOf(fieldEle.attributeValue(AttributeConstant.TRIM)));
+        fieldNode.setTrim(Boolean.valueOf(fieldEle.attributeValue(AttributeConstant.TRIM,"true")));
         fieldNode.setPreCondition(fieldEle.getText());
 
         statement.setField(fieldNode.getPretreatmentBuffer().toString());
 
-        return fieldNode;
+        return element;
     }
 }
