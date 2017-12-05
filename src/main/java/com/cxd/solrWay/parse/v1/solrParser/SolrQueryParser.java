@@ -34,7 +34,7 @@ public class SolrQueryParser {
 
     private static String getRenderResult(SolrStatementV1 statement, VelocityContext context) {
         Writer writer = new StringWriter();
-        VelocityEngineFactory.newVelocityEngine().evaluate(context,writer,statement.getKey(),statement.getStatement());
+        VelocityEngineFactory.getVelocityEngine().evaluate(context,writer,statement.getKey(),statement.getStatement());
         return writer.toString();
     }
 }

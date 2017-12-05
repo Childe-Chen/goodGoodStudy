@@ -16,8 +16,8 @@ public class StatementFactory {
 
     private static final Map<String,AbstractStatement> STATEMENT_MAP = new ConcurrentHashMap<>();
 
-    public static AbstractStatement getStatement(String key) {
-        return STATEMENT_MAP.getOrDefault(key, NullStatement.getNullStatement());
+    public static AbstractStatement getStatement(String nameSpace, String id) {
+        return STATEMENT_MAP.getOrDefault(nameSpace + AbstractStatement.DOT + id, NullStatement.getNullStatement());
     }
 
     public static void addStatement(AbstractStatement statement) {

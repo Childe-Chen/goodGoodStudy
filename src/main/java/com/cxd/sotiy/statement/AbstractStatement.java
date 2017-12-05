@@ -13,7 +13,7 @@ import com.cxd.sotiy.node.WhereNode;
  **/
 public abstract class AbstractStatement implements NullObject {
 
-    private static final String DOT = ".";
+    public static final String DOT = ".";
 
     /**
      * 命名空间
