@@ -14,6 +14,10 @@ public class BeanUtil {
         if (bean == null) {
             return map;
         }
+        if (bean instanceof Map) {
+            map.putAll((Map)bean);
+            return map;
+        }
         try {
             Method[] methods = bean.getClass().getMethods();
             for (int i = 0; i < methods.length; i++) {

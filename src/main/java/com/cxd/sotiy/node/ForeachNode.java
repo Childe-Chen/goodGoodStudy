@@ -6,7 +6,7 @@ package com.cxd.sotiy.node;
  * @author childe
  * @date 2017/12/2 15:53
  **/
-public class ForeachNode extends AbstractNode {
+public final class ForeachNode extends IncludeNode {
 
     private static final String FOR_EACH_PREFIX = "#foreach(";
 
@@ -28,20 +28,7 @@ public class ForeachNode extends AbstractNode {
 
     public void setExpression(String expression) {
         this.expression = expression;
-    }
-
-    @Override
-    public StringBuffer getPretreatmentBuffer() {
-        if (getTrim()) {
-            setPreCondition(preCondition.trim());
-        }
-
-        StringBuffer sb = new StringBuffer();
-        sb.append(FOR_EACH_PREFIX);
-        sb.append(getExpression()).append(FOR_EACH_SUFFIX);
-        sb.append(getPreCondition());
-        sb.append(FOR_EACH_END);
-
-        return sb;
+        super.setPrefix(getPrefix() + FOR_EACH_PREFIX + getExpression() + FOR_EACH_SUFFIX);
+        super.setSuffix(getSuffix() + FOR_EACH_END);
     }
 }

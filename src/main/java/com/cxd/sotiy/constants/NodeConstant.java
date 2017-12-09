@@ -16,6 +16,8 @@ public class NodeConstant {
 
     public static final String INCLUDE = "include";
 
+    public static final String IF = "if";
+
     public static final String WHERE = "where";
 
     public static final String FROM = "from";

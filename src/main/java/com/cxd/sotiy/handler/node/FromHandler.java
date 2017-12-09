@@ -5,6 +5,7 @@ import com.cxd.sotiy.constants.NodeConstant;
 import com.cxd.sotiy.node.AbstractNode;
 import com.cxd.sotiy.node.FromNode;
 import com.cxd.sotiy.statement.AbstractStatement;
+import com.google.common.base.CharMatcher;
 import org.dom4j.Element;
 
 /**
@@ -25,10 +26,8 @@ public class FromHandler implements INodeHandler {
             return element;
         }
 
-        fromNode.setPrefix(fromEle.attributeValue(AttributeConstant.PREFIX));
-        fromNode.setSuffix(fromEle.attributeValue(AttributeConstant.SUFFIX));
         fromNode.setTrim(Boolean.valueOf(fromEle.attributeValue(AttributeConstant.TRIM,"true")));
-        fromNode.setPreCondition(fromEle.getText());
+        fromNode.setPreCondition(CharMatcher.WHITESPACE.removeFrom(fromEle.getText()));
 
         statement.setCollection(fromNode.getPretreatmentBuffer().toString());
 

@@ -5,7 +5,9 @@ import com.cxd.sotiy.factory.StatementFactory;
 import com.cxd.sotiy.loader.ResourceLoader;
 import com.cxd.sotiy.statement.AbstractStatement;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * desc
@@ -23,8 +25,18 @@ public class Test {
         System.out.println(statement.getField());
         System.out.println(statement.getCollection());
         System.out.println(statement.getWhereStatement());
+        System.out.println("==========");
 
-        String queryStr = SotiyAssistant.getQuery("com.cxd.sotiy.test.Commodity","querySolrSpuWithSkuList",new HashMap<>());
+        Map<String,Object> params = new HashMap<>();
+        params.put("entityId","222");
+        params.put("valid","true");
+        params.put("barCode","00000");
+        params.put("adCodes", Arrays.asList("1","12","3"));
+        params.put("planNos", Arrays.asList("1","12","3"));
+        params.put("sellerEntityIds", Arrays.asList("0","12","3"));
+        params.put("isVisibleOnly","10");
+
+        String queryStr = SotiyAssistant.getQuery("com.cxd.sotiy.test.Commodity","querySolrSpuWithSkuList",params);
         System.out.println(queryStr);
     }
 }

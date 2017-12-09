@@ -6,6 +6,7 @@ import com.cxd.sotiy.constants.NodeConstant;
 import com.cxd.sotiy.node.AbstractNode;
 import com.cxd.sotiy.node.FieldNode;
 import com.cxd.sotiy.statement.AbstractStatement;
+import com.google.common.base.CharMatcher;
 import org.dom4j.Element;
 
 /**
@@ -28,10 +29,8 @@ public class FieldHandler implements INodeHandler {
             return element;
         }
 
-        fieldNode.setPrefix(fieldEle.attributeValue(AttributeConstant.PREFIX));
-        fieldNode.setSuffix(fieldEle.attributeValue(AttributeConstant.SUFFIX));
         fieldNode.setTrim(Boolean.valueOf(fieldEle.attributeValue(AttributeConstant.TRIM,"true")));
-        fieldNode.setPreCondition(fieldEle.getText());
+        fieldNode.setPreCondition(CharMatcher.WHITESPACE.removeFrom(fieldEle.getText()));
 
         statement.setField(fieldNode.getPretreatmentBuffer().toString());
 

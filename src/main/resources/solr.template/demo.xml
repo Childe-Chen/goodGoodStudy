@@ -2,57 +2,63 @@
 
 <sotiy namespace="com.cxd.sotiy.test.Commodity">
     <select id="querySolrSpuWithSkuList">
-        <field>name,id</field>
+        <field>name,id,[child parentFilter=type:p],[parent parentFilter=type:p f=entity_id,name,spec_type,status,server,path,is_valid]</field>
         <from>solrIndex</from>
         <where>
-            <include>
-                #if(${entityId} &amp;&amp; ${entityId} != '')
-                    entity_id:${entityId}
+            <if expression="${entityId} &amp;&amp; ${entityId} != ''">
+                entity_id:${entityId}
+            </if>
+            <if expression="${valid}">
+                AND is_valid:1
+            </if>
+            <if expression="${status} &amp;&amp; ${status} != ''">
+                AND status:${status}
+            </if>
+            <if expression="${searchCode} &amp;&amp; ${searchCode} != ''" suffix=")">
+                AND (name:${searchCode} OR spell:*${searchCode}* OR tag:${searchCode} OR brand:${searchCode}
+                #if(${barCodeSearch} &amp;&amp; ${barCodeSearch} != '')
+                    OR ({!parent which="type:p"}sku_bar_code:*${searchCode}*)
                 #end
-                #if(${valid})
-                    AND is_valid:1
-                #end
-                #if(${status} &amp;&amp; ${status} != '')
-                    AND status:${status}
-                #end
-                #if(${searchCode} &amp;&amp; ${searchCode} != '')
-                    AND (name:${searchCode} OR spell:*${searchCode}* OR tag:${searchCode} OR brand:${searchCode}
-                    #if(${barCodeSearch} &amp;&amp; ${barCodeSearch} != '')
-                        OR ({!parent which="type:p"}sku_bar_code:*${searchCode}*)
-                #end
-                )
-                #end
-            </include>
+            </if>
             <include prefix=' AND _query_:"{!parent which=type:p}' suffix='"'>
-                #if(${valid})
-                    sku_is_valid:1
-                #end
-                #if(${standardInnerCode} &amp;&amp; ${standardInnerCode} != '')
+                <if expression="${valid}">
+                    AND is_valid:1
+                </if>
+                <if expression="${standardInnerCode} &amp;&amp; ${standardInnerCode} != ''">
                     AND sku_standard_inner_code:${standardInnerCode}
-                #elseif(${categoryId} &amp;&amp; ${categoryId} == '0')
-                    AND sku_standard_category_id:\"\"
-                #end
-                #if(${barCode} &amp;&amp; ${barCode} != '')
+                </if>
+                <if expression="!${standardInnerCode}">
+                    <if expression="${categoryId} &amp;&amp; ${categoryId} == '0'">
+                        AND sku_standard_category_id:\"\"
+                    </if>
+                </if>
+                <if expression="${barCode} &amp;&amp; ${barCode} != ''">
                     AND sku_bar_code:${barCode}
-                #end
-                <include>
-                    #if(${adCodes} &amp;&amp; ${isVisibleOnly} != 1)
-                        AND ((
-                            <foreach expression="$temp in $!{adCodes}" trim="true" prefix="{!terms f=ad_codes}">
+                </if>
+                <if expression="${adCodes} &amp;&amp; ${isVisibleOnly} != 1">
+                    <include prefix="AND ((" suffix=")">
+                        <foreach expression="$temp in $!{adCodes}" prefix="{!terms f=ad_codes}">
+                            #if($velocityCount > 1),#end$temp
+                        </foreach>
+                        <if expression="${sellerEntityIds}">
+                            <foreach expression="$temp in $!{sellerEntityIds}" prefix="AND -{!terms f=entity_id}">
                                 #if($velocityCount > 1),#end$temp
                             </foreach>
-                            <include prefix=" #if(${sellerEntityIds})" suffix="#end" trim="true">
-                                <foreach expression="$temp in $!{sellerEntityIds}" trim="true" prefix="AND -{!terms f=entity_id}">
-                                    #if($velocityCount > 1),#end$temp
-                                </foreach>
-                            </include>
-                            )
-                            #if(${planNos}  &amp;&amp; ${planNos.size()} > 0 ) OR {!terms f=plan_nos}#foreach($temp in $!{planNos})#if($velocityCount > 1),#end$temp#end
-                            #end)
-                    #elseif(${isVisibleOnly} == 1)
-                        AND #if(${planNos}  &amp;&amp; ${planNos.size()} > 0 ) {!terms f=plan_nos}#foreach($temp in $!{planNos})#if($velocityCount > 1),#end$temp#end#end
-                    #end
-                </include>
+                        </if>
+                    </include>
+                    <if expression="${planNos}  &amp;&amp; ${planNos.size()} > 0" suffix=")">
+                        <foreach expression="$temp in $!{planNos}" prefix=" OR {!terms f=plan_nos}">
+                            #if($velocityCount > 1),#end$temp
+                        </foreach>
+                    </if>
+                </if>
+                <if expression="!${adCodes} &amp;&amp; ${isVisibleOnly} == 1">
+                    <if expression="${planNos}  &amp;&amp; ${planNos.size()} > 0" prefix=" AND {!terms f=plan_nos}">
+                        <foreach expression="$temp in $!{planNos}">
+                            #if($velocityCount > 1),#end$temp
+                        </foreach>
+                    </if>
+                </if>
             </include>
 
         </where>

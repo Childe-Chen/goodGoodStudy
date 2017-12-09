@@ -6,6 +6,6 @@ package com.cxd.sotiy.node;
  * @author childe
  * @date 2017/12/2 15:33
  **/
-public class FieldNode extends AbstractNode {
+public final class FieldNode extends AbstractNode {
 
 }

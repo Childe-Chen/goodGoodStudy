@@ -6,7 +6,7 @@ package com.cxd.sotiy.node;
  * @author childe
  * @date 2017/12/6 20:57
  **/
-public class TextNode extends AbstractNode {
+public final class TextNode extends AbstractNode {
 
     @Override
     public StringBuffer getPretreatmentBuffer() {

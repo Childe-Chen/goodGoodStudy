@@ -6,6 +6,7 @@ import com.cxd.sotiy.node.AbstractNode;
 import com.cxd.sotiy.node.NullNode;
 import com.cxd.sotiy.node.WhereNode;
 import com.cxd.sotiy.statement.AbstractStatement;
+import com.google.common.base.CharMatcher;
 import org.dom4j.Element;
 import org.dom4j.tree.DefaultText;
 import org.slf4j.Logger;
@@ -35,9 +36,7 @@ public class WhereHandler implements INodeHandler {
         Element whereNodeElement = handleChildNode(statement, whereElementList);
 
         WhereNode whereNode = new WhereNode();
-        whereNode.setPrefix(whereNodeElement.attributeValue(AttributeConstant.PREFIX));
-        whereNode.setSuffix(whereNodeElement.attributeValue(AttributeConstant.SUFFIX));
-        whereNode.setPreCondition(whereNodeElement.getTextTrim());
+        whereNode.setPreCondition(CharMatcher.WHITESPACE.trimAndCollapseFrom(whereNodeElement.getTextTrim(),' '));
 
         int index = element.elements().indexOf(whereNodeElement);
         element.elements().add(index,new DefaultText(whereNode.getPretreatmentBuffer().toString()));
@@ -51,6 +50,8 @@ public class WhereHandler implements INodeHandler {
     private Element handleChildNode(AbstractStatement statement, List<Element> whereElementList) {
         Element whereNodeElement = new ForeachHandler().handle(whereElementList.get(0),statement);
         whereNodeElement = new IncludeHandler().handle(whereNodeElement,statement);
+        whereNodeElement = new ForeachHandler().handle(whereNodeElement,statement);
+        whereNodeElement = new IfHandler().handle(whereNodeElement,statement);
         return whereNodeElement;
     }
 }

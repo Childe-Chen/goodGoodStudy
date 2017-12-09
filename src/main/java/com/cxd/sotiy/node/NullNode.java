@@ -8,7 +8,7 @@ import com.cxd.sotiy.common.NullObject;
  * @author childe
  * @date 2017/12/2 23:20
  **/
-public class NullNode extends AbstractNode {
+public final class NullNode extends AbstractNode {
 
     private static final NullNode NULL_NODE = new NullNode();
 

@@ -12,6 +12,56 @@ import java.util.stream.Collectors;
  **/
 public class IncludeNode extends AbstractNode {
 
+    /**
+     * 前缀
+     */
+    protected String prefix = "";
+
+    /**
+     * 后缀
+     */
+    protected String suffix = "";
+
+
+    public String getPrefix() {
+        return prefix;
+    }
+
+    public void setPrefix(String prefix) {
+        if (prefix == null) {
+            return;
+        }
+        this.prefix = prefix;
+    }
+
+    public String getSuffix() {
+        return suffix;
+    }
+
+    public void setSuffix(String suffix) {
+        if (suffix == null) {
+            return;
+        }
+        this.suffix = suffix;
+    }
+
+    @Override
+    public StringBuffer getPretreatmentBuffer() {
+        if (isNullObject()) {
+            return new StringBuffer();
+        }
+        StringBuffer sb = new StringBuffer();
+        sb.append(getPrefix());
+        if (getTrim()) {
+            setPreCondition(getPreCondition().trim());
+        }
+        sb.append(getPreCondition());
+        sb.append(getSuffix());
+        return sb;
+    }
+
+
+
 //    private List<AbstractNode> nodeList = new LinkedList<>();
 //
 //    public void addNode(AbstractNode node) {

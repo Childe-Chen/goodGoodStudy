@@ -6,6 +6,8 @@ import com.cxd.sotiy.node.AbstractNode;
 import com.cxd.sotiy.node.ForeachNode;
 import com.cxd.sotiy.node.IncludeNode;
 import com.cxd.sotiy.statement.AbstractStatement;
+import com.google.common.base.CharMatcher;
+import org.apache.commons.lang.StringUtils;
 import org.dom4j.Element;
 import org.dom4j.tree.DefaultText;
 import org.slf4j.Logger;
@@ -41,7 +43,7 @@ public class IncludeHandler implements INodeHandler {
         includeNode.setPrefix(includeNodeElement.attributeValue(AttributeConstant.PREFIX));
         includeNode.setSuffix(includeNodeElement.attributeValue(AttributeConstant.SUFFIX));
         includeNode.setTrim(Boolean.valueOf(includeNodeElement.attributeValue(AttributeConstant.TRIM,"true")));
-        includeNode.setPreCondition(includeNodeElement.getTextTrim());
+        includeNode.setPreCondition(CharMatcher.WHITESPACE.trimAndCollapseFrom(includeNodeElement.getTextTrim(), ' '));
 
         int index = parentElement.elements().indexOf(includeNodeElement);
         parentElement.elements().add(index,new DefaultText(includeNode.getPretreatmentBuffer().toString()));
@@ -50,6 +52,7 @@ public class IncludeHandler implements INodeHandler {
 
     private Element handleChildNode(Element includeNodeElement, AbstractStatement statement) {
         includeNodeElement = new IncludeHandler().handle(includeNodeElement,statement);
+        includeNodeElement = new IfHandler().handle(includeNodeElement,statement);
         includeNodeElement = new ForeachHandler().handle(includeNodeElement,statement);
         return includeNodeElement;
     }

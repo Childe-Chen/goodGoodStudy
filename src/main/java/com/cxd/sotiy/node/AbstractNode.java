@@ -11,16 +11,6 @@ import com.cxd.sotiy.common.NullObject;
 public abstract class AbstractNode  implements NullObject{
 
     /**
-     * 前缀
-     */
-    protected String prefix = "";
-
-    /**
-     * 后缀
-     */
-    protected String suffix = "";
-
-    /**
      * 去除前后空白
      */
     protected Boolean trim = Boolean.FALSE;
@@ -29,28 +19,6 @@ public abstract class AbstractNode  implements NullObject{
      * 预处理条件语句
      */
     protected String preCondition = "";
-
-    public String getPrefix() {
-        return prefix;
-    }
-
-    public void setPrefix(String prefix) {
-        if (prefix == null) {
-            return;
-        }
-        this.prefix = prefix;
-    }
-
-    public String getSuffix() {
-        return suffix;
-    }
-
-    public void setSuffix(String suffix) {
-        if (suffix == null) {
-            return;
-        }
-        this.suffix = suffix;
-    }
 
     public boolean isTrim() {
         return trim;
@@ -80,12 +48,10 @@ public abstract class AbstractNode  implements NullObject{
             return new StringBuffer();
         }
         StringBuffer sb = new StringBuffer();
-        sb.append(getPrefix());
-        if (trim) {
+        if (getTrim()) {
             setPreCondition(getPreCondition().trim());
         }
         sb.append(getPreCondition());
-        sb.append(getSuffix());
         return sb;
     }
 
