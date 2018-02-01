@@ -1,5 +1,7 @@
 package com.cxd.javaSourceCode;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,13 +16,21 @@ public class ListTest {
         List<String> t = new ArrayList<>();
         t.add("1");
         t.add("2");
-        t.add("3");
-        int index = t.indexOf("1");
-        System.out.println(index);
-        t.add(index,"2222");
-        t.remove(index);
-        for (int i = 0; i < t.size(); i++) {
-            System.out.println(t.get(i));
+//        t.add("3");
+//        int index = t.indexOf("1");
+//        System.out.println(index);
+//        t.add(index,"2222");
+//        t.remove(index);
+//        for (int i = 0; i < t.size(); i++) {
+//            System.out.println(t.get(i));
+//        }
+
+        for (String s : t) {
+            if ("2".equals(s)) {
+                t.remove(s);
+            }
         }
+
+        System.out.println(JSON.toJSONString(t));
     }
 }
