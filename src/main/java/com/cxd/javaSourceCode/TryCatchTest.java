@@ -1,7 +1,5 @@
 package com.cxd.javaSourceCode;
 
-import com.cxd.sotiy.exception.SotiyAttrNotExistsException;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,7 +17,7 @@ public class TryCatchTest {
         for (int i = 0; i < 2; i++) {
             try {
                 set.add("1");
-                throw new SotiyAttrNotExistsException("0");
+                throw new RuntimeException("0");
             } catch (Exception e) {
                 set.add("2");
 
