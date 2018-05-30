@@ -13,7 +13,11 @@ public class Currency {
 //        BigDecimal tmp = new BigDecimal(4325l);
 //        String price = tmp.divide(new BigDecimal(100)).setScale(2,BigDecimal.ROUND_HALF_UP).toPlainString();
 //        System.out.println(price);
-        byte i = (byte)129;
-        System.out.println(i);
+//        byte i = (byte)129;
+//        System.out.println(i);
+
+        String a = "11";
+        String b = null;
+        System.out.println(a + b);
     }
 }

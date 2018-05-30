@@ -2,7 +2,7 @@ package com.cxd.springUtils;
 
 
 
-import org.springframework.beans.BeanUtils;
+
 
 import java.math.BigDecimal;
 
@@ -19,7 +19,7 @@ public class Main {
 
         BPeople bPeople = new BPeople();
 
-        BeanUtils.copyProperties(bPeople,aPeople);
+//        BeanUtils.copyProperties(bPeople,aPeople);
 
         System.out.println(bPeople.getCrash());
     }
