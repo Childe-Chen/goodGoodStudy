@@ -12,7 +12,13 @@ public class Main {
         int[] arr = SortUtil.genericArr(10, 100);
 
         SortUtil.print(arr);
-        SortUtil.print(SelectionSort.sort(arr));
+
+
+//        SortUtil.print(SelectionSort.sort(arr));
+
+//        SortUtil.print(BubbleSort.sort(arr));
+
+        SortUtil.print(InsertSort.sort(arr));
 
 
     }
