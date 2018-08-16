@@ -8,13 +8,19 @@ import net.sf.json.JSONObject;
  */
 public class Test {
     public static void main(String[] args) throws Exception {
-        Man man = new Man();
-        man.setAge(12);
-        man.setName("hessian");
+//        Man man = new Man();
+//        man.setAge(12);
+//        man.setName("hessian");
+//
+//        String json = JSONObject.fromObject(man).toString();
+//
+//        System.out.println(json);
 
-        String json = JSONObject.fromObject(man).toString();
-
-        System.out.println(json);
+        for (int i = 0; i < 10;) {
+            Man man1 = new Man();
+            man1.setAge(++i);
+            System.out.println(man1.getAge());
+        }
 
 
 //        Woman woman= com.alibaba.fastjson.JSONObject.parseObject(json,Woman.class);

@@ -37,10 +37,11 @@ public class DisruptorMainFirst {
         ThreadFactory productThreadFactory = (r) -> new Thread(r, "simpleThread");
 
         // RingBuffer生产工厂,初始化RingBuffer的时候使用
-        EventFactory<Element> ringBufferFactory = () -> new Element();
+        EventFactory<Element> ringBufferFactory = Element::new;
 
         // 处理Event的handler
-        EventHandler<Element> handler = (Element element, long sequence, boolean endOfBatch) -> System.out.println("Element: " + element.get() + "->" + sequence + " - " + endOfBatch);
+        EventHandler<Element> handler = (Element element, long sequence, boolean endOfBatch)
+                -> System.out.println("Element: " + element.get() + "->" + sequence + " - " + endOfBatch);
 
         // 阻塞策略
         BlockingWaitStrategy strategy = new BlockingWaitStrategy();
