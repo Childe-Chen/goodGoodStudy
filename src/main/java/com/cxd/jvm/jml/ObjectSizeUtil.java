@@ -22,7 +22,7 @@ public class ObjectSizeUtil {
         inst = instP;
     }
 
-    public static long sizeOf(Object o) {
+    public static long shallowSizeOf(Object o) {
         if(inst == null) {
             throw new IllegalStateException("Can not access instrumentation environment.\n" +
                     "Please check if jar file containing SizeOfAgent class is \n" +
@@ -35,7 +35,7 @@ public class ObjectSizeUtil {
      * 递归计算当前对象占用空间总大小，包括当前类和超类的实例字段大小以及实例字段引用对象大小
      * 像MAT中的 Retained heap
      */
-    public static long fullSizeOf(Object obj) {
+    public static long retainedSizeOf(Object obj) {
         //深入检索对象，并计算大小
         Map<Object, Object> visited = new IdentityHashMap<>();
         Stack<Object> stack = new Stack<>();
@@ -65,7 +65,7 @@ public class ObjectSizeUtil {
         //将当前对象放入栈中
         visited.put(obj, null);
         long result = 0;
-        result += sizeOf(obj);
+        result += shallowSizeOf(obj);
         Class <?>clazz = obj.getClass();
         //如果数组
         if (clazz.isArray()) {

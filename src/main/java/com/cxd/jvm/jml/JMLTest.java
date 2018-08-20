@@ -39,119 +39,119 @@ public class JMLTest {
     private static void stringTest() {
         String s = new String("c");
         //
-        // +UseCompressedOops new String sizeOf : 24 fullSizeOf : 48
-        // -UseCompressedOops new String sizeOf : 32 fullSizeOf : 64
-        System.out.println("new String sizeOf : " + ObjectSizeUtil.sizeOf(s) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(s)+ "\n");
+        // +UseCompressedOops new String shallowSizeOf : 24 retainedSizeOf : 48
+        // -UseCompressedOops new String shallowSizeOf : 32 retainedSizeOf : 64
+        System.out.println("new String shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(s) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(s)+ "\n");
 
-        // 走了常量池，ObjectSizeUtil.fullSizeOf()会跳过计算
+        // 走了常量池，ObjectSizeUtil.retainedSizeOf()会跳过计算
         String ss = "c";
         //
-        // +UseCompressedOops String sizeOf : 24=12(head) + 4(hash int) +  fullSizeOf : 0
-        // -UseCompressedOops String sizeOf : 32=12(head) + 4(hash int) +  fullSizeOf : 0
-        System.out.println("String sizeOf : " + ObjectSizeUtil.sizeOf(ss) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(ss)+ "\n");
+        // +UseCompressedOops String shallowSizeOf : 24=12(head) + 4(hash int) +  retainedSizeOf : 0
+        // -UseCompressedOops String shallowSizeOf : 32=12(head) + 4(hash int) +  retainedSizeOf : 0
+        System.out.println("String shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(ss) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(ss)+ "\n");
     }
 
     private static void arrayTest() {
         Integer[] integerHead = new Integer[0];
         // integerHead 长度为0，即对象头的大小
-        // +UseCompressedOops integerHead sizeOf : 16 fullSizeOf : 16
-        // -UseCompressedOops integerHead sizeOf : 24 fullSizeOf : 24
-        System.out.println("integerHead sizeOf : " + ObjectSizeUtil.sizeOf(integerHead) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(integerHead)+ "\n");
+        // +UseCompressedOops integerHead shallowSizeOf : 16 retainedSizeOf : 16
+        // -UseCompressedOops integerHead shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("integerHead shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(integerHead) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(integerHead)+ "\n");
 
         Integer[] integers1 = new Integer[1];
         // integers1
-        // +UseCompressedOops integers1 sizeOf : 24 fullSizeOf : 24
-        // -UseCompressedOops integers1 sizeOf : 32 fullSizeOf : 32
-        System.out.println("integers1 sizeOf : " + ObjectSizeUtil.sizeOf(integers1) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(integers1)+ "\n");
+        // +UseCompressedOops integers1 shallowSizeOf : 24 retainedSizeOf : 24
+        // -UseCompressedOops integers1 shallowSizeOf : 32 retainedSizeOf : 32
+        System.out.println("integers1 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(integers1) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(integers1)+ "\n");
 
         Integer[] integers2 = new Integer[2];
         // integers2
-        // +UseCompressedOops integers2 sizeOf : 24=16(head) + 4*2(两个引用) fullSizeOf : 24
-        // -UseCompressedOops integers2 sizeOf : 40=24(head) + 8*2(两个引用) fullSizeOf : 40
-        System.out.println("integers2 sizeOf : " + ObjectSizeUtil.sizeOf(integers2) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(integers2)+ "\n");
+        // +UseCompressedOops integers2 shallowSizeOf : 24=16(head) + 4*2(两个引用) retainedSizeOf : 24
+        // -UseCompressedOops integers2 shallowSizeOf : 40=24(head) + 8*2(两个引用) retainedSizeOf : 40
+        System.out.println("integers2 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(integers2) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(integers2)+ "\n");
 
         Integer[] integers3 = new Integer[3];
         // integers3
-        // +UseCompressedOops integers3 sizeOf : 32 fullSizeOf : 32
-        // -UseCompressedOops integers3 sizeOf : 48 fullSizeOf : 48
-        System.out.println("integers3 sizeOf : " + ObjectSizeUtil.sizeOf(integers3) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(integers3)+ "\n");
+        // +UseCompressedOops integers3 shallowSizeOf : 32 retainedSizeOf : 32
+        // -UseCompressedOops integers3 shallowSizeOf : 48 retainedSizeOf : 48
+        System.out.println("integers3 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(integers3) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(integers3)+ "\n");
 
         int[] intHead = new int[0];
         // intHead 长度为0，即对象头的大小
-        // +UseCompressedOops intHead sizeOf : 16 fullSizeOf : 16
-        // -UseCompressedOops intHead sizeOf : 24 fullSizeOf : 24
-        System.out.println("intHead sizeOf : " + ObjectSizeUtil.sizeOf(intHead) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(intHead)+ "\n");
+        // +UseCompressedOops intHead shallowSizeOf : 16 retainedSizeOf : 16
+        // -UseCompressedOops intHead shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("intHead shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(intHead) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(intHead)+ "\n");
 
         int[] int1 = new int[1];
         // intHead 长度为0，即对象头的大小
-        // +UseCompressedOops int1 sizeOf : 24=16（head）+ 4 + 4（padding） fullSizeOf : 24
-        // -UseCompressedOops int1 sizeOf : 32 fullSizeOf : 32
-        System.out.println("int1 sizeOf : " + ObjectSizeUtil.sizeOf(int1) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(int1)+ "\n");
+        // +UseCompressedOops int1 shallowSizeOf : 24=16（head）+ 4 + 4（padding） retainedSizeOf : 24
+        // -UseCompressedOops int1 shallowSizeOf : 32 retainedSizeOf : 32
+        System.out.println("int1 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(int1) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(int1)+ "\n");
 
         int[] int2 = new int[2];
         // intHead 长度为0，即对象头的大小
-        // +UseCompressedOops int2 sizeOf : 24=16（head）+ 4*2 fullSizeOf : 24
-        // -UseCompressedOops int2 sizeOf : 32 fullSizeOf : 32
-        System.out.println("int2 sizeOf : " + ObjectSizeUtil.sizeOf(int2) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(int2)+ "\n");
+        // +UseCompressedOops int2 shallowSizeOf : 24=16（head）+ 4*2 retainedSizeOf : 24
+        // -UseCompressedOops int2 shallowSizeOf : 32 retainedSizeOf : 32
+        System.out.println("int2 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(int2) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(int2)+ "\n");
 
         int[] int3 = new int[3];
         // intHead 长度为0，即对象头的大小
-        // +UseCompressedOops int3 sizeOf : 32 fullSizeOf : 32
-        // -UseCompressedOops int3 sizeOf : 40 fullSizeOf : 40
-        System.out.println("int3 sizeOf : " + ObjectSizeUtil.sizeOf(int3) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(int3)+ "\n");
+        // +UseCompressedOops int3 shallowSizeOf : 32 retainedSizeOf : 32
+        // -UseCompressedOops int3 shallowSizeOf : 40 retainedSizeOf : 40
+        System.out.println("int3 shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(int3) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(int3)+ "\n");
     }
 
     private static void referenceTest() {
         Explorer explorer = new Explorer();
         // explorer 自身只有一个头
-        // +UseCompressedOops explorer sizeOf : 16=12（self） + 4(int) fullSizeOf : 16
-        // -UseCompressedOops explorer sizeOf : 24=16 （self）+ 4(int) + 4(padding) fullSizeOf : 24
-        System.out.println("explorer sizeOf : " + ObjectSizeUtil.sizeOf(explorer) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(explorer)+ "\n");
+        // +UseCompressedOops explorer shallowSizeOf : 16=12（self） + 4(int) retainedSizeOf : 16
+        // -UseCompressedOops explorer shallowSizeOf : 24=16 （self）+ 4(int) + 4(padding) retainedSizeOf : 24
+        System.out.println("explorer shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(explorer) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(explorer)+ "\n");
 
         EmptyExplorer emptyExplorer = new EmptyExplorer();
         // emptyExplorer 自身只有一个头
-        // +UseCompressedOops emptyExplorer sizeOf : 16=12（self） + 4（padding） fullSizeOf : 16
-        // -UseCompressedOops emptyExplorer sizeOf : 16=16（self） fullSizeOf : 16
-        System.out.println("emptyExplorer sizeOf : " + ObjectSizeUtil.sizeOf(emptyExplorer) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(emptyExplorer)+ "\n");
+        // +UseCompressedOops emptyExplorer shallowSizeOf : 16=12（self） + 4（padding） retainedSizeOf : 16
+        // -UseCompressedOops emptyExplorer shallowSizeOf : 16=16（self） retainedSizeOf : 16
+        System.out.println("emptyExplorer shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(emptyExplorer) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(emptyExplorer)+ "\n");
 
         //64位机器上reference类型占用8个字节，开启指针压缩后占用4个字节。
         NestExplorer nestExplorer = new NestExplorer();
         // nestExplorer 自身只有一个头
-        // +UseCompressedOops nestExplorer sizeOf : 16=12+4(reference) fullSizeOf : 16
-        // -UseCompressedOops nestExplorer sizeOf : 24=16+8(reference) fullSizeOf : 24
-        System.out.println("nestExplorer sizeOf : " + ObjectSizeUtil.sizeOf(nestExplorer) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(nestExplorer)+ "\n");
+        // +UseCompressedOops nestExplorer shallowSizeOf : 16=12+4(reference) retainedSizeOf : 16
+        // -UseCompressedOops nestExplorer shallowSizeOf : 24=16+8(reference) retainedSizeOf : 24
+        System.out.println("nestExplorer shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(nestExplorer) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(nestExplorer)+ "\n");
     }
 
     private static void primitiveTest() {
         int integer = 90;
         // int 自身4byte
-        // +UseCompressedOops Integer sizeOf : 16=12（head）+ 4（self） fullSizeOf : 16
-        // -UseCompressedOops Integer sizeOf : 24=16（head）+ 4（self） + 4（padding） fullSizeOf : 24
-        System.out.println("Integer sizeOf : " + ObjectSizeUtil.sizeOf(integer) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(integer)+ "\n");
+        // +UseCompressedOops Integer shallowSizeOf : 16=12（head）+ 4（self） retainedSizeOf : 16
+        // -UseCompressedOops Integer shallowSizeOf : 24=16（head）+ 4（self） + 4（padding） retainedSizeOf : 24
+        System.out.println("Integer shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(integer) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(integer)+ "\n");
 
         long a = 100L;
         // long 自身8byte
-        // +UseCompressedOops Long sizeOf : 24 fullSizeOf : 24
-        // -UseCompressedOops Long sizeOf : 24 fullSizeOf : 24
-        System.out.println("Long sizeOf : " + ObjectSizeUtil.sizeOf(a) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(a)+ "\n");
+        // +UseCompressedOops Long shallowSizeOf : 24 retainedSizeOf : 24
+        // -UseCompressedOops Long shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("Long shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(a) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(a)+ "\n");
 
         byte b = 1;
         // byte 自身1byte
-        // +UseCompressedOops byte sizeOf : 16 fullSizeOf : 16
-        // -UseCompressedOops byte sizeOf : 24 fullSizeOf : 24
-        System.out.println("byte sizeOf : " + ObjectSizeUtil.sizeOf(b) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(b)+ "\n");
+        // +UseCompressedOops byte shallowSizeOf : 16 retainedSizeOf : 16
+        // -UseCompressedOops byte shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("byte shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(b) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(b)+ "\n");
 
         char c = '2';
         // char 自身2byte
-        // +UseCompressedOops char sizeOf : 16 fullSizeOf : 16
-        // -UseCompressedOops char sizeOf : 24 fullSizeOf : 24
-        System.out.println("char sizeOf : " + ObjectSizeUtil.sizeOf(c) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(c)+ "\n");
+        // +UseCompressedOops char shallowSizeOf : 16 retainedSizeOf : 16
+        // -UseCompressedOops char shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("char shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(c) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(c)+ "\n");
     }
 
     private static void objectTest() {
         Object o = new Object();
-        // +UseCompressedOops Object sizeOf : 16=12（head）+ 4（padding） fullSizeOf : 16
-        // -UseCompressedOops Object sizeOf : 16=16（head） fullSizeOf : 16
-        System.out.println("Object sizeOf : " + ObjectSizeUtil.sizeOf(o) + " fullSizeOf : " + ObjectSizeUtil.fullSizeOf(o) + "\n");
+        // +UseCompressedOops Object shallowSizeOf : 16=12（head）+ 4（padding） retainedSizeOf : 16
+        // -UseCompressedOops Object shallowSizeOf : 16=16（head） retainedSizeOf : 16
+        System.out.println("Object shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(o) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(o) + "\n");
     }
 }
