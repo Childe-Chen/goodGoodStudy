@@ -21,13 +21,13 @@ public class DisruptorMainFirst {
         // 队列中的元素
         class Element {
 
-            private int value;
+            private long value;
 
-            public int get(){
+            public long get(){
                 return value;
             }
 
-            public void set(int value){
+            public void set(long value){
                 this.value= value;
             }
 
