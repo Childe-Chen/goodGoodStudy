@@ -1,4 +1,4 @@
-http://ziyue1987.github.io/pages/2013/09/22/disruptor-use-manual.html
+https://lixiangyun.gitbooks.io/disruptor/content/1.3.html
 
 https://github.com/LMAX-Exchange/disruptor/wiki/Getting-Started
 
@@ -23,5 +23,17 @@ booleans (1) 和 bytes (1)
 references (4/8)
 <子类字段重复上述顺序>
 
-了解这些之后就可以在任意字段间用7个long来填充缓存行。在Disruptor里我们对RingBuffer的cursor和BatchEventProcessor的序列进行了缓存行填充。
+https://lixiangyun.gitbooks.io/disruptor/content/1.3.html 该章节中可能因为使用的环境不同，对填充long的数量可能不一致，
+在如下环境配置中：
+```
+笔记本 MacBook Pro
+处理器 Intel Core i5
+嫩存 8 GB 1867 MHz DDR3
+
+java version "1.8.0_74"
+Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
+```
+
+了解这些之后就可以在任意字段间用7个（以上环境需要6个）long来填充缓存行。在Disruptor里我们对RingBuffer的cursor和BatchEventProcessor的序列进行了缓存行填充。
 为了展示其性能影响，我们启动几个线程，每个都更新它自己独立的计数器。计数器是volatile long类型的，所以其它线程能看到它们的进展。

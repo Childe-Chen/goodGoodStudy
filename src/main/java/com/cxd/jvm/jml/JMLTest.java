@@ -1,5 +1,7 @@
 package com.cxd.jvm.jml;
 
+import com.cxd.disruptor.FalseSharing;
+
 /**
  * Java Memory Layout
  *
@@ -23,14 +25,14 @@ public class JMLTest {
 //        System.out.println("Object--------------------对象头-------------------------------------"+ "\n");
 //        objectTest();
 //
-//        System.out.println("Primitive---------------------------------------------------------\n");
-//        primitiveTest();
+        System.out.println("Primitive---------------------------------------------------------"+ "\n");
+        primitiveTest();
 //
 //        System.out.println("Reference-------64位机器上reference类型占用8个字节，开启指针压缩后占用4个字节------------" + "\n");
 //        referenceTest();
 
-        System.out.println("数组---------64位机器上，数组对象的对象头占用24个字节，启用压缩之后占用16个字节。之所以比普通对象占用内存多是因为需要额外的空间存储数组的长度----------------" + "\n");
-        arrayTest();
+//        System.out.println("数组---------64位机器上，数组对象的对象头占用24个字节，启用压缩之后占用16个字节。之所以比普通对象占用内存多是因为需要额外的空间存储数组的长度----------------" + "\n");
+//        arrayTest();
 
 //        System.out.println("特别的(复合对象) String----------------String存在常量池----------------" + "\n");
 //        stringTest();
@@ -131,7 +133,7 @@ public class JMLTest {
 
         long a = 100L;
         // long 自身8byte
-        // +UseCompressedOops Long shallowSizeOf : 24 retainedSizeOf : 24
+        // +UseCompressedOops Long shallowSizeOf : 24=12 + 8 + 4(padding) retainedSizeOf : 24
         // -UseCompressedOops Long shallowSizeOf : 24 retainedSizeOf : 24
         System.out.println("Long shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(a) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(a)+ "\n");
 
@@ -146,6 +148,13 @@ public class JMLTest {
         // +UseCompressedOops char shallowSizeOf : 16 retainedSizeOf : 16
         // -UseCompressedOops char shallowSizeOf : 24 retainedSizeOf : 24
         System.out.println("char shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(c) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(c)+ "\n");
+
+        boolean d = true;
+        // http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+        // boolean 大小没有明确指定，和虚拟机具体实现有关
+        // +UseCompressedOops shallowSizeOf : 16 retainedSizeOf : 16
+        // -UseCompressedOops shallowSizeOf : 24 retainedSizeOf : 24
+        System.out.println("boolean shallowSizeOf : " + ObjectSizeUtil.shallowSizeOf(d) + " retainedSizeOf : " + ObjectSizeUtil.retainedSizeOf(d)+ "\n");
     }
 
     private static void objectTest() {

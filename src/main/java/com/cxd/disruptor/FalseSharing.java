@@ -7,8 +7,10 @@ package com.cxd.disruptor;
  * @date 2018/8/15 17:56
  **/
 public final class FalseSharing implements Runnable {
-    // 每改变一次，要重新编译一次，不然抛出的时间差别不准确
-    public final static int NUM_THREADS = 4;
+    /**
+     * 每改变一次，要重新编译一次，不然抛出的时间差别不准确
+     */
+    public final static int NUM_THREADS = 1;
     public final static long ITERATIONS = 500L * 1000L * 1000L;
     private final int arrayIndex;
 
@@ -62,12 +64,12 @@ public final class FalseSharing implements Runnable {
     public final static class VolatileLong {
         // 8byte
         public volatile long value = 0L;
-        // 48byte comment out
-        // 0. NUM_THREADS = 1 duration = 18842.165.885
-        // 1. NUM_THREADS = 2 duration = 18427.941.906
-        // 2. NUM_THREADS = 3 duration = 16502.912.971
-        // 3. NUM_THREADS = 4 duration = 18511.556.959
-        public long p1, p2, p3, p4, p5, p6;
+        // 40byte comment out
+        // 0. NUM_THREADS = 1 duration = 4587.402.329
+        // 1. NUM_THREADS = 2 duration = 5249.820.613
+        // 2. NUM_THREADS = 3 duration = 6329.667.147
+        // 3. NUM_THREADS = 4 duration = 7743.024.530
+        public long p1, p2, p3, p4, p5;
 
         // 无填充时
         // 0. NUM_THREADS = 1 duration =  8213.558.562
