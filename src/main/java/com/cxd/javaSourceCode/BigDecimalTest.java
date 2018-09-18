@@ -7,9 +7,12 @@ import java.math.BigDecimal;
  */
 public class BigDecimalTest {
     public static void main(String[] args) {
-        String num = "0.707000";
-        BigDecimal old = new BigDecimal(num);
-        System.out.println(old.setScale(2, BigDecimal.ROUND_DOWN));
+//        String num = "0.707000";
+//        BigDecimal old = new BigDecimal(num);
+//        System.out.println(old.setScale(2, BigDecimal.ROUND_DOWN));
+//
+//        System.out.println(old.toString());
+//        System.out.println(new BigDecimal("-1").toPlainString());
 
 //        BigDecimal o = new BigDecimal(1.01);
 //        BigDecimal o1 = new BigDecimal(0.5);
