@@ -1,7 +1,5 @@
 package com.cxd.jvm.jml;
 
-import com.cxd.disruptor.FalseSharing;
-
 /**
  * Java Memory Layout
  *
