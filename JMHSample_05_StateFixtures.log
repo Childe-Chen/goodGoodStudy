@@ -1,0 +1,91 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -ea
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_05_StateFixtures.measureRight
+
+# Run progress: 0.00% complete, ETA 00:03:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 337409069.358 ops/s
+# Warmup Iteration   2: 341480135.267 ops/s
+# Warmup Iteration   3: 339825792.341 ops/s
+# Warmup Iteration   4: 329174161.619 ops/s
+# Warmup Iteration   5: 325507249.544 ops/s
+Iteration   1: 341040029.342 ops/s
+Iteration   2: 341497862.872 ops/s
+Iteration   3: 341648301.105 ops/s
+Iteration   4: 341064713.606 ops/s
+Iteration   5: 341868852.496 ops/s
+
+
+Result "com.cxd.benchmark.JMHSample_05_StateFixtures.measureRight":
+  341423951.884 ±(99.9%) 1401894.364 ops/s [Average]
+  (min, avg, max) = (341040029.342, 341423951.884, 341868852.496), stdev = 364067.514
+  CI (99.9%): [340022057.520, 342825846.248] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -ea
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_05_StateFixtures.measureWrong
+
+# Run progress: 50.00% complete, ETA 00:01:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 2973351889.721 ops/s
+# Warmup Iteration   2: 2645019496.635 ops/s
+# Warmup Iteration   3: 2491595427.289 ops/s
+# Warmup Iteration   4: 2203777643.580 ops/s
+# Warmup Iteration   5: 2512183681.585 ops/s
+Iteration   1: 2710187237.176 ops/s
+Iteration   2: 3056215215.562 ops/s
+Iteration   3: 3057722538.267 ops/s
+Iteration   4: 3067385676.507 ops/s
+Iteration   5: <failure>
+
+java.lang.AssertionError: Nothing changed?
+	at com.cxd.benchmark.JMHSample_05_StateFixtures.check(JMHSample_05_StateFixtures.java:57)
+	at com.cxd.benchmark.generated.JMHSample_05_StateFixtures_measureWrong_jmhTest.measureWrong_Throughput(JMHSample_05_StateFixtures_measureWrong_jmhTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+Result "com.cxd.benchmark.JMHSample_05_StateFixtures.measureWrong":
+  2972877666.878 ±(99.9%) 1132120272.977 ops/s [Average]
+  (min, avg, max) = (2710187237.176, 2972877666.878, 3067385676.507), stdev = 175196865.424
+  CI (99.9%): [1840757393.902, 4104997939.855] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:21
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                 Mode  Cnt           Score            Error  Units
+JMHSample_05_StateFixtures.measureRight  thrpt    5   341423951.884 ±    1401894.364  ops/s
+JMHSample_05_StateFixtures.measureWrong  thrpt    4  2972877666.878 ± 1132120272.977  ops/s

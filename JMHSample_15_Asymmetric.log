@@ -1,0 +1,69 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63965:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads (1 group; 1x "get", 3x "inc" in each group), will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_15_Asymmetric.g
+
+# Run progress: 0.00% complete, ETA 00:01:40
+# Fork: 1 of 1
+objc[42564]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10274d4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1027d14e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 82.089 ±(99.9%) 237.611 ns/op
+# Warmup Iteration   2: 84.335 ±(99.9%) 242.491 ns/op
+# Warmup Iteration   3: 80.474 ±(99.9%) 240.377 ns/op
+# Warmup Iteration   4: 84.650 ±(99.9%) 253.542 ns/op
+# Warmup Iteration   5: 80.803 ±(99.9%) 244.635 ns/op
+Iteration   1: 79.158 ±(99.9%) 236.630 ns/op
+                 get: 24.230 ns/op
+                 inc: 97.467 ±(99.9%) 3.599 ns/op
+
+Iteration   2: 80.167 ±(99.9%) 242.302 ns/op
+                 get: 23.934 ns/op
+                 inc: 98.911 ±(99.9%) 17.106 ns/op
+
+Iteration   3: 84.552 ±(99.9%) 252.130 ns/op
+                 get: 26.028 ns/op
+                 inc: 104.060 ±(99.9%) 7.258 ns/op
+
+Iteration   4: 81.293 ±(99.9%) 245.587 ns/op
+                 get: 24.308 ns/op
+                 inc: 100.288 ±(99.9%) 23.742 ns/op
+
+Iteration   5: 82.386 ±(99.9%) 246.374 ns/op
+                 get: 25.232 ns/op
+                 inc: 101.437 ±(99.9%) 30.413 ns/op
+
+
+
+Result "com.cxd.benchmark.JMHSample_15_Asymmetric.g":
+  81.511 ±(99.9%) 8.032 ns/op [Average]
+  (min, avg, max) = (79.158, 81.511, 84.552), stdev = 2.086
+  CI (99.9%): [73.479, 89.543] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_15_Asymmetric.g:get":
+  24.747 ±(99.9%) 3.333 ns/op [Average]
+  (min, avg, max) = (23.934, 24.747, 26.028), stdev = 0.866
+  CI (99.9%): [21.413, 28.080] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_15_Asymmetric.g:inc":
+  100.433 ±(99.9%) 9.683 ns/op [Average]
+  (min, avg, max) = (97.467, 100.433, 104.060), stdev = 2.515
+  CI (99.9%): [90.749, 110.116] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:41
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                      Mode  Cnt    Score   Error  Units
+JMHSample_15_Asymmetric.g      avgt    5   81.511 ± 8.032  ns/op
+JMHSample_15_Asymmetric.g:get  avgt    5   24.747 ± 3.333  ns/op
+JMHSample_15_Asymmetric.g:inc  avgt    5  100.433 ± 9.683  ns/op

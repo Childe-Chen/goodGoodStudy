@@ -1,0 +1,248 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63464:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_13_RunToRun.baseline
+
+# Run progress: 0.00% complete, ETA 00:13:00
+# Fork: 1 of 1
+objc[41858]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1089034c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1089874e0). One of the two will be used. Which one is undefined.
+Iteration   1: 191.951 ms/op
+Iteration   2: 192.128 ms/op
+Iteration   3: 191.748 ms/op
+
+
+Result "com.cxd.benchmark.JMHSample_13_RunToRun.baseline":
+  191.943 ±(99.9%) 3.465 ms/op [Average]
+  (min, avg, max) = (191.748, 191.943, 192.128), stdev = 0.190
+  CI (99.9%): [188.477, 195.408] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63464:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_13_RunToRun.fork_1
+
+# Run progress: 3.85% complete, ETA 00:13:09
+# Fork: 1 of 5
+objc[41862]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1017f04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1018744e0). One of the two will be used. Which one is undefined.
+Iteration   1: 125.519 ms/op
+Iteration   2: 125.711 ms/op
+Iteration   3: 125.847 ms/op
+
+# Run progress: 7.69% complete, ETA 00:12:30
+# Fork: 2 of 5
+objc[41866]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x101f014c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x101f854e0). One of the two will be used. Which one is undefined.
+Iteration   1: 295.758 ms/op
+Iteration   2: 295.284 ms/op
+Iteration   3: 296.033 ms/op
+
+# Run progress: 11.54% complete, ETA 00:11:57
+# Fork: 3 of 5
+objc[41872]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1060804c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1061044e0). One of the two will be used. Which one is undefined.
+Iteration   1: 557.748 ms/op
+Iteration   2: 557.884 ms/op
+Iteration   3: 558.342 ms/op
+
+# Run progress: 15.38% complete, ETA 00:11:24
+# Fork: 4 of 5
+objc[41877]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x108c424c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x108cc64e0). One of the two will be used. Which one is undefined.
+Iteration   1: 337.727 ms/op
+Iteration   2: 337.469 ms/op
+Iteration   3: 338.099 ms/op
+
+# Run progress: 19.23% complete, ETA 00:10:53
+# Fork: 5 of 5
+objc[41881]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1046a14c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1047254e0). One of the two will be used. Which one is undefined.
+Iteration   1: 377.961 ms/op
+Iteration   2: 377.496 ms/op
+Iteration   3: 377.577 ms/op
+
+
+Result "com.cxd.benchmark.JMHSample_13_RunToRun.fork_1":
+  338.964 ±(99.9%) 153.995 ms/op [Average]
+  (min, avg, max) = (125.519, 338.964, 558.342), stdev = 144.047
+  CI (99.9%): [184.969, 492.958] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63464:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: <none>
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_13_RunToRun.fork_2
+
+# Run progress: 23.08% complete, ETA 00:10:23
+# Fork: 1 of 20
+objc[41895]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x109a294c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109aad4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 272.740 ms/op
+Iteration   2: 272.948 ms/op
+Iteration   3: 273.012 ms/op
+
+# Run progress: 26.92% complete, ETA 00:09:52
+# Fork: 2 of 20
+objc[41904]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e4a34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e5274e0). One of the two will be used. Which one is undefined.
+Iteration   1: 630.218 ms/op
+Iteration   2: 630.940 ms/op
+Iteration   3: 629.834 ms/op
+
+# Run progress: 30.77% complete, ETA 00:09:21
+# Fork: 3 of 20
+objc[41920]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10dd394c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ddbd4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 199.088 ms/op
+Iteration   2: 198.731 ms/op
+Iteration   3: 198.961 ms/op
+
+# Run progress: 34.62% complete, ETA 00:08:50
+# Fork: 4 of 20
+objc[41925]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10cbf74c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10cc7b4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 503.116 ms/op
+Iteration   2: 504.514 ms/op
+Iteration   3: 503.528 ms/op
+
+# Run progress: 38.46% complete, ETA 00:08:18
+# Fork: 5 of 20
+objc[41930]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x102b144c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x102b984e0). One of the two will be used. Which one is undefined.
+Iteration   1: 410.032 ms/op
+Iteration   2: 409.526 ms/op
+Iteration   3: 410.037 ms/op
+
+# Run progress: 42.31% complete, ETA 00:07:48
+# Fork: 6 of 20
+objc[41939]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10a5834c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bda84e0). One of the two will be used. Which one is undefined.
+Iteration   1: 474.712 ms/op
+Iteration   2: 475.510 ms/op
+Iteration   3: 475.924 ms/op
+
+# Run progress: 46.15% complete, ETA 00:07:17
+# Fork: 7 of 20
+objc[41944]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x100c414c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x100cc54e0). One of the two will be used. Which one is undefined.
+Iteration   1: 514.010 ms/op
+Iteration   2: 515.355 ms/op
+Iteration   3: 515.121 ms/op
+
+# Run progress: 50.00% complete, ETA 00:06:47
+# Fork: 8 of 20
+objc[41948]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1089004c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1089844e0). One of the two will be used. Which one is undefined.
+Iteration   1: 939.290 ms/op
+Iteration   2: 938.473 ms/op
+Iteration   3: 940.364 ms/op
+
+# Run progress: 53.85% complete, ETA 00:06:16
+# Fork: 9 of 20
+objc[41960]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10d1624c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d1e64e0). One of the two will be used. Which one is undefined.
+Iteration   1: 300.725 ms/op
+Iteration   2: 300.537 ms/op
+Iteration   3: 300.285 ms/op
+
+# Run progress: 57.69% complete, ETA 00:05:44
+# Fork: 10 of 20
+objc[41964]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x109c674c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109ceb4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 855.797 ms/op
+Iteration   2: 854.884 ms/op
+Iteration   3: 855.190 ms/op
+
+# Run progress: 61.54% complete, ETA 00:05:13
+# Fork: 11 of 20
+objc[41977]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e4924c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e5164e0). One of the two will be used. Which one is undefined.
+Iteration   1: 40.106 ms/op
+Iteration   2: 39.848 ms/op
+Iteration   3: 39.644 ms/op
+
+# Run progress: 65.38% complete, ETA 00:04:42
+# Fork: 12 of 20
+objc[41982]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1014c04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1015444e0). One of the two will be used. Which one is undefined.
+Iteration   1: 110.895 ms/op
+Iteration   2: 110.422 ms/op
+Iteration   3: 111.098 ms/op
+
+# Run progress: 69.23% complete, ETA 00:04:10
+# Fork: 13 of 20
+objc[41986]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1048f44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1049784e0). One of the two will be used. Which one is undefined.
+Iteration   1: 674.164 ms/op
+Iteration   2: 673.919 ms/op
+Iteration   3: 674.330 ms/op
+
+# Run progress: 73.08% complete, ETA 00:03:39
+# Fork: 14 of 20
+objc[41996]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10f45a4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f4de4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 698.255 ms/op
+Iteration   2: 698.865 ms/op
+Iteration   3: 699.111 ms/op
+
+# Run progress: 76.92% complete, ETA 00:03:08
+# Fork: 15 of 20
+objc[42006]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e3014c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e3854e0). One of the two will be used. Which one is undefined.
+Iteration   1: 914.263 ms/op
+Iteration   2: 913.711 ms/op
+Iteration   3: 913.284 ms/op
+
+# Run progress: 80.77% complete, ETA 00:02:36
+# Fork: 16 of 20
+objc[42010]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10a0464c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a0ca4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 687.574 ms/op
+Iteration   2: 686.643 ms/op
+Iteration   3: 687.707 ms/op
+
+# Run progress: 84.62% complete, ETA 00:02:05
+# Fork: 17 of 20
+objc[42014]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x109ace4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109b524e0). One of the two will be used. Which one is undefined.
+Iteration   1: 807.582 ms/op
+Iteration   2: 807.886 ms/op
+Iteration   3: 807.368 ms/op
+
+# Run progress: 88.46% complete, ETA 00:01:34
+# Fork: 18 of 20
+objc[42018]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1019b84c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1031dd4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 603.265 ms/op
+Iteration   2: 603.326 ms/op
+Iteration   3: 602.779 ms/op
+
+# Run progress: 92.31% complete, ETA 00:01:02
+# Fork: 19 of 20
+objc[42022]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1099b04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b1dd4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 948.004 ms/op
+Iteration   2: 947.487 ms/op
+Iteration   3: 948.462 ms/op
+
+# Run progress: 96.15% complete, ETA 00:00:31
+# Fork: 20 of 20
+objc[42027]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10a7304c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a7b44e0). One of the two will be used. Which one is undefined.
+Iteration   1: 415.752 ms/op
+Iteration   2: 416.404 ms/op
+Iteration   3: 415.952 ms/op
+
+
+Result "com.cxd.benchmark.JMHSample_13_RunToRun.fork_2":
+  550.025 ±(99.9%) 120.539 ms/op [Average]
+  (min, avg, max) = (39.644, 550.025, 948.462), stdev = 269.604
+  CI (99.9%): [429.486, 670.564] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:13:38
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                       Mode  Cnt    Score     Error  Units
+JMHSample_13_RunToRun.baseline  avgt    3  191.943 ±   3.465  ms/op
+JMHSample_13_RunToRun.fork_1    avgt   15  338.964 ± 153.995  ms/op
+JMHSample_13_RunToRun.fork_2    avgt   60  550.025 ± 120.539  ms/op

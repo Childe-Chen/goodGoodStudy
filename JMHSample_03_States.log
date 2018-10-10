@@ -1,0 +1,75 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55763:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_03_States.measureShared
+
+# Run progress: 0.00% complete, ETA 00:03:20
+# Fork: 1 of 1
+objc[19133]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1013664c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1013ea4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 54935829.246 ops/s
+# Warmup Iteration   2: 53871916.366 ops/s
+# Warmup Iteration   3: 53575389.495 ops/s
+# Warmup Iteration   4: 53830590.981 ops/s
+# Warmup Iteration   5: 53087783.002 ops/s
+Iteration   1: 53298466.636 ops/s
+Iteration   2: 53453475.618 ops/s
+Iteration   3: 53986305.730 ops/s
+Iteration   4: 53584967.526 ops/s
+Iteration   5: 53274438.565 ops/s
+
+
+Result "com.cxd.benchmark.JMHSample_03_States.measureShared":
+  53519530.815 ±(99.9%) 1115131.549 ops/s [Average]
+  (min, avg, max) = (53274438.565, 53519530.815, 53986305.730), stdev = 289596.122
+  CI (99.9%): [52404399.266, 54634662.364] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=55763:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_03_States.measureUnshared
+
+# Run progress: 50.00% complete, ETA 00:01:42
+# Fork: 1 of 1
+objc[19144]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x106b4c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x106bd04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 277356771.062 ops/s
+# Warmup Iteration   2: 294488213.509 ops/s
+# Warmup Iteration   3: 274357084.530 ops/s
+# Warmup Iteration   4: 274119302.909 ops/s
+# Warmup Iteration   5: 263661829.049 ops/s
+Iteration   1: 293438224.352 ops/s
+Iteration   2: 262097925.848 ops/s
+Iteration   3: 292898505.455 ops/s
+Iteration   4: 297063692.148 ops/s
+Iteration   5: 288485232.622 ops/s
+
+
+Result "com.cxd.benchmark.JMHSample_03_States.measureUnshared":
+  286796716.085 ±(99.9%) 54443856.419 ops/s [Average]
+  (min, avg, max) = (262097925.848, 286796716.085, 297063692.148), stdev = 14138896.618
+  CI (99.9%): [232352859.666, 341240572.504] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                             Mode  Cnt          Score          Error  Units
+JMHSample_03_States.measureShared    thrpt    5   53519530.815 ±  1115131.549  ops/s
+JMHSample_03_States.measureUnshared  thrpt    5  286796716.085 ± 54443856.419  ops/s

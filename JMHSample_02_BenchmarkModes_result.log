@@ -1,0 +1,204 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50801:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureThroughput
+
+# Run progress: 0.00% complete, ETA 00:05:00
+# Fork: 1 of 1
+objc[15361]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x107f0a4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x107f8e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 9.725 ops/s
+# Warmup Iteration   2: 9.741 ops/s
+# Warmup Iteration   3: 9.701 ops/s
+# Warmup Iteration   4: 9.719 ops/s
+# Warmup Iteration   5: 9.722 ops/s
+Iteration   1: 9.743 ops/s
+Iteration   2: 9.721 ops/s
+Iteration   3: 9.713 ops/s
+Iteration   4: 9.708 ops/s
+Iteration   5: 9.758 ops/s
+
+
+Result "com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureThroughput":
+  9.729 ±(99.9%) 0.082 ops/s [Average]
+  (min, avg, max) = (9.708, 9.729, 9.758), stdev = 0.021
+  CI (99.9%): [9.647, 9.810] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50801:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureAverageTime
+
+# Run progress: 33.33% complete, ETA 00:03:23
+# Fork: 1 of 1
+objc[15394]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1098674c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1098eb4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 103162.731 us/op
+# Warmup Iteration   2: 102974.470 us/op
+# Warmup Iteration   3: 102959.184 us/op
+# Warmup Iteration   4: 102888.361 us/op
+# Warmup Iteration   5: 103116.713 us/op
+Iteration   1: 102851.900 us/op
+Iteration   2: 102915.524 us/op
+Iteration   3: 102737.933 us/op
+Iteration   4: 102496.359 us/op
+Iteration   5: 102727.110 us/op
+
+
+Result "com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureAverageTime":
+  102745.765 ±(99.9%) 616.991 us/op [Average]
+  (min, avg, max) = (102496.359, 102745.765, 102915.524), stdev = 160.231
+  CI (99.9%): [102128.774, 103362.757] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50801:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureSampleTime
+
+# Run progress: 66.67% complete, ETA 00:01:41
+# Fork: 1 of 1
+objc[15406]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x107cea4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x107d6e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 103070.741 ±(99.9%) 638.371 us/op
+# Warmup Iteration   2: 103960.365 ±(99.9%) 614.441 us/op
+# Warmup Iteration   3: 104228.181 ±(99.9%) 549.771 us/op
+# Warmup Iteration   4: 103648.224 ±(99.9%) 654.395 us/op
+# Warmup Iteration   5: 103977.931 ±(99.9%) 550.628 us/op
+Iteration   1: 103931.988 ±(99.9%) 607.428 us/op
+                 measureSampleTime·p0.00:   100007.936 us/op
+                 measureSampleTime·p0.50:   105119.744 us/op
+                 measureSampleTime·p0.90:   105119.744 us/op
+                 measureSampleTime·p0.95:   105119.744 us/op
+                 measureSampleTime·p0.99:   105119.744 us/op
+                 measureSampleTime·p0.999:  105119.744 us/op
+                 measureSampleTime·p0.9999: 105119.744 us/op
+                 measureSampleTime·p1.00:   105119.744 us/op
+
+Iteration   2: 103898.207 ±(99.9%) 612.681 us/op
+                 measureSampleTime·p0.00:   100007.936 us/op
+                 measureSampleTime·p0.50:   105119.744 us/op
+                 measureSampleTime·p0.90:   105119.744 us/op
+                 measureSampleTime·p0.95:   105119.744 us/op
+                 measureSampleTime·p0.99:   105119.744 us/op
+                 measureSampleTime·p0.999:  105119.744 us/op
+                 measureSampleTime·p0.9999: 105119.744 us/op
+                 measureSampleTime·p1.00:   105119.744 us/op
+
+Iteration   3: 104063.060 ±(99.9%) 577.314 us/op
+                 measureSampleTime·p0.00:   100007.936 us/op
+                 measureSampleTime·p0.50:   105119.744 us/op
+                 measureSampleTime·p0.90:   105119.744 us/op
+                 measureSampleTime·p0.95:   105119.744 us/op
+                 measureSampleTime·p0.99:   105119.744 us/op
+                 measureSampleTime·p0.999:  105119.744 us/op
+                 measureSampleTime·p0.9999: 105119.744 us/op
+                 measureSampleTime·p1.00:   105119.744 us/op
+
+Iteration   4: 102751.086 ±(99.9%) 656.182 us/op
+                 measureSampleTime·p0.00:   100007.936 us/op
+                 measureSampleTime·p0.50:   103153.664 us/op
+                 measureSampleTime·p0.90:   105119.744 us/op
+                 measureSampleTime·p0.95:   105119.744 us/op
+                 measureSampleTime·p0.99:   105119.744 us/op
+                 measureSampleTime·p0.999:  105119.744 us/op
+                 measureSampleTime·p0.9999: 105119.744 us/op
+                 measureSampleTime·p1.00:   105119.744 us/op
+
+Iteration   5: 102458.180 ±(99.9%) 684.869 us/op
+                 measureSampleTime·p0.00:   100007.936 us/op
+                 measureSampleTime·p0.50:   102498.304 us/op
+                 measureSampleTime·p0.90:   105119.744 us/op
+                 measureSampleTime·p0.95:   105119.744 us/op
+                 measureSampleTime·p0.99:   105119.744 us/op
+                 measureSampleTime·p0.999:  105119.744 us/op
+                 measureSampleTime·p0.9999: 105119.744 us/op
+                 measureSampleTime·p1.00:   105119.744 us/op
+
+
+
+Result "com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureSampleTime":
+  N = 487
+  mean = 103417.154 ±(99.9%) 291.548 us/op
+
+  Histogram, us/op:
+    [100000.000, 100500.000) = 63 
+    [100500.000, 101000.000) = 30 
+    [101000.000, 101500.000) = 30 
+    [101500.000, 102000.000) = 16 
+    [102000.000, 102500.000) = 22 
+    [102500.000, 103000.000) = 15 
+    [103000.000, 103500.000) = 35 
+    [103500.000, 104000.000) = 18 
+    [104000.000, 104500.000) = 16 
+    [104500.000, 105000.000) = 27 
+    [105000.000, 105500.000) = 215 
+
+  Percentiles, us/op:
+      p(0.0000) = 100007.936 us/op
+     p(50.0000) = 104464.384 us/op
+     p(90.0000) = 105119.744 us/op
+     p(95.0000) = 105119.744 us/op
+     p(99.0000) = 105119.744 us/op
+     p(99.9000) = 105119.744 us/op
+     p(99.9900) = 105119.744 us/op
+     p(99.9990) = 105119.744 us/op
+     p(99.9999) = 105119.744 us/op
+    p(100.0000) = 105119.744 us/op
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50801:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: <none>
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: com.cxd.benchmark.JMHSample_02_BenchmarkModes.measureSingleShotTime
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 1 of 1
+objc[15418]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x106a474c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x106acb4e0). One of the two will be used. Which one is undefined.
+Iteration   1: 104522.390 us/op
+
+
+
+# Run complete. Total time: 00:05:06
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                  Mode  Cnt       Score     Error  Units
+JMHSample_02_BenchmarkModes.measureThroughput                             thrpt    5       9.729 ±   0.082  ops/s
+JMHSample_02_BenchmarkModes.measureAverageTime                             avgt    5  102745.765 ± 616.991  us/op
+JMHSample_02_BenchmarkModes.measureSampleTime                            sample  487  103417.154 ± 291.548  us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.00    sample       100007.936            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.50    sample       104464.384            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.90    sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.95    sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.99    sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.999   sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p0.9999  sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSampleTime:measureSampleTime·p1.00    sample       105119.744            us/op
+JMHSample_02_BenchmarkModes.measureSingleShotTime                            ss       104522.390            us/op

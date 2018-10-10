@@ -1,0 +1,75 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=58803:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_07_FixtureLevelInvocation.measureCold
+
+# Run progress: 0.00% complete, ETA 00:03:20
+# Fork: 1 of 1
+objc[36219]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e22c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e2b04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 131.113 us/op
+# Warmup Iteration   2: 93.180 us/op
+# Warmup Iteration   3: 97.936 us/op
+# Warmup Iteration   4: 94.840 us/op
+# Warmup Iteration   5: 94.448 us/op
+Iteration   1: 87.574 us/op
+Iteration   2: 85.222 us/op
+Iteration   3: 83.328 us/op
+Iteration   4: 82.117 us/op
+Iteration   5: 80.904 us/op
+
+
+Result "com.cxd.benchmark.JMHSample_07_FixtureLevelInvocation.measureCold":
+  83.829 ±(99.9%) 10.134 us/op [Average]
+  (min, avg, max) = (80.904, 83.829, 87.574), stdev = 2.632
+  CI (99.9%): [73.696, 93.963] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=58803:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_07_FixtureLevelInvocation.measureHot
+
+# Run progress: 50.00% complete, ETA 00:01:41
+# Fork: 1 of 1
+objc[36232]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x105fc54c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1077dd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 10.855 us/op
+# Warmup Iteration   2: 10.533 us/op
+# Warmup Iteration   3: 10.546 us/op
+# Warmup Iteration   4: 10.612 us/op
+# Warmup Iteration   5: 10.528 us/op
+Iteration   1: 10.660 us/op
+Iteration   2: 10.581 us/op
+Iteration   3: 10.498 us/op
+Iteration   4: 10.609 us/op
+Iteration   5: 10.518 us/op
+
+
+Result "com.cxd.benchmark.JMHSample_07_FixtureLevelInvocation.measureHot":
+  10.573 ±(99.9%) 0.256 us/op [Average]
+  (min, avg, max) = (10.498, 10.573, 10.660), stdev = 0.067
+  CI (99.9%): [10.317, 10.830] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                        Mode  Cnt   Score    Error  Units
+JMHSample_07_FixtureLevelInvocation.measureCold  avgt    5  83.829 ± 10.134  us/op
+JMHSample_07_FixtureLevelInvocation.measureHot   avgt    5  10.573 ±  0.256  us/op
