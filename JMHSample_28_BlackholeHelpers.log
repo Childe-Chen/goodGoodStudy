@@ -1,0 +1,108 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64382:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_28_BlackholeHelpers.baseline
+
+# Run progress: 0.00% complete, ETA 00:00:30
+# Fork: 1 of 1
+objc[75511]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x107dbc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x108dcf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 0.887 ns/op
+# Warmup Iteration   2: 0.677 ns/op
+# Warmup Iteration   3: 0.666 ns/op
+# Warmup Iteration   4: 0.674 ns/op
+# Warmup Iteration   5: 0.665 ns/op
+Iteration   1: 0.669 ns/op
+Iteration   2: 0.665 ns/op
+Iteration   3: 0.667 ns/op
+Iteration   4: 0.667 ns/op
+Iteration   5: 0.674 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_28_BlackholeHelpers.baseline":
+  0.668 ±(99.9%) 0.014 ns/op [Average]
+  (min, avg, max) = (0.665, 0.668, 0.674), stdev = 0.004
+  CI (99.9%): [0.654, 0.682] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64382:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_28_BlackholeHelpers.measureRight
+
+# Run progress: 33.33% complete, ETA 00:00:23
+# Fork: 1 of 1
+objc[75513]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10ffe24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1100664e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 44.522 ns/op
+# Warmup Iteration   2: 43.357 ns/op
+# Warmup Iteration   3: 42.669 ns/op
+# Warmup Iteration   4: 42.818 ns/op
+# Warmup Iteration   5: 42.664 ns/op
+Iteration   1: 42.584 ns/op
+Iteration   2: 42.654 ns/op
+Iteration   3: 42.704 ns/op
+Iteration   4: 42.944 ns/op
+Iteration   5: 43.153 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_28_BlackholeHelpers.measureRight":
+  42.808 ±(99.9%) 0.907 ns/op [Average]
+  (min, avg, max) = (42.584, 42.808, 43.153), stdev = 0.236
+  CI (99.9%): [41.901, 43.715] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64382:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_28_BlackholeHelpers.measureWrong
+
+# Run progress: 66.67% complete, ETA 00:00:11
+# Fork: 1 of 1
+objc[75515]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e6374c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e6bb4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 0.665 ns/op
+# Warmup Iteration   2: 0.668 ns/op
+# Warmup Iteration   3: 0.671 ns/op
+# Warmup Iteration   4: 0.676 ns/op
+# Warmup Iteration   5: 0.677 ns/op
+Iteration   1: 0.716 ns/op
+Iteration   2: 0.886 ns/op
+Iteration   3: 0.737 ns/op
+Iteration   4: 0.693 ns/op
+Iteration   5: 0.780 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_28_BlackholeHelpers.measureWrong":
+  0.762 ±(99.9%) 0.293 ns/op [Average]
+  (min, avg, max) = (0.693, 0.762, 0.886), stdev = 0.076
+  CI (99.9%): [0.469, 1.055] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:33
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                   Mode  Cnt   Score   Error  Units
+JMHSample_28_BlackholeHelpers.baseline      avgt    5   0.668 ± 0.014  ns/op
+JMHSample_28_BlackholeHelpers.measureRight  avgt    5  42.808 ± 0.907  ns/op
+JMHSample_28_BlackholeHelpers.measureWrong  avgt    5   0.762 ± 0.293  ns/op

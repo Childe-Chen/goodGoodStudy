@@ -1,0 +1,185 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64554:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 s per iteration, ***WARNING: The timeout might be too low!***
+# Threads: 2 threads (1 group; 1x "put", 1x "take" in each group), will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_30_Interrupts.Q
+
+# Run progress: 0.00% complete, ETA 00:08:20
+# Fork: 1 of 5
+objc[75728]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1024c44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1034d74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11596.191 ns/op
+# Warmup Iteration   2: 11246.265 ns/op
+# Warmup Iteration   3: 11241.349 ns/op
+# Warmup Iteration   4: (*interrupt*) 11493.193 ns/op
+# Warmup Iteration   5: 11295.892 ns/op
+Iteration   1: (*interrupt*) 11201.428 ns/op
+                 put:  11201.428 ns/op
+                 take: 11201.428 ns/op
+
+Iteration   2: (*interrupt*) 11066.189 ns/op
+                 put:  11066.189 ns/op
+                 take: 11066.189 ns/op
+
+Iteration   3: 11683.287 ns/op
+                 put:  11683.275 ns/op
+                 take: 11683.299 ns/op
+
+Iteration   4: 11335.564 ns/op
+                 put:  11335.555 ns/op
+                 take: 11335.573 ns/op
+
+Iteration   5: 10990.466 ns/op
+                 put:  10990.476 ns/op
+                 take: 10990.457 ns/op
+
+
+# Run progress: 20.00% complete, ETA 00:06:47
+# Fork: 2 of 5
+objc[75740]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1057fb4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10587f4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11019.740 ns/op
+# Warmup Iteration   2: 11790.547 ns/op
+# Warmup Iteration   3: 11935.743 ns/op
+# Warmup Iteration   4: (*interrupt*) 11084.153 ns/op
+# Warmup Iteration   5: (*interrupt*) 11287.723 ns/op
+Iteration   1: (*interrupt*) 11215.987 ns/op
+                 put:  11215.948 ns/op
+                 take: 11216.026 ns/op
+
+Iteration   2: (*interrupt*) 11017.791 ns/op
+                 put:  11017.814 ns/op
+                 take: 11017.769 ns/op
+
+Iteration   3: 10961.719 ns/op
+                 put:  10961.720 ns/op
+                 take: 10961.719 ns/op
+
+Iteration   4: 11408.318 ns/op
+                 put:  11408.401 ns/op
+                 take: 11408.236 ns/op
+
+Iteration   5: (*interrupt*) 11661.424 ns/op
+                 put:  11661.458 ns/op
+                 take: 11661.389 ns/op
+
+
+# Run progress: 40.00% complete, ETA 00:05:04
+# Fork: 3 of 5
+objc[75753]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1079114c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1079954e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11085.046 ns/op
+# Warmup Iteration   2: 11210.381 ns/op
+# Warmup Iteration   3: (*interrupt*) 11151.565 ns/op
+# Warmup Iteration   4: (*interrupt*) 11137.857 ns/op
+# Warmup Iteration   5: (*interrupt*) 11990.090 ns/op
+Iteration   1: (*interrupt*) 12148.955 ns/op
+                 put:  12148.968 ns/op
+                 take: 12148.943 ns/op
+
+Iteration   2: (*interrupt*) 12054.451 ns/op
+                 put:  12054.454 ns/op
+                 take: 12054.448 ns/op
+
+Iteration   3: (*interrupt*) 11551.231 ns/op
+                 put:  11551.284 ns/op
+                 take: 11551.178 ns/op
+
+Iteration   4: 11233.975 ns/op
+                 put:  11233.955 ns/op
+                 take: 11233.996 ns/op
+
+Iteration   5: (*interrupt*) 11253.806 ns/op
+                 put:  11253.806 ns/op
+                 take: 11253.806 ns/op
+
+
+# Run progress: 60.00% complete, ETA 00:03:23
+# Fork: 4 of 5
+objc[75767]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e4304c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e4b44e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 12384.994 ns/op
+# Warmup Iteration   2: 12210.027 ns/op
+# Warmup Iteration   3: 12601.539 ns/op
+# Warmup Iteration   4: (*interrupt*) 12207.010 ns/op
+# Warmup Iteration   5: (*interrupt*) 11248.647 ns/op
+Iteration   1: 11075.838 ns/op
+                 put:  11075.813 ns/op
+                 take: 11075.863 ns/op
+
+Iteration   2: (*interrupt*) 11084.372 ns/op
+                 put:  11084.365 ns/op
+                 take: 11084.379 ns/op
+
+Iteration   3: 11522.459 ns/op
+                 put:  11522.466 ns/op
+                 take: 11522.451 ns/op
+
+Iteration   4: 11286.556 ns/op
+                 put:  11286.561 ns/op
+                 take: 11286.552 ns/op
+
+Iteration   5: (*interrupt*) 11858.877 ns/op
+                 put:  11858.871 ns/op
+                 take: 11858.883 ns/op
+
+
+# Run progress: 80.00% complete, ETA 00:01:41
+# Fork: 5 of 5
+objc[75780]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1084dc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1085604e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11698.788 ns/op
+# Warmup Iteration   2: 11311.705 ns/op
+# Warmup Iteration   3: 11740.409 ns/op
+# Warmup Iteration   4: (*interrupt*) 11624.693 ns/op
+# Warmup Iteration   5: (*interrupt*) 11280.656 ns/op
+Iteration   1: (*interrupt*) 11599.418 ns/op
+                 put:  11599.480 ns/op
+                 take: 11599.357 ns/op
+
+Iteration   2: (*interrupt*) 11264.947 ns/op
+                 put:  11264.934 ns/op
+                 take: 11264.961 ns/op
+
+Iteration   3: 11178.675 ns/op
+                 put:  11178.668 ns/op
+                 take: 11178.682 ns/op
+
+Iteration   4: (*interrupt*) 11535.493 ns/op
+                 put:  11535.508 ns/op
+                 take: 11535.478 ns/op
+
+Iteration   5: 11785.431 ns/op
+                 put:  11785.460 ns/op
+                 take: 11785.402 ns/op
+
+
+
+Result "com.cxd.benchmark.JMHSample_30_Interrupts.Q":
+  11399.066 ±(99.9%) 247.569 ns/op [Average]
+  (min, avg, max) = (10961.719, 11399.066, 12148.955), stdev = 330.498
+  CI (99.9%): [11151.497, 11646.636] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_30_Interrupts.Q:put":
+  11399.074 ±(99.9%) 247.575 ns/op [Average]
+  (min, avg, max) = (10961.720, 11399.074, 12148.968), stdev = 330.506
+  CI (99.9%): [11151.499, 11646.650] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_30_Interrupts.Q:take":
+  11399.058 ±(99.9%) 247.564 ns/op [Average]
+  (min, avg, max) = (10961.719, 11399.058, 12148.943), stdev = 330.490
+  CI (99.9%): [11151.495, 11646.622] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:27
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                       Mode  Cnt      Score     Error  Units
+JMHSample_30_Interrupts.Q       avgt   25  11399.066 ± 247.569  ns/op
+JMHSample_30_Interrupts.Q:put   avgt   25  11399.074 ± 247.575  ns/op
+JMHSample_30_Interrupts.Q:take  avgt   25  11399.058 ± 247.564  ns/op

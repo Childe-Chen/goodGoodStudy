@@ -1,0 +1,129 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56707:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_23_AuxCounters.runSETI
+
+# Run progress: 0.00% complete, ETA 00:00:20
+# Fork: 1 of 1
+objc[69941]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10dfaa4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f7dd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 35741775.390 ops/s
+# Warmup Iteration   2: 37831348.786 ops/s
+# Warmup Iteration   3: 38669690.092 ops/s
+# Warmup Iteration   4: 40075211.519 ops/s
+# Warmup Iteration   5: 39748341.734 ops/s
+Iteration   1: 39806934.462 ops/s
+                 wows: 4.000 #
+
+Iteration   2: 35791104.636 ops/s
+                 wows: 2.000 #
+
+Iteration   3: 36938083.159 ops/s
+                 wows: 5.000 #
+
+Iteration   4: 36265179.337 ops/s
+                 wows: 7.000 #
+
+Iteration   5: 38599213.149 ops/s
+                 wows: ≈ 0 #
+
+
+
+Result "com.cxd.benchmark.JMHSample_23_AuxCounters.runSETI":
+  37480102.949 ±(99.9%) 6468936.444 ops/s [Average]
+  (min, avg, max) = (35791104.636, 37480102.949, 39806934.462), stdev = 1679962.252
+  CI (99.9%): [31011166.504, 43949039.393] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_23_AuxCounters.runSETI:wows":
+  18.000 ±(99.9%) 0.001 # [Sum]
+  (min, avg, max) = (≈ 0, 3.600, 7.000), stdev = 2.702
+  CI (99.9%): [18.000, 18.000] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=56707:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_23_AuxCounters.splitBranch
+
+# Run progress: 50.00% complete, ETA 00:00:11
+# Fork: 1 of 1
+objc[69943]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1038dc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1039604e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 39007634.907 ops/s
+# Warmup Iteration   2: 38844177.206 ops/s
+# Warmup Iteration   3: 39028805.074 ops/s
+# Warmup Iteration   4: 39287767.082 ops/s
+# Warmup Iteration   5: 39236930.192 ops/s
+Iteration   1: 39078954.482 ops/s
+                 case1: 3907395.205 ops/s
+                 case2: 35171559.277 ops/s
+                 total: 39078954.482 ops/s
+
+Iteration   2: 39085208.056 ops/s
+                 case1: 3912077.887 ops/s
+                 case2: 35173130.169 ops/s
+                 total: 39085208.056 ops/s
+
+Iteration   3: 39219187.241 ops/s
+                 case1: 3924310.031 ops/s
+                 case2: 35294877.209 ops/s
+                 total: 39219187.241 ops/s
+
+Iteration   4: 39135347.987 ops/s
+                 case1: 3914397.543 ops/s
+                 case2: 35220950.445 ops/s
+                 total: 39135347.987 ops/s
+
+Iteration   5: 38877207.812 ops/s
+                 case1: 3886329.735 ops/s
+                 case2: 34990878.077 ops/s
+                 total: 38877207.812 ops/s
+
+
+
+Result "com.cxd.benchmark.JMHSample_23_AuxCounters.splitBranch":
+  39079181.115 ±(99.9%) 485494.370 ops/s [Average]
+  (min, avg, max) = (38877207.812, 39079181.115, 39219187.241), stdev = 126081.346
+  CI (99.9%): [38593686.745, 39564675.486] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_23_AuxCounters.splitBranch:case1":
+  3908902.080 ±(99.9%) 54096.829 ops/s [Average]
+  (min, avg, max) = (3886329.735, 3908902.080, 3924310.031), stdev = 14048.775
+  CI (99.9%): [3854805.251, 3962998.909] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_23_AuxCounters.splitBranch:case2":
+  35170279.035 ±(99.9%) 431747.896 ops/s [Average]
+  (min, avg, max) = (34990878.077, 35170279.035, 35294877.209), stdev = 112123.557
+  CI (99.9%): [34738531.140, 35602026.931] (assumes normal distribution)
+
+Secondary result "com.cxd.benchmark.JMHSample_23_AuxCounters.splitBranch:total":
+  39079181.115 ±(99.9%) 485494.370 ops/s [Average]
+  (min, avg, max) = (38877207.812, 39079181.115, 39219187.241), stdev = 126081.346
+  CI (99.9%): [38593686.745, 39564675.486] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                    Mode  Cnt         Score         Error  Units
+JMHSample_23_AuxCounters.runSETI            thrpt    5  37480102.949 ± 6468936.444  ops/s
+JMHSample_23_AuxCounters.runSETI:wows       thrpt    5        18.000                    #
+JMHSample_23_AuxCounters.splitBranch        thrpt    5  39079181.115 ±  485494.370  ops/s
+JMHSample_23_AuxCounters.splitBranch:case1  thrpt    5   3908902.080 ±   54096.829  ops/s
+JMHSample_23_AuxCounters.splitBranch:case2  thrpt    5  35170279.035 ±  431747.896  ops/s
+JMHSample_23_AuxCounters.splitBranch:total  thrpt    5  39079181.115 ±  485494.370  ops/s

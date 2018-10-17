@@ -1,0 +1,1199 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 0)
+
+# Run progress: 0.00% complete, ETA 00:05:50
+# Fork: 1 of 1
+objc[75241]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b0aa4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b12e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.921 ns/op
+# Warmup Iteration   2: 12.855 ns/op
+# Warmup Iteration   3: 4.713 ns/op
+# Warmup Iteration   4: 4.595 ns/op
+# Warmup Iteration   5: 4.535 ns/op
+Iteration   1: 4.386 ns/op
+Iteration   2: 4.670 ns/op
+Iteration   3: 4.268 ns/op
+Iteration   4: 4.615 ns/op
+Iteration   5: 4.570 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  4.502 ±(99.9%) 0.649 ns/op [Average]
+  (min, avg, max) = (4.268, 4.502, 4.670), stdev = 0.168
+  CI (99.9%): [3.853, 5.150] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 1)
+
+# Run progress: 2.86% complete, ETA 00:06:33
+# Fork: 1 of 1
+objc[75245]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10f7ba4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x11004e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 8.832 ns/op
+# Warmup Iteration   2: 9.358 ns/op
+# Warmup Iteration   3: 7.373 ns/op
+# Warmup Iteration   4: 7.243 ns/op
+# Warmup Iteration   5: 8.141 ns/op
+Iteration   1: 7.665 ns/op
+Iteration   2: 7.269 ns/op
+Iteration   3: 7.289 ns/op
+Iteration   4: 7.338 ns/op
+Iteration   5: 7.061 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.324 ±(99.9%) 0.840 ns/op [Average]
+  (min, avg, max) = (7.061, 7.324, 7.665), stdev = 0.218
+  CI (99.9%): [6.485, 8.164] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 2)
+
+# Run progress: 5.71% complete, ETA 00:06:13
+# Fork: 1 of 1
+objc[75247]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1014e74c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10156b4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.746 ns/op
+# Warmup Iteration   2: 7.776 ns/op
+# Warmup Iteration   3: 7.406 ns/op
+# Warmup Iteration   4: 7.409 ns/op
+# Warmup Iteration   5: 7.152 ns/op
+Iteration   1: 7.071 ns/op
+Iteration   2: 7.088 ns/op
+Iteration   3: 7.253 ns/op
+Iteration   4: 7.144 ns/op
+Iteration   5: 7.245 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.160 ±(99.9%) 0.329 ns/op [Average]
+  (min, avg, max) = (7.071, 7.160, 7.253), stdev = 0.086
+  CI (99.9%): [6.831, 7.490] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 4)
+
+# Run progress: 8.57% complete, ETA 00:05:56
+# Fork: 1 of 1
+objc[75249]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10033b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1003bf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.820 ns/op
+# Warmup Iteration   2: 7.448 ns/op
+# Warmup Iteration   3: 7.120 ns/op
+# Warmup Iteration   4: 7.146 ns/op
+# Warmup Iteration   5: 7.102 ns/op
+Iteration   1: 7.121 ns/op
+Iteration   2: 7.106 ns/op
+Iteration   3: 7.130 ns/op
+Iteration   4: 7.157 ns/op
+Iteration   5: 7.123 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.127 ±(99.9%) 0.072 ns/op [Average]
+  (min, avg, max) = (7.106, 7.127, 7.157), stdev = 0.019
+  CI (99.9%): [7.056, 7.199] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 8)
+
+# Run progress: 11.43% complete, ETA 00:05:43
+# Fork: 1 of 1
+objc[75251]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1094764c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1094fa4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.661 ns/op
+# Warmup Iteration   2: 7.559 ns/op
+# Warmup Iteration   3: 7.107 ns/op
+# Warmup Iteration   4: 7.113 ns/op
+# Warmup Iteration   5: 7.239 ns/op
+Iteration   1: 7.158 ns/op
+Iteration   2: 7.101 ns/op
+Iteration   3: 7.314 ns/op
+Iteration   4: 7.126 ns/op
+Iteration   5: 7.045 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.149 ±(99.9%) 0.390 ns/op [Average]
+  (min, avg, max) = (7.045, 7.149, 7.314), stdev = 0.101
+  CI (99.9%): [6.759, 7.539] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 16)
+
+# Run progress: 14.29% complete, ETA 00:05:30
+# Fork: 1 of 1
+objc[75253]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10533b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1053bf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.600 ns/op
+# Warmup Iteration   2: 7.656 ns/op
+# Warmup Iteration   3: 7.014 ns/op
+# Warmup Iteration   4: 7.003 ns/op
+# Warmup Iteration   5: 6.989 ns/op
+Iteration   1: 7.043 ns/op
+Iteration   2: 7.067 ns/op
+Iteration   3: 7.118 ns/op
+Iteration   4: 7.415 ns/op
+Iteration   5: 7.103 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.149 ±(99.9%) 0.584 ns/op [Average]
+  (min, avg, max) = (7.043, 7.149, 7.415), stdev = 0.152
+  CI (99.9%): [6.565, 7.733] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 1, certainty = 32)
+
+# Run progress: 17.14% complete, ETA 00:05:18
+# Fork: 1 of 1
+objc[75256]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10beb44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bf384e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.866 ns/op
+# Warmup Iteration   2: 7.747 ns/op
+# Warmup Iteration   3: 7.081 ns/op
+# Warmup Iteration   4: 6.985 ns/op
+# Warmup Iteration   5: 7.028 ns/op
+Iteration   1: 7.495 ns/op
+Iteration   2: 7.331 ns/op
+Iteration   3: 7.220 ns/op
+Iteration   4: 6.989 ns/op
+Iteration   5: 6.992 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7.205 ±(99.9%) 0.845 ns/op [Average]
+  (min, avg, max) = (6.989, 7.205, 7.495), stdev = 0.219
+  CI (99.9%): [6.361, 8.050] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 0)
+
+# Run progress: 20.00% complete, ETA 00:05:06
+# Fork: 1 of 1
+objc[75258]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10fee94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ff6d4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 10.247 ns/op
+# Warmup Iteration   2: 8.713 ns/op
+# Warmup Iteration   3: 5.836 ns/op
+# Warmup Iteration   4: 5.726 ns/op
+# Warmup Iteration   5: 5.768 ns/op
+Iteration   1: 5.685 ns/op
+Iteration   2: 5.745 ns/op
+Iteration   3: 5.696 ns/op
+Iteration   4: 5.757 ns/op
+Iteration   5: 5.704 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  5.717 ±(99.9%) 0.122 ns/op [Average]
+  (min, avg, max) = (5.685, 5.717, 5.757), stdev = 0.032
+  CI (99.9%): [5.595, 5.839] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 1)
+
+# Run progress: 22.86% complete, ETA 00:04:55
+# Fork: 1 of 1
+objc[75261]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b9c94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d1dd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 597.310 ns/op
+# Warmup Iteration   2: 517.302 ns/op
+# Warmup Iteration   3: 430.582 ns/op
+# Warmup Iteration   4: 415.678 ns/op
+# Warmup Iteration   5: 418.757 ns/op
+Iteration   1: 420.596 ns/op
+Iteration   2: 409.050 ns/op
+Iteration   3: 474.222 ns/op
+Iteration   4: 463.249 ns/op
+Iteration   5: 479.268 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  449.277 ±(99.9%) 124.147 ns/op [Average]
+  (min, avg, max) = (409.050, 449.277, 479.268), stdev = 32.240
+  CI (99.9%): [325.130, 573.424] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 2)
+
+# Run progress: 25.71% complete, ETA 00:04:44
+# Fork: 1 of 1
+objc[75265]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c04f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c0d34e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 599.127 ns/op
+# Warmup Iteration   2: 482.976 ns/op
+# Warmup Iteration   3: 622.664 ns/op
+# Warmup Iteration   4: 436.494 ns/op
+# Warmup Iteration   5: 427.962 ns/op
+Iteration   1: 417.326 ns/op
+Iteration   2: 418.127 ns/op
+Iteration   3: 421.455 ns/op
+Iteration   4: 427.216 ns/op
+Iteration   5: 425.045 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  421.834 ±(99.9%) 16.505 ns/op [Average]
+  (min, avg, max) = (417.326, 421.834, 427.216), stdev = 4.286
+  CI (99.9%): [405.329, 438.339] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 4)
+
+# Run progress: 28.57% complete, ETA 00:04:32
+# Fork: 1 of 1
+objc[75267]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1018334c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1018b74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1115.097 ns/op
+# Warmup Iteration   2: 943.969 ns/op
+# Warmup Iteration   3: 791.067 ns/op
+# Warmup Iteration   4: 804.383 ns/op
+# Warmup Iteration   5: 862.213 ns/op
+Iteration   1: 898.431 ns/op
+Iteration   2: 924.202 ns/op
+Iteration   3: 943.524 ns/op
+Iteration   4: 945.278 ns/op
+Iteration   5: 865.992 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  915.485 ±(99.9%) 129.013 ns/op [Average]
+  (min, avg, max) = (865.992, 915.485, 945.278), stdev = 33.504
+  CI (99.9%): [786.472, 1044.499] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 8)
+
+# Run progress: 31.43% complete, ETA 00:04:21
+# Fork: 1 of 1
+objc[75269]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1010fd4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1011814e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2070.936 ns/op
+# Warmup Iteration   2: 1620.851 ns/op
+# Warmup Iteration   3: 1472.186 ns/op
+# Warmup Iteration   4: 1535.328 ns/op
+# Warmup Iteration   5: 1579.459 ns/op
+Iteration   1: 1544.362 ns/op
+Iteration   2: 1517.848 ns/op
+Iteration   3: 1485.115 ns/op
+Iteration   4: 1493.616 ns/op
+Iteration   5: 1484.166 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1505.021 ±(99.9%) 99.551 ns/op [Average]
+  (min, avg, max) = (1484.166, 1505.021, 1544.362), stdev = 25.853
+  CI (99.9%): [1405.470, 1604.572] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 16)
+
+# Run progress: 34.29% complete, ETA 00:04:10
+# Fork: 1 of 1
+objc[75271]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1072394c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1072bd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4022.086 ns/op
+# Warmup Iteration   2: 3712.719 ns/op
+# Warmup Iteration   3: 2833.498 ns/op
+# Warmup Iteration   4: 2804.051 ns/op
+# Warmup Iteration   5: 2811.600 ns/op
+Iteration   1: 3026.306 ns/op
+Iteration   2: 3394.771 ns/op
+Iteration   3: 2952.879 ns/op
+Iteration   4: 2865.670 ns/op
+Iteration   5: 2831.188 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  3014.163 ±(99.9%) 870.228 ns/op [Average]
+  (min, avg, max) = (2831.188, 3014.163, 3394.771), stdev = 225.995
+  CI (99.9%): [2143.935, 3884.391] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 31, certainty = 32)
+
+# Run progress: 37.14% complete, ETA 00:03:59
+# Fork: 1 of 1
+objc[75273]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1066d34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1067574e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7839.952 ns/op
+# Warmup Iteration   2: 7115.201 ns/op
+# Warmup Iteration   3: 5907.706 ns/op
+# Warmup Iteration   4: 6006.057 ns/op
+# Warmup Iteration   5: 5852.947 ns/op
+Iteration   1: 5851.977 ns/op
+Iteration   2: 5694.007 ns/op
+Iteration   3: 5858.501 ns/op
+Iteration   4: 6032.917 ns/op
+Iteration   5: 6065.132 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  5900.507 ±(99.9%) 582.057 ns/op [Average]
+  (min, avg, max) = (5694.007, 5900.507, 6065.132), stdev = 151.158
+  CI (99.9%): [5318.450, 6482.564] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 0)
+
+# Run progress: 40.00% complete, ETA 00:03:48
+# Fork: 1 of 1
+objc[75276]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1000c64c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10014a4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 10.452 ns/op
+# Warmup Iteration   2: 9.288 ns/op
+# Warmup Iteration   3: 6.059 ns/op
+# Warmup Iteration   4: 5.904 ns/op
+# Warmup Iteration   5: 7.213 ns/op
+Iteration   1: 6.988 ns/op
+Iteration   2: 6.282 ns/op
+Iteration   3: 6.262 ns/op
+Iteration   4: 6.411 ns/op
+Iteration   5: 6.194 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  6.428 ±(99.9%) 1.244 ns/op [Average]
+  (min, avg, max) = (6.194, 6.428, 6.988), stdev = 0.323
+  CI (99.9%): [5.184, 7.671] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 1)
+
+# Run progress: 42.86% complete, ETA 00:03:37
+# Fork: 1 of 1
+objc[75278]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x104b084c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x104b8c4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1556.872 ns/op
+# Warmup Iteration   2: 1228.915 ns/op
+# Warmup Iteration   3: 1124.023 ns/op
+# Warmup Iteration   4: 1177.519 ns/op
+# Warmup Iteration   5: 1174.771 ns/op
+Iteration   1: 1149.293 ns/op
+Iteration   2: 1091.158 ns/op
+Iteration   3: 1093.910 ns/op
+Iteration   4: 1185.846 ns/op
+Iteration   5: 1131.329 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1130.307 ±(99.9%) 152.860 ns/op [Average]
+  (min, avg, max) = (1091.158, 1130.307, 1185.846), stdev = 39.697
+  CI (99.9%): [977.447, 1283.167] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 2)
+
+# Run progress: 45.71% complete, ETA 00:03:26
+# Fork: 1 of 1
+objc[75280]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x103dc34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1055dd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1475.279 ns/op
+# Warmup Iteration   2: 1195.198 ns/op
+# Warmup Iteration   3: 1079.943 ns/op
+# Warmup Iteration   4: 1085.764 ns/op
+# Warmup Iteration   5: 1074.005 ns/op
+Iteration   1: 1071.397 ns/op
+Iteration   2: 1071.903 ns/op
+Iteration   3: 1087.580 ns/op
+Iteration   4: 1094.396 ns/op
+Iteration   5: 1089.084 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1082.872 ±(99.9%) 40.640 ns/op [Average]
+  (min, avg, max) = (1071.397, 1082.872, 1094.396), stdev = 10.554
+  CI (99.9%): [1042.231, 1123.512] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 4)
+
+# Run progress: 48.57% complete, ETA 00:03:16
+# Fork: 1 of 1
+objc[75282]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10d7434c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d7c74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1541.446 ns/op
+# Warmup Iteration   2: 1243.436 ns/op
+# Warmup Iteration   3: 1121.067 ns/op
+# Warmup Iteration   4: 1131.201 ns/op
+# Warmup Iteration   5: 1117.579 ns/op
+Iteration   1: 1124.151 ns/op
+Iteration   2: 1133.757 ns/op
+Iteration   3: 1124.655 ns/op
+Iteration   4: 1151.988 ns/op
+Iteration   5: 1135.146 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1133.939 ±(99.9%) 43.448 ns/op [Average]
+  (min, avg, max) = (1124.151, 1133.939, 1151.988), stdev = 11.283
+  CI (99.9%): [1090.491, 1177.388] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 8)
+
+# Run progress: 51.43% complete, ETA 00:03:05
+# Fork: 1 of 1
+objc[75284]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e8504c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e8d44e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1716.054 ns/op
+# Warmup Iteration   2: 1265.408 ns/op
+# Warmup Iteration   3: 1147.721 ns/op
+# Warmup Iteration   4: 1142.078 ns/op
+# Warmup Iteration   5: 1144.236 ns/op
+Iteration   1: 1150.034 ns/op
+Iteration   2: 1158.897 ns/op
+Iteration   3: 1154.876 ns/op
+Iteration   4: 1146.401 ns/op
+Iteration   5: 1154.314 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1152.905 ±(99.9%) 18.500 ns/op [Average]
+  (min, avg, max) = (1146.401, 1152.905, 1158.897), stdev = 4.804
+  CI (99.9%): [1134.405, 1171.404] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 16)
+
+# Run progress: 54.29% complete, ETA 00:02:54
+# Fork: 1 of 1
+objc[75286]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1025244c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1025a84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1611.394 ns/op
+# Warmup Iteration   2: 1335.622 ns/op
+# Warmup Iteration   3: 1134.620 ns/op
+# Warmup Iteration   4: 1126.893 ns/op
+# Warmup Iteration   5: 1133.460 ns/op
+Iteration   1: 1133.541 ns/op
+Iteration   2: 1141.107 ns/op
+Iteration   3: 1142.344 ns/op
+Iteration   4: 1144.815 ns/op
+Iteration   5: 1146.478 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1141.657 ±(99.9%) 19.241 ns/op [Average]
+  (min, avg, max) = (1133.541, 1141.657, 1146.478), stdev = 4.997
+  CI (99.9%): [1122.417, 1160.898] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 65, certainty = 32)
+
+# Run progress: 57.14% complete, ETA 00:02:43
+# Fork: 1 of 1
+objc[75289]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1073a14c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1073f04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1520.644 ns/op
+# Warmup Iteration   2: 1233.355 ns/op
+# Warmup Iteration   3: 1119.365 ns/op
+# Warmup Iteration   4: 1121.284 ns/op
+# Warmup Iteration   5: 1128.609 ns/op
+Iteration   1: 1129.578 ns/op
+Iteration   2: 1133.251 ns/op
+Iteration   3: 1134.119 ns/op
+Iteration   4: 1139.727 ns/op
+Iteration   5: 1139.041 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1135.143 ±(99.9%) 16.315 ns/op [Average]
+  (min, avg, max) = (1129.578, 1135.143, 1139.727), stdev = 4.237
+  CI (99.9%): [1118.828, 1151.458] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 0)
+
+# Run progress: 60.00% complete, ETA 00:02:32
+# Fork: 1 of 1
+objc[75291]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c04a4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c0ce4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 9.500 ns/op
+# Warmup Iteration   2: 7.798 ns/op
+# Warmup Iteration   3: 5.689 ns/op
+# Warmup Iteration   4: 5.707 ns/op
+# Warmup Iteration   5: 5.708 ns/op
+Iteration   1: 5.703 ns/op
+Iteration   2: 5.699 ns/op
+Iteration   3: 5.721 ns/op
+Iteration   4: 5.746 ns/op
+Iteration   5: 5.692 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  5.712 ±(99.9%) 0.083 ns/op [Average]
+  (min, avg, max) = (5.692, 5.712, 5.746), stdev = 0.022
+  CI (99.9%): [5.629, 5.795] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 1)
+
+# Run progress: 62.86% complete, ETA 00:02:21
+# Fork: 1 of 1
+objc[75293]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x105bff4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x105c834e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 755.344 ns/op
+# Warmup Iteration   2: 605.707 ns/op
+# Warmup Iteration   3: 543.163 ns/op
+# Warmup Iteration   4: 545.538 ns/op
+# Warmup Iteration   5: 542.926 ns/op
+Iteration   1: 543.390 ns/op
+Iteration   2: 544.534 ns/op
+Iteration   3: 554.252 ns/op
+Iteration   4: 548.972 ns/op
+Iteration   5: 547.778 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  547.785 ±(99.9%) 16.463 ns/op [Average]
+  (min, avg, max) = (543.390, 547.785, 554.252), stdev = 4.275
+  CI (99.9%): [531.322, 564.248] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 2)
+
+# Run progress: 65.71% complete, ETA 00:02:10
+# Fork: 1 of 1
+objc[75295]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1099064c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10998a4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 786.766 ns/op
+# Warmup Iteration   2: 596.710 ns/op
+# Warmup Iteration   3: 538.189 ns/op
+# Warmup Iteration   4: 540.451 ns/op
+# Warmup Iteration   5: 540.743 ns/op
+Iteration   1: 540.778 ns/op
+Iteration   2: 546.375 ns/op
+Iteration   3: 546.407 ns/op
+Iteration   4: 549.124 ns/op
+Iteration   5: 544.293 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  545.395 ±(99.9%) 11.933 ns/op [Average]
+  (min, avg, max) = (540.778, 545.395, 549.124), stdev = 3.099
+  CI (99.9%): [533.462, 557.328] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 4)
+
+# Run progress: 68.57% complete, ETA 00:01:59
+# Fork: 1 of 1
+objc[75298]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b6aa4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b72e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1442.766 ns/op
+# Warmup Iteration   2: 1130.631 ns/op
+# Warmup Iteration   3: 1018.319 ns/op
+# Warmup Iteration   4: 1019.082 ns/op
+# Warmup Iteration   5: 1021.501 ns/op
+Iteration   1: 1021.054 ns/op
+Iteration   2: 1027.083 ns/op
+Iteration   3: 1029.142 ns/op
+Iteration   4: 1031.885 ns/op
+Iteration   5: 1033.947 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1028.622 ±(99.9%) 19.149 ns/op [Average]
+  (min, avg, max) = (1021.054, 1028.622, 1033.947), stdev = 4.973
+  CI (99.9%): [1009.474, 1047.771] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 8)
+
+# Run progress: 71.43% complete, ETA 00:01:48
+# Fork: 1 of 1
+objc[75300]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x105c2b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x105caf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2764.012 ns/op
+# Warmup Iteration   2: 2172.661 ns/op
+# Warmup Iteration   3: 1951.213 ns/op
+# Warmup Iteration   4: 1951.593 ns/op
+# Warmup Iteration   5: 1956.995 ns/op
+Iteration   1: 1997.596 ns/op
+Iteration   2: 1988.160 ns/op
+Iteration   3: 2000.190 ns/op
+Iteration   4: 1995.987 ns/op
+Iteration   5: 1987.999 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1993.987 ±(99.9%) 21.553 ns/op [Average]
+  (min, avg, max) = (1987.999, 1993.987, 2000.190), stdev = 5.597
+  CI (99.9%): [1972.433, 2015.540] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 16)
+
+# Run progress: 74.29% complete, ETA 00:01:37
+# Fork: 1 of 1
+objc[75302]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c15d4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c1e14e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5403.879 ns/op
+# Warmup Iteration   2: 4252.235 ns/op
+# Warmup Iteration   3: 3822.123 ns/op
+# Warmup Iteration   4: 3824.243 ns/op
+# Warmup Iteration   5: 3855.336 ns/op
+Iteration   1: 3840.939 ns/op
+Iteration   2: 3853.754 ns/op
+Iteration   3: 3878.149 ns/op
+Iteration   4: 3912.376 ns/op
+Iteration   5: 3937.347 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  3884.513 ±(99.9%) 154.663 ns/op [Average]
+  (min, avg, max) = (3840.939, 3884.513, 3937.347), stdev = 40.166
+  CI (99.9%): [3729.850, 4039.176] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 101, certainty = 32)
+
+# Run progress: 77.14% complete, ETA 00:01:26
+# Fork: 1 of 1
+objc[75304]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10ec294c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ecad4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11147.008 ns/op
+# Warmup Iteration   2: 8616.236 ns/op
+# Warmup Iteration   3: 7809.343 ns/op
+# Warmup Iteration   4: 7785.176 ns/op
+# Warmup Iteration   5: 7803.971 ns/op
+Iteration   1: 7777.811 ns/op
+Iteration   2: 7811.682 ns/op
+Iteration   3: 7870.433 ns/op
+Iteration   4: 7918.791 ns/op
+Iteration   5: 7928.319 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  7861.407 ±(99.9%) 253.327 ns/op [Average]
+  (min, avg, max) = (7777.811, 7861.407, 7928.319), stdev = 65.788
+  CI (99.9%): [7608.080, 8114.734] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 0)
+
+# Run progress: 80.00% complete, ETA 00:01:16
+# Fork: 1 of 1
+objc[75306]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1014ca4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10154e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 9.525 ns/op
+# Warmup Iteration   2: 7.594 ns/op
+# Warmup Iteration   3: 5.775 ns/op
+# Warmup Iteration   4: 5.769 ns/op
+# Warmup Iteration   5: 5.771 ns/op
+Iteration   1: 5.833 ns/op
+Iteration   2: 5.798 ns/op
+Iteration   3: 5.820 ns/op
+Iteration   4: 5.811 ns/op
+Iteration   5: 5.780 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  5.808 ±(99.9%) 0.078 ns/op [Average]
+  (min, avg, max) = (5.780, 5.808, 5.833), stdev = 0.020
+  CI (99.9%): [5.730, 5.887] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 1)
+
+# Run progress: 82.86% complete, ETA 00:01:05
+# Fork: 1 of 1
+objc[75308]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x100cae4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x100d324e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 664.907 ns/op
+# Warmup Iteration   2: 564.516 ns/op
+# Warmup Iteration   3: 469.667 ns/op
+# Warmup Iteration   4: 468.055 ns/op
+# Warmup Iteration   5: 469.328 ns/op
+Iteration   1: 470.962 ns/op
+Iteration   2: 473.284 ns/op
+Iteration   3: 472.763 ns/op
+Iteration   4: 474.259 ns/op
+Iteration   5: 475.888 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  473.431 ±(99.9%) 7.018 ns/op [Average]
+  (min, avg, max) = (470.962, 473.431, 475.888), stdev = 1.823
+  CI (99.9%): [466.413, 480.449] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 2)
+
+# Run progress: 85.71% complete, ETA 00:00:54
+# Fork: 1 of 1
+objc[75310]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x108ced4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x108d714e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 667.749 ns/op
+# Warmup Iteration   2: 516.789 ns/op
+# Warmup Iteration   3: 457.237 ns/op
+# Warmup Iteration   4: 455.838 ns/op
+# Warmup Iteration   5: 457.987 ns/op
+Iteration   1: 462.116 ns/op
+Iteration   2: 459.898 ns/op
+Iteration   3: 460.253 ns/op
+Iteration   4: 462.053 ns/op
+Iteration   5: 460.157 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  460.895 ±(99.9%) 4.209 ns/op [Average]
+  (min, avg, max) = (459.898, 460.895, 462.116), stdev = 1.093
+  CI (99.9%): [456.686, 465.104] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 4)
+
+# Run progress: 88.57% complete, ETA 00:00:43
+# Fork: 1 of 1
+objc[75312]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1033234c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1033a74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1245.315 ns/op
+# Warmup Iteration   2: 959.777 ns/op
+# Warmup Iteration   3: 862.067 ns/op
+# Warmup Iteration   4: 859.675 ns/op
+# Warmup Iteration   5: 865.120 ns/op
+Iteration   1: 868.026 ns/op
+Iteration   2: 869.215 ns/op
+Iteration   3: 882.372 ns/op
+Iteration   4: 868.782 ns/op
+Iteration   5: 875.863 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  872.852 ±(99.9%) 23.799 ns/op [Average]
+  (min, avg, max) = (868.026, 872.852, 882.372), stdev = 6.181
+  CI (99.9%): [849.053, 896.651] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 8)
+
+# Run progress: 91.43% complete, ETA 00:00:32
+# Fork: 1 of 1
+objc[75315]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1019604c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1019e44e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2379.640 ns/op
+# Warmup Iteration   2: 2004.164 ns/op
+# Warmup Iteration   3: 1683.993 ns/op
+# Warmup Iteration   4: 1681.547 ns/op
+# Warmup Iteration   5: 1677.179 ns/op
+Iteration   1: 1678.053 ns/op
+Iteration   2: 1678.827 ns/op
+Iteration   3: 1677.428 ns/op
+Iteration   4: 1681.557 ns/op
+Iteration   5: 1683.392 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  1679.851 ±(99.9%) 9.742 ns/op [Average]
+  (min, avg, max) = (1677.428, 1679.851, 1683.392), stdev = 2.530
+  CI (99.9%): [1670.110, 1689.593] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 16)
+
+# Run progress: 94.29% complete, ETA 00:00:21
+# Fork: 1 of 1
+objc[75318]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10458c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x105da84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4500.485 ns/op
+# Warmup Iteration   2: 3577.488 ns/op
+# Warmup Iteration   3: 3328.268 ns/op
+# Warmup Iteration   4: 3226.896 ns/op
+# Warmup Iteration   5: 3239.103 ns/op
+Iteration   1: 3218.282 ns/op
+Iteration   2: 3233.942 ns/op
+Iteration   3: 3231.199 ns/op
+Iteration   4: 3263.366 ns/op
+Iteration   5: 3269.738 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  3243.306 ±(99.9%) 85.271 ns/op [Average]
+  (min, avg, max) = (3218.282, 3243.306, 3269.738), stdev = 22.145
+  CI (99.9%): [3158.034, 3328.577] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64130:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_27_Params.bench
+# Parameters: (arg = 103, certainty = 32)
+
+# Run progress: 97.14% complete, ETA 00:00:10
+# Fork: 1 of 1
+objc[75320]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x100f2a4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x100fae4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 8980.937 ns/op
+# Warmup Iteration   2: 7068.464 ns/op
+# Warmup Iteration   3: 6367.813 ns/op
+# Warmup Iteration   4: 6370.253 ns/op
+# Warmup Iteration   5: 6381.777 ns/op
+Iteration   1: 6390.228 ns/op
+Iteration   2: 6381.496 ns/op
+Iteration   3: 6419.240 ns/op
+Iteration   4: 6443.871 ns/op
+Iteration   5: 6453.913 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_27_Params.bench":
+  6417.750 ±(99.9%) 122.740 ns/op [Average]
+  (min, avg, max) = (6381.496, 6417.750, 6453.913), stdev = 31.875
+  CI (99.9%): [6295.010, 6540.489] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:06:19
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                  (arg)  (certainty)  Mode  Cnt     Score     Error  Units
+JMHSample_27_Params.bench      1            0  avgt    5     4.502 ±   0.649  ns/op
+JMHSample_27_Params.bench      1            1  avgt    5     7.324 ±   0.840  ns/op
+JMHSample_27_Params.bench      1            2  avgt    5     7.160 ±   0.329  ns/op
+JMHSample_27_Params.bench      1            4  avgt    5     7.127 ±   0.072  ns/op
+JMHSample_27_Params.bench      1            8  avgt    5     7.149 ±   0.390  ns/op
+JMHSample_27_Params.bench      1           16  avgt    5     7.149 ±   0.584  ns/op
+JMHSample_27_Params.bench      1           32  avgt    5     7.205 ±   0.845  ns/op
+JMHSample_27_Params.bench     31            0  avgt    5     5.717 ±   0.122  ns/op
+JMHSample_27_Params.bench     31            1  avgt    5   449.277 ± 124.147  ns/op
+JMHSample_27_Params.bench     31            2  avgt    5   421.834 ±  16.505  ns/op
+JMHSample_27_Params.bench     31            4  avgt    5   915.485 ± 129.013  ns/op
+JMHSample_27_Params.bench     31            8  avgt    5  1505.021 ±  99.551  ns/op
+JMHSample_27_Params.bench     31           16  avgt    5  3014.163 ± 870.228  ns/op
+JMHSample_27_Params.bench     31           32  avgt    5  5900.507 ± 582.057  ns/op
+JMHSample_27_Params.bench     65            0  avgt    5     6.428 ±   1.244  ns/op
+JMHSample_27_Params.bench     65            1  avgt    5  1130.307 ± 152.860  ns/op
+JMHSample_27_Params.bench     65            2  avgt    5  1082.872 ±  40.640  ns/op
+JMHSample_27_Params.bench     65            4  avgt    5  1133.939 ±  43.448  ns/op
+JMHSample_27_Params.bench     65            8  avgt    5  1152.905 ±  18.500  ns/op
+JMHSample_27_Params.bench     65           16  avgt    5  1141.657 ±  19.241  ns/op
+JMHSample_27_Params.bench     65           32  avgt    5  1135.143 ±  16.315  ns/op
+JMHSample_27_Params.bench    101            0  avgt    5     5.712 ±   0.083  ns/op
+JMHSample_27_Params.bench    101            1  avgt    5   547.785 ±  16.463  ns/op
+JMHSample_27_Params.bench    101            2  avgt    5   545.395 ±  11.933  ns/op
+JMHSample_27_Params.bench    101            4  avgt    5  1028.622 ±  19.149  ns/op
+JMHSample_27_Params.bench    101            8  avgt    5  1993.987 ±  21.553  ns/op
+JMHSample_27_Params.bench    101           16  avgt    5  3884.513 ± 154.663  ns/op
+JMHSample_27_Params.bench    101           32  avgt    5  7861.407 ± 253.327  ns/op
+JMHSample_27_Params.bench    103            0  avgt    5     5.808 ±   0.078  ns/op
+JMHSample_27_Params.bench    103            1  avgt    5   473.431 ±   7.018  ns/op
+JMHSample_27_Params.bench    103            2  avgt    5   460.895 ±   4.209  ns/op
+JMHSample_27_Params.bench    103            4  avgt    5   872.852 ±  23.799  ns/op
+JMHSample_27_Params.bench    103            8  avgt    5  1679.851 ±   9.742  ns/op
+JMHSample_27_Params.bench    103           16  avgt    5  3243.306 ±  85.271  ns/op
+JMHSample_27_Params.bench    103           32  avgt    5  6417.750 ± 122.740  ns/op

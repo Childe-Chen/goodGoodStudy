@@ -1,0 +1,42 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62513:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 64 threads, ***WARNING: Synchronize iterations are disabled!***
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.cxd.benchmark.JMHSample_17_SyncIterations.test
+
+# Run progress: 0.00% complete, ETA 00:00:10
+# Fork: 1 of 1
+objc[52074]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1095c04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10addd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 86.757 ops/ms
+# Warmup Iteration   2: 148.670 ops/ms
+# Warmup Iteration   3: 139.540 ops/ms
+# Warmup Iteration   4: 156.583 ops/ms
+# Warmup Iteration   5: 138.722 ops/ms
+Iteration   1: 149.465 ops/ms
+Iteration   2: 147.931 ops/ms
+Iteration   3: 159.496 ops/ms
+Iteration   4: 159.114 ops/ms
+Iteration   5: 157.615 ops/ms
+
+
+Result "com.cxd.benchmark.JMHSample_17_SyncIterations.test":
+  154.724 ±(99.9%) 21.456 ops/ms [Average]
+  (min, avg, max) = (147.931, 154.724, 159.496), stdev = 5.572
+  CI (99.9%): [133.268, 176.181] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:12
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                          Mode  Cnt    Score    Error   Units
+JMHSample_17_SyncIterations.test  thrpt    5  154.724 ± 21.456  ops/ms

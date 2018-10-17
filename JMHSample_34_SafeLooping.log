@@ -1,0 +1,1001 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1
+# Parameters: (size = 1)
+
+# Run progress: 0.00% complete, ETA 00:08:00
+# Fork: 1 of 3
+objc[77580]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c6db4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d6ee4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 9.404 ns/op
+# Warmup Iteration   2: 6.334 ns/op
+# Warmup Iteration   3: 5.088 ns/op
+# Warmup Iteration   4: 5.008 ns/op
+# Warmup Iteration   5: 5.016 ns/op
+Iteration   1: 5.061 ns/op
+Iteration   2: 5.010 ns/op
+Iteration   3: 5.047 ns/op
+Iteration   4: 4.948 ns/op
+Iteration   5: 4.912 ns/op
+
+# Run progress: 2.08% complete, ETA 00:08:49
+# Fork: 2 of 3
+objc[77582]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x107be44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x107c684e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.158 ns/op
+# Warmup Iteration   2: 5.185 ns/op
+# Warmup Iteration   3: 4.900 ns/op
+# Warmup Iteration   4: 4.867 ns/op
+# Warmup Iteration   5: 4.876 ns/op
+Iteration   1: 4.884 ns/op
+Iteration   2: 4.903 ns/op
+Iteration   3: 4.918 ns/op
+Iteration   4: 4.905 ns/op
+Iteration   5: 4.930 ns/op
+
+# Run progress: 4.17% complete, ETA 00:08:27
+# Fork: 3 of 3
+objc[77584]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b6284c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b6ac4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.158 ns/op
+# Warmup Iteration   2: 5.226 ns/op
+# Warmup Iteration   3: 4.907 ns/op
+# Warmup Iteration   4: 4.898 ns/op
+# Warmup Iteration   5: 4.892 ns/op
+Iteration   1: 4.918 ns/op
+Iteration   2: 4.897 ns/op
+Iteration   3: 4.877 ns/op
+Iteration   4: 4.873 ns/op
+Iteration   5: 4.881 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1":
+  4.931 ±(99.9%) 0.065 ns/op [Average]
+  (min, avg, max) = (4.873, 4.931, 5.061), stdev = 0.060
+  CI (99.9%): [4.866, 4.996] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1
+# Parameters: (size = 10)
+
+# Run progress: 6.25% complete, ETA 00:08:13
+# Fork: 1 of 3
+objc[77586]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1027fb4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10287f4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 27.124 ns/op
+# Warmup Iteration   2: 26.851 ns/op
+# Warmup Iteration   3: 26.716 ns/op
+# Warmup Iteration   4: 26.843 ns/op
+# Warmup Iteration   5: 26.749 ns/op
+Iteration   1: 26.810 ns/op
+Iteration   2: 26.805 ns/op
+Iteration   3: 26.759 ns/op
+Iteration   4: 26.765 ns/op
+Iteration   5: 26.874 ns/op
+
+# Run progress: 8.33% complete, ETA 00:08:00
+# Fork: 2 of 3
+objc[77588]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10aadf4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ab634e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 27.742 ns/op
+# Warmup Iteration   2: 26.873 ns/op
+# Warmup Iteration   3: 26.773 ns/op
+# Warmup Iteration   4: 26.862 ns/op
+# Warmup Iteration   5: 26.770 ns/op
+Iteration   1: 26.766 ns/op
+Iteration   2: 26.760 ns/op
+Iteration   3: 26.903 ns/op
+Iteration   4: 26.786 ns/op
+Iteration   5: 26.853 ns/op
+
+# Run progress: 10.42% complete, ETA 00:07:49
+# Fork: 3 of 3
+objc[77591]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10a9044c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a9884e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 27.084 ns/op
+# Warmup Iteration   2: 27.025 ns/op
+# Warmup Iteration   3: 26.972 ns/op
+# Warmup Iteration   4: 26.932 ns/op
+# Warmup Iteration   5: 26.835 ns/op
+Iteration   1: 26.811 ns/op
+Iteration   2: 26.900 ns/op
+Iteration   3: 26.812 ns/op
+Iteration   4: 26.835 ns/op
+Iteration   5: 26.834 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1":
+  26.818 ±(99.9%) 0.052 ns/op [Average]
+  (min, avg, max) = (26.759, 26.818, 26.903), stdev = 0.048
+  CI (99.9%): [26.767, 26.870] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1
+# Parameters: (size = 100)
+
+# Run progress: 12.50% complete, ETA 00:07:37
+# Fork: 1 of 3
+objc[77593]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10849c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1085204e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 262.136 ns/op
+# Warmup Iteration   2: 258.230 ns/op
+# Warmup Iteration   3: 260.067 ns/op
+# Warmup Iteration   4: 259.018 ns/op
+# Warmup Iteration   5: 260.838 ns/op
+Iteration   1: 263.128 ns/op
+Iteration   2: 258.920 ns/op
+Iteration   3: 259.295 ns/op
+Iteration   4: 259.799 ns/op
+Iteration   5: 259.311 ns/op
+
+# Run progress: 14.58% complete, ETA 00:07:26
+# Fork: 2 of 3
+objc[77595]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1074084c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10748c4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 261.684 ns/op
+# Warmup Iteration   2: 258.694 ns/op
+# Warmup Iteration   3: 256.985 ns/op
+# Warmup Iteration   4: 258.800 ns/op
+# Warmup Iteration   5: 259.601 ns/op
+Iteration   1: 260.361 ns/op
+Iteration   2: 260.650 ns/op
+Iteration   3: 263.236 ns/op
+Iteration   4: 259.777 ns/op
+Iteration   5: 263.498 ns/op
+
+# Run progress: 16.67% complete, ETA 00:07:15
+# Fork: 3 of 3
+objc[77597]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1000b24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1001364e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 267.282 ns/op
+# Warmup Iteration   2: 261.031 ns/op
+# Warmup Iteration   3: 265.341 ns/op
+# Warmup Iteration   4: 264.692 ns/op
+# Warmup Iteration   5: 261.691 ns/op
+Iteration   1: 259.771 ns/op
+Iteration   2: 263.812 ns/op
+Iteration   3: 294.978 ns/op
+Iteration   4: 331.459 ns/op
+Iteration   5: 320.533 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1":
+  271.902 ±(99.9%) 25.426 ns/op [Average]
+  (min, avg, max) = (258.920, 271.902, 331.459), stdev = 23.783
+  CI (99.9%): [246.476, 297.328] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1
+# Parameters: (size = 1000)
+
+# Run progress: 18.75% complete, ETA 00:07:03
+# Fork: 1 of 3
+objc[77599]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1055574c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1055db4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2941.090 ns/op
+# Warmup Iteration   2: 3131.612 ns/op
+# Warmup Iteration   3: 3584.459 ns/op
+# Warmup Iteration   4: 3194.134 ns/op
+# Warmup Iteration   5: 2965.800 ns/op
+Iteration   1: 4624.988 ns/op
+Iteration   2: 3284.475 ns/op
+Iteration   3: 3243.846 ns/op
+Iteration   4: 2655.572 ns/op
+Iteration   5: 3009.090 ns/op
+
+# Run progress: 20.83% complete, ETA 00:06:54
+# Fork: 2 of 3
+objc[77601]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1003234c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1013364e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4383.726 ns/op
+# Warmup Iteration   2: 2662.337 ns/op
+# Warmup Iteration   3: 3156.594 ns/op
+# Warmup Iteration   4: 3387.022 ns/op
+# Warmup Iteration   5: 3812.975 ns/op
+Iteration   1: 3192.536 ns/op
+Iteration   2: 3051.966 ns/op
+Iteration   3: 3079.972 ns/op
+Iteration   4: 3429.318 ns/op
+Iteration   5: 4102.757 ns/op
+
+# Run progress: 22.92% complete, ETA 00:06:44
+# Fork: 3 of 3
+objc[77603]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10fb894c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1113a84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2583.880 ns/op
+# Warmup Iteration   2: 3232.379 ns/op
+# Warmup Iteration   3: 2973.350 ns/op
+# Warmup Iteration   4: 2714.920 ns/op
+# Warmup Iteration   5: 3442.675 ns/op
+Iteration   1: 5139.846 ns/op
+Iteration   2: 3367.358 ns/op
+Iteration   3: 2767.209 ns/op
+Iteration   4: 2632.792 ns/op
+Iteration   5: 3079.693 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_1":
+  3377.428 ±(99.9%) 762.325 ns/op [Average]
+  (min, avg, max) = (2632.792, 3377.428, 5139.846), stdev = 713.079
+  CI (99.9%): [2615.103, 4139.753] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2
+# Parameters: (size = 1)
+
+# Run progress: 25.00% complete, ETA 00:06:34
+# Fork: 1 of 3
+objc[77605]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x101eca4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x101f4e4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.209 ns/op
+# Warmup Iteration   2: 4.259 ns/op
+# Warmup Iteration   3: 4.267 ns/op
+# Warmup Iteration   4: 4.265 ns/op
+# Warmup Iteration   5: 4.267 ns/op
+Iteration   1: 4.289 ns/op
+Iteration   2: 5.264 ns/op
+Iteration   3: 4.918 ns/op
+Iteration   4: 4.510 ns/op
+Iteration   5: 4.347 ns/op
+
+# Run progress: 27.08% complete, ETA 00:06:23
+# Fork: 2 of 3
+objc[77608]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10d0844c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d1084e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.662 ns/op
+# Warmup Iteration   2: 6.378 ns/op
+# Warmup Iteration   3: 5.225 ns/op
+# Warmup Iteration   4: 5.617 ns/op
+# Warmup Iteration   5: 5.392 ns/op
+Iteration   1: 5.308 ns/op
+Iteration   2: 5.312 ns/op
+Iteration   3: 4.265 ns/op
+Iteration   4: 4.310 ns/op
+Iteration   5: 4.269 ns/op
+
+# Run progress: 29.17% complete, ETA 00:06:12
+# Fork: 3 of 3
+objc[77612]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10274b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1027cf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.261 ns/op
+# Warmup Iteration   2: 5.509 ns/op
+# Warmup Iteration   3: 6.266 ns/op
+# Warmup Iteration   4: 4.385 ns/op
+# Warmup Iteration   5: 5.470 ns/op
+Iteration   1: 4.280 ns/op
+Iteration   2: 4.262 ns/op
+Iteration   3: 4.369 ns/op
+Iteration   4: 5.169 ns/op
+Iteration   5: 4.555 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2":
+  4.628 ±(99.9%) 0.461 ns/op [Average]
+  (min, avg, max) = (4.262, 4.628, 5.312), stdev = 0.432
+  CI (99.9%): [4.167, 5.090] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2
+# Parameters: (size = 10)
+
+# Run progress: 31.25% complete, ETA 00:06:01
+# Fork: 1 of 3
+objc[77615]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1047564c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1047da4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 22.779 ns/op
+# Warmup Iteration   2: 22.758 ns/op
+# Warmup Iteration   3: 22.231 ns/op
+# Warmup Iteration   4: 22.169 ns/op
+# Warmup Iteration   5: 22.466 ns/op
+Iteration   1: 25.075 ns/op
+Iteration   2: 29.323 ns/op
+Iteration   3: 37.717 ns/op
+Iteration   4: 23.016 ns/op
+Iteration   5: 29.857 ns/op
+
+# Run progress: 33.33% complete, ETA 00:05:49
+# Fork: 2 of 3
+objc[77619]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1088924c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1089164e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 22.585 ns/op
+# Warmup Iteration   2: 32.770 ns/op
+# Warmup Iteration   3: 24.665 ns/op
+# Warmup Iteration   4: 27.567 ns/op
+# Warmup Iteration   5: 22.924 ns/op
+Iteration   1: 23.020 ns/op
+Iteration   2: 24.735 ns/op
+Iteration   3: 33.018 ns/op
+Iteration   4: 36.265 ns/op
+Iteration   5: 22.343 ns/op
+
+# Run progress: 35.42% complete, ETA 00:05:38
+# Fork: 3 of 3
+objc[77622]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x107e384c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x107ebc4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 30.426 ns/op
+# Warmup Iteration   2: 24.922 ns/op
+# Warmup Iteration   3: 22.224 ns/op
+# Warmup Iteration   4: 26.400 ns/op
+# Warmup Iteration   5: 22.251 ns/op
+Iteration   1: 23.091 ns/op
+Iteration   2: 27.914 ns/op
+Iteration   3: 24.091 ns/op
+Iteration   4: 27.653 ns/op
+Iteration   5: 39.075 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2":
+  28.413 ±(99.9%) 6.085 ns/op [Average]
+  (min, avg, max) = (22.343, 28.413, 39.075), stdev = 5.692
+  CI (99.9%): [22.328, 34.498] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2
+# Parameters: (size = 100)
+
+# Run progress: 37.50% complete, ETA 00:05:28
+# Fork: 1 of 3
+objc[77625]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10750e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1075924e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 226.944 ns/op
+# Warmup Iteration   2: 244.208 ns/op
+# Warmup Iteration   3: 310.497 ns/op
+# Warmup Iteration   4: 224.882 ns/op
+# Warmup Iteration   5: 223.093 ns/op
+Iteration   1: 223.203 ns/op
+Iteration   2: 250.617 ns/op
+Iteration   3: 230.296 ns/op
+Iteration   4: 232.073 ns/op
+Iteration   5: 226.045 ns/op
+
+# Run progress: 39.58% complete, ETA 00:05:16
+# Fork: 2 of 3
+objc[77628]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10eb534c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ebd74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 237.489 ns/op
+# Warmup Iteration   2: 274.144 ns/op
+# Warmup Iteration   3: 281.509 ns/op
+# Warmup Iteration   4: 260.790 ns/op
+# Warmup Iteration   5: 334.191 ns/op
+Iteration   1: 350.494 ns/op
+Iteration   2: 296.539 ns/op
+Iteration   3: 222.759 ns/op
+Iteration   4: 222.524 ns/op
+Iteration   5: 235.625 ns/op
+
+# Run progress: 41.67% complete, ETA 00:05:05
+# Fork: 3 of 3
+objc[77631]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10d8d34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d9574e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 240.215 ns/op
+# Warmup Iteration   2: 251.232 ns/op
+# Warmup Iteration   3: 239.748 ns/op
+# Warmup Iteration   4: 248.501 ns/op
+# Warmup Iteration   5: 237.502 ns/op
+Iteration   1: 230.180 ns/op
+Iteration   2: 221.623 ns/op
+Iteration   3: 230.868 ns/op
+Iteration   4: 226.638 ns/op
+Iteration   5: 224.236 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2":
+  241.581 ±(99.9%) 37.992 ns/op [Average]
+  (min, avg, max) = (221.623, 241.581, 350.494), stdev = 35.538
+  CI (99.9%): [203.589, 279.573] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2
+# Parameters: (size = 1000)
+
+# Run progress: 43.75% complete, ETA 00:04:55
+# Fork: 1 of 3
+objc[77634]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c7e24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c8664e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2136.516 ns/op
+# Warmup Iteration   2: 2115.479 ns/op
+# Warmup Iteration   3: 2151.851 ns/op
+# Warmup Iteration   4: 2117.093 ns/op
+# Warmup Iteration   5: 2123.531 ns/op
+Iteration   1: 2116.939 ns/op
+Iteration   2: 2118.257 ns/op
+Iteration   3: 2113.072 ns/op
+Iteration   4: 2175.155 ns/op
+Iteration   5: 2158.538 ns/op
+
+# Run progress: 45.83% complete, ETA 00:04:43
+# Fork: 2 of 3
+objc[77638]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10634f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1063d34e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2126.483 ns/op
+# Warmup Iteration   2: 2138.142 ns/op
+# Warmup Iteration   3: 2120.147 ns/op
+# Warmup Iteration   4: 2109.276 ns/op
+# Warmup Iteration   5: 2115.302 ns/op
+Iteration   1: 2108.210 ns/op
+Iteration   2: 2117.082 ns/op
+Iteration   3: 2117.563 ns/op
+Iteration   4: 2133.727 ns/op
+Iteration   5: 2112.380 ns/op
+
+# Run progress: 47.92% complete, ETA 00:04:32
+# Fork: 3 of 3
+objc[77640]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e1cc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f9eb4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2123.385 ns/op
+# Warmup Iteration   2: 2113.394 ns/op
+# Warmup Iteration   3: 2121.542 ns/op
+# Warmup Iteration   4: 2115.324 ns/op
+# Warmup Iteration   5: 2105.606 ns/op
+Iteration   1: 2108.354 ns/op
+Iteration   2: 2113.615 ns/op
+Iteration   3: 2118.329 ns/op
+Iteration   4: 2104.317 ns/op
+Iteration   5: 2102.650 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureRight_2":
+  2121.213 ±(99.9%) 21.555 ns/op [Average]
+  (min, avg, max) = (2102.650, 2121.213, 2175.155), stdev = 20.163
+  CI (99.9%): [2099.657, 2142.768] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1
+# Parameters: (size = 1)
+
+# Run progress: 50.00% complete, ETA 00:04:21
+# Fork: 1 of 3
+objc[77642]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e84e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e8d24e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.343 ns/op
+# Warmup Iteration   2: 4.313 ns/op
+# Warmup Iteration   3: 3.822 ns/op
+# Warmup Iteration   4: 4.143 ns/op
+# Warmup Iteration   5: 4.351 ns/op
+Iteration   1: 4.150 ns/op
+Iteration   2: 3.934 ns/op
+Iteration   3: 3.925 ns/op
+Iteration   4: 3.958 ns/op
+Iteration   5: 3.923 ns/op
+
+# Run progress: 52.08% complete, ETA 00:04:10
+# Fork: 2 of 3
+objc[77645]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10e2c04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10e3444e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.290 ns/op
+# Warmup Iteration   2: 4.333 ns/op
+# Warmup Iteration   3: 3.797 ns/op
+# Warmup Iteration   4: 3.810 ns/op
+# Warmup Iteration   5: 3.792 ns/op
+Iteration   1: 3.796 ns/op
+Iteration   2: 3.799 ns/op
+Iteration   3: 3.821 ns/op
+Iteration   4: 3.807 ns/op
+Iteration   5: 3.819 ns/op
+
+# Run progress: 54.17% complete, ETA 00:03:59
+# Fork: 3 of 3
+objc[77647]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10db404c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10dbc44e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.301 ns/op
+# Warmup Iteration   2: 4.340 ns/op
+# Warmup Iteration   3: 3.815 ns/op
+# Warmup Iteration   4: 3.797 ns/op
+# Warmup Iteration   5: 3.997 ns/op
+Iteration   1: 3.845 ns/op
+Iteration   2: 3.812 ns/op
+Iteration   3: 3.807 ns/op
+Iteration   4: 3.818 ns/op
+Iteration   5: 3.804 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1":
+  3.868 ±(99.9%) 0.103 ns/op [Average]
+  (min, avg, max) = (3.796, 3.868, 4.150), stdev = 0.096
+  CI (99.9%): [3.765, 3.971] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1
+# Parameters: (size = 10)
+
+# Run progress: 56.25% complete, ETA 00:03:48
+# Fork: 1 of 3
+objc[77649]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x101d3f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x101dc34e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.185 ns/op
+# Warmup Iteration   2: 4.667 ns/op
+# Warmup Iteration   3: 3.627 ns/op
+# Warmup Iteration   4: 3.671 ns/op
+# Warmup Iteration   5: 3.627 ns/op
+Iteration   1: 3.636 ns/op
+Iteration   2: 3.616 ns/op
+Iteration   3: 3.620 ns/op
+Iteration   4: 3.628 ns/op
+Iteration   5: 3.657 ns/op
+
+# Run progress: 58.33% complete, ETA 00:03:37
+# Fork: 2 of 3
+objc[77652]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10bbf64c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bc7a4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.189 ns/op
+# Warmup Iteration   2: 4.144 ns/op
+# Warmup Iteration   3: 3.673 ns/op
+# Warmup Iteration   4: 3.621 ns/op
+# Warmup Iteration   5: 3.620 ns/op
+Iteration   1: 3.642 ns/op
+Iteration   2: 3.637 ns/op
+Iteration   3: 3.626 ns/op
+Iteration   4: 3.637 ns/op
+Iteration   5: 3.671 ns/op
+
+# Run progress: 60.42% complete, ETA 00:03:26
+# Fork: 3 of 3
+objc[77654]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10a7864c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bfa84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.156 ns/op
+# Warmup Iteration   2: 4.144 ns/op
+# Warmup Iteration   3: 3.911 ns/op
+# Warmup Iteration   4: 4.563 ns/op
+# Warmup Iteration   5: 3.720 ns/op
+Iteration   1: 4.420 ns/op
+Iteration   2: 3.830 ns/op
+Iteration   3: 3.711 ns/op
+Iteration   4: 4.810 ns/op
+Iteration   5: 3.784 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1":
+  3.795 ±(99.9%) 0.371 ns/op [Average]
+  (min, avg, max) = (3.616, 3.795, 4.810), stdev = 0.347
+  CI (99.9%): [3.425, 4.166] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1
+# Parameters: (size = 100)
+
+# Run progress: 62.50% complete, ETA 00:03:16
+# Fork: 1 of 3
+objc[77656]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10ff944c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1117a84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.158 ns/op
+# Warmup Iteration   2: 4.100 ns/op
+# Warmup Iteration   3: 3.586 ns/op
+# Warmup Iteration   4: 3.611 ns/op
+# Warmup Iteration   5: 3.590 ns/op
+Iteration   1: 3.569 ns/op
+Iteration   2: 3.584 ns/op
+Iteration   3: 3.573 ns/op
+Iteration   4: 3.582 ns/op
+Iteration   5: 3.577 ns/op
+
+# Run progress: 64.58% complete, ETA 00:03:05
+# Fork: 2 of 3
+objc[77658]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b3c24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10cbdd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.145 ns/op
+# Warmup Iteration   2: 4.077 ns/op
+# Warmup Iteration   3: 3.569 ns/op
+# Warmup Iteration   4: 3.574 ns/op
+# Warmup Iteration   5: 3.569 ns/op
+Iteration   1: 3.584 ns/op
+Iteration   2: 3.574 ns/op
+Iteration   3: 3.606 ns/op
+Iteration   4: 3.575 ns/op
+Iteration   5: 3.569 ns/op
+
+# Run progress: 66.67% complete, ETA 00:02:54
+# Fork: 3 of 3
+objc[77660]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1047294c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1047ad4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.121 ns/op
+# Warmup Iteration   2: 4.079 ns/op
+# Warmup Iteration   3: 3.580 ns/op
+# Warmup Iteration   4: 3.580 ns/op
+# Warmup Iteration   5: 3.580 ns/op
+Iteration   1: 3.619 ns/op
+Iteration   2: 3.571 ns/op
+Iteration   3: 3.561 ns/op
+Iteration   4: 3.566 ns/op
+Iteration   5: 3.590 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1":
+  3.580 ±(99.9%) 0.017 ns/op [Average]
+  (min, avg, max) = (3.561, 3.580, 3.619), stdev = 0.015
+  CI (99.9%): [3.564, 3.597] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1
+# Parameters: (size = 1000)
+
+# Run progress: 68.75% complete, ETA 00:02:43
+# Fork: 1 of 3
+objc[77662]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x105f584c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x105fdc4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.134 ns/op
+# Warmup Iteration   2: 4.070 ns/op
+# Warmup Iteration   3: 3.559 ns/op
+# Warmup Iteration   4: 3.558 ns/op
+# Warmup Iteration   5: 3.565 ns/op
+Iteration   1: 3.592 ns/op
+Iteration   2: 3.570 ns/op
+Iteration   3: 3.574 ns/op
+Iteration   4: 3.559 ns/op
+Iteration   5: 3.569 ns/op
+
+# Run progress: 70.83% complete, ETA 00:02:32
+# Fork: 2 of 3
+objc[77664]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x102e0e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x102e924e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.693 ns/op
+# Warmup Iteration   2: 4.077 ns/op
+# Warmup Iteration   3: 3.560 ns/op
+# Warmup Iteration   4: 3.560 ns/op
+# Warmup Iteration   5: 3.567 ns/op
+Iteration   1: 3.571 ns/op
+Iteration   2: 3.562 ns/op
+Iteration   3: 3.574 ns/op
+Iteration   4: 3.591 ns/op
+Iteration   5: 3.558 ns/op
+
+# Run progress: 72.92% complete, ETA 00:02:21
+# Fork: 3 of 3
+objc[77666]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x108a9f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x108b234e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.113 ns/op
+# Warmup Iteration   2: 4.080 ns/op
+# Warmup Iteration   3: 3.559 ns/op
+# Warmup Iteration   4: 3.564 ns/op
+# Warmup Iteration   5: 3.592 ns/op
+Iteration   1: 3.560 ns/op
+Iteration   2: 3.597 ns/op
+Iteration   3: 3.560 ns/op
+Iteration   4: 3.568 ns/op
+Iteration   5: 3.562 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_1":
+  3.571 ±(99.9%) 0.014 ns/op [Average]
+  (min, avg, max) = (3.558, 3.571, 3.597), stdev = 0.013
+  CI (99.9%): [3.557, 3.585] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2
+# Parameters: (size = 1)
+
+# Run progress: 75.00% complete, ETA 00:02:10
+# Fork: 1 of 3
+objc[77668]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10d5c94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10eddd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.257 ns/op
+# Warmup Iteration   2: 4.218 ns/op
+# Warmup Iteration   3: 3.577 ns/op
+# Warmup Iteration   4: 3.595 ns/op
+# Warmup Iteration   5: 3.580 ns/op
+Iteration   1: 3.577 ns/op
+Iteration   2: 3.628 ns/op
+Iteration   3: 3.575 ns/op
+Iteration   4: 3.591 ns/op
+Iteration   5: 3.582 ns/op
+
+# Run progress: 77.08% complete, ETA 00:01:59
+# Fork: 2 of 3
+objc[77670]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1002544c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1002d84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.245 ns/op
+# Warmup Iteration   2: 4.220 ns/op
+# Warmup Iteration   3: 3.593 ns/op
+# Warmup Iteration   4: 3.575 ns/op
+# Warmup Iteration   5: 3.576 ns/op
+Iteration   1: 3.577 ns/op
+Iteration   2: 3.579 ns/op
+Iteration   3: 3.576 ns/op
+Iteration   4: 3.574 ns/op
+Iteration   5: 3.582 ns/op
+
+# Run progress: 79.17% complete, ETA 00:01:48
+# Fork: 3 of 3
+objc[77672]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x108a094c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x108a8d4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.224 ns/op
+# Warmup Iteration   2: 4.259 ns/op
+# Warmup Iteration   3: 3.579 ns/op
+# Warmup Iteration   4: 3.575 ns/op
+# Warmup Iteration   5: 3.604 ns/op
+Iteration   1: 3.575 ns/op
+Iteration   2: 3.591 ns/op
+Iteration   3: 3.578 ns/op
+Iteration   4: 3.575 ns/op
+Iteration   5: 3.587 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2":
+  3.583 ±(99.9%) 0.014 ns/op [Average]
+  (min, avg, max) = (3.574, 3.583, 3.628), stdev = 0.013
+  CI (99.9%): [3.569, 3.598] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2
+# Parameters: (size = 10)
+
+# Run progress: 81.25% complete, ETA 00:01:37
+# Fork: 1 of 3
+objc[77674]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x109ac94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109b4d4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.328 ns/op
+# Warmup Iteration   2: 7.307 ns/op
+# Warmup Iteration   3: 6.784 ns/op
+# Warmup Iteration   4: 6.781 ns/op
+# Warmup Iteration   5: 6.781 ns/op
+Iteration   1: 6.800 ns/op
+Iteration   2: 6.792 ns/op
+Iteration   3: 6.783 ns/op
+Iteration   4: 6.789 ns/op
+Iteration   5: 6.783 ns/op
+
+# Run progress: 83.33% complete, ETA 00:01:26
+# Fork: 2 of 3
+objc[77676]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x101c8f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x101d134e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.334 ns/op
+# Warmup Iteration   2: 7.269 ns/op
+# Warmup Iteration   3: 6.801 ns/op
+# Warmup Iteration   4: 6.824 ns/op
+# Warmup Iteration   5: 6.780 ns/op
+Iteration   1: 6.809 ns/op
+Iteration   2: 6.787 ns/op
+Iteration   3: 6.783 ns/op
+Iteration   4: 6.806 ns/op
+Iteration   5: 6.788 ns/op
+
+# Run progress: 85.42% complete, ETA 00:01:16
+# Fork: 3 of 3
+objc[77679]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b0424c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b0c64e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.343 ns/op
+# Warmup Iteration   2: 7.266 ns/op
+# Warmup Iteration   3: 6.831 ns/op
+# Warmup Iteration   4: 6.783 ns/op
+# Warmup Iteration   5: 6.781 ns/op
+Iteration   1: 6.820 ns/op
+Iteration   2: 6.830 ns/op
+Iteration   3: 6.914 ns/op
+Iteration   4: 6.783 ns/op
+Iteration   5: 6.790 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2":
+  6.804 ±(99.9%) 0.036 ns/op [Average]
+  (min, avg, max) = (6.783, 6.804, 6.914), stdev = 0.034
+  CI (99.9%): [6.768, 6.840] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2
+# Parameters: (size = 100)
+
+# Run progress: 87.50% complete, ETA 00:01:05
+# Fork: 1 of 3
+objc[77681]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10639b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1063ea4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 35.309 ns/op
+# Warmup Iteration   2: 35.037 ns/op
+# Warmup Iteration   3: 34.224 ns/op
+# Warmup Iteration   4: 34.217 ns/op
+# Warmup Iteration   5: 34.313 ns/op
+Iteration   1: 34.215 ns/op
+Iteration   2: 34.240 ns/op
+Iteration   3: 34.223 ns/op
+Iteration   4: 34.273 ns/op
+Iteration   5: 34.223 ns/op
+
+# Run progress: 89.58% complete, ETA 00:00:54
+# Fork: 2 of 3
+objc[77683]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10c16d4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c1f14e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 35.299 ns/op
+# Warmup Iteration   2: 35.130 ns/op
+# Warmup Iteration   3: 34.319 ns/op
+# Warmup Iteration   4: 34.316 ns/op
+# Warmup Iteration   5: 34.220 ns/op
+Iteration   1: 34.432 ns/op
+Iteration   2: 34.410 ns/op
+Iteration   3: 34.300 ns/op
+Iteration   4: 34.790 ns/op
+Iteration   5: 34.244 ns/op
+
+# Run progress: 91.67% complete, ETA 00:00:43
+# Fork: 3 of 3
+objc[77686]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x10b17c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c9a84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 35.348 ns/op
+# Warmup Iteration   2: 35.135 ns/op
+# Warmup Iteration   3: 34.211 ns/op
+# Warmup Iteration   4: 34.261 ns/op
+# Warmup Iteration   5: 34.207 ns/op
+Iteration   1: 34.258 ns/op
+Iteration   2: 34.212 ns/op
+Iteration   3: 34.260 ns/op
+Iteration   4: 34.209 ns/op
+Iteration   5: 34.217 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2":
+  34.300 ±(99.9%) 0.162 ns/op [Average]
+  (min, avg, max) = (34.209, 34.300, 34.790), stdev = 0.152
+  CI (99.9%): [34.138, 34.462] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_74, Java HotSpot(TM) 64-Bit Server VM, 25.74-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=49910:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2
+# Parameters: (size = 1000)
+
+# Run progress: 93.75% complete, ETA 00:00:32
+# Fork: 1 of 3
+objc[77688]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x106da94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1085dd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 349.115 ns/op
+# Warmup Iteration   2: 346.412 ns/op
+# Warmup Iteration   3: 344.519 ns/op
+# Warmup Iteration   4: 344.405 ns/op
+# Warmup Iteration   5: 346.944 ns/op
+Iteration   1: 344.795 ns/op
+Iteration   2: 344.993 ns/op
+Iteration   3: 344.254 ns/op
+Iteration   4: 344.482 ns/op
+Iteration   5: 344.180 ns/op
+
+# Run progress: 95.83% complete, ETA 00:00:21
+# Fork: 2 of 3
+objc[77690]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1070bf4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1071434e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 348.672 ns/op
+# Warmup Iteration   2: 346.267 ns/op
+# Warmup Iteration   3: 344.409 ns/op
+# Warmup Iteration   4: 345.489 ns/op
+# Warmup Iteration   5: 344.567 ns/op
+Iteration   1: 345.735 ns/op
+Iteration   2: 345.662 ns/op
+Iteration   3: 344.370 ns/op
+Iteration   4: 345.774 ns/op
+Iteration   5: 344.499 ns/op
+
+# Run progress: 97.92% complete, ETA 00:00:10
+# Fork: 3 of 3
+objc[77692]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/bin/java (0x1035054c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1035894e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 349.255 ns/op
+# Warmup Iteration   2: 347.467 ns/op
+# Warmup Iteration   3: 345.121 ns/op
+# Warmup Iteration   4: 344.350 ns/op
+# Warmup Iteration   5: 344.326 ns/op
+Iteration   1: 344.173 ns/op
+Iteration   2: 344.463 ns/op
+Iteration   3: 344.289 ns/op
+Iteration   4: 344.586 ns/op
+Iteration   5: 344.300 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_34_SafeLooping.measureWrong_2":
+  344.704 ±(99.9%) 0.612 ns/op [Average]
+  (min, avg, max) = (344.173, 344.704, 345.774), stdev = 0.572
+  CI (99.9%): [344.092, 345.316] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:41
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                (size)  Mode  Cnt     Score     Error  Units
+JMHSample_34_SafeLooping.measureRight_1       1  avgt   15     4.931 ±   0.065  ns/op
+JMHSample_34_SafeLooping.measureRight_1      10  avgt   15    26.818 ±   0.052  ns/op
+JMHSample_34_SafeLooping.measureRight_1     100  avgt   15   271.902 ±  25.426  ns/op
+JMHSample_34_SafeLooping.measureRight_1    1000  avgt   15  3377.428 ± 762.325  ns/op
+JMHSample_34_SafeLooping.measureRight_2       1  avgt   15     4.628 ±   0.461  ns/op
+JMHSample_34_SafeLooping.measureRight_2      10  avgt   15    28.413 ±   6.085  ns/op
+JMHSample_34_SafeLooping.measureRight_2     100  avgt   15   241.581 ±  37.992  ns/op
+JMHSample_34_SafeLooping.measureRight_2    1000  avgt   15  2121.213 ±  21.555  ns/op
+JMHSample_34_SafeLooping.measureWrong_1       1  avgt   15     3.868 ±   0.103  ns/op
+JMHSample_34_SafeLooping.measureWrong_1      10  avgt   15     3.795 ±   0.371  ns/op
+JMHSample_34_SafeLooping.measureWrong_1     100  avgt   15     3.580 ±   0.017  ns/op
+JMHSample_34_SafeLooping.measureWrong_1    1000  avgt   15     3.571 ±   0.014  ns/op
+JMHSample_34_SafeLooping.measureWrong_2       1  avgt   15     3.583 ±   0.014  ns/op
+JMHSample_34_SafeLooping.measureWrong_2      10  avgt   15     6.804 ±   0.036  ns/op
+JMHSample_34_SafeLooping.measureWrong_2     100  avgt   15    34.300 ±   0.162  ns/op
+JMHSample_34_SafeLooping.measureWrong_2    1000  avgt   15   344.704 ±   0.612  ns/op

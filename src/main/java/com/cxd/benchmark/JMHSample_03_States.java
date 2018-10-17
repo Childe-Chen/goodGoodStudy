@@ -42,11 +42,17 @@ public class JMHSample_03_States {
 
     @State(Scope.Benchmark)
     public static class BenchmarkState {
+        {
+            System.out.println("swwwws");
+        }
         volatile double x = Math.PI;
     }
 
     @State(Scope.Thread)
     public static class ThreadState {
+        {
+            System.out.println("ss");
+        }
         volatile double x = Math.PI;
     }
 
