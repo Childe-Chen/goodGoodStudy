@@ -1,0 +1,177 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_112, Java HotSpot(TM) 64-Bit Server VM, 25.112-b16
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/bin/java
+# VM options: -Didea.launcher.port=7536 -Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_36_BranchPrediction.sorted
+
+# Run progress: 0.00% complete, ETA 00:01:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 3.111 ns/op
+# Warmup Iteration   2: 2.813 ns/op
+# Warmup Iteration   3: 2.739 ns/op
+# Warmup Iteration   4: 2.639 ns/op
+# Warmup Iteration   5: 2.672 ns/op
+Iteration   1: 2.684 ns/op
+Iteration   2: 2.718 ns/op
+Iteration   3: 2.691 ns/op
+Iteration   4: 2.687 ns/op
+Iteration   5: 2.652 ns/op
+
+# Run progress: 10.00% complete, ETA 00:01:39
+# Fork: 2 of 5
+# Warmup Iteration   1: 2.853 ns/op
+# Warmup Iteration   2: 2.733 ns/op
+# Warmup Iteration   3: 2.815 ns/op
+# Warmup Iteration   4: 2.657 ns/op
+# Warmup Iteration   5: 2.678 ns/op
+Iteration   1: 2.643 ns/op
+Iteration   2: 2.671 ns/op
+Iteration   3: 2.674 ns/op
+Iteration   4: 2.735 ns/op
+Iteration   5: 2.954 ns/op
+
+# Run progress: 20.00% complete, ETA 00:01:26
+# Fork: 3 of 5
+# Warmup Iteration   1: 3.137 ns/op
+# Warmup Iteration   2: 2.922 ns/op
+# Warmup Iteration   3: 2.674 ns/op
+# Warmup Iteration   4: 2.670 ns/op
+# Warmup Iteration   5: 2.669 ns/op
+Iteration   1: 2.702 ns/op
+Iteration   2: 2.752 ns/op
+Iteration   3: 2.672 ns/op
+Iteration   4: 2.722 ns/op
+Iteration   5: 2.680 ns/op
+
+# Run progress: 30.00% complete, ETA 00:01:15
+# Fork: 4 of 5
+# Warmup Iteration   1: 2.891 ns/op
+# Warmup Iteration   2: 2.771 ns/op
+# Warmup Iteration   3: 2.667 ns/op
+# Warmup Iteration   4: 3.000 ns/op
+# Warmup Iteration   5: 2.837 ns/op
+Iteration   1: 5.821 ns/op
+Iteration   2: 3.623 ns/op
+Iteration   3: 2.939 ns/op
+Iteration   4: 3.099 ns/op
+Iteration   5: 2.845 ns/op
+
+# Run progress: 40.00% complete, ETA 00:01:04
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.852 ns/op
+# Warmup Iteration   2: 2.603 ns/op
+# Warmup Iteration   3: 2.603 ns/op
+# Warmup Iteration   4: 2.601 ns/op
+# Warmup Iteration   5: 2.744 ns/op
+Iteration   1: 3.183 ns/op
+Iteration   2: 2.883 ns/op
+Iteration   3: 2.833 ns/op
+Iteration   4: 4.294 ns/op
+Iteration   5: 2.881 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_36_BranchPrediction.sorted":
+  3.002 ±(99.9%) 0.518 ns/op [Average]
+  (min, avg, max) = (2.643, 3.002, 5.821), stdev = 0.692
+  CI (99.9%): [2.483, 3.520] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_112, Java HotSpot(TM) 64-Bit Server VM, 25.112-b16
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/bin/java
+# VM options: -Didea.launcher.port=7536 -Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.benchmark.JMHSample_36_BranchPrediction.unsorted
+
+# Run progress: 50.00% complete, ETA 00:00:53
+# Fork: 1 of 5
+# Warmup Iteration   1: 9.713 ns/op
+# Warmup Iteration   2: 8.435 ns/op
+# Warmup Iteration   3: 8.474 ns/op
+# Warmup Iteration   4: 10.591 ns/op
+# Warmup Iteration   5: 8.018 ns/op
+Iteration   1: 10.571 ns/op
+Iteration   2: 9.420 ns/op
+Iteration   3: 9.937 ns/op
+Iteration   4: 8.638 ns/op
+Iteration   5: 7.858 ns/op
+
+# Run progress: 60.00% complete, ETA 00:00:43
+# Fork: 2 of 5
+# Warmup Iteration   1: 7.881 ns/op
+# Warmup Iteration   2: 7.726 ns/op
+# Warmup Iteration   3: 8.301 ns/op
+# Warmup Iteration   4: 8.083 ns/op
+# Warmup Iteration   5: 7.804 ns/op
+Iteration   1: 8.142 ns/op
+Iteration   2: 8.259 ns/op
+Iteration   3: 7.790 ns/op
+Iteration   4: 8.080 ns/op
+Iteration   5: 7.649 ns/op
+
+# Run progress: 70.00% complete, ETA 00:00:32
+# Fork: 3 of 5
+# Warmup Iteration   1: 7.683 ns/op
+# Warmup Iteration   2: 7.607 ns/op
+# Warmup Iteration   3: 7.680 ns/op
+# Warmup Iteration   4: 7.637 ns/op
+# Warmup Iteration   5: 8.145 ns/op
+Iteration   1: 9.392 ns/op
+Iteration   2: 8.061 ns/op
+Iteration   3: 8.026 ns/op
+Iteration   4: 7.691 ns/op
+Iteration   5: 8.039 ns/op
+
+# Run progress: 80.00% complete, ETA 00:00:21
+# Fork: 4 of 5
+# Warmup Iteration   1: 7.737 ns/op
+# Warmup Iteration   2: 7.589 ns/op
+# Warmup Iteration   3: 7.685 ns/op
+# Warmup Iteration   4: 7.638 ns/op
+# Warmup Iteration   5: 7.625 ns/op
+Iteration   1: 7.984 ns/op
+Iteration   2: 7.665 ns/op
+Iteration   3: 8.402 ns/op
+Iteration   4: 7.628 ns/op
+Iteration   5: 7.636 ns/op
+
+# Run progress: 90.00% complete, ETA 00:00:10
+# Fork: 5 of 5
+# Warmup Iteration   1: 7.586 ns/op
+# Warmup Iteration   2: 7.633 ns/op
+# Warmup Iteration   3: 7.651 ns/op
+# Warmup Iteration   4: 7.592 ns/op
+# Warmup Iteration   5: 7.588 ns/op
+Iteration   1: 7.571 ns/op
+Iteration   2: 7.859 ns/op
+Iteration   3: 8.052 ns/op
+Iteration   4: 7.747 ns/op
+Iteration   5: 7.389 ns/op
+
+
+Result "com.cxd.benchmark.JMHSample_36_BranchPrediction.unsorted":
+  8.219 ±(99.9%) 0.594 ns/op [Average]
+  (min, avg, max) = (7.389, 8.219, 10.571), stdev = 0.793
+  CI (99.9%): [7.625, 8.813] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:46
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                               Mode  Cnt  Score   Error  Units
+JMHSample_36_BranchPrediction.sorted    avgt   25  3.002 ± 0.518  ns/op
+JMHSample_36_BranchPrediction.unsorted  avgt   25  8.219 ± 0.594  ns/op
