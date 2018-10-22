@@ -5,8 +5,6 @@ http://openjdk.java.net/projects/code-tools/jmh/
 
 ### 一点疑问
 
-- @OperationsPerInvocation注解不太理解
-
 ### 基准测试中建议：
 - 测试前后较重的处理放在@Setup和@TearDown中
 - 注意DCE（死代码消除）
@@ -15,6 +13,7 @@ http://openjdk.java.net/projects/code-tools/jmh/
 - 使用@fork多次fork测试，减少运行间差异
 - 多线程测试时参考JMHSample_17_SyncIterations
 - 对非循环方法需要测量冷启动的时间消耗，参考JMHSample_26_BatchSize
+- 可以通过profiler获得基准测试时JVM的相关信息，比如栈，gc，classloader。参考JMHSample_35_Profilers
 
 ### 知识点记录：
 
