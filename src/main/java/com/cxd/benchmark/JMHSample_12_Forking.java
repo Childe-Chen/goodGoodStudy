@@ -153,7 +153,7 @@ public class JMHSample_12_Forking {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_12_Forking.class.getSimpleName())
-                .output("JMHSample_12_Forking.log")
+                .output("JMHSample_12_Forking.sampleLog")
                 .build();
 
         new Runner(opt).run();

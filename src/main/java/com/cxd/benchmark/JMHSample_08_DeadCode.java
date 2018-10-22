@@ -64,7 +64,7 @@ public class JMHSample_08_DeadCode {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_08_DeadCode.class.getSimpleName())
-                .output("JMHSample_08_DeadCode.log")
+                .output("JMHSample_08_DeadCode.sampleLog")
                 .forks(1)
                 .build();
 

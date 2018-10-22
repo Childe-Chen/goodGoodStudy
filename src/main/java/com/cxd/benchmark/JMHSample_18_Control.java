@@ -82,7 +82,7 @@ public class JMHSample_18_Control {
                 .include(JMHSample_18_Control.class.getSimpleName())
                 .threads(2)
                 .forks(1)
-                .output("JMHSample_18_Control.log")
+                .output("JMHSample_18_Control.sampleLog")
                 .build();
 
         new Runner(opt).run();

@@ -3,7 +3,7 @@ package com.cxd.jvm.references.ref;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * -Xms4m -Xmx4m -XX:+PrintGCDetails -Xloggc:/Users/childe/logs/gc-f.log
+ * -Xms4m -Xmx4m -XX:+PrintGCDetails -Xloggc:/Users/childe/logs/gc-f.sampleLog
  * -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/Users/childe/logs/oom-f.hprof
  * Created by childe on 2017/3/31.
  */

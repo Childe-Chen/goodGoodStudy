@@ -67,7 +67,7 @@ public class JMHSample_27_Params {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_27_Params.class.getSimpleName())
 //                .param("arg", "41", "42") // Use this to selectively constrain/override parameters
-                .output("JMHSample_27_Params.log")
+                .output("JMHSample_27_Params.sampleLog")
                 .build();
 
         new Runner(opt).run();

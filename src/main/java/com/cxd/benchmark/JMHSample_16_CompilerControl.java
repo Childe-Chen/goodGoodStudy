@@ -152,7 +152,7 @@ public class JMHSample_16_CompilerControl {
                 .warmupIterations(0)
                 .measurementIterations(3)
                 .forks(1)
-                .output("JMHSample_16_CompilerControl.log")
+                .output("JMHSample_16_CompilerControl.sampleLog")
                 .build();
 
         new Runner(opt).run();

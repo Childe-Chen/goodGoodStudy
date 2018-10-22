@@ -115,7 +115,7 @@ public class JMHSample_31_InfraParams {
                 .include(JMHSample_31_InfraParams.class.getSimpleName())
                 .threads(4)
                 .forks(5)
-                .output("JMHSample_31_InfraParams.log")
+                .output("JMHSample_31_InfraParams.sampleLog")
                 .build();
 
         new Runner(opt).run();

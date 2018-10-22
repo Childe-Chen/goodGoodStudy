@@ -86,7 +86,7 @@ public class JMHSample_24_Inheritance {
      * ============================== HOW TO RUN THIS TEST: ====================================
      *
      * You can run this test, and observe the three distinct benchmarks running the squares
-     * of Math.log, Math.sin, and Math.cos, accordingly.
+     * of Math.sampleLog, Math.sin, and Math.cos, accordingly.
      *
      * a) Via the command line:
      *    $ mvn clean install
@@ -100,7 +100,7 @@ public class JMHSample_24_Inheritance {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_24_Inheritance.class.getSimpleName())
-                .output("JMHSample_24_Inheritance.log")
+                .output("JMHSample_24_Inheritance.sampleLog")
                 .build();
 
         new Runner(opt).run();

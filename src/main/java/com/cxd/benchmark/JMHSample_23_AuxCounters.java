@@ -95,7 +95,7 @@ public class JMHSample_23_AuxCounters {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_23_AuxCounters.class.getSimpleName())
-                .output("JMHSample_23_AuxCounters.log")
+                .output("JMHSample_23_AuxCounters.sampleLog")
                 .build();
 
         new Runner(opt).run();

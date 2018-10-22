@@ -128,7 +128,7 @@ public class JMHSample_07_FixtureLevelInvocation {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_07_FixtureLevelInvocation.class.getSimpleName())
                 .forks(1)
-                .output("JMHSample_07_FixtureLevelInvocation.log")
+                .output("JMHSample_07_FixtureLevelInvocation.sampleLog")
                 .build();
 
         new Runner(opt).run();

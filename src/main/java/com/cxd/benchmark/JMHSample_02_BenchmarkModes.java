@@ -26,7 +26,7 @@ public class JMHSample_02_BenchmarkModes {
                 .include(JMHSample_02_BenchmarkModes.class.getSimpleName())
                 .exclude(JMHSample_02_BenchmarkModes.class.getSimpleName() + ".measureAll")
                 .exclude(JMHSample_02_BenchmarkModes.class.getSimpleName() + ".measureMultiple")
-                .output("JMHSample_02_BenchmarkModes_result.log")
+                .output("JMHSample_02_BenchmarkModes_result.sampleLog")
                 .forks(1)
                 .build();
 

@@ -113,7 +113,7 @@ public class JMHSample_15_Asymmetric {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_15_Asymmetric.class.getSimpleName())
                 .forks(1)
-                .output("JMHSample_15_Asymmetric.log")
+                .output("JMHSample_15_Asymmetric.sampleLog")
                 .build();
 
         new Runner(opt).run();

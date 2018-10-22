@@ -97,7 +97,7 @@ public class JMHSample_30_Interrupts {
                 .threads(2)
                 .forks(5)
 //                .timeout(TimeValue.seconds(10))
-                .output("JMHSample_30_Interrupts_annotation.log")
+                .output("JMHSample_30_Interrupts_annotation.sampleLog")
                 .build();
 
         new Runner(opt).run();

@@ -1,9 +1,13 @@
-TODO-基准测试
+## 基准测试
+
+### 文档
 
 http://hg.openjdk.java.net/code-tools/jmh/file/tip/jmh-samples/src/main/java/org/openjdk/jmh/samples/
 http://openjdk.java.net/projects/code-tools/jmh/
 
 ### 一点疑问
+
+[] -prof perfnorm在linux下执行会报错，不确定是否和maven的打包插件有关。
 
 ### 基准测试中建议：
 - 测试前后较重的处理放在@Setup和@TearDown中
@@ -14,6 +18,8 @@ http://openjdk.java.net/projects/code-tools/jmh/
 - 多线程测试时参考JMHSample_17_SyncIterations
 - 对非循环方法需要测量冷启动的时间消耗，参考JMHSample_26_BatchSize
 - 可以通过profiler获得基准测试时JVM的相关信息，比如栈，gc，classloader。参考JMHSample_35_Profilers
+- 在使用profiler时遇到·no tty present and no askpass program specified·错误是因为帐号并没有开启sudo免密导致的。
+    通过以下步骤可解决，但测试完成后安全起见建议删除：sudo visudo；在文件最后追加 userName ALL=(ALL) NOPASSWD:ALL
 
 ### 知识点记录：
 
@@ -86,3 +92,8 @@ for (i = 1; i <= 20; i+=3)
   a[i+2] = a[i+2] * b + c;
 }
 ```
+2. 分支预测
+
+底层对循环中判断的优化。简单理解，对执行的循环判断做采样，根据采样来预测下一个判断会走到哪个分支中。
+
+参考这篇文章->[深入理解CPU的分支预测(Branch Prediction)模型](https://zhuanlan.zhihu.com/p/22469702)<-做进一步了解。

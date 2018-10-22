@@ -22,7 +22,7 @@ public class JMHSample_04_DefaultState {
     public static void main(String[] args) throws RunnerException {
         Options options = new OptionsBuilder()
                 .include(JMHSample_04_DefaultState.class.getSimpleName())
-                .output("JMHSample_04_DefaultState_result.log")
+                .output("JMHSample_04_DefaultState_result.sampleLog")
                 .threads(1)
                 .forks(1)
                 .build();

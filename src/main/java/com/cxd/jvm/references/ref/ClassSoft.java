@@ -65,7 +65,7 @@ public class ClassSoft {
     /**
      * JVM配置
      * -Xms4m -Xmx4m
-     * -XX:+PrintGCDetails -Xloggc:/Users/childe/logs/gc-f.log
+     * -XX:+PrintGCDetails -Xloggc:/Users/childe/logs/gc-f.sampleLog
      * 务必加上该参数，以确定collect方法后GC被执行
      * @param args
      * @throws InterruptedException

@@ -75,7 +75,7 @@ public class JMHSample_10_ConstantFold {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_10_ConstantFold.class.getSimpleName())
                 .forks(1)
-                .output("JMHSample_10_ConstantFold.log")
+                .output("JMHSample_10_ConstantFold.sampleLog")
                 .build();
 
         new Runner(opt).run();

@@ -71,7 +71,7 @@ public class JMHSample_06_FixtureLevel {
                 .jvmArgs("-ea")
                 // switch to "true" to fail the complete run
                 .shouldFailOnError(false)
-                .output("JMHSample_06_FixtureLevel.log")
+                .output("JMHSample_06_FixtureLevel.sampleLog")
                 .build();
 
         new Runner(opt).run();

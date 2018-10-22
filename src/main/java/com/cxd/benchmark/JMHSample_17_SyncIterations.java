@@ -108,7 +108,7 @@ public class JMHSample_17_SyncIterations {
                 .forks(1)
                 // try to switch to "false", default is true
                 .syncIterations(false)
-                .output("JMHSample_17_SyncIterations_false.log")
+                .output("JMHSample_17_SyncIterations_false.sampleLog")
                 .build();
 
         new Runner(opt).run();

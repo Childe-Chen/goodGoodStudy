@@ -44,7 +44,7 @@ public class ReadWriteReentrantLocks implements Locks {
 //        if (!writeLock.acquire(time, unit)) {
 //            throw new IllegalStateException(clientName + " could not acquire the writeLock");
 //        }
-//        log.info(clientName + " has the writeLock");
+//        sampleLog.info(clientName + " has the writeLock");
 
         try {
             resource.use(); //access resource exclusively

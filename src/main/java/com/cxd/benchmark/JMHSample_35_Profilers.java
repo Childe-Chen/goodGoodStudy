@@ -2,9 +2,7 @@ package com.cxd.benchmark;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
-import org.openjdk.jmh.profile.ClassloaderProfiler;
-import org.openjdk.jmh.profile.LinuxPerfProfiler;
-import org.openjdk.jmh.profile.StackProfiler;
+import org.openjdk.jmh.profile.*;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -117,8 +115,8 @@ public class JMHSample_35_Profilers {
         public static void main(String[] args) throws RunnerException {
             Options opt = new OptionsBuilder()
                     .include(JMHSample_35_Profilers.Maps.class.getSimpleName())
-                    .addProfiler(StackProfiler.class)
-//                    .addProfiler(GCProfiler.class)
+//                    .addProfiler(StackProfiler.class)
+                    .addProfiler(GCProfiler.class)
                     .build();
 
             new Runner(opt).run();
@@ -375,11 +373,12 @@ public class JMHSample_35_Profilers {
         public static void main(String[] args) throws RunnerException {
             Options opt = new OptionsBuilder()
                     .include(JMHSample_35_Profilers.Atomic.class.getSimpleName())
-                    .addProfiler(LinuxPerfProfiler.class)
+//                    .addProfiler(LinuxPerfProfiler.class)
 //                    .addProfiler(LinuxPerfNormProfiler.class)
 //                    .addProfiler(LinuxPerfAsmProfiler.class)
 //                    .addProfiler(WinPerfAsmProfiler.class)
-//                    .addProfiler(DTraceAsmProfiler.class)
+                    // 需要开启用户sudo免密
+                    .addProfiler(DTraceAsmProfiler.class)
                     .build();
 
             new Runner(opt).run();

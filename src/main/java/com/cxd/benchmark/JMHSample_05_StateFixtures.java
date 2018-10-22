@@ -104,7 +104,7 @@ public class JMHSample_05_StateFixtures {
                 .include(JMHSample_05_StateFixtures.class.getSimpleName())
                 .forks(1)
                 .jvmArgs("-ea")
-                .output("JMHSample_05_StateFixtures.log")
+                .output("JMHSample_05_StateFixtures.sampleLog")
                 .build();
 
         new Runner(opt).run();

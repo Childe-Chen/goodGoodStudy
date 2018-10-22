@@ -125,7 +125,7 @@ public class JMHSample_11_Loops {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_11_Loops.class.getSimpleName())
                 .forks(1)
-                .output("JMHSample_11_Loops.log")
+                .output("JMHSample_11_Loops.sampleLog")
                 .build();
 
         new Runner(opt).run();

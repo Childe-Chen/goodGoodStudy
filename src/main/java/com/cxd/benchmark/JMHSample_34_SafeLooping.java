@@ -190,7 +190,7 @@ public class JMHSample_34_SafeLooping {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_34_SafeLooping.class.getSimpleName())
                 .forks(3)
-                .output("JMHSample_34_SafeLooping.log")
+                .output("JMHSample_34_SafeLooping.sampleLog")
                 .build();
 
         new Runner(opt).run();

@@ -117,7 +117,7 @@ public class JMHSample_28_BlackholeHelpers {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_28_BlackholeHelpers.class.getSimpleName())
-                .output("JMHSample_28_BlackholeHelpers.log")
+                .output("JMHSample_28_BlackholeHelpers.sampleLog")
                 .build();
 
         new Runner(opt).run();

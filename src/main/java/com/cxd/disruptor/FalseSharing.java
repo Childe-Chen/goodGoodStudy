@@ -3,6 +3,8 @@ package com.cxd.disruptor;
 /**
  * https://lixiangyun.gitbooks.io/disruptor/content/1.3.html
  *
+ * http://childe.net.cn/2018/08/17/%E7%AC%94%E8%AE%B0-%E4%BC%AA%E5%85%B1%E4%BA%AB%E6%B5%8B%E8%AF%95%E5%8F%8AJava%E5%AF%B9%E5%83%8F%E5%86%85%E5%AD%98%E4%BC%B0%E7%AE%97/
+ * 
  * @author childe
  * @date 2018/8/15 17:56
  **/

@@ -122,7 +122,7 @@ public class JMHSample_32_BulkWarmup {
 //                .warmupMode(WarmupMode.BULK) // see other WarmupMode.* as well
                 .warmupMode(WarmupMode.INDI) // see other WarmupMode.* as well
                 .forks(1)
-                .output("JMHSample_32_BulkWarmup_indi.log")
+                .output("JMHSample_32_BulkWarmup_indi.sampleLog")
                 .build();
 
         new Runner(opt).run();

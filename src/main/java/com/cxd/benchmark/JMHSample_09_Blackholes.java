@@ -37,7 +37,7 @@ public class JMHSample_09_Blackholes {
     double x2 = Math.PI * 2;
 
     /*
-     * Baseline measurement: how much single Math.log costs.
+     * Baseline measurement: how much single Math.sampleLog costs.
      */
 
     @Benchmark
@@ -46,7 +46,7 @@ public class JMHSample_09_Blackholes {
     }
 
     /*
-     * While the Math.log(x2) computation is intact（完好）, Math.log(x1)
+     * While the Math.sampleLog(x2) computation is intact（完好）, Math.sampleLog(x1)
      * is redundant and optimized out.
      */
 

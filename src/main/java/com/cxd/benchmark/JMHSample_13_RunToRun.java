@@ -109,7 +109,7 @@ public class JMHSample_13_RunToRun {
                 .include(JMHSample_13_RunToRun.class.getSimpleName())
                 .warmupIterations(0)
                 .measurementIterations(3)
-                .output("JMHSample_13_RunToRun.log")
+                .output("JMHSample_13_RunToRun.sampleLog")
                 .build();
 
         new Runner(opt).run();

@@ -112,7 +112,7 @@ public class JMHSample_26_BatchSize {
         Options opt = new OptionsBuilder()
                 .include(JMHSample_26_BatchSize.class.getSimpleName())
                 .forks(1)
-                .output("JMHSample_26_BatchSize.log")
+                .output("JMHSample_26_BatchSize.sampleLog")
                 .build();
 
         new Runner(opt).run();
