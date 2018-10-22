@@ -2,7 +2,7 @@
 
 1. [常用算法的一些实现](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/algorithm)
 2. [基准测试的了解](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/benchmark)
-3. [netty的websocket的示例](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/chat)
+3. [Netty的websocket的示例](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/chat)
 4. [ClassLoader的了解](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/classLoader)
 5. [Apache commons-cli解析命令行](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/cli)
 6. [ZK curator-recipes的学习](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/)
@@ -18,7 +18,7 @@
 16. [Jni调研](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/jni)
 17. [Json日常相关](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/json)
 18. [JVM学习](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/jvm)
-19. [netty不断入门失败](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/netty)
+19. [Netty不断入门失败](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/netty)
 20. [代理了解](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/proxy)
 21. [Reactor入门暂停](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/reactor)
 22. [Redis汇总](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/redis)
