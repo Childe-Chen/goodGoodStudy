@@ -7,18 +7,18 @@ http://openjdk.java.net/projects/code-tools/jmh/
 
 ### 一点疑问
 
-[] -prof perfnorm在linux下执行会报错，不确定是否和maven的打包插件有关。
+- [ ] `-prof perfnorm`在linux下执行会报错，不确定是否和maven的打包插件有关。
 
 ### 基准测试中建议：
 - 测试前后较重的处理放在@Setup和@TearDown中
 - 注意DCE（死代码消除）
 - 不出现循环被编译器优化，具体建议参考JMHSample_34_SafeLooping
-- 测试必须为fork，fork是分离出来子进程进行测试，@fork(2)含义为顺次（one-by-one）fork出子进程来测试
-- 使用@fork多次fork测试，减少运行间差异
+- 测试必须为fork，fork是分离出来子进程进行测试，`@fork(2)`含义为顺次（one-by-one）fork出子进程来测试
+- 使用`@fork`多次fork测试，减少运行间差异
 - 多线程测试时参考JMHSample_17_SyncIterations
 - 对非循环方法需要测量冷启动的时间消耗，参考JMHSample_26_BatchSize
-- 可以通过profiler获得基准测试时JVM的相关信息，比如栈，gc，classloader。参考JMHSample_35_Profilers
-- 在使用profiler时遇到·no tty present and no askpass program specified·错误是因为帐号并没有开启sudo免密导致的。
+- 可以通过profiler获得基准测试时JVM的相关信息，比如栈、gc、classloader。参考JMHSample_35_Profilers
+- 在使用profiler时遇到`no tty present and no askpass program specified`错误是因为帐号并没有开启sudo免密导致的。
     通过以下步骤可解决，但测试完成后安全起见建议删除：sudo visudo；在文件最后追加 userName ALL=(ALL) NOPASSWD:ALL
 
 ### 知识点记录：
