@@ -17,6 +17,9 @@ import java.util.concurrent.TimeUnit;
  *
  * 消费一些时间令牌。
  *
+ * 有时测试消耗一定CPU周期。通过静态的BlackHole.consumeCPU(tokens)方法来实现。
+ * Token是一些CPU指令。这样编写方法代码就可以达到运行时间依赖于该参数的目的(不被任何JIT/CPU优化)。
+ *
  * @author childe
  * @date 2018/10/13 15:03
  **/

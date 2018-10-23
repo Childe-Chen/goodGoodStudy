@@ -6,6 +6,12 @@ http://hg.openjdk.java.net/code-tools/jmh/file/tip/jmh-samples/src/main/java/org
 
 http://openjdk.java.net/projects/code-tools/jmh/
 
+### 参考
+
+在CSDN上搜索了下，普遍质量不高，就找到这一篇译文。
+
+[JMH简介](http://www.importnew.com/18084.html) --> [英文原文](http://java-performance.info/jmh/)
+
 ### 一点疑问
 
 - [ ] `-prof perfnorm`在linux下执行会报错，不确定是否和maven的打包插件有关。
