@@ -45,6 +45,7 @@ public class JMHSample_10_ConstantFold {
     // IDEs will probably also say "Look, it could be final". Don't. Trust. Them. Either.
     // (While this is normally fine advice, it does not work in the context of measuring correctly.)
     // 哈哈，原因说错了
+
     private final double wrongX = Math.PI;
 
     @Benchmark
