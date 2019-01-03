@@ -23,7 +23,7 @@ public class SyncProducer {
         try {
             //Launch the instance.
             producer.start();
-            for (int i = 0; i < 100000; i++) {
+            for (int i = 0; i < 1; i++) {
                 //Create a message instance, specifying topic, tag and message body.
                 Message msg = new Message("dmall" /* Topic */,
                         "testS" /* Tag */,

@@ -24,3 +24,9 @@
 - In-place：占用常数内存，不占用额外内存
 - Out-place：占用额外内存
 - 稳定性：排序后 2 个相等键值的顺序和排序之前它们的顺序相同
+
+### 树
+
+B/B+树 https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/03.02.md
+
+MySQL索引 https://www.kancloud.cn/kancloud/theory-of-mysql-index/41850

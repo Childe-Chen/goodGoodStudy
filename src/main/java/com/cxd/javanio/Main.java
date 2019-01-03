@@ -9,16 +9,24 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         RandomAccessFile accessFile = new RandomAccessFile("nio-data.txt","rw");
+
         FileChannel fc = accessFile.getChannel();
+
         ByteBuffer byteBuffer = ByteBuffer.allocate(48);
+
         int bytesRead = fc.read(byteBuffer);
+
         while(bytesRead != -1) {
             System.out.println("Read " + bytesRead);
+
             byteBuffer.flip();
+
             while(byteBuffer.hasRemaining()) {
                 System.out.println((char) byteBuffer.get());
             }
+
             byteBuffer.clear();
+
             bytesRead = fc.read(byteBuffer);
         }
     }

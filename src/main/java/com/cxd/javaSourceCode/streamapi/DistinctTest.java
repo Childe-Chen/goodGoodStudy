@@ -3,9 +3,9 @@ package com.cxd.javaSourceCode.streamapi;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -29,9 +29,23 @@ public class DistinctTest {
         List<String> nameList = personList.stream()
                 .map(Person::getName).collect(Collectors.toList());
 
+        nameList.forEach(System.out::println);
+
+        System.out.println("----------------");
         List<String> nameList1 = nameList.stream().distinct().collect(Collectors.toList());
 
         nameList1.forEach(System.out::println);
+
+        System.out.println("----------------");
+        List<String> nameList2 = personList.stream()
+                .map(Person::getName).distinct().collect(Collectors.toList());
+        nameList2.forEach(System.out::println);
+
+        try {
+            System.in.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static class Person {
@@ -42,7 +56,6 @@ public class DistinctTest {
         }
 
         public String getName() {
-            System.out.println(name);
             return name;
         }
 

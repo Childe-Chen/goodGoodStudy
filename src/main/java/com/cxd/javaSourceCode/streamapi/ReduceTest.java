@@ -13,33 +13,26 @@ import java.util.stream.Stream;
  **/
 public class ReduceTest {
     public static void main(String[] args) {
-//        System.out.println(Stream.of(1).reduce(0, Integer::sum));
-//
-//        Stream.of(1,2,3,33,333).filter(integer -> integer>100).map(integer -> integer*2).forEach(integer -> {
-//            if (integer > 10) {
-//                System.out.println(integer);
-//                return;
-//            }
-//            System.out.println("ss" + integer);
-//        });
+        System.out.println(Stream.of(1).reduce(0, Integer::sum));
 
-//        List<KV> kvList = new ArrayList<>(5);
-//
-//        for (long i = 0; i < 5; i++) {
-//            kvList.add(new KV(String.valueOf(i),1L));
-//        }
-//
-//        long sum = kvList.stream().map(KV::getValue).reduce(0L,Long::sum);
-//        System.out.println(sum);
+        Stream.of(1,2,3,33,333).filter(integer -> integer > 100)
+                .map(integer -> integer * 2)
+                .forEach(integer -> {
+                    if (integer > 10) {
+                        System.out.println(integer);
+                        return;
+                    }
+                    System.out.println("ss" + integer);
+        });
 
-        System.out.println(ReduceTest.class.getSimpleName());
-        KV kv = new KV("ss", 0L);
-        long j=0;
-        for (int i = 0; i < 10; i++) {
-            kv.setValue(++j);
-            System.out.println(kv.value);
+        List<KV> kvList = new ArrayList<>(5);
+
+        for (long i = 0; i < 5; i++) {
+            kvList.add(new KV(String.valueOf(i),1L));
         }
 
+        long sum = kvList.stream().map(KV::getValue).reduce(0L,Long::sum);
+        System.out.println(sum);
     }
 
 
