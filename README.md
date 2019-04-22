@@ -27,6 +27,7 @@
 25. [SpringUtils测试汇总](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/springUtils)
 26. [状态机](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/springUtils/stateless)
 27. [ZK原生学习](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/springUtils/stateless)
+28. [数据结构](https://github.com/Childe-Chen/goodGoodStudy/tree/master/src/main/java/com/cxd/dataStructure)
 
 ## 总结
 

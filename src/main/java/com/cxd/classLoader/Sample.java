@@ -16,4 +16,11 @@ public class Sample {
     public void setSample(Object instance) {
         this.instance = (Sample) instance;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        System.out.println(obj.getClass().getClassLoader());
+        System.out.println(this.getClass().getClassLoader());
+        return obj instanceof Sample;
+    }
 }
