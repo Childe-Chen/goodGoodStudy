@@ -12,6 +12,8 @@ http://openjdk.java.net/projects/code-tools/jmh/
 
 [JMH简介](http://www.importnew.com/18084.html) --> [英文原文](http://java-performance.info/jmh/)
 
+[了解 Java 代码基准测试的问题](https://www.ibm.com/developerworks/cn/java/j-benchmark1.html#puzzler)
+
 ### 一点疑问
 
 - [ ] `-prof perfnorm`在linux下执行会报错，不确定是否和maven的打包插件有关。

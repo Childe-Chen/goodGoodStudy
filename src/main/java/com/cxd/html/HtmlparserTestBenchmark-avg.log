@@ -1,0 +1,1747 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = )
+
+# Run progress: 0.00% complete, ETA 00:20:10
+# Fork: 1 of 1
+objc[16221]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1033254c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1043474e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 24.925 ms/op
+# Warmup Iteration   2: 7.341 ms/op
+# Warmup Iteration   3: 7.148 ms/op
+# Warmup Iteration   4: 2.616 ms/op
+# Warmup Iteration   5: 1.538 ms/op
+Iteration   1: 1.503 ms/op
+Iteration   2: 2.927 ms/op
+Iteration   3: 1.561 ms/op
+Iteration   4: 1.109 ms/op
+Iteration   5: 1.082 ms/op
+Iteration   6: 1.057 ms/op
+Iteration   7: 1.045 ms/op
+Iteration   8: 1.034 ms/op
+Iteration   9: 1.029 ms/op
+Iteration  10: 1.095 ms/op
+Iteration  11: 1.327 ms/op
+Iteration  12: 1.063 ms/op
+Iteration  13: 1.052 ms/op
+Iteration  14: 1.078 ms/op
+Iteration  15: 1.039 ms/op
+Iteration  16: 1.105 ms/op
+Iteration  17: 1.086 ms/op
+Iteration  18: 1.075 ms/op
+Iteration  19: 1.094 ms/op
+Iteration  20: 1.094 ms/op
+Iteration  21: 1.080 ms/op
+Iteration  22: 1.084 ms/op
+Iteration  23: 1.103 ms/op
+Iteration  24: 1.094 ms/op
+Iteration  25: 1.073 ms/op
+Iteration  26: 1.146 ms/op
+Iteration  27: 1.093 ms/op
+Iteration  28: 1.072 ms/op
+Iteration  29: 1.032 ms/op
+Iteration  30: 1.040 ms/op
+Iteration  31: 1.072 ms/op
+Iteration  32: 1.088 ms/op
+Iteration  33: 1.143 ms/op
+Iteration  34: 1.091 ms/op
+Iteration  35: 1.141 ms/op
+Iteration  36: 1.111 ms/op
+Iteration  37: 1.146 ms/op
+Iteration  38: 1.142 ms/op
+Iteration  39: 1.125 ms/op
+Iteration  40: 1.143 ms/op
+Iteration  41: 1.162 ms/op
+Iteration  42: 1.228 ms/op
+Iteration  43: 1.155 ms/op
+Iteration  44: 1.238 ms/op
+Iteration  45: 1.146 ms/op
+Iteration  46: 1.167 ms/op
+Iteration  47: 1.169 ms/op
+Iteration  48: 1.186 ms/op
+Iteration  49: 1.115 ms/op
+Iteration  50: 1.083 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.162 ±(99.9%) 0.136 ms/op [Average]
+  (min, avg, max) = (1.029, 1.162, 2.927), stdev = 0.274
+  CI (99.9%): [1.027, 1.298] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>1</p>)
+
+# Run progress: 4.55% complete, ETA 00:20:08
+# Fork: 1 of 1
+objc[16229]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x109de44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109e644e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.094 ms/op
+# Warmup Iteration   2: 1.318 ms/op
+# Warmup Iteration   3: 1.329 ms/op
+# Warmup Iteration   4: 1.123 ms/op
+# Warmup Iteration   5: 1.045 ms/op
+Iteration   1: 1.078 ms/op
+Iteration   2: 1.035 ms/op
+Iteration   3: 1.024 ms/op
+Iteration   4: 0.986 ms/op
+Iteration   5: 1.051 ms/op
+Iteration   6: 1.053 ms/op
+Iteration   7: 0.989 ms/op
+Iteration   8: 1.019 ms/op
+Iteration   9: 0.944 ms/op
+Iteration  10: 1.149 ms/op
+Iteration  11: 1.554 ms/op
+Iteration  12: 1.038 ms/op
+Iteration  13: 1.158 ms/op
+Iteration  14: 1.091 ms/op
+Iteration  15: 0.985 ms/op
+Iteration  16: 0.981 ms/op
+Iteration  17: 0.983 ms/op
+Iteration  18: 0.995 ms/op
+Iteration  19: 1.193 ms/op
+Iteration  20: 1.147 ms/op
+Iteration  21: 1.026 ms/op
+Iteration  22: 0.984 ms/op
+Iteration  23: 1.024 ms/op
+Iteration  24: 0.967 ms/op
+Iteration  25: 0.988 ms/op
+Iteration  26: 0.983 ms/op
+Iteration  27: 0.998 ms/op
+Iteration  28: 0.980 ms/op
+Iteration  29: 0.981 ms/op
+Iteration  30: 0.983 ms/op
+Iteration  31: 0.984 ms/op
+Iteration  32: 0.981 ms/op
+Iteration  33: 1.013 ms/op
+Iteration  34: 0.981 ms/op
+Iteration  35: 0.981 ms/op
+Iteration  36: 0.972 ms/op
+Iteration  37: 0.980 ms/op
+Iteration  38: 0.977 ms/op
+Iteration  39: 0.980 ms/op
+Iteration  40: 0.995 ms/op
+Iteration  41: 0.968 ms/op
+Iteration  42: 0.982 ms/op
+Iteration  43: 0.991 ms/op
+Iteration  44: 1.084 ms/op
+Iteration  45: 1.005 ms/op
+Iteration  46: 0.981 ms/op
+Iteration  47: 0.986 ms/op
+Iteration  48: 1.005 ms/op
+Iteration  49: 0.986 ms/op
+Iteration  50: 0.979 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.024 ±(99.9%) 0.046 ms/op [Average]
+  (min, avg, max) = (0.944, 1.024, 1.554), stdev = 0.094
+  CI (99.9%): [0.977, 1.070] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>2</p>)
+
+# Run progress: 9.09% complete, ETA 00:18:58
+# Fork: 1 of 1
+objc[16238]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10200c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10208c4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.574 ms/op
+# Warmup Iteration   2: 1.480 ms/op
+# Warmup Iteration   3: 1.501 ms/op
+# Warmup Iteration   4: 1.407 ms/op
+# Warmup Iteration   5: 1.352 ms/op
+Iteration   1: 1.035 ms/op
+Iteration   2: 1.113 ms/op
+Iteration   3: 1.074 ms/op
+Iteration   4: 1.016 ms/op
+Iteration   5: 1.014 ms/op
+Iteration   6: 1.005 ms/op
+Iteration   7: 1.012 ms/op
+Iteration   8: 1.011 ms/op
+Iteration   9: 1.006 ms/op
+Iteration  10: 1.000 ms/op
+Iteration  11: 1.001 ms/op
+Iteration  12: 0.999 ms/op
+Iteration  13: 1.003 ms/op
+Iteration  14: 0.996 ms/op
+Iteration  15: 1.116 ms/op
+Iteration  16: 1.198 ms/op
+Iteration  17: 1.193 ms/op
+Iteration  18: 1.038 ms/op
+Iteration  19: 1.143 ms/op
+Iteration  20: 1.035 ms/op
+Iteration  21: 1.035 ms/op
+Iteration  22: 1.039 ms/op
+Iteration  23: 1.031 ms/op
+Iteration  24: 0.989 ms/op
+Iteration  25: 1.014 ms/op
+Iteration  26: 1.001 ms/op
+Iteration  27: 1.014 ms/op
+Iteration  28: 1.003 ms/op
+Iteration  29: 0.996 ms/op
+Iteration  30: 1.009 ms/op
+Iteration  31: 1.027 ms/op
+Iteration  32: 1.051 ms/op
+Iteration  33: 1.008 ms/op
+Iteration  34: 1.016 ms/op
+Iteration  35: 1.024 ms/op
+Iteration  36: 1.012 ms/op
+Iteration  37: 1.020 ms/op
+Iteration  38: 1.005 ms/op
+Iteration  39: 1.015 ms/op
+Iteration  40: 1.018 ms/op
+Iteration  41: 1.019 ms/op
+Iteration  42: 1.003 ms/op
+Iteration  43: 1.014 ms/op
+Iteration  44: 1.016 ms/op
+Iteration  45: 1.004 ms/op
+Iteration  46: 0.989 ms/op
+Iteration  47: 1.009 ms/op
+Iteration  48: 1.051 ms/op
+Iteration  49: 1.649 ms/op
+Iteration  50: 1.250 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.047 ±(99.9%) 0.051 ms/op [Average]
+  (min, avg, max) = (0.989, 1.047, 1.649), stdev = 0.103
+  CI (99.9%): [0.996, 1.098] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>3</p>)
+
+# Run progress: 13.64% complete, ETA 00:17:56
+# Fork: 1 of 1
+objc[16246]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1007d54c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x101ffe4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.042 ms/op
+# Warmup Iteration   2: 1.615 ms/op
+# Warmup Iteration   3: 1.529 ms/op
+# Warmup Iteration   4: 1.239 ms/op
+# Warmup Iteration   5: 1.051 ms/op
+Iteration   1: 1.007 ms/op
+Iteration   2: 1.156 ms/op
+Iteration   3: 1.066 ms/op
+Iteration   4: 1.072 ms/op
+Iteration   5: 1.072 ms/op
+Iteration   6: 1.078 ms/op
+Iteration   7: 1.090 ms/op
+Iteration   8: 1.161 ms/op
+Iteration   9: 1.037 ms/op
+Iteration  10: 0.949 ms/op
+Iteration  11: 0.950 ms/op
+Iteration  12: 0.960 ms/op
+Iteration  13: 1.088 ms/op
+Iteration  14: 0.993 ms/op
+Iteration  15: 1.085 ms/op
+Iteration  16: 1.059 ms/op
+Iteration  17: 1.013 ms/op
+Iteration  18: 1.060 ms/op
+Iteration  19: 1.032 ms/op
+Iteration  20: 0.959 ms/op
+Iteration  21: 0.936 ms/op
+Iteration  22: 0.943 ms/op
+Iteration  23: 1.111 ms/op
+Iteration  24: 1.361 ms/op
+Iteration  25: 1.218 ms/op
+Iteration  26: 1.058 ms/op
+Iteration  27: 1.464 ms/op
+Iteration  28: 1.175 ms/op
+Iteration  29: 1.208 ms/op
+Iteration  30: 1.069 ms/op
+Iteration  31: 1.261 ms/op
+Iteration  32: 1.154 ms/op
+Iteration  33: 1.123 ms/op
+Iteration  34: 0.961 ms/op
+Iteration  35: 0.965 ms/op
+Iteration  36: 0.955 ms/op
+Iteration  37: 0.968 ms/op
+Iteration  38: 0.954 ms/op
+Iteration  39: 1.003 ms/op
+Iteration  40: 0.993 ms/op
+Iteration  41: 0.977 ms/op
+Iteration  42: 0.954 ms/op
+Iteration  43: 0.963 ms/op
+Iteration  44: 0.963 ms/op
+Iteration  45: 0.961 ms/op
+Iteration  46: 0.962 ms/op
+Iteration  47: 0.972 ms/op
+Iteration  48: 0.966 ms/op
+Iteration  49: 0.978 ms/op
+Iteration  50: 0.963 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.049 ±(99.9%) 0.056 ms/op [Average]
+  (min, avg, max) = (0.936, 1.049, 1.464), stdev = 0.112
+  CI (99.9%): [0.993, 1.104] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>4</p>)
+
+# Run progress: 18.18% complete, ETA 00:16:57
+# Fork: 1 of 1
+objc[16256]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x103d614c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x103de14e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.003 ms/op
+# Warmup Iteration   2: 1.266 ms/op
+# Warmup Iteration   3: 1.300 ms/op
+# Warmup Iteration   4: 1.171 ms/op
+# Warmup Iteration   5: 1.000 ms/op
+Iteration   1: 1.025 ms/op
+Iteration   2: 1.065 ms/op
+Iteration   3: 0.964 ms/op
+Iteration   4: 0.972 ms/op
+Iteration   5: 0.994 ms/op
+Iteration   6: 0.993 ms/op
+Iteration   7: 0.976 ms/op
+Iteration   8: 0.990 ms/op
+Iteration   9: 0.974 ms/op
+Iteration  10: 1.063 ms/op
+Iteration  11: 2.250 ms/op
+Iteration  12: 2.541 ms/op
+Iteration  13: 1.266 ms/op
+Iteration  14: 1.001 ms/op
+Iteration  15: 1.053 ms/op
+Iteration  16: 1.255 ms/op
+Iteration  17: 1.287 ms/op
+Iteration  18: 1.138 ms/op
+Iteration  19: 1.167 ms/op
+Iteration  20: 0.988 ms/op
+Iteration  21: 0.992 ms/op
+Iteration  22: 1.106 ms/op
+Iteration  23: 1.299 ms/op
+Iteration  24: 1.333 ms/op
+Iteration  25: 1.292 ms/op
+Iteration  26: 1.164 ms/op
+Iteration  27: 1.000 ms/op
+Iteration  28: 1.006 ms/op
+Iteration  29: 0.975 ms/op
+Iteration  30: 0.990 ms/op
+Iteration  31: 0.989 ms/op
+Iteration  32: 0.995 ms/op
+Iteration  33: 1.020 ms/op
+Iteration  34: 0.985 ms/op
+Iteration  35: 0.992 ms/op
+Iteration  36: 1.060 ms/op
+Iteration  37: 1.003 ms/op
+Iteration  38: 0.989 ms/op
+Iteration  39: 0.976 ms/op
+Iteration  40: 1.006 ms/op
+Iteration  41: 0.982 ms/op
+Iteration  42: 0.990 ms/op
+Iteration  43: 1.006 ms/op
+Iteration  44: 1.160 ms/op
+Iteration  45: 1.083 ms/op
+Iteration  46: 1.143 ms/op
+Iteration  47: 1.115 ms/op
+Iteration  48: 0.993 ms/op
+Iteration  49: 1.003 ms/op
+Iteration  50: 1.034 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.113 ±(99.9%) 0.141 ms/op [Average]
+  (min, avg, max) = (0.964, 1.113, 2.541), stdev = 0.285
+  CI (99.9%): [0.972, 1.254] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>5</p>)
+
+# Run progress: 22.73% complete, ETA 00:16:02
+# Fork: 1 of 1
+objc[16267]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x100ad84c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x100b584e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.736 ms/op
+# Warmup Iteration   2: 1.298 ms/op
+# Warmup Iteration   3: 1.295 ms/op
+# Warmup Iteration   4: 1.208 ms/op
+# Warmup Iteration   5: 1.042 ms/op
+Iteration   1: 1.004 ms/op
+Iteration   2: 1.002 ms/op
+Iteration   3: 1.014 ms/op
+Iteration   4: 1.008 ms/op
+Iteration   5: 1.006 ms/op
+Iteration   6: 0.986 ms/op
+Iteration   7: 0.981 ms/op
+Iteration   8: 0.956 ms/op
+Iteration   9: 0.992 ms/op
+Iteration  10: 1.118 ms/op
+Iteration  11: 0.992 ms/op
+Iteration  12: 0.995 ms/op
+Iteration  13: 1.044 ms/op
+Iteration  14: 1.019 ms/op
+Iteration  15: 0.948 ms/op
+Iteration  16: 0.940 ms/op
+Iteration  17: 0.969 ms/op
+Iteration  18: 0.948 ms/op
+Iteration  19: 0.943 ms/op
+Iteration  20: 0.947 ms/op
+Iteration  21: 0.930 ms/op
+Iteration  22: 0.950 ms/op
+Iteration  23: 0.948 ms/op
+Iteration  24: 0.957 ms/op
+Iteration  25: 0.955 ms/op
+Iteration  26: 0.938 ms/op
+Iteration  27: 0.941 ms/op
+Iteration  28: 0.942 ms/op
+Iteration  29: 0.944 ms/op
+Iteration  30: 0.942 ms/op
+Iteration  31: 0.941 ms/op
+Iteration  32: 0.944 ms/op
+Iteration  33: 1.021 ms/op
+Iteration  34: 0.956 ms/op
+Iteration  35: 0.992 ms/op
+Iteration  36: 1.019 ms/op
+Iteration  37: 1.015 ms/op
+Iteration  38: 1.044 ms/op
+Iteration  39: 1.035 ms/op
+Iteration  40: 1.012 ms/op
+Iteration  41: 1.064 ms/op
+Iteration  42: 1.084 ms/op
+Iteration  43: 1.018 ms/op
+Iteration  44: 1.073 ms/op
+Iteration  45: 1.408 ms/op
+Iteration  46: 1.095 ms/op
+Iteration  47: 1.070 ms/op
+Iteration  48: 1.051 ms/op
+Iteration  49: 1.050 ms/op
+Iteration  50: 1.186 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.007 ±(99.9%) 0.040 ms/op [Average]
+  (min, avg, max) = (0.930, 1.007, 1.408), stdev = 0.080
+  CI (99.9%): [0.967, 1.046] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>6</p>)
+
+# Run progress: 27.27% complete, ETA 00:15:05
+# Fork: 1 of 1
+objc[16275]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10f06f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f0ef4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.310 ms/op
+# Warmup Iteration   2: 1.473 ms/op
+# Warmup Iteration   3: 1.364 ms/op
+# Warmup Iteration   4: 1.204 ms/op
+# Warmup Iteration   5: 1.055 ms/op
+Iteration   1: 1.038 ms/op
+Iteration   2: 1.034 ms/op
+Iteration   3: 1.200 ms/op
+Iteration   4: 1.172 ms/op
+Iteration   5: 1.197 ms/op
+Iteration   6: 1.143 ms/op
+Iteration   7: 1.004 ms/op
+Iteration   8: 0.995 ms/op
+Iteration   9: 1.003 ms/op
+Iteration  10: 1.056 ms/op
+Iteration  11: 0.994 ms/op
+Iteration  12: 1.051 ms/op
+Iteration  13: 1.090 ms/op
+Iteration  14: 1.031 ms/op
+Iteration  15: 1.012 ms/op
+Iteration  16: 1.002 ms/op
+Iteration  17: 1.034 ms/op
+Iteration  18: 1.032 ms/op
+Iteration  19: 1.014 ms/op
+Iteration  20: 0.993 ms/op
+Iteration  21: 1.012 ms/op
+Iteration  22: 0.985 ms/op
+Iteration  23: 1.035 ms/op
+Iteration  24: 0.984 ms/op
+Iteration  25: 0.985 ms/op
+Iteration  26: 1.027 ms/op
+Iteration  27: 1.018 ms/op
+Iteration  28: 1.021 ms/op
+Iteration  29: 1.022 ms/op
+Iteration  30: 1.034 ms/op
+Iteration  31: 1.015 ms/op
+Iteration  32: 0.980 ms/op
+Iteration  33: 1.000 ms/op
+Iteration  34: 0.995 ms/op
+Iteration  35: 0.994 ms/op
+Iteration  36: 1.007 ms/op
+Iteration  37: 0.989 ms/op
+Iteration  38: 1.003 ms/op
+Iteration  39: 1.007 ms/op
+Iteration  40: 1.027 ms/op
+Iteration  41: 1.018 ms/op
+Iteration  42: 1.020 ms/op
+Iteration  43: 1.006 ms/op
+Iteration  44: 1.020 ms/op
+Iteration  45: 0.983 ms/op
+Iteration  46: 1.021 ms/op
+Iteration  47: 1.054 ms/op
+Iteration  48: 1.046 ms/op
+Iteration  49: 1.021 ms/op
+Iteration  50: 0.983 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.028 ±(99.9%) 0.025 ms/op [Average]
+  (min, avg, max) = (0.980, 1.028, 1.200), stdev = 0.050
+  CI (99.9%): [1.003, 1.053] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>7</p>)
+
+# Run progress: 31.82% complete, ETA 00:14:08
+# Fork: 1 of 1
+objc[16283]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10f0734c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f0f34e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.029 ms/op
+# Warmup Iteration   2: 1.262 ms/op
+# Warmup Iteration   3: 1.328 ms/op
+# Warmup Iteration   4: 1.236 ms/op
+# Warmup Iteration   5: 1.053 ms/op
+Iteration   1: 0.990 ms/op
+Iteration   2: 1.087 ms/op
+Iteration   3: 1.039 ms/op
+Iteration   4: 0.959 ms/op
+Iteration   5: 0.970 ms/op
+Iteration   6: 0.932 ms/op
+Iteration   7: 0.960 ms/op
+Iteration   8: 0.953 ms/op
+Iteration   9: 0.974 ms/op
+Iteration  10: 1.025 ms/op
+Iteration  11: 0.973 ms/op
+Iteration  12: 1.001 ms/op
+Iteration  13: 0.940 ms/op
+Iteration  14: 0.981 ms/op
+Iteration  15: 0.990 ms/op
+Iteration  16: 0.942 ms/op
+Iteration  17: 0.996 ms/op
+Iteration  18: 0.941 ms/op
+Iteration  19: 0.977 ms/op
+Iteration  20: 0.970 ms/op
+Iteration  21: 0.965 ms/op
+Iteration  22: 0.992 ms/op
+Iteration  23: 0.995 ms/op
+Iteration  24: 1.019 ms/op
+Iteration  25: 0.971 ms/op
+Iteration  26: 1.000 ms/op
+Iteration  27: 1.062 ms/op
+Iteration  28: 1.019 ms/op
+Iteration  29: 1.040 ms/op
+Iteration  30: 1.009 ms/op
+Iteration  31: 1.016 ms/op
+Iteration  32: 1.029 ms/op
+Iteration  33: 0.990 ms/op
+Iteration  34: 1.015 ms/op
+Iteration  35: 1.016 ms/op
+Iteration  36: 1.001 ms/op
+Iteration  37: 1.174 ms/op
+Iteration  38: 1.798 ms/op
+Iteration  39: 1.148 ms/op
+Iteration  40: 1.012 ms/op
+Iteration  41: 0.939 ms/op
+Iteration  42: 0.957 ms/op
+Iteration  43: 1.175 ms/op
+Iteration  44: 1.351 ms/op
+Iteration  45: 1.367 ms/op
+Iteration  46: 1.649 ms/op
+Iteration  47: 1.173 ms/op
+Iteration  48: 1.167 ms/op
+Iteration  49: 1.043 ms/op
+Iteration  50: 1.189 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.058 ±(99.9%) 0.083 ms/op [Average]
+  (min, avg, max) = (0.932, 1.058, 1.798), stdev = 0.168
+  CI (99.9%): [0.975, 1.141] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>8</p>)
+
+# Run progress: 36.36% complete, ETA 00:13:10
+# Fork: 1 of 1
+objc[16294]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10163d4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1016bd4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.330 ms/op
+# Warmup Iteration   2: 1.284 ms/op
+# Warmup Iteration   3: 1.286 ms/op
+# Warmup Iteration   4: 1.220 ms/op
+# Warmup Iteration   5: 0.992 ms/op
+Iteration   1: 0.984 ms/op
+Iteration   2: 0.980 ms/op
+Iteration   3: 0.950 ms/op
+Iteration   4: 1.103 ms/op
+Iteration   5: 1.204 ms/op
+Iteration   6: 1.121 ms/op
+Iteration   7: 1.028 ms/op
+Iteration   8: 0.961 ms/op
+Iteration   9: 0.957 ms/op
+Iteration  10: 0.955 ms/op
+Iteration  11: 0.948 ms/op
+Iteration  12: 0.958 ms/op
+Iteration  13: 0.976 ms/op
+Iteration  14: 0.972 ms/op
+Iteration  15: 0.944 ms/op
+Iteration  16: 0.950 ms/op
+Iteration  17: 0.956 ms/op
+Iteration  18: 0.986 ms/op
+Iteration  19: 0.954 ms/op
+Iteration  20: 1.011 ms/op
+Iteration  21: 0.998 ms/op
+Iteration  22: 1.390 ms/op
+Iteration  23: 1.172 ms/op
+Iteration  24: 1.090 ms/op
+Iteration  25: 1.124 ms/op
+Iteration  26: 1.327 ms/op
+Iteration  27: 1.135 ms/op
+Iteration  28: 1.014 ms/op
+Iteration  29: 1.032 ms/op
+Iteration  30: 1.002 ms/op
+Iteration  31: 1.059 ms/op
+Iteration  32: 0.992 ms/op
+Iteration  33: 1.009 ms/op
+Iteration  34: 1.326 ms/op
+Iteration  35: 1.266 ms/op
+Iteration  36: 1.084 ms/op
+Iteration  37: 1.283 ms/op
+Iteration  38: 1.337 ms/op
+Iteration  39: 1.746 ms/op
+Iteration  40: 2.583 ms/op
+Iteration  41: 1.797 ms/op
+Iteration  42: 1.045 ms/op
+Iteration  43: 1.123 ms/op
+Iteration  44: 1.362 ms/op
+Iteration  45: 1.324 ms/op
+Iteration  46: 1.053 ms/op
+Iteration  47: 1.043 ms/op
+Iteration  48: 1.081 ms/op
+Iteration  49: 1.030 ms/op
+Iteration  50: 0.974 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.134 ±(99.9%) 0.139 ms/op [Average]
+  (min, avg, max) = (0.944, 1.134, 2.583), stdev = 0.281
+  CI (99.9%): [0.995, 1.273] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>9</p>)
+
+# Run progress: 40.91% complete, ETA 00:12:13
+# Fork: 1 of 1
+objc[16307]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10f2884c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f3084e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.215 ms/op
+# Warmup Iteration   2: 2.305 ms/op
+# Warmup Iteration   3: 1.397 ms/op
+# Warmup Iteration   4: 1.595 ms/op
+# Warmup Iteration   5: 1.818 ms/op
+Iteration   1: 1.072 ms/op
+Iteration   2: 1.068 ms/op
+Iteration   3: 1.191 ms/op
+Iteration   4: 1.532 ms/op
+Iteration   5: 1.263 ms/op
+Iteration   6: 1.271 ms/op
+Iteration   7: 1.108 ms/op
+Iteration   8: 1.488 ms/op
+Iteration   9: 1.073 ms/op
+Iteration  10: 1.248 ms/op
+Iteration  11: 1.514 ms/op
+Iteration  12: 1.174 ms/op
+Iteration  13: 1.069 ms/op
+Iteration  14: 1.046 ms/op
+Iteration  15: 1.106 ms/op
+Iteration  16: 1.047 ms/op
+Iteration  17: 1.671 ms/op
+Iteration  18: 1.114 ms/op
+Iteration  19: 1.132 ms/op
+Iteration  20: 1.071 ms/op
+Iteration  21: 1.294 ms/op
+Iteration  22: 1.052 ms/op
+Iteration  23: 1.034 ms/op
+Iteration  24: 1.026 ms/op
+Iteration  25: 1.030 ms/op
+Iteration  26: 1.037 ms/op
+Iteration  27: 1.061 ms/op
+Iteration  28: 1.033 ms/op
+Iteration  29: 1.029 ms/op
+Iteration  30: 1.021 ms/op
+Iteration  31: 1.006 ms/op
+Iteration  32: 1.024 ms/op
+Iteration  33: 1.038 ms/op
+Iteration  34: 1.034 ms/op
+Iteration  35: 1.006 ms/op
+Iteration  36: 1.015 ms/op
+Iteration  37: 1.018 ms/op
+Iteration  38: 1.018 ms/op
+Iteration  39: 1.012 ms/op
+Iteration  40: 1.025 ms/op
+Iteration  41: 1.014 ms/op
+Iteration  42: 1.021 ms/op
+Iteration  43: 1.007 ms/op
+Iteration  44: 1.025 ms/op
+Iteration  45: 1.030 ms/op
+Iteration  46: 1.015 ms/op
+Iteration  47: 1.006 ms/op
+Iteration  48: 1.015 ms/op
+Iteration  49: 1.016 ms/op
+Iteration  50: 1.015 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.105 ±(99.9%) 0.076 ms/op [Average]
+  (min, avg, max) = (1.006, 1.105, 1.671), stdev = 0.153
+  CI (99.9%): [1.029, 1.181] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>10</p>)
+
+# Run progress: 45.45% complete, ETA 00:11:17
+# Fork: 1 of 1
+objc[16316]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10c5724c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c5f24e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 1.909 ms/op
+# Warmup Iteration   2: 1.205 ms/op
+# Warmup Iteration   3: 1.204 ms/op
+# Warmup Iteration   4: 1.142 ms/op
+# Warmup Iteration   5: 0.932 ms/op
+Iteration   1: 0.952 ms/op
+Iteration   2: 0.941 ms/op
+Iteration   3: 0.916 ms/op
+Iteration   4: 0.934 ms/op
+Iteration   5: 0.911 ms/op
+Iteration   6: 0.910 ms/op
+Iteration   7: 0.923 ms/op
+Iteration   8: 0.911 ms/op
+Iteration   9: 0.912 ms/op
+Iteration  10: 0.921 ms/op
+Iteration  11: 1.058 ms/op
+Iteration  12: 0.973 ms/op
+Iteration  13: 1.100 ms/op
+Iteration  14: 1.463 ms/op
+Iteration  15: 1.650 ms/op
+Iteration  16: 1.644 ms/op
+Iteration  17: 2.303 ms/op
+Iteration  18: 1.435 ms/op
+Iteration  19: 1.261 ms/op
+Iteration  20: 1.151 ms/op
+Iteration  21: 1.065 ms/op
+Iteration  22: 1.268 ms/op
+Iteration  23: 0.995 ms/op
+Iteration  24: 1.065 ms/op
+Iteration  25: 1.068 ms/op
+Iteration  26: 1.112 ms/op
+Iteration  27: 1.259 ms/op
+Iteration  28: 0.985 ms/op
+Iteration  29: 0.957 ms/op
+Iteration  30: 0.962 ms/op
+Iteration  31: 1.082 ms/op
+Iteration  32: 1.343 ms/op
+Iteration  33: 1.473 ms/op
+Iteration  34: 1.167 ms/op
+Iteration  35: 1.091 ms/op
+Iteration  36: 1.088 ms/op
+Iteration  37: 1.015 ms/op
+Iteration  38: 1.221 ms/op
+Iteration  39: 1.583 ms/op
+Iteration  40: 1.070 ms/op
+Iteration  41: 1.038 ms/op
+Iteration  42: 1.062 ms/op
+Iteration  43: 1.071 ms/op
+Iteration  44: 1.177 ms/op
+Iteration  45: 1.229 ms/op
+Iteration  46: 1.000 ms/op
+Iteration  47: 0.954 ms/op
+Iteration  48: 0.965 ms/op
+Iteration  49: 0.986 ms/op
+Iteration  50: 1.289 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.138 ±(99.9%) 0.128 ms/op [Average]
+  (min, avg, max) = (0.910, 1.138, 2.303), stdev = 0.259
+  CI (99.9%): [1.010, 1.266] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>11</p>)
+
+# Run progress: 50.00% complete, ETA 00:10:20
+# Fork: 1 of 1
+objc[16333]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1069304c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1069b04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 13.729 ms/op
+# Warmup Iteration   2: 11.138 ms/op
+# Warmup Iteration   3: 7.662 ms/op
+# Warmup Iteration   4: 7.534 ms/op
+# Warmup Iteration   5: 5.205 ms/op
+Iteration   1: 6.674 ms/op
+Iteration   2: 8.824 ms/op
+Iteration   3: 6.311 ms/op
+Iteration   4: 5.368 ms/op
+Iteration   5: 7.141 ms/op
+Iteration   6: 5.933 ms/op
+Iteration   7: 4.457 ms/op
+Iteration   8: 7.277 ms/op
+Iteration   9: 6.356 ms/op
+Iteration  10: 4.673 ms/op
+Iteration  11: 4.002 ms/op
+Iteration  12: 4.419 ms/op
+Iteration  13: 4.268 ms/op
+Iteration  14: 3.530 ms/op
+Iteration  15: 2.579 ms/op
+Iteration  16: 3.612 ms/op
+Iteration  17: 1.573 ms/op
+Iteration  18: 1.064 ms/op
+Iteration  19: 0.984 ms/op
+Iteration  20: 0.961 ms/op
+Iteration  21: 0.954 ms/op
+Iteration  22: 0.957 ms/op
+Iteration  23: 0.962 ms/op
+Iteration  24: 0.990 ms/op
+Iteration  25: 0.965 ms/op
+Iteration  26: 0.957 ms/op
+Iteration  27: 0.962 ms/op
+Iteration  28: 0.969 ms/op
+Iteration  29: 1.007 ms/op
+Iteration  30: 0.958 ms/op
+Iteration  31: 0.957 ms/op
+Iteration  32: 0.970 ms/op
+Iteration  33: 0.968 ms/op
+Iteration  34: 1.014 ms/op
+Iteration  35: 0.968 ms/op
+Iteration  36: 0.993 ms/op
+Iteration  37: 0.966 ms/op
+Iteration  38: 0.951 ms/op
+Iteration  39: 0.961 ms/op
+Iteration  40: 0.946 ms/op
+Iteration  41: 0.975 ms/op
+Iteration  42: 0.967 ms/op
+Iteration  43: 1.031 ms/op
+Iteration  44: 1.076 ms/op
+Iteration  45: 0.962 ms/op
+Iteration  46: 1.002 ms/op
+Iteration  47: 1.001 ms/op
+Iteration  48: 1.083 ms/op
+Iteration  49: 1.021 ms/op
+Iteration  50: 1.445 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  2.399 ±(99.9%) 1.109 ms/op [Average]
+  (min, avg, max) = (0.946, 2.399, 8.824), stdev = 2.241
+  CI (99.9%): [1.289, 3.508] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>12</p>)
+
+# Run progress: 54.55% complete, ETA 00:09:24
+# Fork: 1 of 1
+objc[16459]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10f0724c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f0f24e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.442 ms/op
+# Warmup Iteration   2: 1.391 ms/op
+# Warmup Iteration   3: 1.427 ms/op
+# Warmup Iteration   4: 3.875 ms/op
+# Warmup Iteration   5: 5.894 ms/op
+Iteration   1: 8.346 ms/op
+Iteration   2: 9.594 ms/op
+Iteration   3: 6.866 ms/op
+Iteration   4: 4.673 ms/op
+Iteration   5: 1.488 ms/op
+Iteration   6: 1.056 ms/op
+Iteration   7: 1.052 ms/op
+Iteration   8: 1.466 ms/op
+Iteration   9: 1.713 ms/op
+Iteration  10: 3.371 ms/op
+Iteration  11: 1.204 ms/op
+Iteration  12: 0.967 ms/op
+Iteration  13: 0.971 ms/op
+Iteration  14: 1.137 ms/op
+Iteration  15: 2.570 ms/op
+Iteration  16: 1.701 ms/op
+Iteration  17: 1.344 ms/op
+Iteration  18: 1.217 ms/op
+Iteration  19: 1.127 ms/op
+Iteration  20: 1.035 ms/op
+Iteration  21: 1.015 ms/op
+Iteration  22: 1.076 ms/op
+Iteration  23: 1.121 ms/op
+Iteration  24: 1.245 ms/op
+Iteration  25: 1.111 ms/op
+Iteration  26: 1.093 ms/op
+Iteration  27: 1.153 ms/op
+Iteration  28: 1.271 ms/op
+Iteration  29: 1.274 ms/op
+Iteration  30: 1.262 ms/op
+Iteration  31: 1.223 ms/op
+Iteration  32: 1.118 ms/op
+Iteration  33: 0.964 ms/op
+Iteration  34: 1.270 ms/op
+Iteration  35: 1.193 ms/op
+Iteration  36: 1.245 ms/op
+Iteration  37: 1.191 ms/op
+Iteration  38: 1.136 ms/op
+Iteration  39: 1.260 ms/op
+Iteration  40: 1.179 ms/op
+Iteration  41: 1.271 ms/op
+Iteration  42: 1.070 ms/op
+Iteration  43: 1.458 ms/op
+Iteration  44: 1.575 ms/op
+Iteration  45: 1.074 ms/op
+Iteration  46: 2.158 ms/op
+Iteration  47: 1.104 ms/op
+Iteration  48: 1.793 ms/op
+Iteration  49: 1.662 ms/op
+Iteration  50: 2.452 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.838 ±(99.9%) 0.884 ms/op [Average]
+  (min, avg, max) = (0.964, 1.838, 9.594), stdev = 1.786
+  CI (99.9%): [0.954, 2.722] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>13</p>)
+
+# Run progress: 59.09% complete, ETA 00:08:28
+# Fork: 1 of 1
+objc[16492]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10f03f4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f0bf4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 9.578 ms/op
+# Warmup Iteration   2: 4.538 ms/op
+# Warmup Iteration   3: 2.377 ms/op
+# Warmup Iteration   4: 1.586 ms/op
+# Warmup Iteration   5: 2.638 ms/op
+Iteration   1: 2.461 ms/op
+Iteration   2: 3.669 ms/op
+Iteration   3: 4.131 ms/op
+Iteration   4: 2.469 ms/op
+Iteration   5: 1.137 ms/op
+Iteration   6: 1.178 ms/op
+Iteration   7: 1.503 ms/op
+Iteration   8: 3.244 ms/op
+Iteration   9: 2.900 ms/op
+Iteration  10: 4.499 ms/op
+Iteration  11: 4.014 ms/op
+Iteration  12: 3.298 ms/op
+Iteration  13: 4.190 ms/op
+Iteration  14: 6.754 ms/op
+Iteration  15: 5.641 ms/op
+Iteration  16: 5.821 ms/op
+Iteration  17: 5.913 ms/op
+Iteration  18: 3.991 ms/op
+Iteration  19: 3.170 ms/op
+Iteration  20: 3.276 ms/op
+Iteration  21: 2.212 ms/op
+Iteration  22: 1.022 ms/op
+Iteration  23: 1.014 ms/op
+Iteration  24: 1.004 ms/op
+Iteration  25: 1.011 ms/op
+Iteration  26: 1.084 ms/op
+Iteration  27: 1.226 ms/op
+Iteration  28: 1.069 ms/op
+Iteration  29: 1.007 ms/op
+Iteration  30: 1.023 ms/op
+Iteration  31: 1.022 ms/op
+Iteration  32: 1.028 ms/op
+Iteration  33: 1.013 ms/op
+Iteration  34: 1.014 ms/op
+Iteration  35: 1.008 ms/op
+Iteration  36: 1.009 ms/op
+Iteration  37: 1.022 ms/op
+Iteration  38: 1.019 ms/op
+Iteration  39: 1.281 ms/op
+Iteration  40: 1.128 ms/op
+Iteration  41: 1.352 ms/op
+Iteration  42: 1.388 ms/op
+Iteration  43: 1.444 ms/op
+Iteration  44: 1.174 ms/op
+Iteration  45: 1.186 ms/op
+Iteration  46: 1.422 ms/op
+Iteration  47: 1.244 ms/op
+Iteration  48: 1.094 ms/op
+Iteration  49: 1.085 ms/op
+Iteration  50: 1.050 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  2.158 ±(99.9%) 0.785 ms/op [Average]
+  (min, avg, max) = (1.004, 2.158, 6.754), stdev = 1.585
+  CI (99.9%): [1.373, 2.943] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>14</p>)
+
+# Run progress: 63.64% complete, ETA 00:07:32
+# Fork: 1 of 1
+objc[16500]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x108fc24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a7f04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.660 ms/op
+# Warmup Iteration   2: 1.339 ms/op
+# Warmup Iteration   3: 1.342 ms/op
+# Warmup Iteration   4: 1.293 ms/op
+# Warmup Iteration   5: 1.176 ms/op
+Iteration   1: 1.232 ms/op
+Iteration   2: 1.265 ms/op
+Iteration   3: 1.150 ms/op
+Iteration   4: 1.143 ms/op
+Iteration   5: 0.983 ms/op
+Iteration   6: 1.024 ms/op
+Iteration   7: 0.999 ms/op
+Iteration   8: 1.049 ms/op
+Iteration   9: 1.255 ms/op
+Iteration  10: 1.085 ms/op
+Iteration  11: 1.044 ms/op
+Iteration  12: 0.993 ms/op
+Iteration  13: 0.989 ms/op
+Iteration  14: 1.330 ms/op
+Iteration  15: 1.557 ms/op
+Iteration  16: 1.108 ms/op
+Iteration  17: 1.009 ms/op
+Iteration  18: 1.207 ms/op
+Iteration  19: 1.135 ms/op
+Iteration  20: 1.415 ms/op
+Iteration  21: 1.039 ms/op
+Iteration  22: 1.051 ms/op
+Iteration  23: 0.982 ms/op
+Iteration  24: 0.950 ms/op
+Iteration  25: 1.006 ms/op
+Iteration  26: 1.037 ms/op
+Iteration  27: 1.053 ms/op
+Iteration  28: 1.048 ms/op
+Iteration  29: 0.962 ms/op
+Iteration  30: 0.978 ms/op
+Iteration  31: 0.996 ms/op
+Iteration  32: 0.987 ms/op
+Iteration  33: 0.988 ms/op
+Iteration  34: 0.983 ms/op
+Iteration  35: 1.007 ms/op
+Iteration  36: 0.986 ms/op
+Iteration  37: 1.006 ms/op
+Iteration  38: 1.229 ms/op
+Iteration  39: 1.323 ms/op
+Iteration  40: 1.267 ms/op
+Iteration  41: 1.247 ms/op
+Iteration  42: 1.135 ms/op
+Iteration  43: 1.162 ms/op
+Iteration  44: 1.086 ms/op
+Iteration  45: 1.275 ms/op
+Iteration  46: 1.457 ms/op
+Iteration  47: 1.057 ms/op
+Iteration  48: 1.115 ms/op
+Iteration  49: 1.736 ms/op
+Iteration  50: 1.173 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.126 ±(99.9%) 0.082 ms/op [Average]
+  (min, avg, max) = (0.950, 1.126, 1.736), stdev = 0.166
+  CI (99.9%): [1.044, 1.208] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>15</p>)
+
+# Run progress: 68.18% complete, ETA 00:06:35
+# Fork: 1 of 1
+objc[16501]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10a2c14c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a3414e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.654 ms/op
+# Warmup Iteration   2: 1.327 ms/op
+# Warmup Iteration   3: 1.268 ms/op
+# Warmup Iteration   4: 1.238 ms/op
+# Warmup Iteration   5: 1.101 ms/op
+Iteration   1: 1.232 ms/op
+Iteration   2: 1.094 ms/op
+Iteration   3: 1.215 ms/op
+Iteration   4: 1.119 ms/op
+Iteration   5: 1.122 ms/op
+Iteration   6: 1.065 ms/op
+Iteration   7: 1.092 ms/op
+Iteration   8: 1.048 ms/op
+Iteration   9: 0.995 ms/op
+Iteration  10: 0.948 ms/op
+Iteration  11: 1.079 ms/op
+Iteration  12: 1.042 ms/op
+Iteration  13: 0.996 ms/op
+Iteration  14: 1.015 ms/op
+Iteration  15: 0.954 ms/op
+Iteration  16: 0.935 ms/op
+Iteration  17: 0.947 ms/op
+Iteration  18: 0.937 ms/op
+Iteration  19: 0.948 ms/op
+Iteration  20: 0.945 ms/op
+Iteration  21: 1.023 ms/op
+Iteration  22: 1.028 ms/op
+Iteration  23: 0.922 ms/op
+Iteration  24: 0.938 ms/op
+Iteration  25: 0.945 ms/op
+Iteration  26: 0.939 ms/op
+Iteration  27: 0.931 ms/op
+Iteration  28: 0.925 ms/op
+Iteration  29: 0.944 ms/op
+Iteration  30: 0.959 ms/op
+Iteration  31: 0.959 ms/op
+Iteration  32: 0.947 ms/op
+Iteration  33: 0.947 ms/op
+Iteration  34: 0.943 ms/op
+Iteration  35: 0.942 ms/op
+Iteration  36: 0.951 ms/op
+Iteration  37: 0.942 ms/op
+Iteration  38: 0.951 ms/op
+Iteration  39: 0.974 ms/op
+Iteration  40: 0.990 ms/op
+Iteration  41: 1.151 ms/op
+Iteration  42: 1.183 ms/op
+Iteration  43: 0.978 ms/op
+Iteration  44: 1.012 ms/op
+Iteration  45: 1.035 ms/op
+Iteration  46: 1.055 ms/op
+Iteration  47: 0.955 ms/op
+Iteration  48: 0.992 ms/op
+Iteration  49: 0.927 ms/op
+Iteration  50: 0.934 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.001 ±(99.9%) 0.039 ms/op [Average]
+  (min, avg, max) = (0.922, 1.001, 1.232), stdev = 0.080
+  CI (99.9%): [0.962, 1.041] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>16</p>)
+
+# Run progress: 72.73% complete, ETA 00:05:39
+# Fork: 1 of 1
+objc[16508]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10a7404c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a7c04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.955 ms/op
+# Warmup Iteration   2: 1.470 ms/op
+# Warmup Iteration   3: 1.390 ms/op
+# Warmup Iteration   4: 1.428 ms/op
+# Warmup Iteration   5: 1.237 ms/op
+Iteration   1: 2.771 ms/op
+Iteration   2: 2.483 ms/op
+Iteration   3: 1.125 ms/op
+Iteration   4: 1.122 ms/op
+Iteration   5: 1.063 ms/op
+Iteration   6: 1.101 ms/op
+Iteration   7: 1.064 ms/op
+Iteration   8: 1.187 ms/op
+Iteration   9: 2.536 ms/op
+Iteration  10: 1.393 ms/op
+Iteration  11: 1.227 ms/op
+Iteration  12: 1.076 ms/op
+Iteration  13: 1.042 ms/op
+Iteration  14: 1.040 ms/op
+Iteration  15: 1.080 ms/op
+Iteration  16: 1.050 ms/op
+Iteration  17: 1.044 ms/op
+Iteration  18: 1.055 ms/op
+Iteration  19: 1.040 ms/op
+Iteration  20: 1.049 ms/op
+Iteration  21: 1.034 ms/op
+Iteration  22: 1.032 ms/op
+Iteration  23: 1.059 ms/op
+Iteration  24: 1.054 ms/op
+Iteration  25: 1.161 ms/op
+Iteration  26: 1.122 ms/op
+Iteration  27: 1.395 ms/op
+Iteration  28: 1.341 ms/op
+Iteration  29: 1.158 ms/op
+Iteration  30: 1.206 ms/op
+Iteration  31: 1.137 ms/op
+Iteration  32: 1.061 ms/op
+Iteration  33: 1.045 ms/op
+Iteration  34: 1.054 ms/op
+Iteration  35: 1.052 ms/op
+Iteration  36: 1.032 ms/op
+Iteration  37: 1.062 ms/op
+Iteration  38: 1.064 ms/op
+Iteration  39: 1.031 ms/op
+Iteration  40: 1.070 ms/op
+Iteration  41: 1.089 ms/op
+Iteration  42: 1.072 ms/op
+Iteration  43: 1.838 ms/op
+Iteration  44: 3.170 ms/op
+Iteration  45: 1.597 ms/op
+Iteration  46: 1.117 ms/op
+Iteration  47: 1.180 ms/op
+Iteration  48: 1.119 ms/op
+Iteration  49: 1.040 ms/op
+Iteration  50: 1.055 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.260 ±(99.9%) 0.234 ms/op [Average]
+  (min, avg, max) = (1.031, 1.260, 3.170), stdev = 0.472
+  CI (99.9%): [1.026, 1.494] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>17</p>)
+
+# Run progress: 77.27% complete, ETA 00:04:42
+# Fork: 1 of 1
+objc[16520]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10bb1b4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bb9b4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.657 ms/op
+# Warmup Iteration   2: 1.534 ms/op
+# Warmup Iteration   3: 1.585 ms/op
+# Warmup Iteration   4: 1.364 ms/op
+# Warmup Iteration   5: 1.150 ms/op
+Iteration   1: 1.082 ms/op
+Iteration   2: 1.070 ms/op
+Iteration   3: 1.031 ms/op
+Iteration   4: 1.008 ms/op
+Iteration   5: 1.037 ms/op
+Iteration   6: 1.008 ms/op
+Iteration   7: 1.034 ms/op
+Iteration   8: 1.010 ms/op
+Iteration   9: 1.003 ms/op
+Iteration  10: 0.998 ms/op
+Iteration  11: 1.011 ms/op
+Iteration  12: 1.045 ms/op
+Iteration  13: 1.013 ms/op
+Iteration  14: 1.056 ms/op
+Iteration  15: 1.107 ms/op
+Iteration  16: 1.014 ms/op
+Iteration  17: 1.032 ms/op
+Iteration  18: 0.936 ms/op
+Iteration  19: 0.940 ms/op
+Iteration  20: 0.939 ms/op
+Iteration  21: 0.952 ms/op
+Iteration  22: 0.941 ms/op
+Iteration  23: 0.958 ms/op
+Iteration  24: 0.950 ms/op
+Iteration  25: 0.950 ms/op
+Iteration  26: 0.927 ms/op
+Iteration  27: 0.953 ms/op
+Iteration  28: 0.939 ms/op
+Iteration  29: 0.934 ms/op
+Iteration  30: 0.967 ms/op
+Iteration  31: 0.945 ms/op
+Iteration  32: 0.947 ms/op
+Iteration  33: 0.941 ms/op
+Iteration  34: 1.006 ms/op
+Iteration  35: 0.958 ms/op
+Iteration  36: 0.954 ms/op
+Iteration  37: 1.005 ms/op
+Iteration  38: 0.974 ms/op
+Iteration  39: 0.948 ms/op
+Iteration  40: 0.951 ms/op
+Iteration  41: 0.965 ms/op
+Iteration  42: 0.982 ms/op
+Iteration  43: 1.035 ms/op
+Iteration  44: 0.965 ms/op
+Iteration  45: 0.980 ms/op
+Iteration  46: 0.952 ms/op
+Iteration  47: 0.945 ms/op
+Iteration  48: 0.949 ms/op
+Iteration  49: 0.967 ms/op
+Iteration  50: 1.010 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  0.984 ±(99.9%) 0.022 ms/op [Average]
+  (min, avg, max) = (0.927, 0.984, 1.107), stdev = 0.044
+  CI (99.9%): [0.963, 1.006] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>18</p>)
+
+# Run progress: 81.82% complete, ETA 00:03:45
+# Fork: 1 of 1
+objc[16528]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10ba8d4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bb0d4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.010 ms/op
+# Warmup Iteration   2: 1.319 ms/op
+# Warmup Iteration   3: 1.349 ms/op
+# Warmup Iteration   4: 1.251 ms/op
+# Warmup Iteration   5: 1.086 ms/op
+Iteration   1: 1.034 ms/op
+Iteration   2: 1.034 ms/op
+Iteration   3: 1.019 ms/op
+Iteration   4: 1.003 ms/op
+Iteration   5: 1.015 ms/op
+Iteration   6: 1.027 ms/op
+Iteration   7: 1.033 ms/op
+Iteration   8: 1.021 ms/op
+Iteration   9: 1.024 ms/op
+Iteration  10: 1.032 ms/op
+Iteration  11: 1.174 ms/op
+Iteration  12: 1.166 ms/op
+Iteration  13: 1.271 ms/op
+Iteration  14: 1.311 ms/op
+Iteration  15: 1.356 ms/op
+Iteration  16: 3.269 ms/op
+Iteration  17: 3.267 ms/op
+Iteration  18: 1.194 ms/op
+Iteration  19: 1.444 ms/op
+Iteration  20: 1.245 ms/op
+Iteration  21: 1.077 ms/op
+Iteration  22: 1.131 ms/op
+Iteration  23: 1.040 ms/op
+Iteration  24: 1.055 ms/op
+Iteration  25: 1.211 ms/op
+Iteration  26: 1.441 ms/op
+Iteration  27: 1.170 ms/op
+Iteration  28: 1.146 ms/op
+Iteration  29: 1.057 ms/op
+Iteration  30: 1.354 ms/op
+Iteration  31: 1.157 ms/op
+Iteration  32: 1.096 ms/op
+Iteration  33: 1.025 ms/op
+Iteration  34: 1.021 ms/op
+Iteration  35: 1.035 ms/op
+Iteration  36: 1.079 ms/op
+Iteration  37: 1.038 ms/op
+Iteration  38: 1.018 ms/op
+Iteration  39: 1.063 ms/op
+Iteration  40: 1.044 ms/op
+Iteration  41: 1.057 ms/op
+Iteration  42: 1.083 ms/op
+Iteration  43: 1.056 ms/op
+Iteration  44: 1.013 ms/op
+Iteration  45: 0.992 ms/op
+Iteration  46: 1.000 ms/op
+Iteration  47: 1.011 ms/op
+Iteration  48: 1.044 ms/op
+Iteration  49: 1.041 ms/op
+Iteration  50: 1.304 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.196 ±(99.9%) 0.219 ms/op [Average]
+  (min, avg, max) = (0.992, 1.196, 3.269), stdev = 0.443
+  CI (99.9%): [0.977, 1.415] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>19</p>)
+
+# Run progress: 86.36% complete, ETA 00:02:49
+# Fork: 1 of 1
+objc[16538]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x103dc34c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1055f04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.761 ms/op
+# Warmup Iteration   2: 1.514 ms/op
+# Warmup Iteration   3: 1.619 ms/op
+# Warmup Iteration   4: 1.225 ms/op
+# Warmup Iteration   5: 1.075 ms/op
+Iteration   1: 0.990 ms/op
+Iteration   2: 0.992 ms/op
+Iteration   3: 0.968 ms/op
+Iteration   4: 0.949 ms/op
+Iteration   5: 0.962 ms/op
+Iteration   6: 0.972 ms/op
+Iteration   7: 0.961 ms/op
+Iteration   8: 1.008 ms/op
+Iteration   9: 0.977 ms/op
+Iteration  10: 0.981 ms/op
+Iteration  11: 1.007 ms/op
+Iteration  12: 0.973 ms/op
+Iteration  13: 0.967 ms/op
+Iteration  14: 0.968 ms/op
+Iteration  15: 0.984 ms/op
+Iteration  16: 1.028 ms/op
+Iteration  17: 0.940 ms/op
+Iteration  18: 0.940 ms/op
+Iteration  19: 0.967 ms/op
+Iteration  20: 0.967 ms/op
+Iteration  21: 0.955 ms/op
+Iteration  22: 0.933 ms/op
+Iteration  23: 0.945 ms/op
+Iteration  24: 0.931 ms/op
+Iteration  25: 0.959 ms/op
+Iteration  26: 1.030 ms/op
+Iteration  27: 1.090 ms/op
+Iteration  28: 1.001 ms/op
+Iteration  29: 1.182 ms/op
+Iteration  30: 1.235 ms/op
+Iteration  31: 0.993 ms/op
+Iteration  32: 0.998 ms/op
+Iteration  33: 1.165 ms/op
+Iteration  34: 1.307 ms/op
+Iteration  35: 1.124 ms/op
+Iteration  36: 1.042 ms/op
+Iteration  37: 0.966 ms/op
+Iteration  38: 0.984 ms/op
+Iteration  39: 0.961 ms/op
+Iteration  40: 0.969 ms/op
+Iteration  41: 1.872 ms/op
+Iteration  42: 2.059 ms/op
+Iteration  43: 1.488 ms/op
+Iteration  44: 1.517 ms/op
+Iteration  45: 1.196 ms/op
+Iteration  46: 1.748 ms/op
+Iteration  47: 2.212 ms/op
+Iteration  48: 3.452 ms/op
+Iteration  49: 2.116 ms/op
+Iteration  50: 1.629 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.191 ±(99.9%) 0.230 ms/op [Average]
+  (min, avg, max) = (0.931, 1.191, 3.452), stdev = 0.464
+  CI (99.9%): [0.961, 1.421] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>20</p>)
+
+# Run progress: 90.91% complete, ETA 00:01:52
+# Fork: 1 of 1
+objc[16551]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10b6bc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c6de4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 11.309 ms/op
+# Warmup Iteration   2: 2.573 ms/op
+# Warmup Iteration   3: 2.456 ms/op
+# Warmup Iteration   4: 1.437 ms/op
+# Warmup Iteration   5: 1.224 ms/op
+Iteration   1: 1.104 ms/op
+Iteration   2: 1.134 ms/op
+Iteration   3: 1.174 ms/op
+Iteration   4: 1.115 ms/op
+Iteration   5: 1.028 ms/op
+Iteration   6: 1.073 ms/op
+Iteration   7: 1.239 ms/op
+Iteration   8: 1.245 ms/op
+Iteration   9: 1.140 ms/op
+Iteration  10: 1.171 ms/op
+Iteration  11: 1.054 ms/op
+Iteration  12: 1.027 ms/op
+Iteration  13: 1.073 ms/op
+Iteration  14: 1.086 ms/op
+Iteration  15: 1.308 ms/op
+Iteration  16: 1.022 ms/op
+Iteration  17: 1.007 ms/op
+Iteration  18: 2.239 ms/op
+Iteration  19: 1.068 ms/op
+Iteration  20: 1.217 ms/op
+Iteration  21: 1.121 ms/op
+Iteration  22: 1.425 ms/op
+Iteration  23: 1.408 ms/op
+Iteration  24: 1.094 ms/op
+Iteration  25: 1.126 ms/op
+Iteration  26: 1.468 ms/op
+Iteration  27: 1.357 ms/op
+Iteration  28: 1.165 ms/op
+Iteration  29: 1.096 ms/op
+Iteration  30: 1.984 ms/op
+Iteration  31: 1.274 ms/op
+Iteration  32: 1.117 ms/op
+Iteration  33: 1.215 ms/op
+Iteration  34: 2.213 ms/op
+Iteration  35: 1.682 ms/op
+Iteration  36: 1.078 ms/op
+Iteration  37: 1.296 ms/op
+Iteration  38: 1.091 ms/op
+Iteration  39: 1.796 ms/op
+Iteration  40: 3.603 ms/op
+Iteration  41: 1.243 ms/op
+Iteration  42: 1.172 ms/op
+Iteration  43: 1.172 ms/op
+Iteration  44: 1.307 ms/op
+Iteration  45: 2.964 ms/op
+Iteration  46: 2.149 ms/op
+Iteration  47: 1.058 ms/op
+Iteration  48: 1.076 ms/op
+Iteration  49: 1.087 ms/op
+Iteration  50: 1.089 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.349 ±(99.9%) 0.251 ms/op [Average]
+  (min, avg, max) = (1.007, 1.349, 3.603), stdev = 0.507
+  CI (99.9%): [1.098, 1.600] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62541:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 50 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HtmlparserTestBenchmark.measureSampleTime
+# Parameters: (html = <p>21</p>)
+
+# Run progress: 95.45% complete, ETA 00:00:56
+# Fork: 1 of 1
+objc[16562]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10c1884c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10d9bb4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.007 ms/op
+# Warmup Iteration   2: 1.324 ms/op
+# Warmup Iteration   3: 1.373 ms/op
+# Warmup Iteration   4: 1.261 ms/op
+# Warmup Iteration   5: 1.216 ms/op
+Iteration   1: 1.486 ms/op
+Iteration   2: 3.001 ms/op
+Iteration   3: 1.097 ms/op
+Iteration   4: 1.033 ms/op
+Iteration   5: 1.087 ms/op
+Iteration   6: 0.959 ms/op
+Iteration   7: 1.289 ms/op
+Iteration   8: 1.521 ms/op
+Iteration   9: 1.052 ms/op
+Iteration  10: 1.189 ms/op
+Iteration  11: 0.978 ms/op
+Iteration  12: 1.057 ms/op
+Iteration  13: 1.096 ms/op
+Iteration  14: 2.067 ms/op
+Iteration  15: 1.205 ms/op
+Iteration  16: 0.969 ms/op
+Iteration  17: 0.948 ms/op
+Iteration  18: 0.970 ms/op
+Iteration  19: 1.470 ms/op
+Iteration  20: 1.612 ms/op
+Iteration  21: 1.191 ms/op
+Iteration  22: 0.950 ms/op
+Iteration  23: 0.957 ms/op
+Iteration  24: 0.941 ms/op
+Iteration  25: 0.937 ms/op
+Iteration  26: 0.949 ms/op
+Iteration  27: 1.170 ms/op
+Iteration  28: 1.645 ms/op
+Iteration  29: 1.057 ms/op
+Iteration  30: 1.387 ms/op
+Iteration  31: 0.995 ms/op
+Iteration  32: 0.942 ms/op
+Iteration  33: 0.939 ms/op
+Iteration  34: 0.943 ms/op
+Iteration  35: 0.956 ms/op
+Iteration  36: 0.958 ms/op
+Iteration  37: 0.952 ms/op
+Iteration  38: 1.040 ms/op
+Iteration  39: 1.033 ms/op
+Iteration  40: 1.372 ms/op
+Iteration  41: 1.494 ms/op
+Iteration  42: 1.209 ms/op
+Iteration  43: 1.001 ms/op
+Iteration  44: 1.060 ms/op
+Iteration  45: 1.384 ms/op
+Iteration  46: 1.358 ms/op
+Iteration  47: 1.079 ms/op
+Iteration  48: 2.081 ms/op
+Iteration  49: 1.161 ms/op
+Iteration  50: 1.677 ms/op
+
+
+Result "com.cxd.html.HtmlparserTestBenchmark.measureSampleTime":
+  1.218 ±(99.9%) 0.188 ms/op [Average]
+  (min, avg, max) = (0.937, 1.218, 3.001), stdev = 0.381
+  CI (99.9%): [1.030, 1.406] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:20:42
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                  Mode  Cnt  Score   Error  Units
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.162 ± 0.136  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.024 ± 0.046  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.047 ± 0.051  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.049 ± 0.056  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.113 ± 0.141  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.007 ± 0.040  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.028 ± 0.025  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.058 ± 0.083  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.134 ± 0.139  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.105 ± 0.076  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.138 ± 0.128  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  2.399 ± 1.109  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.838 ± 0.884  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  2.158 ± 0.785  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.126 ± 0.082  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.001 ± 0.039  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.260 ± 0.234  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  0.984 ± 0.022  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.196 ± 0.219  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.191 ± 0.230  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.349 ± 0.251  ms/op
+HtmlparserTestBenchmark.measureSampleTime  avgt   50  1.218 ± 0.188  ms/op

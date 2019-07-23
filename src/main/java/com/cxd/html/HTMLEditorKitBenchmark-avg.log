@@ -1,0 +1,2847 @@
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = )
+
+# Run progress: 0.00% complete, ETA 00:38:30
+# Fork: 1 of 1
+objc[13930]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10dbf94c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ebe64e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 15.331 ms/op
+# Warmup Iteration   2: 6.385 ms/op
+# Warmup Iteration   3: 2.311 ms/op
+# Warmup Iteration   4: 0.645 ms/op
+# Warmup Iteration   5: 0.629 ms/op
+Iteration   1: 0.702 ms/op
+Iteration   2: 0.656 ms/op
+Iteration   3: 0.621 ms/op
+Iteration   4: 0.606 ms/op
+Iteration   5: 0.674 ms/op
+Iteration   6: 0.790 ms/op
+Iteration   7: 0.607 ms/op
+Iteration   8: 0.621 ms/op
+Iteration   9: 0.749 ms/op
+Iteration  10: 0.756 ms/op
+Iteration  11: 0.701 ms/op
+Iteration  12: 0.670 ms/op
+Iteration  13: 0.652 ms/op
+Iteration  14: 0.676 ms/op
+Iteration  15: 0.698 ms/op
+Iteration  16: 1.165 ms/op
+Iteration  17: 0.933 ms/op
+Iteration  18: 0.631 ms/op
+Iteration  19: 0.596 ms/op
+Iteration  20: 0.738 ms/op
+Iteration  21: 0.639 ms/op
+Iteration  22: 0.623 ms/op
+Iteration  23: 0.647 ms/op
+Iteration  24: 0.743 ms/op
+Iteration  25: 0.839 ms/op
+Iteration  26: 0.933 ms/op
+Iteration  27: 0.661 ms/op
+Iteration  28: 0.665 ms/op
+Iteration  29: 0.666 ms/op
+Iteration  30: 0.696 ms/op
+Iteration  31: 0.751 ms/op
+Iteration  32: 0.717 ms/op
+Iteration  33: 0.842 ms/op
+Iteration  34: 0.880 ms/op
+Iteration  35: 0.706 ms/op
+Iteration  36: 0.770 ms/op
+Iteration  37: 1.020 ms/op
+Iteration  38: 0.660 ms/op
+Iteration  39: 0.679 ms/op
+Iteration  40: 0.646 ms/op
+Iteration  41: 0.639 ms/op
+Iteration  42: 0.633 ms/op
+Iteration  43: 0.631 ms/op
+Iteration  44: 0.638 ms/op
+Iteration  45: 0.634 ms/op
+Iteration  46: 0.632 ms/op
+Iteration  47: 0.633 ms/op
+Iteration  48: 0.623 ms/op
+Iteration  49: 0.631 ms/op
+Iteration  50: 0.631 ms/op
+Iteration  51: 0.629 ms/op
+Iteration  52: 0.628 ms/op
+Iteration  53: 0.639 ms/op
+Iteration  54: 0.636 ms/op
+Iteration  55: 0.628 ms/op
+Iteration  56: 0.652 ms/op
+Iteration  57: 0.703 ms/op
+Iteration  58: 0.656 ms/op
+Iteration  59: 0.656 ms/op
+Iteration  60: 0.629 ms/op
+Iteration  61: 0.667 ms/op
+Iteration  62: 0.748 ms/op
+Iteration  63: 0.631 ms/op
+Iteration  64: 0.650 ms/op
+Iteration  65: 0.633 ms/op
+Iteration  66: 0.694 ms/op
+Iteration  67: 0.656 ms/op
+Iteration  68: 0.632 ms/op
+Iteration  69: 0.623 ms/op
+Iteration  70: 0.686 ms/op
+Iteration  71: 0.769 ms/op
+Iteration  72: 0.682 ms/op
+Iteration  73: 0.643 ms/op
+Iteration  74: 0.712 ms/op
+Iteration  75: 0.657 ms/op
+Iteration  76: 0.645 ms/op
+Iteration  77: 0.599 ms/op
+Iteration  78: 0.593 ms/op
+Iteration  79: 0.589 ms/op
+Iteration  80: 0.584 ms/op
+Iteration  81: 0.594 ms/op
+Iteration  82: 0.617 ms/op
+Iteration  83: 0.591 ms/op
+Iteration  84: 0.594 ms/op
+Iteration  85: 0.592 ms/op
+Iteration  86: 0.646 ms/op
+Iteration  87: 0.698 ms/op
+Iteration  88: 0.628 ms/op
+Iteration  89: 0.598 ms/op
+Iteration  90: 0.599 ms/op
+Iteration  91: 0.701 ms/op
+Iteration  92: 0.690 ms/op
+Iteration  93: 0.606 ms/op
+Iteration  94: 0.592 ms/op
+Iteration  95: 0.589 ms/op
+Iteration  96: 0.587 ms/op
+Iteration  97: 0.591 ms/op
+Iteration  98: 0.590 ms/op
+Iteration  99: 0.590 ms/op
+Iteration 100: 0.585 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.672 ±(99.9%) 0.032 ms/op [Average]
+  (min, avg, max) = (0.584, 0.672, 1.165), stdev = 0.093
+  CI (99.9%): [0.640, 0.703] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>1</p>)
+
+# Run progress: 4.55% complete, ETA 00:37:41
+# Fork: 1 of 1
+objc[14054]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1017a44c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1018244e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.801 ms/op
+# Warmup Iteration   2: 0.778 ms/op
+# Warmup Iteration   3: 0.592 ms/op
+# Warmup Iteration   4: 0.585 ms/op
+# Warmup Iteration   5: 0.603 ms/op
+Iteration   1: 0.593 ms/op
+Iteration   2: 0.625 ms/op
+Iteration   3: 0.603 ms/op
+Iteration   4: 0.609 ms/op
+Iteration   5: 0.627 ms/op
+Iteration   6: 0.598 ms/op
+Iteration   7: 0.594 ms/op
+Iteration   8: 0.594 ms/op
+Iteration   9: 0.594 ms/op
+Iteration  10: 0.605 ms/op
+Iteration  11: 0.598 ms/op
+Iteration  12: 0.601 ms/op
+Iteration  13: 0.596 ms/op
+Iteration  14: 0.596 ms/op
+Iteration  15: 0.595 ms/op
+Iteration  16: 0.596 ms/op
+Iteration  17: 0.625 ms/op
+Iteration  18: 0.654 ms/op
+Iteration  19: 0.645 ms/op
+Iteration  20: 0.611 ms/op
+Iteration  21: 0.663 ms/op
+Iteration  22: 0.663 ms/op
+Iteration  23: 0.604 ms/op
+Iteration  24: 0.612 ms/op
+Iteration  25: 0.630 ms/op
+Iteration  26: 0.627 ms/op
+Iteration  27: 0.587 ms/op
+Iteration  28: 0.633 ms/op
+Iteration  29: 0.682 ms/op
+Iteration  30: 0.611 ms/op
+Iteration  31: 0.584 ms/op
+Iteration  32: 0.589 ms/op
+Iteration  33: 0.627 ms/op
+Iteration  34: 0.658 ms/op
+Iteration  35: 0.651 ms/op
+Iteration  36: 0.603 ms/op
+Iteration  37: 0.688 ms/op
+Iteration  38: 0.615 ms/op
+Iteration  39: 0.637 ms/op
+Iteration  40: 0.596 ms/op
+Iteration  41: 0.629 ms/op
+Iteration  42: 0.674 ms/op
+Iteration  43: 0.628 ms/op
+Iteration  44: 0.605 ms/op
+Iteration  45: 0.672 ms/op
+Iteration  46: 0.593 ms/op
+Iteration  47: 0.586 ms/op
+Iteration  48: 0.588 ms/op
+Iteration  49: 0.585 ms/op
+Iteration  50: 0.585 ms/op
+Iteration  51: 0.585 ms/op
+Iteration  52: 0.619 ms/op
+Iteration  53: 0.610 ms/op
+Iteration  54: 0.601 ms/op
+Iteration  55: 0.597 ms/op
+Iteration  56: 0.599 ms/op
+Iteration  57: 0.595 ms/op
+Iteration  58: 0.594 ms/op
+Iteration  59: 0.594 ms/op
+Iteration  60: 0.596 ms/op
+Iteration  61: 0.593 ms/op
+Iteration  62: 0.593 ms/op
+Iteration  63: 0.594 ms/op
+Iteration  64: 0.594 ms/op
+Iteration  65: 0.593 ms/op
+Iteration  66: 0.593 ms/op
+Iteration  67: 0.589 ms/op
+Iteration  68: 0.593 ms/op
+Iteration  69: 0.590 ms/op
+Iteration  70: 0.601 ms/op
+Iteration  71: 0.590 ms/op
+Iteration  72: 0.595 ms/op
+Iteration  73: 0.593 ms/op
+Iteration  74: 0.595 ms/op
+Iteration  75: 0.594 ms/op
+Iteration  76: 0.593 ms/op
+Iteration  77: 0.674 ms/op
+Iteration  78: 0.618 ms/op
+Iteration  79: 0.633 ms/op
+Iteration  80: 0.612 ms/op
+Iteration  81: 0.656 ms/op
+Iteration  82: 0.605 ms/op
+Iteration  83: 0.651 ms/op
+Iteration  84: 0.615 ms/op
+Iteration  85: 0.685 ms/op
+Iteration  86: 0.635 ms/op
+Iteration  87: 0.601 ms/op
+Iteration  88: 0.584 ms/op
+Iteration  89: 0.667 ms/op
+Iteration  90: 0.655 ms/op
+Iteration  91: 0.613 ms/op
+Iteration  92: 0.650 ms/op
+Iteration  93: 0.674 ms/op
+Iteration  94: 0.626 ms/op
+Iteration  95: 0.658 ms/op
+Iteration  96: 0.622 ms/op
+Iteration  97: 0.657 ms/op
+Iteration  98: 0.691 ms/op
+Iteration  99: 0.710 ms/op
+Iteration 100: 0.671 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.618 ±(99.9%) 0.010 ms/op [Average]
+  (min, avg, max) = (0.584, 0.618, 0.710), stdev = 0.031
+  CI (99.9%): [0.608, 0.629] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>2</p>)
+
+# Run progress: 9.09% complete, ETA 00:35:40
+# Fork: 1 of 1
+objc[14061]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x101f624c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x102f844e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.490 ms/op
+# Warmup Iteration   2: 1.076 ms/op
+# Warmup Iteration   3: 0.649 ms/op
+# Warmup Iteration   4: 0.711 ms/op
+# Warmup Iteration   5: 0.678 ms/op
+Iteration   1: 0.741 ms/op
+Iteration   2: 0.699 ms/op
+Iteration   3: 0.618 ms/op
+Iteration   4: 0.654 ms/op
+Iteration   5: 0.693 ms/op
+Iteration   6: 0.648 ms/op
+Iteration   7: 0.634 ms/op
+Iteration   8: 0.716 ms/op
+Iteration   9: 0.653 ms/op
+Iteration  10: 0.596 ms/op
+Iteration  11: 0.577 ms/op
+Iteration  12: 0.580 ms/op
+Iteration  13: 0.577 ms/op
+Iteration  14: 0.709 ms/op
+Iteration  15: 0.630 ms/op
+Iteration  16: 0.594 ms/op
+Iteration  17: 0.621 ms/op
+Iteration  18: 0.632 ms/op
+Iteration  19: 0.652 ms/op
+Iteration  20: 0.596 ms/op
+Iteration  21: 0.735 ms/op
+Iteration  22: 0.626 ms/op
+Iteration  23: 0.624 ms/op
+Iteration  24: 0.747 ms/op
+Iteration  25: 0.692 ms/op
+Iteration  26: 0.735 ms/op
+Iteration  27: 0.698 ms/op
+Iteration  28: 0.612 ms/op
+Iteration  29: 0.625 ms/op
+Iteration  30: 0.626 ms/op
+Iteration  31: 0.626 ms/op
+Iteration  32: 0.636 ms/op
+Iteration  33: 0.700 ms/op
+Iteration  34: 0.632 ms/op
+Iteration  35: 0.641 ms/op
+Iteration  36: 0.640 ms/op
+Iteration  37: 0.605 ms/op
+Iteration  38: 0.613 ms/op
+Iteration  39: 0.640 ms/op
+Iteration  40: 0.707 ms/op
+Iteration  41: 0.660 ms/op
+Iteration  42: 0.712 ms/op
+Iteration  43: 0.628 ms/op
+Iteration  44: 0.620 ms/op
+Iteration  45: 0.610 ms/op
+Iteration  46: 0.611 ms/op
+Iteration  47: 0.611 ms/op
+Iteration  48: 0.615 ms/op
+Iteration  49: 0.613 ms/op
+Iteration  50: 0.611 ms/op
+Iteration  51: 0.622 ms/op
+Iteration  52: 0.630 ms/op
+Iteration  53: 0.654 ms/op
+Iteration  54: 0.628 ms/op
+Iteration  55: 0.620 ms/op
+Iteration  56: 0.634 ms/op
+Iteration  57: 0.619 ms/op
+Iteration  58: 0.674 ms/op
+Iteration  59: 0.655 ms/op
+Iteration  60: 0.772 ms/op
+Iteration  61: 0.684 ms/op
+Iteration  62: 0.666 ms/op
+Iteration  63: 0.625 ms/op
+Iteration  64: 0.642 ms/op
+Iteration  65: 0.703 ms/op
+Iteration  66: 0.717 ms/op
+Iteration  67: 0.719 ms/op
+Iteration  68: 0.718 ms/op
+Iteration  69: 0.613 ms/op
+Iteration  70: 0.653 ms/op
+Iteration  71: 0.606 ms/op
+Iteration  72: 0.693 ms/op
+Iteration  73: 0.607 ms/op
+Iteration  74: 0.585 ms/op
+Iteration  75: 0.587 ms/op
+Iteration  76: 0.600 ms/op
+Iteration  77: 0.608 ms/op
+Iteration  78: 0.587 ms/op
+Iteration  79: 0.588 ms/op
+Iteration  80: 0.623 ms/op
+Iteration  81: 0.681 ms/op
+Iteration  82: 0.588 ms/op
+Iteration  83: 0.580 ms/op
+Iteration  84: 0.579 ms/op
+Iteration  85: 0.576 ms/op
+Iteration  86: 0.576 ms/op
+Iteration  87: 0.579 ms/op
+Iteration  88: 0.593 ms/op
+Iteration  89: 0.579 ms/op
+Iteration  90: 0.597 ms/op
+Iteration  91: 0.584 ms/op
+Iteration  92: 0.581 ms/op
+Iteration  93: 0.577 ms/op
+Iteration  94: 0.578 ms/op
+Iteration  95: 0.577 ms/op
+Iteration  96: 0.595 ms/op
+Iteration  97: 0.607 ms/op
+Iteration  98: 0.597 ms/op
+Iteration  99: 0.628 ms/op
+Iteration 100: 0.670 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.635 ±(99.9%) 0.016 ms/op [Average]
+  (min, avg, max) = (0.576, 0.635, 0.772), stdev = 0.048
+  CI (99.9%): [0.619, 0.651] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>3</p>)
+
+# Run progress: 13.64% complete, ETA 00:34:04
+# Fork: 1 of 1
+objc[14074]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10bd2e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10bdae4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.797 ms/op
+# Warmup Iteration   2: 0.804 ms/op
+# Warmup Iteration   3: 0.586 ms/op
+# Warmup Iteration   4: 0.579 ms/op
+# Warmup Iteration   5: 0.576 ms/op
+Iteration   1: 0.582 ms/op
+Iteration   2: 0.578 ms/op
+Iteration   3: 0.578 ms/op
+Iteration   4: 0.586 ms/op
+Iteration   5: 0.587 ms/op
+Iteration   6: 0.585 ms/op
+Iteration   7: 0.581 ms/op
+Iteration   8: 0.584 ms/op
+Iteration   9: 0.582 ms/op
+Iteration  10: 0.581 ms/op
+Iteration  11: 0.584 ms/op
+Iteration  12: 0.583 ms/op
+Iteration  13: 0.582 ms/op
+Iteration  14: 0.584 ms/op
+Iteration  15: 0.582 ms/op
+Iteration  16: 0.583 ms/op
+Iteration  17: 0.584 ms/op
+Iteration  18: 0.585 ms/op
+Iteration  19: 0.584 ms/op
+Iteration  20: 0.595 ms/op
+Iteration  21: 0.587 ms/op
+Iteration  22: 0.592 ms/op
+Iteration  23: 0.585 ms/op
+Iteration  24: 0.595 ms/op
+Iteration  25: 0.611 ms/op
+Iteration  26: 0.623 ms/op
+Iteration  27: 0.628 ms/op
+Iteration  28: 0.587 ms/op
+Iteration  29: 0.591 ms/op
+Iteration  30: 0.606 ms/op
+Iteration  31: 0.633 ms/op
+Iteration  32: 0.611 ms/op
+Iteration  33: 0.609 ms/op
+Iteration  34: 0.636 ms/op
+Iteration  35: 0.608 ms/op
+Iteration  36: 0.592 ms/op
+Iteration  37: 0.664 ms/op
+Iteration  38: 0.677 ms/op
+Iteration  39: 0.601 ms/op
+Iteration  40: 0.614 ms/op
+Iteration  41: 0.666 ms/op
+Iteration  42: 0.673 ms/op
+Iteration  43: 0.750 ms/op
+Iteration  44: 0.593 ms/op
+Iteration  45: 0.588 ms/op
+Iteration  46: 0.595 ms/op
+Iteration  47: 0.592 ms/op
+Iteration  48: 0.585 ms/op
+Iteration  49: 0.584 ms/op
+Iteration  50: 0.589 ms/op
+Iteration  51: 0.590 ms/op
+Iteration  52: 0.586 ms/op
+Iteration  53: 0.587 ms/op
+Iteration  54: 0.583 ms/op
+Iteration  55: 0.585 ms/op
+Iteration  56: 0.584 ms/op
+Iteration  57: 0.588 ms/op
+Iteration  58: 0.583 ms/op
+Iteration  59: 0.585 ms/op
+Iteration  60: 0.584 ms/op
+Iteration  61: 0.587 ms/op
+Iteration  62: 0.588 ms/op
+Iteration  63: 0.583 ms/op
+Iteration  64: 0.582 ms/op
+Iteration  65: 0.588 ms/op
+Iteration  66: 0.584 ms/op
+Iteration  67: 0.583 ms/op
+Iteration  68: 0.582 ms/op
+Iteration  69: 0.582 ms/op
+Iteration  70: 0.581 ms/op
+Iteration  71: 0.586 ms/op
+Iteration  72: 0.584 ms/op
+Iteration  73: 0.589 ms/op
+Iteration  74: 0.582 ms/op
+Iteration  75: 0.585 ms/op
+Iteration  76: 0.582 ms/op
+Iteration  77: 0.582 ms/op
+Iteration  78: 0.586 ms/op
+Iteration  79: 0.582 ms/op
+Iteration  80: 0.583 ms/op
+Iteration  81: 0.586 ms/op
+Iteration  82: 0.587 ms/op
+Iteration  83: 0.580 ms/op
+Iteration  84: 0.581 ms/op
+Iteration  85: 0.599 ms/op
+Iteration  86: 0.586 ms/op
+Iteration  87: 0.583 ms/op
+Iteration  88: 0.581 ms/op
+Iteration  89: 0.582 ms/op
+Iteration  90: 0.583 ms/op
+Iteration  91: 0.583 ms/op
+Iteration  92: 0.582 ms/op
+Iteration  93: 0.582 ms/op
+Iteration  94: 0.587 ms/op
+Iteration  95: 0.584 ms/op
+Iteration  96: 0.585 ms/op
+Iteration  97: 0.585 ms/op
+Iteration  98: 0.581 ms/op
+Iteration  99: 0.583 ms/op
+Iteration 100: 0.584 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.594 ±(99.9%) 0.009 ms/op [Average]
+  (min, avg, max) = (0.578, 0.594, 0.750), stdev = 0.025
+  CI (99.9%): [0.585, 0.602] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>4</p>)
+
+# Run progress: 18.18% complete, ETA 00:32:11
+# Fork: 1 of 1
+objc[14087]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10d3b04c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10ebf04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.530 ms/op
+# Warmup Iteration   2: 0.757 ms/op
+# Warmup Iteration   3: 0.578 ms/op
+# Warmup Iteration   4: 0.574 ms/op
+# Warmup Iteration   5: 0.574 ms/op
+Iteration   1: 0.578 ms/op
+Iteration   2: 0.575 ms/op
+Iteration   3: 0.577 ms/op
+Iteration   4: 0.576 ms/op
+Iteration   5: 0.584 ms/op
+Iteration   6: 0.582 ms/op
+Iteration   7: 0.579 ms/op
+Iteration   8: 0.581 ms/op
+Iteration   9: 0.579 ms/op
+Iteration  10: 0.580 ms/op
+Iteration  11: 0.579 ms/op
+Iteration  12: 0.582 ms/op
+Iteration  13: 0.579 ms/op
+Iteration  14: 0.582 ms/op
+Iteration  15: 0.583 ms/op
+Iteration  16: 0.591 ms/op
+Iteration  17: 0.598 ms/op
+Iteration  18: 0.582 ms/op
+Iteration  19: 0.583 ms/op
+Iteration  20: 0.584 ms/op
+Iteration  21: 0.581 ms/op
+Iteration  22: 0.580 ms/op
+Iteration  23: 0.619 ms/op
+Iteration  24: 0.600 ms/op
+Iteration  25: 0.598 ms/op
+Iteration  26: 0.588 ms/op
+Iteration  27: 0.583 ms/op
+Iteration  28: 0.579 ms/op
+Iteration  29: 0.580 ms/op
+Iteration  30: 0.583 ms/op
+Iteration  31: 0.588 ms/op
+Iteration  32: 0.589 ms/op
+Iteration  33: 0.588 ms/op
+Iteration  34: 0.581 ms/op
+Iteration  35: 0.587 ms/op
+Iteration  36: 0.581 ms/op
+Iteration  37: 0.596 ms/op
+Iteration  38: 0.592 ms/op
+Iteration  39: 0.582 ms/op
+Iteration  40: 0.621 ms/op
+Iteration  41: 0.707 ms/op
+Iteration  42: 0.706 ms/op
+Iteration  43: 0.629 ms/op
+Iteration  44: 0.656 ms/op
+Iteration  45: 0.610 ms/op
+Iteration  46: 0.729 ms/op
+Iteration  47: 0.589 ms/op
+Iteration  48: 0.583 ms/op
+Iteration  49: 0.579 ms/op
+Iteration  50: 0.577 ms/op
+Iteration  51: 0.578 ms/op
+Iteration  52: 0.577 ms/op
+Iteration  53: 0.581 ms/op
+Iteration  54: 0.582 ms/op
+Iteration  55: 0.591 ms/op
+Iteration  56: 0.594 ms/op
+Iteration  57: 0.664 ms/op
+Iteration  58: 0.672 ms/op
+Iteration  59: 0.665 ms/op
+Iteration  60: 0.682 ms/op
+Iteration  61: 0.647 ms/op
+Iteration  62: 0.639 ms/op
+Iteration  63: 0.629 ms/op
+Iteration  64: 0.588 ms/op
+Iteration  65: 0.582 ms/op
+Iteration  66: 0.580 ms/op
+Iteration  67: 0.582 ms/op
+Iteration  68: 0.579 ms/op
+Iteration  69: 0.579 ms/op
+Iteration  70: 0.581 ms/op
+Iteration  71: 0.583 ms/op
+Iteration  72: 0.580 ms/op
+Iteration  73: 0.579 ms/op
+Iteration  74: 0.643 ms/op
+Iteration  75: 0.612 ms/op
+Iteration  76: 0.641 ms/op
+Iteration  77: 0.630 ms/op
+Iteration  78: 0.587 ms/op
+Iteration  79: 0.626 ms/op
+Iteration  80: 0.592 ms/op
+Iteration  81: 0.655 ms/op
+Iteration  82: 0.646 ms/op
+Iteration  83: 0.644 ms/op
+Iteration  84: 0.634 ms/op
+Iteration  85: 0.611 ms/op
+Iteration  86: 0.627 ms/op
+Iteration  87: 0.623 ms/op
+Iteration  88: 0.619 ms/op
+Iteration  89: 0.623 ms/op
+Iteration  90: 0.678 ms/op
+Iteration  91: 0.679 ms/op
+Iteration  92: 1.170 ms/op
+Iteration  93: 0.707 ms/op
+Iteration  94: 0.626 ms/op
+Iteration  95: 0.604 ms/op
+Iteration  96: 0.600 ms/op
+Iteration  97: 0.600 ms/op
+Iteration  98: 0.599 ms/op
+Iteration  99: 0.598 ms/op
+Iteration 100: 0.635 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.612 ±(99.9%) 0.023 ms/op [Average]
+  (min, avg, max) = (0.575, 0.612, 1.170), stdev = 0.067
+  CI (99.9%): [0.590, 0.635] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>5</p>)
+
+# Run progress: 22.73% complete, ETA 00:30:26
+# Fork: 1 of 1
+objc[14101]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x100ee24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x100f624e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.152 ms/op
+# Warmup Iteration   2: 1.956 ms/op
+# Warmup Iteration   3: 0.761 ms/op
+# Warmup Iteration   4: 0.662 ms/op
+# Warmup Iteration   5: 0.601 ms/op
+Iteration   1: 0.588 ms/op
+Iteration   2: 0.642 ms/op
+Iteration   3: 0.642 ms/op
+Iteration   4: 0.661 ms/op
+Iteration   5: 0.647 ms/op
+Iteration   6: 0.598 ms/op
+Iteration   7: 0.721 ms/op
+Iteration   8: 0.835 ms/op
+Iteration   9: 0.694 ms/op
+Iteration  10: 1.199 ms/op
+Iteration  11: 1.787 ms/op
+Iteration  12: 1.280 ms/op
+Iteration  13: 0.744 ms/op
+Iteration  14: 0.657 ms/op
+Iteration  15: 0.589 ms/op
+Iteration  16: 0.687 ms/op
+Iteration  17: 0.729 ms/op
+Iteration  18: 0.647 ms/op
+Iteration  19: 0.600 ms/op
+Iteration  20: 0.593 ms/op
+Iteration  21: 0.648 ms/op
+Iteration  22: 0.898 ms/op
+Iteration  23: 0.637 ms/op
+Iteration  24: 0.678 ms/op
+Iteration  25: 0.639 ms/op
+Iteration  26: 0.676 ms/op
+Iteration  27: 0.694 ms/op
+Iteration  28: 0.679 ms/op
+Iteration  29: 0.658 ms/op
+Iteration  30: 0.602 ms/op
+Iteration  31: 0.601 ms/op
+Iteration  32: 0.591 ms/op
+Iteration  33: 0.593 ms/op
+Iteration  34: 0.592 ms/op
+Iteration  35: 0.587 ms/op
+Iteration  36: 0.592 ms/op
+Iteration  37: 0.587 ms/op
+Iteration  38: 0.593 ms/op
+Iteration  39: 0.592 ms/op
+Iteration  40: 0.606 ms/op
+Iteration  41: 0.602 ms/op
+Iteration  42: 0.601 ms/op
+Iteration  43: 0.590 ms/op
+Iteration  44: 0.587 ms/op
+Iteration  45: 0.593 ms/op
+Iteration  46: 0.594 ms/op
+Iteration  47: 0.597 ms/op
+Iteration  48: 0.600 ms/op
+Iteration  49: 0.588 ms/op
+Iteration  50: 0.592 ms/op
+Iteration  51: 0.588 ms/op
+Iteration  52: 0.595 ms/op
+Iteration  53: 0.591 ms/op
+Iteration  54: 0.587 ms/op
+Iteration  55: 0.595 ms/op
+Iteration  56: 0.596 ms/op
+Iteration  57: 0.597 ms/op
+Iteration  58: 0.590 ms/op
+Iteration  59: 0.593 ms/op
+Iteration  60: 0.601 ms/op
+Iteration  61: 0.610 ms/op
+Iteration  62: 0.646 ms/op
+Iteration  63: 0.590 ms/op
+Iteration  64: 0.592 ms/op
+Iteration  65: 0.597 ms/op
+Iteration  66: 0.597 ms/op
+Iteration  67: 0.593 ms/op
+Iteration  68: 0.597 ms/op
+Iteration  69: 0.594 ms/op
+Iteration  70: 0.589 ms/op
+Iteration  71: 0.590 ms/op
+Iteration  72: 0.610 ms/op
+Iteration  73: 0.609 ms/op
+Iteration  74: 0.595 ms/op
+Iteration  75: 0.598 ms/op
+Iteration  76: 0.630 ms/op
+Iteration  77: 0.673 ms/op
+Iteration  78: 0.602 ms/op
+Iteration  79: 0.603 ms/op
+Iteration  80: 0.611 ms/op
+Iteration  81: 0.604 ms/op
+Iteration  82: 0.636 ms/op
+Iteration  83: 0.614 ms/op
+Iteration  84: 0.623 ms/op
+Iteration  85: 0.716 ms/op
+Iteration  86: 0.624 ms/op
+Iteration  87: 0.620 ms/op
+Iteration  88: 0.628 ms/op
+Iteration  89: 0.620 ms/op
+Iteration  90: 0.622 ms/op
+Iteration  91: 0.690 ms/op
+Iteration  92: 0.677 ms/op
+Iteration  93: 0.690 ms/op
+Iteration  94: 0.676 ms/op
+Iteration  95: 0.666 ms/op
+Iteration  96: 0.721 ms/op
+Iteration  97: 0.686 ms/op
+Iteration  98: 0.675 ms/op
+Iteration  99: 0.683 ms/op
+Iteration 100: 0.682 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.654 ±(99.9%) 0.052 ms/op [Average]
+  (min, avg, max) = (0.587, 0.654, 1.787), stdev = 0.152
+  CI (99.9%): [0.603, 0.706] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>6</p>)
+
+# Run progress: 27.27% complete, ETA 00:28:36
+# Fork: 1 of 1
+objc[14110]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1017164c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1017964e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.031 ms/op
+# Warmup Iteration   2: 1.335 ms/op
+# Warmup Iteration   3: 0.703 ms/op
+# Warmup Iteration   4: 0.599 ms/op
+# Warmup Iteration   5: 0.590 ms/op
+Iteration   1: 0.600 ms/op
+Iteration   2: 0.597 ms/op
+Iteration   3: 0.592 ms/op
+Iteration   4: 0.594 ms/op
+Iteration   5: 0.596 ms/op
+Iteration   6: 0.601 ms/op
+Iteration   7: 0.600 ms/op
+Iteration   8: 0.600 ms/op
+Iteration   9: 0.618 ms/op
+Iteration  10: 0.643 ms/op
+Iteration  11: 0.647 ms/op
+Iteration  12: 0.629 ms/op
+Iteration  13: 0.610 ms/op
+Iteration  14: 0.612 ms/op
+Iteration  15: 0.610 ms/op
+Iteration  16: 0.599 ms/op
+Iteration  17: 0.606 ms/op
+Iteration  18: 0.632 ms/op
+Iteration  19: 0.643 ms/op
+Iteration  20: 0.672 ms/op
+Iteration  21: 0.799 ms/op
+Iteration  22: 0.767 ms/op
+Iteration  23: 0.991 ms/op
+Iteration  24: 0.806 ms/op
+Iteration  25: 0.623 ms/op
+Iteration  26: 0.835 ms/op
+Iteration  27: 0.775 ms/op
+Iteration  28: 0.609 ms/op
+Iteration  29: 0.721 ms/op
+Iteration  30: 0.685 ms/op
+Iteration  31: 0.668 ms/op
+Iteration  32: 0.686 ms/op
+Iteration  33: 0.734 ms/op
+Iteration  34: 0.700 ms/op
+Iteration  35: 0.661 ms/op
+Iteration  36: 0.676 ms/op
+Iteration  37: 0.679 ms/op
+Iteration  38: 0.755 ms/op
+Iteration  39: 0.835 ms/op
+Iteration  40: 0.716 ms/op
+Iteration  41: 0.702 ms/op
+Iteration  42: 0.681 ms/op
+Iteration  43: 0.682 ms/op
+Iteration  44: 0.680 ms/op
+Iteration  45: 0.744 ms/op
+Iteration  46: 0.894 ms/op
+Iteration  47: 0.748 ms/op
+Iteration  48: 0.723 ms/op
+Iteration  49: 0.741 ms/op
+Iteration  50: 0.715 ms/op
+Iteration  51: 0.807 ms/op
+Iteration  52: 0.768 ms/op
+Iteration  53: 0.686 ms/op
+Iteration  54: 0.707 ms/op
+Iteration  55: 0.796 ms/op
+Iteration  56: 0.809 ms/op
+Iteration  57: 1.062 ms/op
+Iteration  58: 1.161 ms/op
+Iteration  59: 0.899 ms/op
+Iteration  60: 0.703 ms/op
+Iteration  61: 0.789 ms/op
+Iteration  62: 0.794 ms/op
+Iteration  63: 1.064 ms/op
+Iteration  64: 0.761 ms/op
+Iteration  65: 1.123 ms/op
+Iteration  66: 0.905 ms/op
+Iteration  67: 0.695 ms/op
+Iteration  68: 0.890 ms/op
+Iteration  69: 0.851 ms/op
+Iteration  70: 0.755 ms/op
+Iteration  71: 0.697 ms/op
+Iteration  72: 0.786 ms/op
+Iteration  73: 0.946 ms/op
+Iteration  74: 0.775 ms/op
+Iteration  75: 0.791 ms/op
+Iteration  76: 0.710 ms/op
+Iteration  77: 0.702 ms/op
+Iteration  78: 0.669 ms/op
+Iteration  79: 0.827 ms/op
+Iteration  80: 1.106 ms/op
+Iteration  81: 0.730 ms/op
+Iteration  82: 1.077 ms/op
+Iteration  83: 0.761 ms/op
+Iteration  84: 0.649 ms/op
+Iteration  85: 0.756 ms/op
+Iteration  86: 1.076 ms/op
+Iteration  87: 0.884 ms/op
+Iteration  88: 1.060 ms/op
+Iteration  89: 0.909 ms/op
+Iteration  90: 1.078 ms/op
+Iteration  91: 0.709 ms/op
+Iteration  92: 0.700 ms/op
+Iteration  93: 0.722 ms/op
+Iteration  94: 0.711 ms/op
+Iteration  95: 0.948 ms/op
+Iteration  96: 0.825 ms/op
+Iteration  97: 0.771 ms/op
+Iteration  98: 0.727 ms/op
+Iteration  99: 1.026 ms/op
+Iteration 100: 0.784 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.763 ±(99.9%) 0.047 ms/op [Average]
+  (min, avg, max) = (0.592, 0.763, 1.161), stdev = 0.140
+  CI (99.9%): [0.715, 0.810] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>7</p>)
+
+# Run progress: 31.82% complete, ETA 00:26:48
+# Fork: 1 of 1
+objc[14130]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1045e24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x105e194e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.683 ms/op
+# Warmup Iteration   2: 3.745 ms/op
+# Warmup Iteration   3: 0.765 ms/op
+# Warmup Iteration   4: 0.649 ms/op
+# Warmup Iteration   5: 0.736 ms/op
+Iteration   1: 0.818 ms/op
+Iteration   2: 0.723 ms/op
+Iteration   3: 0.712 ms/op
+Iteration   4: 0.722 ms/op
+Iteration   5: 0.701 ms/op
+Iteration   6: 0.711 ms/op
+Iteration   7: 0.720 ms/op
+Iteration   8: 0.965 ms/op
+Iteration   9: 0.742 ms/op
+Iteration  10: 0.720 ms/op
+Iteration  11: 0.706 ms/op
+Iteration  12: 0.706 ms/op
+Iteration  13: 0.812 ms/op
+Iteration  14: 0.741 ms/op
+Iteration  15: 1.179 ms/op
+Iteration  16: 0.759 ms/op
+Iteration  17: 0.694 ms/op
+Iteration  18: 0.705 ms/op
+Iteration  19: 0.814 ms/op
+Iteration  20: 1.122 ms/op
+Iteration  21: 0.826 ms/op
+Iteration  22: 0.735 ms/op
+Iteration  23: 0.715 ms/op
+Iteration  24: 0.666 ms/op
+Iteration  25: 0.665 ms/op
+Iteration  26: 0.661 ms/op
+Iteration  27: 0.710 ms/op
+Iteration  28: 0.837 ms/op
+Iteration  29: 0.888 ms/op
+Iteration  30: 0.722 ms/op
+Iteration  31: 0.757 ms/op
+Iteration  32: 0.768 ms/op
+Iteration  33: 0.746 ms/op
+Iteration  34: 0.755 ms/op
+Iteration  35: 0.896 ms/op
+Iteration  36: 0.730 ms/op
+Iteration  37: 0.742 ms/op
+Iteration  38: 0.714 ms/op
+Iteration  39: 0.716 ms/op
+Iteration  40: 0.718 ms/op
+Iteration  41: 0.737 ms/op
+Iteration  42: 0.681 ms/op
+Iteration  43: 0.711 ms/op
+Iteration  44: 0.759 ms/op
+Iteration  45: 0.736 ms/op
+Iteration  46: 0.750 ms/op
+Iteration  47: 0.796 ms/op
+Iteration  48: 1.143 ms/op
+Iteration  49: 1.693 ms/op
+Iteration  50: 0.819 ms/op
+Iteration  51: 0.720 ms/op
+Iteration  52: 0.775 ms/op
+Iteration  53: 0.781 ms/op
+Iteration  54: 0.776 ms/op
+Iteration  55: 0.776 ms/op
+Iteration  56: 0.737 ms/op
+Iteration  57: 0.789 ms/op
+Iteration  58: 0.793 ms/op
+Iteration  59: 1.669 ms/op
+Iteration  60: 0.948 ms/op
+Iteration  61: 0.772 ms/op
+Iteration  62: 0.713 ms/op
+Iteration  63: 0.725 ms/op
+Iteration  64: 0.709 ms/op
+Iteration  65: 0.714 ms/op
+Iteration  66: 0.727 ms/op
+Iteration  67: 0.717 ms/op
+Iteration  68: 0.709 ms/op
+Iteration  69: 0.708 ms/op
+Iteration  70: 0.703 ms/op
+Iteration  71: 0.697 ms/op
+Iteration  72: 0.702 ms/op
+Iteration  73: 1.052 ms/op
+Iteration  74: 1.350 ms/op
+Iteration  75: 1.007 ms/op
+Iteration  76: 1.111 ms/op
+Iteration  77: 0.892 ms/op
+Iteration  78: 0.927 ms/op
+Iteration  79: 0.866 ms/op
+Iteration  80: 0.856 ms/op
+Iteration  81: 0.954 ms/op
+Iteration  82: 0.943 ms/op
+Iteration  83: 0.847 ms/op
+Iteration  84: 0.969 ms/op
+Iteration  85: 0.915 ms/op
+Iteration  86: 0.948 ms/op
+Iteration  87: 0.942 ms/op
+Iteration  88: 0.708 ms/op
+Iteration  89: 0.843 ms/op
+Iteration  90: 0.754 ms/op
+Iteration  91: 0.830 ms/op
+Iteration  92: 0.815 ms/op
+Iteration  93: 0.892 ms/op
+Iteration  94: 0.788 ms/op
+Iteration  95: 1.040 ms/op
+Iteration  96: 0.746 ms/op
+Iteration  97: 0.718 ms/op
+Iteration  98: 0.747 ms/op
+Iteration  99: 0.725 ms/op
+Iteration 100: 0.718 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.818 ±(99.9%) 0.060 ms/op [Average]
+  (min, avg, max) = (0.661, 0.818, 1.693), stdev = 0.176
+  CI (99.9%): [0.759, 0.878] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>8</p>)
+
+# Run progress: 36.36% complete, ETA 00:24:59
+# Fork: 1 of 1
+objc[14165]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x101f894c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1037bb4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 6.130 ms/op
+# Warmup Iteration   2: 2.606 ms/op
+# Warmup Iteration   3: 1.055 ms/op
+# Warmup Iteration   4: 0.697 ms/op
+# Warmup Iteration   5: 0.672 ms/op
+Iteration   1: 0.728 ms/op
+Iteration   2: 0.760 ms/op
+Iteration   3: 0.839 ms/op
+Iteration   4: 0.758 ms/op
+Iteration   5: 0.790 ms/op
+Iteration   6: 0.778 ms/op
+Iteration   7: 0.699 ms/op
+Iteration   8: 0.757 ms/op
+Iteration   9: 0.720 ms/op
+Iteration  10: 0.769 ms/op
+Iteration  11: 0.766 ms/op
+Iteration  12: 1.258 ms/op
+Iteration  13: 1.139 ms/op
+Iteration  14: 0.717 ms/op
+Iteration  15: 0.653 ms/op
+Iteration  16: 0.732 ms/op
+Iteration  17: 0.700 ms/op
+Iteration  18: 0.665 ms/op
+Iteration  19: 0.866 ms/op
+Iteration  20: 1.126 ms/op
+Iteration  21: 1.196 ms/op
+Iteration  22: 1.347 ms/op
+Iteration  23: 2.808 ms/op
+Iteration  24: 1.157 ms/op
+Iteration  25: 0.916 ms/op
+Iteration  26: 0.695 ms/op
+Iteration  27: 0.683 ms/op
+Iteration  28: 0.758 ms/op
+Iteration  29: 0.699 ms/op
+Iteration  30: 0.764 ms/op
+Iteration  31: 0.719 ms/op
+Iteration  32: 0.744 ms/op
+Iteration  33: 0.716 ms/op
+Iteration  34: 0.800 ms/op
+Iteration  35: 0.745 ms/op
+Iteration  36: 0.771 ms/op
+Iteration  37: 0.685 ms/op
+Iteration  38: 0.609 ms/op
+Iteration  39: 0.609 ms/op
+Iteration  40: 0.684 ms/op
+Iteration  41: 0.728 ms/op
+Iteration  42: 0.976 ms/op
+Iteration  43: 0.968 ms/op
+Iteration  44: 0.683 ms/op
+Iteration  45: 0.586 ms/op
+Iteration  46: 0.580 ms/op
+Iteration  47: 0.696 ms/op
+Iteration  48: 0.652 ms/op
+Iteration  49: 0.651 ms/op
+Iteration  50: 0.647 ms/op
+Iteration  51: 0.747 ms/op
+Iteration  52: 0.741 ms/op
+Iteration  53: 0.695 ms/op
+Iteration  54: 0.663 ms/op
+Iteration  55: 0.699 ms/op
+Iteration  56: 0.889 ms/op
+Iteration  57: 0.711 ms/op
+Iteration  58: 0.670 ms/op
+Iteration  59: 0.726 ms/op
+Iteration  60: 0.659 ms/op
+Iteration  61: 0.644 ms/op
+Iteration  62: 0.585 ms/op
+Iteration  63: 0.591 ms/op
+Iteration  64: 0.813 ms/op
+Iteration  65: 1.670 ms/op
+Iteration  66: 0.636 ms/op
+Iteration  67: 0.591 ms/op
+Iteration  68: 0.649 ms/op
+Iteration  69: 0.592 ms/op
+Iteration  70: 0.581 ms/op
+Iteration  71: 0.605 ms/op
+Iteration  72: 0.710 ms/op
+Iteration  73: 0.660 ms/op
+Iteration  74: 0.677 ms/op
+Iteration  75: 0.664 ms/op
+Iteration  76: 0.768 ms/op
+Iteration  77: 0.663 ms/op
+Iteration  78: 0.649 ms/op
+Iteration  79: 0.775 ms/op
+Iteration  80: 0.686 ms/op
+Iteration  81: 0.797 ms/op
+Iteration  82: 0.710 ms/op
+Iteration  83: 0.747 ms/op
+Iteration  84: 0.849 ms/op
+Iteration  85: 0.709 ms/op
+Iteration  86: 0.701 ms/op
+Iteration  87: 0.797 ms/op
+Iteration  88: 0.693 ms/op
+Iteration  89: 0.631 ms/op
+Iteration  90: 0.627 ms/op
+Iteration  91: 0.777 ms/op
+Iteration  92: 0.646 ms/op
+Iteration  93: 0.899 ms/op
+Iteration  94: 0.781 ms/op
+Iteration  95: 0.914 ms/op
+Iteration  96: 0.667 ms/op
+Iteration  97: 0.843 ms/op
+Iteration  98: 1.105 ms/op
+Iteration  99: 1.085 ms/op
+Iteration 100: 0.632 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.785 ±(99.9%) 0.092 ms/op [Average]
+  (min, avg, max) = (0.580, 0.785, 2.808), stdev = 0.270
+  CI (99.9%): [0.693, 0.877] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>9</p>)
+
+# Run progress: 40.91% complete, ETA 00:23:12
+# Fork: 1 of 1
+objc[14197]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1095404c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1095c04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.751 ms/op
+# Warmup Iteration   2: 1.319 ms/op
+# Warmup Iteration   3: 0.936 ms/op
+# Warmup Iteration   4: 0.729 ms/op
+# Warmup Iteration   5: 0.652 ms/op
+Iteration   1: 0.667 ms/op
+Iteration   2: 0.794 ms/op
+Iteration   3: 0.962 ms/op
+Iteration   4: 1.323 ms/op
+Iteration   5: 0.853 ms/op
+Iteration   6: 0.841 ms/op
+Iteration   7: 0.794 ms/op
+Iteration   8: 0.978 ms/op
+Iteration   9: 0.747 ms/op
+Iteration  10: 0.657 ms/op
+Iteration  11: 0.658 ms/op
+Iteration  12: 0.786 ms/op
+Iteration  13: 1.119 ms/op
+Iteration  14: 2.766 ms/op
+Iteration  15: 2.155 ms/op
+Iteration  16: 1.885 ms/op
+Iteration  17: 0.824 ms/op
+Iteration  18: 0.679 ms/op
+Iteration  19: 0.682 ms/op
+Iteration  20: 0.619 ms/op
+Iteration  21: 0.624 ms/op
+Iteration  22: 0.670 ms/op
+Iteration  23: 0.609 ms/op
+Iteration  24: 0.595 ms/op
+Iteration  25: 0.596 ms/op
+Iteration  26: 0.590 ms/op
+Iteration  27: 0.605 ms/op
+Iteration  28: 0.625 ms/op
+Iteration  29: 0.695 ms/op
+Iteration  30: 0.653 ms/op
+Iteration  31: 0.718 ms/op
+Iteration  32: 0.648 ms/op
+Iteration  33: 0.646 ms/op
+Iteration  34: 0.589 ms/op
+Iteration  35: 0.630 ms/op
+Iteration  36: 0.593 ms/op
+Iteration  37: 0.639 ms/op
+Iteration  38: 0.621 ms/op
+Iteration  39: 0.618 ms/op
+Iteration  40: 0.763 ms/op
+Iteration  41: 0.781 ms/op
+Iteration  42: 0.651 ms/op
+Iteration  43: 0.878 ms/op
+Iteration  44: 0.739 ms/op
+Iteration  45: 0.942 ms/op
+Iteration  46: 0.650 ms/op
+Iteration  47: 0.623 ms/op
+Iteration  48: 0.637 ms/op
+Iteration  49: 0.591 ms/op
+Iteration  50: 0.583 ms/op
+Iteration  51: 0.608 ms/op
+Iteration  52: 0.622 ms/op
+Iteration  53: 0.619 ms/op
+Iteration  54: 0.607 ms/op
+Iteration  55: 0.602 ms/op
+Iteration  56: 0.587 ms/op
+Iteration  57: 0.596 ms/op
+Iteration  58: 0.581 ms/op
+Iteration  59: 0.638 ms/op
+Iteration  60: 0.638 ms/op
+Iteration  61: 0.640 ms/op
+Iteration  62: 0.806 ms/op
+Iteration  63: 0.623 ms/op
+Iteration  64: 0.583 ms/op
+Iteration  65: 0.635 ms/op
+Iteration  66: 0.708 ms/op
+Iteration  67: 0.726 ms/op
+Iteration  68: 0.647 ms/op
+Iteration  69: 0.676 ms/op
+Iteration  70: 0.674 ms/op
+Iteration  71: 0.701 ms/op
+Iteration  72: 0.762 ms/op
+Iteration  73: 0.649 ms/op
+Iteration  74: 0.643 ms/op
+Iteration  75: 0.641 ms/op
+Iteration  76: 0.861 ms/op
+Iteration  77: 0.955 ms/op
+Iteration  78: 0.790 ms/op
+Iteration  79: 0.712 ms/op
+Iteration  80: 0.723 ms/op
+Iteration  81: 0.736 ms/op
+Iteration  82: 0.625 ms/op
+Iteration  83: 0.633 ms/op
+Iteration  84: 0.691 ms/op
+Iteration  85: 0.649 ms/op
+Iteration  86: 0.712 ms/op
+Iteration  87: 0.637 ms/op
+Iteration  88: 0.852 ms/op
+Iteration  89: 0.839 ms/op
+Iteration  90: 0.658 ms/op
+Iteration  91: 0.588 ms/op
+Iteration  92: 0.582 ms/op
+Iteration  93: 0.578 ms/op
+Iteration  94: 0.581 ms/op
+Iteration  95: 0.584 ms/op
+Iteration  96: 0.591 ms/op
+Iteration  97: 0.636 ms/op
+Iteration  98: 0.639 ms/op
+Iteration  99: 0.688 ms/op
+Iteration 100: 0.713 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.741 ±(99.9%) 0.103 ms/op [Average]
+  (min, avg, max) = (0.578, 0.741, 2.766), stdev = 0.303
+  CI (99.9%): [0.638, 0.843] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>10</p>)
+
+# Run progress: 45.45% complete, ETA 00:21:24
+# Fork: 1 of 1
+objc[14219]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1009bc4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1021f04e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.393 ms/op
+# Warmup Iteration   2: 1.338 ms/op
+# Warmup Iteration   3: 0.667 ms/op
+# Warmup Iteration   4: 0.621 ms/op
+# Warmup Iteration   5: 0.584 ms/op
+Iteration   1: 0.669 ms/op
+Iteration   2: 0.704 ms/op
+Iteration   3: 0.628 ms/op
+Iteration   4: 0.648 ms/op
+Iteration   5: 0.834 ms/op
+Iteration   6: 0.735 ms/op
+Iteration   7: 0.766 ms/op
+Iteration   8: 0.728 ms/op
+Iteration   9: 0.588 ms/op
+Iteration  10: 0.589 ms/op
+Iteration  11: 0.660 ms/op
+Iteration  12: 0.606 ms/op
+Iteration  13: 0.592 ms/op
+Iteration  14: 0.585 ms/op
+Iteration  15: 0.590 ms/op
+Iteration  16: 0.622 ms/op
+Iteration  17: 0.637 ms/op
+Iteration  18: 0.668 ms/op
+Iteration  19: 0.608 ms/op
+Iteration  20: 0.612 ms/op
+Iteration  21: 0.621 ms/op
+Iteration  22: 0.604 ms/op
+Iteration  23: 0.836 ms/op
+Iteration  24: 1.460 ms/op
+Iteration  25: 0.677 ms/op
+Iteration  26: 0.738 ms/op
+Iteration  27: 0.597 ms/op
+Iteration  28: 0.589 ms/op
+Iteration  29: 0.641 ms/op
+Iteration  30: 0.692 ms/op
+Iteration  31: 0.747 ms/op
+Iteration  32: 1.120 ms/op
+Iteration  33: 1.003 ms/op
+Iteration  34: 0.670 ms/op
+Iteration  35: 0.608 ms/op
+Iteration  36: 0.586 ms/op
+Iteration  37: 0.591 ms/op
+Iteration  38: 0.681 ms/op
+Iteration  39: 0.626 ms/op
+Iteration  40: 0.632 ms/op
+Iteration  41: 0.616 ms/op
+Iteration  42: 0.668 ms/op
+Iteration  43: 0.612 ms/op
+Iteration  44: 0.595 ms/op
+Iteration  45: 0.596 ms/op
+Iteration  46: 0.587 ms/op
+Iteration  47: 0.589 ms/op
+Iteration  48: 0.620 ms/op
+Iteration  49: 0.637 ms/op
+Iteration  50: 0.640 ms/op
+Iteration  51: 0.656 ms/op
+Iteration  52: 0.695 ms/op
+Iteration  53: 0.650 ms/op
+Iteration  54: 0.631 ms/op
+Iteration  55: 0.720 ms/op
+Iteration  56: 0.711 ms/op
+Iteration  57: 0.702 ms/op
+Iteration  58: 0.644 ms/op
+Iteration  59: 0.638 ms/op
+Iteration  60: 0.594 ms/op
+Iteration  61: 0.620 ms/op
+Iteration  62: 0.648 ms/op
+Iteration  63: 0.644 ms/op
+Iteration  64: 1.774 ms/op
+Iteration  65: 1.002 ms/op
+Iteration  66: 0.662 ms/op
+Iteration  67: 0.619 ms/op
+Iteration  68: 0.637 ms/op
+Iteration  69: 0.630 ms/op
+Iteration  70: 0.602 ms/op
+Iteration  71: 0.584 ms/op
+Iteration  72: 0.587 ms/op
+Iteration  73: 0.587 ms/op
+Iteration  74: 0.591 ms/op
+Iteration  75: 0.609 ms/op
+Iteration  76: 0.891 ms/op
+Iteration  77: 0.983 ms/op
+Iteration  78: 0.995 ms/op
+Iteration  79: 0.623 ms/op
+Iteration  80: 0.588 ms/op
+Iteration  81: 0.586 ms/op
+Iteration  82: 0.585 ms/op
+Iteration  83: 0.589 ms/op
+Iteration  84: 0.586 ms/op
+Iteration  85: 0.615 ms/op
+Iteration  86: 0.712 ms/op
+Iteration  87: 0.663 ms/op
+Iteration  88: 0.634 ms/op
+Iteration  89: 0.601 ms/op
+Iteration  90: 0.627 ms/op
+Iteration  91: 0.631 ms/op
+Iteration  92: 0.668 ms/op
+Iteration  93: 0.675 ms/op
+Iteration  94: 0.645 ms/op
+Iteration  95: 0.602 ms/op
+Iteration  96: 0.601 ms/op
+Iteration  97: 1.045 ms/op
+Iteration  98: 1.477 ms/op
+Iteration  99: 0.733 ms/op
+Iteration 100: 0.626 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.694 ±(99.9%) 0.065 ms/op [Average]
+  (min, avg, max) = (0.584, 0.694, 1.774), stdev = 0.190
+  CI (99.9%): [0.629, 0.758] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>11</p>)
+
+# Run progress: 50.00% complete, ETA 00:19:38
+# Fork: 1 of 1
+objc[14243]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x103c754c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x103cf54e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 13.598 ms/op
+# Warmup Iteration   2: 4.867 ms/op
+# Warmup Iteration   3: 3.939 ms/op
+# Warmup Iteration   4: 1.361 ms/op
+# Warmup Iteration   5: 0.828 ms/op
+Iteration   1: 0.897 ms/op
+Iteration   2: 0.668 ms/op
+Iteration   3: 0.733 ms/op
+Iteration   4: 0.905 ms/op
+Iteration   5: 1.248 ms/op
+Iteration   6: 1.330 ms/op
+Iteration   7: 0.832 ms/op
+Iteration   8: 1.264 ms/op
+Iteration   9: 1.054 ms/op
+Iteration  10: 1.271 ms/op
+Iteration  11: 0.651 ms/op
+Iteration  12: 0.581 ms/op
+Iteration  13: 0.592 ms/op
+Iteration  14: 0.615 ms/op
+Iteration  15: 0.592 ms/op
+Iteration  16: 0.684 ms/op
+Iteration  17: 0.725 ms/op
+Iteration  18: 0.828 ms/op
+Iteration  19: 0.685 ms/op
+Iteration  20: 0.829 ms/op
+Iteration  21: 0.626 ms/op
+Iteration  22: 0.583 ms/op
+Iteration  23: 0.589 ms/op
+Iteration  24: 0.586 ms/op
+Iteration  25: 0.597 ms/op
+Iteration  26: 0.589 ms/op
+Iteration  27: 0.582 ms/op
+Iteration  28: 0.591 ms/op
+Iteration  29: 0.595 ms/op
+Iteration  30: 0.591 ms/op
+Iteration  31: 0.592 ms/op
+Iteration  32: 0.586 ms/op
+Iteration  33: 0.585 ms/op
+Iteration  34: 0.595 ms/op
+Iteration  35: 0.602 ms/op
+Iteration  36: 0.594 ms/op
+Iteration  37: 0.585 ms/op
+Iteration  38: 0.585 ms/op
+Iteration  39: 0.586 ms/op
+Iteration  40: 0.583 ms/op
+Iteration  41: 0.585 ms/op
+Iteration  42: 0.585 ms/op
+Iteration  43: 0.666 ms/op
+Iteration  44: 0.599 ms/op
+Iteration  45: 0.694 ms/op
+Iteration  46: 0.658 ms/op
+Iteration  47: 0.615 ms/op
+Iteration  48: 0.645 ms/op
+Iteration  49: 0.718 ms/op
+Iteration  50: 0.654 ms/op
+Iteration  51: 0.653 ms/op
+Iteration  52: 0.625 ms/op
+Iteration  53: 0.660 ms/op
+Iteration  54: 0.710 ms/op
+Iteration  55: 0.736 ms/op
+Iteration  56: 0.680 ms/op
+Iteration  57: 0.675 ms/op
+Iteration  58: 2.043 ms/op
+Iteration  59: 0.799 ms/op
+Iteration  60: 0.811 ms/op
+Iteration  61: 0.615 ms/op
+Iteration  62: 0.618 ms/op
+Iteration  63: 0.653 ms/op
+Iteration  64: 0.665 ms/op
+Iteration  65: 0.584 ms/op
+Iteration  66: 0.625 ms/op
+Iteration  67: 0.611 ms/op
+Iteration  68: 0.608 ms/op
+Iteration  69: 0.597 ms/op
+Iteration  70: 0.590 ms/op
+Iteration  71: 0.608 ms/op
+Iteration  72: 0.621 ms/op
+Iteration  73: 0.622 ms/op
+Iteration  74: 0.610 ms/op
+Iteration  75: 0.631 ms/op
+Iteration  76: 0.653 ms/op
+Iteration  77: 0.661 ms/op
+Iteration  78: 0.642 ms/op
+Iteration  79: 0.629 ms/op
+Iteration  80: 0.592 ms/op
+Iteration  81: 0.693 ms/op
+Iteration  82: 0.600 ms/op
+Iteration  83: 0.606 ms/op
+Iteration  84: 0.636 ms/op
+Iteration  85: 0.626 ms/op
+Iteration  86: 0.598 ms/op
+Iteration  87: 0.610 ms/op
+Iteration  88: 0.659 ms/op
+Iteration  89: 0.599 ms/op
+Iteration  90: 0.595 ms/op
+Iteration  91: 0.590 ms/op
+Iteration  92: 0.582 ms/op
+Iteration  93: 0.633 ms/op
+Iteration  94: 0.676 ms/op
+Iteration  95: 0.625 ms/op
+Iteration  96: 0.594 ms/op
+Iteration  97: 0.587 ms/op
+Iteration  98: 0.622 ms/op
+Iteration  99: 0.600 ms/op
+Iteration 100: 0.616 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.684 ±(99.9%) 0.068 ms/op [Average]
+  (min, avg, max) = (0.581, 0.684, 2.043), stdev = 0.202
+  CI (99.9%): [0.616, 0.753] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>12</p>)
+
+# Run progress: 54.55% complete, ETA 00:17:50
+# Fork: 1 of 1
+objc[14262]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1084634c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1084e34e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.677 ms/op
+# Warmup Iteration   2: 0.972 ms/op
+# Warmup Iteration   3: 0.743 ms/op
+# Warmup Iteration   4: 0.845 ms/op
+# Warmup Iteration   5: 1.058 ms/op
+Iteration   1: 0.618 ms/op
+Iteration   2: 0.603 ms/op
+Iteration   3: 0.794 ms/op
+Iteration   4: 0.591 ms/op
+Iteration   5: 0.654 ms/op
+Iteration   6: 0.738 ms/op
+Iteration   7: 1.003 ms/op
+Iteration   8: 1.192 ms/op
+Iteration   9: 1.258 ms/op
+Iteration  10: 1.128 ms/op
+Iteration  11: 1.438 ms/op
+Iteration  12: 0.840 ms/op
+Iteration  13: 0.922 ms/op
+Iteration  14: 0.873 ms/op
+Iteration  15: 1.206 ms/op
+Iteration  16: 1.037 ms/op
+Iteration  17: 0.847 ms/op
+Iteration  18: 0.934 ms/op
+Iteration  19: 1.060 ms/op
+Iteration  20: 0.924 ms/op
+Iteration  21: 0.867 ms/op
+Iteration  22: 0.818 ms/op
+Iteration  23: 0.891 ms/op
+Iteration  24: 0.818 ms/op
+Iteration  25: 0.766 ms/op
+Iteration  26: 0.768 ms/op
+Iteration  27: 1.013 ms/op
+Iteration  28: 0.797 ms/op
+Iteration  29: 0.900 ms/op
+Iteration  30: 0.766 ms/op
+Iteration  31: 0.761 ms/op
+Iteration  32: 0.758 ms/op
+Iteration  33: 0.765 ms/op
+Iteration  34: 0.738 ms/op
+Iteration  35: 0.745 ms/op
+Iteration  36: 0.717 ms/op
+Iteration  37: 0.827 ms/op
+Iteration  38: 0.869 ms/op
+Iteration  39: 0.970 ms/op
+Iteration  40: 0.952 ms/op
+Iteration  41: 0.760 ms/op
+Iteration  42: 0.739 ms/op
+Iteration  43: 0.867 ms/op
+Iteration  44: 0.930 ms/op
+Iteration  45: 0.921 ms/op
+Iteration  46: 0.727 ms/op
+Iteration  47: 0.739 ms/op
+Iteration  48: 0.815 ms/op
+Iteration  49: 0.798 ms/op
+Iteration  50: 1.654 ms/op
+Iteration  51: 0.845 ms/op
+Iteration  52: 0.786 ms/op
+Iteration  53: 0.792 ms/op
+Iteration  54: 0.643 ms/op
+Iteration  55: 0.752 ms/op
+Iteration  56: 0.608 ms/op
+Iteration  57: 0.604 ms/op
+Iteration  58: 0.607 ms/op
+Iteration  59: 0.612 ms/op
+Iteration  60: 0.888 ms/op
+Iteration  61: 0.791 ms/op
+Iteration  62: 0.691 ms/op
+Iteration  63: 0.672 ms/op
+Iteration  64: 0.888 ms/op
+Iteration  65: 0.607 ms/op
+Iteration  66: 0.593 ms/op
+Iteration  67: 0.588 ms/op
+Iteration  68: 0.589 ms/op
+Iteration  69: 0.588 ms/op
+Iteration  70: 0.589 ms/op
+Iteration  71: 0.592 ms/op
+Iteration  72: 0.632 ms/op
+Iteration  73: 0.671 ms/op
+Iteration  74: 0.602 ms/op
+Iteration  75: 0.588 ms/op
+Iteration  76: 0.587 ms/op
+Iteration  77: 0.594 ms/op
+Iteration  78: 0.587 ms/op
+Iteration  79: 0.606 ms/op
+Iteration  80: 0.588 ms/op
+Iteration  81: 0.590 ms/op
+Iteration  82: 0.586 ms/op
+Iteration  83: 0.591 ms/op
+Iteration  84: 0.585 ms/op
+Iteration  85: 0.592 ms/op
+Iteration  86: 0.586 ms/op
+Iteration  87: 0.589 ms/op
+Iteration  88: 0.593 ms/op
+Iteration  89: 0.587 ms/op
+Iteration  90: 0.586 ms/op
+Iteration  91: 0.669 ms/op
+Iteration  92: 0.606 ms/op
+Iteration  93: 0.732 ms/op
+Iteration  94: 0.802 ms/op
+Iteration  95: 0.596 ms/op
+Iteration  96: 0.586 ms/op
+Iteration  97: 0.589 ms/op
+Iteration  98: 0.588 ms/op
+Iteration  99: 0.585 ms/op
+Iteration 100: 0.586 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.761 ±(99.9%) 0.067 ms/op [Average]
+  (min, avg, max) = (0.585, 0.761, 1.654), stdev = 0.197
+  CI (99.9%): [0.695, 0.828] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>13</p>)
+
+# Run progress: 59.09% complete, ETA 00:16:03
+# Fork: 1 of 1
+objc[14280]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10c1374c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10c1b74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.187 ms/op
+# Warmup Iteration   2: 0.939 ms/op
+# Warmup Iteration   3: 0.687 ms/op
+# Warmup Iteration   4: 0.602 ms/op
+# Warmup Iteration   5: 0.596 ms/op
+Iteration   1: 0.592 ms/op
+Iteration   2: 0.588 ms/op
+Iteration   3: 0.616 ms/op
+Iteration   4: 0.596 ms/op
+Iteration   5: 0.592 ms/op
+Iteration   6: 0.593 ms/op
+Iteration   7: 0.598 ms/op
+Iteration   8: 0.598 ms/op
+Iteration   9: 0.597 ms/op
+Iteration  10: 0.594 ms/op
+Iteration  11: 0.594 ms/op
+Iteration  12: 0.597 ms/op
+Iteration  13: 0.599 ms/op
+Iteration  14: 0.639 ms/op
+Iteration  15: 0.724 ms/op
+Iteration  16: 0.637 ms/op
+Iteration  17: 0.609 ms/op
+Iteration  18: 0.612 ms/op
+Iteration  19: 0.630 ms/op
+Iteration  20: 0.606 ms/op
+Iteration  21: 0.658 ms/op
+Iteration  22: 0.616 ms/op
+Iteration  23: 0.608 ms/op
+Iteration  24: 0.661 ms/op
+Iteration  25: 0.608 ms/op
+Iteration  26: 0.607 ms/op
+Iteration  27: 0.615 ms/op
+Iteration  28: 0.608 ms/op
+Iteration  29: 0.598 ms/op
+Iteration  30: 0.672 ms/op
+Iteration  31: 0.651 ms/op
+Iteration  32: 0.617 ms/op
+Iteration  33: 0.607 ms/op
+Iteration  34: 0.610 ms/op
+Iteration  35: 0.631 ms/op
+Iteration  36: 0.594 ms/op
+Iteration  37: 0.622 ms/op
+Iteration  38: 0.702 ms/op
+Iteration  39: 0.674 ms/op
+Iteration  40: 0.741 ms/op
+Iteration  41: 0.740 ms/op
+Iteration  42: 0.710 ms/op
+Iteration  43: 0.731 ms/op
+Iteration  44: 0.622 ms/op
+Iteration  45: 0.633 ms/op
+Iteration  46: 0.671 ms/op
+Iteration  47: 0.643 ms/op
+Iteration  48: 0.686 ms/op
+Iteration  49: 0.767 ms/op
+Iteration  50: 0.745 ms/op
+Iteration  51: 0.633 ms/op
+Iteration  52: 0.649 ms/op
+Iteration  53: 0.669 ms/op
+Iteration  54: 0.819 ms/op
+Iteration  55: 0.680 ms/op
+Iteration  56: 0.623 ms/op
+Iteration  57: 0.715 ms/op
+Iteration  58: 0.639 ms/op
+Iteration  59: 0.647 ms/op
+Iteration  60: 0.729 ms/op
+Iteration  61: 0.852 ms/op
+Iteration  62: 1.282 ms/op
+Iteration  63: 1.260 ms/op
+Iteration  64: 1.433 ms/op
+Iteration  65: 1.745 ms/op
+Iteration  66: 0.981 ms/op
+Iteration  67: 0.927 ms/op
+Iteration  68: 0.935 ms/op
+Iteration  69: 0.944 ms/op
+Iteration  70: 1.107 ms/op
+Iteration  71: 1.280 ms/op
+Iteration  72: 1.051 ms/op
+Iteration  73: 1.259 ms/op
+Iteration  74: 0.870 ms/op
+Iteration  75: 0.828 ms/op
+Iteration  76: 0.864 ms/op
+Iteration  77: 1.110 ms/op
+Iteration  78: 0.953 ms/op
+Iteration  79: 0.868 ms/op
+Iteration  80: 0.746 ms/op
+Iteration  81: 0.735 ms/op
+Iteration  82: 0.733 ms/op
+Iteration  83: 0.730 ms/op
+Iteration  84: 0.845 ms/op
+Iteration  85: 0.779 ms/op
+Iteration  86: 0.735 ms/op
+Iteration  87: 0.773 ms/op
+Iteration  88: 0.981 ms/op
+Iteration  89: 0.882 ms/op
+Iteration  90: 0.871 ms/op
+Iteration  91: 0.738 ms/op
+Iteration  92: 0.894 ms/op
+Iteration  93: 0.880 ms/op
+Iteration  94: 0.762 ms/op
+Iteration  95: 0.870 ms/op
+Iteration  96: 0.727 ms/op
+Iteration  97: 0.765 ms/op
+Iteration  98: 0.747 ms/op
+Iteration  99: 1.011 ms/op
+Iteration 100: 0.905 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.763 ±(99.9%) 0.070 ms/op [Average]
+  (min, avg, max) = (0.588, 0.763, 1.745), stdev = 0.206
+  CI (99.9%): [0.693, 0.833] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>14</p>)
+
+# Run progress: 63.64% complete, ETA 00:14:15
+# Fork: 1 of 1
+objc[14296]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1092864c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a2a84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 7.238 ms/op
+# Warmup Iteration   2: 3.299 ms/op
+# Warmup Iteration   3: 1.088 ms/op
+# Warmup Iteration   4: 0.763 ms/op
+# Warmup Iteration   5: 0.961 ms/op
+Iteration   1: 0.878 ms/op
+Iteration   2: 0.919 ms/op
+Iteration   3: 0.984 ms/op
+Iteration   4: 0.849 ms/op
+Iteration   5: 0.919 ms/op
+Iteration   6: 0.764 ms/op
+Iteration   7: 0.935 ms/op
+Iteration   8: 0.910 ms/op
+Iteration   9: 0.878 ms/op
+Iteration  10: 0.937 ms/op
+Iteration  11: 1.108 ms/op
+Iteration  12: 0.824 ms/op
+Iteration  13: 0.950 ms/op
+Iteration  14: 0.841 ms/op
+Iteration  15: 0.887 ms/op
+Iteration  16: 0.908 ms/op
+Iteration  17: 0.983 ms/op
+Iteration  18: 1.058 ms/op
+Iteration  19: 0.970 ms/op
+Iteration  20: 0.760 ms/op
+Iteration  21: 1.044 ms/op
+Iteration  22: 1.356 ms/op
+Iteration  23: 0.844 ms/op
+Iteration  24: 0.659 ms/op
+Iteration  25: 0.688 ms/op
+Iteration  26: 0.720 ms/op
+Iteration  27: 0.831 ms/op
+Iteration  28: 0.791 ms/op
+Iteration  29: 0.716 ms/op
+Iteration  30: 0.641 ms/op
+Iteration  31: 0.595 ms/op
+Iteration  32: 0.602 ms/op
+Iteration  33: 0.605 ms/op
+Iteration  34: 0.990 ms/op
+Iteration  35: 0.882 ms/op
+Iteration  36: 0.723 ms/op
+Iteration  37: 1.672 ms/op
+Iteration  38: 1.215 ms/op
+Iteration  39: 1.014 ms/op
+Iteration  40: 0.966 ms/op
+Iteration  41: 0.689 ms/op
+Iteration  42: 0.724 ms/op
+Iteration  43: 0.665 ms/op
+Iteration  44: 0.662 ms/op
+Iteration  45: 0.685 ms/op
+Iteration  46: 0.800 ms/op
+Iteration  47: 0.622 ms/op
+Iteration  48: 0.625 ms/op
+Iteration  49: 0.705 ms/op
+Iteration  50: 0.678 ms/op
+Iteration  51: 0.661 ms/op
+Iteration  52: 0.636 ms/op
+Iteration  53: 0.665 ms/op
+Iteration  54: 0.880 ms/op
+Iteration  55: 0.669 ms/op
+Iteration  56: 0.625 ms/op
+Iteration  57: 0.678 ms/op
+Iteration  58: 2.000 ms/op
+Iteration  59: 1.069 ms/op
+Iteration  60: 0.963 ms/op
+Iteration  61: 0.689 ms/op
+Iteration  62: 0.622 ms/op
+Iteration  63: 0.834 ms/op
+Iteration  64: 1.326 ms/op
+Iteration  65: 0.639 ms/op
+Iteration  66: 0.872 ms/op
+Iteration  67: 0.701 ms/op
+Iteration  68: 0.859 ms/op
+Iteration  69: 0.789 ms/op
+Iteration  70: 0.625 ms/op
+Iteration  71: 0.849 ms/op
+Iteration  72: 0.693 ms/op
+Iteration  73: 0.676 ms/op
+Iteration  74: 0.621 ms/op
+Iteration  75: 0.610 ms/op
+Iteration  76: 0.635 ms/op
+Iteration  77: 0.737 ms/op
+Iteration  78: 0.679 ms/op
+Iteration  79: 0.691 ms/op
+Iteration  80: 0.664 ms/op
+Iteration  81: 0.593 ms/op
+Iteration  82: 0.596 ms/op
+Iteration  83: 0.618 ms/op
+Iteration  84: 0.613 ms/op
+Iteration  85: 0.613 ms/op
+Iteration  86: 0.637 ms/op
+Iteration  87: 0.915 ms/op
+Iteration  88: 0.727 ms/op
+Iteration  89: 0.769 ms/op
+Iteration  90: 0.653 ms/op
+Iteration  91: 1.078 ms/op
+Iteration  92: 0.928 ms/op
+Iteration  93: 0.696 ms/op
+Iteration  94: 0.791 ms/op
+Iteration  95: 0.649 ms/op
+Iteration  96: 0.603 ms/op
+Iteration  97: 0.626 ms/op
+Iteration  98: 0.687 ms/op
+Iteration  99: 0.663 ms/op
+Iteration 100: 0.885 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.807 ±(99.9%) 0.075 ms/op [Average]
+  (min, avg, max) = (0.593, 0.807, 2.000), stdev = 0.222
+  CI (99.9%): [0.731, 0.882] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>15</p>)
+
+# Run progress: 68.18% complete, ETA 00:12:28
+# Fork: 1 of 1
+objc[14309]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x103f1c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x103f9c4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 4.075 ms/op
+# Warmup Iteration   2: 1.072 ms/op
+# Warmup Iteration   3: 2.364 ms/op
+# Warmup Iteration   4: 1.138 ms/op
+# Warmup Iteration   5: 0.679 ms/op
+Iteration   1: 0.731 ms/op
+Iteration   2: 0.723 ms/op
+Iteration   3: 0.620 ms/op
+Iteration   4: 0.589 ms/op
+Iteration   5: 0.610 ms/op
+Iteration   6: 0.790 ms/op
+Iteration   7: 0.672 ms/op
+Iteration   8: 0.652 ms/op
+Iteration   9: 0.611 ms/op
+Iteration  10: 0.616 ms/op
+Iteration  11: 0.673 ms/op
+Iteration  12: 0.780 ms/op
+Iteration  13: 0.720 ms/op
+Iteration  14: 0.769 ms/op
+Iteration  15: 0.695 ms/op
+Iteration  16: 0.787 ms/op
+Iteration  17: 0.711 ms/op
+Iteration  18: 0.767 ms/op
+Iteration  19: 0.711 ms/op
+Iteration  20: 0.734 ms/op
+Iteration  21: 0.787 ms/op
+Iteration  22: 0.740 ms/op
+Iteration  23: 0.786 ms/op
+Iteration  24: 0.711 ms/op
+Iteration  25: 0.655 ms/op
+Iteration  26: 0.731 ms/op
+Iteration  27: 0.792 ms/op
+Iteration  28: 0.817 ms/op
+Iteration  29: 0.809 ms/op
+Iteration  30: 0.671 ms/op
+Iteration  31: 0.730 ms/op
+Iteration  32: 0.686 ms/op
+Iteration  33: 0.827 ms/op
+Iteration  34: 0.777 ms/op
+Iteration  35: 0.816 ms/op
+Iteration  36: 0.889 ms/op
+Iteration  37: 0.865 ms/op
+Iteration  38: 0.666 ms/op
+Iteration  39: 0.722 ms/op
+Iteration  40: 0.635 ms/op
+Iteration  41: 0.613 ms/op
+Iteration  42: 0.607 ms/op
+Iteration  43: 0.610 ms/op
+Iteration  44: 0.608 ms/op
+Iteration  45: 0.607 ms/op
+Iteration  46: 0.603 ms/op
+Iteration  47: 0.602 ms/op
+Iteration  48: 0.605 ms/op
+Iteration  49: 0.609 ms/op
+Iteration  50: 0.609 ms/op
+Iteration  51: 0.623 ms/op
+Iteration  52: 0.644 ms/op
+Iteration  53: 0.859 ms/op
+Iteration  54: 0.685 ms/op
+Iteration  55: 0.759 ms/op
+Iteration  56: 0.734 ms/op
+Iteration  57: 0.870 ms/op
+Iteration  58: 0.737 ms/op
+Iteration  59: 0.711 ms/op
+Iteration  60: 0.691 ms/op
+Iteration  61: 0.771 ms/op
+Iteration  62: 0.697 ms/op
+Iteration  63: 0.642 ms/op
+Iteration  64: 0.693 ms/op
+Iteration  65: 0.636 ms/op
+Iteration  66: 0.726 ms/op
+Iteration  67: 0.599 ms/op
+Iteration  68: 0.646 ms/op
+Iteration  69: 0.635 ms/op
+Iteration  70: 0.939 ms/op
+Iteration  71: 0.764 ms/op
+Iteration  72: 0.615 ms/op
+Iteration  73: 0.623 ms/op
+Iteration  74: 0.634 ms/op
+Iteration  75: 0.648 ms/op
+Iteration  76: 0.601 ms/op
+Iteration  77: 0.651 ms/op
+Iteration  78: 0.621 ms/op
+Iteration  79: 0.646 ms/op
+Iteration  80: 0.626 ms/op
+Iteration  81: 0.620 ms/op
+Iteration  82: 0.597 ms/op
+Iteration  83: 0.630 ms/op
+Iteration  84: 0.670 ms/op
+Iteration  85: 0.652 ms/op
+Iteration  86: 0.646 ms/op
+Iteration  87: 0.602 ms/op
+Iteration  88: 0.587 ms/op
+Iteration  89: 0.601 ms/op
+Iteration  90: 0.648 ms/op
+Iteration  91: 0.623 ms/op
+Iteration  92: 0.589 ms/op
+Iteration  93: 0.583 ms/op
+Iteration  94: 0.585 ms/op
+Iteration  95: 0.584 ms/op
+Iteration  96: 0.586 ms/op
+Iteration  97: 0.582 ms/op
+Iteration  98: 0.584 ms/op
+Iteration  99: 0.585 ms/op
+Iteration 100: 0.585 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.680 ±(99.9%) 0.028 ms/op [Average]
+  (min, avg, max) = (0.582, 0.680, 0.939), stdev = 0.083
+  CI (99.9%): [0.652, 0.708] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>16</p>)
+
+# Run progress: 72.73% complete, ETA 00:10:41
+# Fork: 1 of 1
+objc[14323]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10a1384c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10a1b84e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 2.933 ms/op
+# Warmup Iteration   2: 1.004 ms/op
+# Warmup Iteration   3: 0.717 ms/op
+# Warmup Iteration   4: 0.708 ms/op
+# Warmup Iteration   5: 0.576 ms/op
+Iteration   1: 0.575 ms/op
+Iteration   2: 0.568 ms/op
+Iteration   3: 0.569 ms/op
+Iteration   4: 0.568 ms/op
+Iteration   5: 0.568 ms/op
+Iteration   6: 0.588 ms/op
+Iteration   7: 0.586 ms/op
+Iteration   8: 0.574 ms/op
+Iteration   9: 0.569 ms/op
+Iteration  10: 0.603 ms/op
+Iteration  11: 0.579 ms/op
+Iteration  12: 0.578 ms/op
+Iteration  13: 0.578 ms/op
+Iteration  14: 0.603 ms/op
+Iteration  15: 0.629 ms/op
+Iteration  16: 0.621 ms/op
+Iteration  17: 0.615 ms/op
+Iteration  18: 0.583 ms/op
+Iteration  19: 0.576 ms/op
+Iteration  20: 0.589 ms/op
+Iteration  21: 0.594 ms/op
+Iteration  22: 0.579 ms/op
+Iteration  23: 0.579 ms/op
+Iteration  24: 0.583 ms/op
+Iteration  25: 0.580 ms/op
+Iteration  26: 0.578 ms/op
+Iteration  27: 0.581 ms/op
+Iteration  28: 0.585 ms/op
+Iteration  29: 0.574 ms/op
+Iteration  30: 0.576 ms/op
+Iteration  31: 0.580 ms/op
+Iteration  32: 0.579 ms/op
+Iteration  33: 0.582 ms/op
+Iteration  34: 0.591 ms/op
+Iteration  35: 0.591 ms/op
+Iteration  36: 0.581 ms/op
+Iteration  37: 0.578 ms/op
+Iteration  38: 0.583 ms/op
+Iteration  39: 0.579 ms/op
+Iteration  40: 0.588 ms/op
+Iteration  41: 0.578 ms/op
+Iteration  42: 0.637 ms/op
+Iteration  43: 0.593 ms/op
+Iteration  44: 0.583 ms/op
+Iteration  45: 0.578 ms/op
+Iteration  46: 0.579 ms/op
+Iteration  47: 0.614 ms/op
+Iteration  48: 0.590 ms/op
+Iteration  49: 0.592 ms/op
+Iteration  50: 0.593 ms/op
+Iteration  51: 0.614 ms/op
+Iteration  52: 0.590 ms/op
+Iteration  53: 0.589 ms/op
+Iteration  54: 0.595 ms/op
+Iteration  55: 0.610 ms/op
+Iteration  56: 0.724 ms/op
+Iteration  57: 0.935 ms/op
+Iteration  58: 0.602 ms/op
+Iteration  59: 0.637 ms/op
+Iteration  60: 0.582 ms/op
+Iteration  61: 0.619 ms/op
+Iteration  62: 0.591 ms/op
+Iteration  63: 0.585 ms/op
+Iteration  64: 0.577 ms/op
+Iteration  65: 0.605 ms/op
+Iteration  66: 0.642 ms/op
+Iteration  67: 0.588 ms/op
+Iteration  68: 0.589 ms/op
+Iteration  69: 0.575 ms/op
+Iteration  70: 0.584 ms/op
+Iteration  71: 0.578 ms/op
+Iteration  72: 0.574 ms/op
+Iteration  73: 0.576 ms/op
+Iteration  74: 0.574 ms/op
+Iteration  75: 0.576 ms/op
+Iteration  76: 0.578 ms/op
+Iteration  77: 0.575 ms/op
+Iteration  78: 0.578 ms/op
+Iteration  79: 0.578 ms/op
+Iteration  80: 0.577 ms/op
+Iteration  81: 0.578 ms/op
+Iteration  82: 0.574 ms/op
+Iteration  83: 0.582 ms/op
+Iteration  84: 0.578 ms/op
+Iteration  85: 0.577 ms/op
+Iteration  86: 0.586 ms/op
+Iteration  87: 0.838 ms/op
+Iteration  88: 1.029 ms/op
+Iteration  89: 1.461 ms/op
+Iteration  90: 1.922 ms/op
+Iteration  91: 0.914 ms/op
+Iteration  92: 1.326 ms/op
+Iteration  93: 0.869 ms/op
+Iteration  94: 0.801 ms/op
+Iteration  95: 0.834 ms/op
+Iteration  96: 0.897 ms/op
+Iteration  97: 0.950 ms/op
+Iteration  98: 0.717 ms/op
+Iteration  99: 1.055 ms/op
+Iteration 100: 0.758 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.653 ±(99.9%) 0.067 ms/op [Average]
+  (min, avg, max) = (0.568, 0.653, 1.922), stdev = 0.197
+  CI (99.9%): [0.586, 0.720] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>17</p>)
+
+# Run progress: 77.27% complete, ETA 00:08:54
+# Fork: 1 of 1
+objc[14339]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x103b004c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x103b804e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.622 ms/op
+# Warmup Iteration   2: 4.020 ms/op
+# Warmup Iteration   3: 0.974 ms/op
+# Warmup Iteration   4: 0.595 ms/op
+# Warmup Iteration   5: 0.587 ms/op
+Iteration   1: 0.586 ms/op
+Iteration   2: 0.625 ms/op
+Iteration   3: 0.616 ms/op
+Iteration   4: 0.619 ms/op
+Iteration   5: 0.580 ms/op
+Iteration   6: 0.582 ms/op
+Iteration   7: 0.593 ms/op
+Iteration   8: 0.598 ms/op
+Iteration   9: 0.617 ms/op
+Iteration  10: 0.586 ms/op
+Iteration  11: 0.584 ms/op
+Iteration  12: 0.589 ms/op
+Iteration  13: 0.591 ms/op
+Iteration  14: 0.616 ms/op
+Iteration  15: 0.615 ms/op
+Iteration  16: 0.588 ms/op
+Iteration  17: 0.636 ms/op
+Iteration  18: 0.725 ms/op
+Iteration  19: 0.651 ms/op
+Iteration  20: 0.599 ms/op
+Iteration  21: 0.594 ms/op
+Iteration  22: 0.616 ms/op
+Iteration  23: 0.598 ms/op
+Iteration  24: 0.658 ms/op
+Iteration  25: 0.641 ms/op
+Iteration  26: 0.613 ms/op
+Iteration  27: 0.659 ms/op
+Iteration  28: 0.613 ms/op
+Iteration  29: 0.590 ms/op
+Iteration  30: 0.591 ms/op
+Iteration  31: 0.592 ms/op
+Iteration  32: 0.591 ms/op
+Iteration  33: 0.589 ms/op
+Iteration  34: 0.588 ms/op
+Iteration  35: 0.584 ms/op
+Iteration  36: 0.584 ms/op
+Iteration  37: 0.633 ms/op
+Iteration  38: 0.597 ms/op
+Iteration  39: 0.584 ms/op
+Iteration  40: 0.588 ms/op
+Iteration  41: 0.582 ms/op
+Iteration  42: 0.586 ms/op
+Iteration  43: 0.584 ms/op
+Iteration  44: 0.582 ms/op
+Iteration  45: 0.582 ms/op
+Iteration  46: 0.582 ms/op
+Iteration  47: 0.588 ms/op
+Iteration  48: 0.589 ms/op
+Iteration  49: 0.587 ms/op
+Iteration  50: 0.583 ms/op
+Iteration  51: 0.583 ms/op
+Iteration  52: 0.584 ms/op
+Iteration  53: 0.582 ms/op
+Iteration  54: 0.585 ms/op
+Iteration  55: 0.584 ms/op
+Iteration  56: 0.597 ms/op
+Iteration  57: 0.641 ms/op
+Iteration  58: 0.598 ms/op
+Iteration  59: 0.596 ms/op
+Iteration  60: 0.582 ms/op
+Iteration  61: 0.582 ms/op
+Iteration  62: 0.583 ms/op
+Iteration  63: 0.647 ms/op
+Iteration  64: 0.615 ms/op
+Iteration  65: 0.583 ms/op
+Iteration  66: 0.598 ms/op
+Iteration  67: 0.614 ms/op
+Iteration  68: 0.596 ms/op
+Iteration  69: 0.589 ms/op
+Iteration  70: 0.584 ms/op
+Iteration  71: 0.584 ms/op
+Iteration  72: 0.582 ms/op
+Iteration  73: 0.584 ms/op
+Iteration  74: 0.582 ms/op
+Iteration  75: 0.583 ms/op
+Iteration  76: 0.584 ms/op
+Iteration  77: 0.584 ms/op
+Iteration  78: 0.587 ms/op
+Iteration  79: 0.583 ms/op
+Iteration  80: 0.658 ms/op
+Iteration  81: 0.664 ms/op
+Iteration  82: 0.631 ms/op
+Iteration  83: 0.581 ms/op
+Iteration  84: 0.582 ms/op
+Iteration  85: 0.664 ms/op
+Iteration  86: 0.617 ms/op
+Iteration  87: 0.601 ms/op
+Iteration  88: 0.599 ms/op
+Iteration  89: 0.585 ms/op
+Iteration  90: 0.621 ms/op
+Iteration  91: 0.792 ms/op
+Iteration  92: 0.777 ms/op
+Iteration  93: 0.660 ms/op
+Iteration  94: 0.650 ms/op
+Iteration  95: 0.726 ms/op
+Iteration  96: 0.813 ms/op
+Iteration  97: 0.879 ms/op
+Iteration  98: 2.156 ms/op
+Iteration  99: 1.190 ms/op
+Iteration 100: 0.713 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.635 ±(99.9%) 0.058 ms/op [Average]
+  (min, avg, max) = (0.580, 0.635, 2.156), stdev = 0.172
+  CI (99.9%): [0.576, 0.693] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>18</p>)
+
+# Run progress: 81.82% complete, ETA 00:07:07
+# Fork: 1 of 1
+objc[14354]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x10af9c4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10afe74e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.977 ms/op
+# Warmup Iteration   2: 1.296 ms/op
+# Warmup Iteration   3: 1.128 ms/op
+# Warmup Iteration   4: 2.232 ms/op
+# Warmup Iteration   5: 0.638 ms/op
+Iteration   1: 0.597 ms/op
+Iteration   2: 0.692 ms/op
+Iteration   3: 0.801 ms/op
+Iteration   4: 0.689 ms/op
+Iteration   5: 0.807 ms/op
+Iteration   6: 0.766 ms/op
+Iteration   7: 0.806 ms/op
+Iteration   8: 0.884 ms/op
+Iteration   9: 0.817 ms/op
+Iteration  10: 0.867 ms/op
+Iteration  11: 0.846 ms/op
+Iteration  12: 0.681 ms/op
+Iteration  13: 0.826 ms/op
+Iteration  14: 0.746 ms/op
+Iteration  15: 0.768 ms/op
+Iteration  16: 0.650 ms/op
+Iteration  17: 0.596 ms/op
+Iteration  18: 0.594 ms/op
+Iteration  19: 0.620 ms/op
+Iteration  20: 0.697 ms/op
+Iteration  21: 0.741 ms/op
+Iteration  22: 0.728 ms/op
+Iteration  23: 0.623 ms/op
+Iteration  24: 0.597 ms/op
+Iteration  25: 0.723 ms/op
+Iteration  26: 0.877 ms/op
+Iteration  27: 0.694 ms/op
+Iteration  28: 0.655 ms/op
+Iteration  29: 0.763 ms/op
+Iteration  30: 0.843 ms/op
+Iteration  31: 0.675 ms/op
+Iteration  32: 0.610 ms/op
+Iteration  33: 0.597 ms/op
+Iteration  34: 0.600 ms/op
+Iteration  35: 0.593 ms/op
+Iteration  36: 0.592 ms/op
+Iteration  37: 0.650 ms/op
+Iteration  38: 0.714 ms/op
+Iteration  39: 0.679 ms/op
+Iteration  40: 0.713 ms/op
+Iteration  41: 0.676 ms/op
+Iteration  42: 0.749 ms/op
+Iteration  43: 0.831 ms/op
+Iteration  44: 0.675 ms/op
+Iteration  45: 0.654 ms/op
+Iteration  46: 0.850 ms/op
+Iteration  47: 0.612 ms/op
+Iteration  48: 0.606 ms/op
+Iteration  49: 0.613 ms/op
+Iteration  50: 0.595 ms/op
+Iteration  51: 0.592 ms/op
+Iteration  52: 0.598 ms/op
+Iteration  53: 0.601 ms/op
+Iteration  54: 0.592 ms/op
+Iteration  55: 0.613 ms/op
+Iteration  56: 0.710 ms/op
+Iteration  57: 0.684 ms/op
+Iteration  58: 0.697 ms/op
+Iteration  59: 0.695 ms/op
+Iteration  60: 0.612 ms/op
+Iteration  61: 0.750 ms/op
+Iteration  62: 0.673 ms/op
+Iteration  63: 0.604 ms/op
+Iteration  64: 0.644 ms/op
+Iteration  65: 0.608 ms/op
+Iteration  66: 0.607 ms/op
+Iteration  67: 0.665 ms/op
+Iteration  68: 0.607 ms/op
+Iteration  69: 0.599 ms/op
+Iteration  70: 0.708 ms/op
+Iteration  71: 0.653 ms/op
+Iteration  72: 0.627 ms/op
+Iteration  73: 0.585 ms/op
+Iteration  74: 0.585 ms/op
+Iteration  75: 0.726 ms/op
+Iteration  76: 0.612 ms/op
+Iteration  77: 0.582 ms/op
+Iteration  78: 0.585 ms/op
+Iteration  79: 0.582 ms/op
+Iteration  80: 0.583 ms/op
+Iteration  81: 0.599 ms/op
+Iteration  82: 0.618 ms/op
+Iteration  83: 0.679 ms/op
+Iteration  84: 0.601 ms/op
+Iteration  85: 0.652 ms/op
+Iteration  86: 0.588 ms/op
+Iteration  87: 0.605 ms/op
+Iteration  88: 0.667 ms/op
+Iteration  89: 0.598 ms/op
+Iteration  90: 0.597 ms/op
+Iteration  91: 0.589 ms/op
+Iteration  92: 0.584 ms/op
+Iteration  93: 0.581 ms/op
+Iteration  94: 0.584 ms/op
+Iteration  95: 0.583 ms/op
+Iteration  96: 0.584 ms/op
+Iteration  97: 0.610 ms/op
+Iteration  98: 0.666 ms/op
+Iteration  99: 0.642 ms/op
+Iteration 100: 0.678 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.666 ±(99.9%) 0.028 ms/op [Average]
+  (min, avg, max) = (0.581, 0.666, 0.884), stdev = 0.082
+  CI (99.9%): [0.638, 0.693] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>19</p>)
+
+# Run progress: 86.36% complete, ETA 00:05:20
+# Fork: 1 of 1
+objc[14362]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x1043a24c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1043ed4e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.851 ms/op
+# Warmup Iteration   2: 1.496 ms/op
+# Warmup Iteration   3: 0.696 ms/op
+# Warmup Iteration   4: 0.624 ms/op
+# Warmup Iteration   5: 0.580 ms/op
+Iteration   1: 0.581 ms/op
+Iteration   2: 0.586 ms/op
+Iteration   3: 0.642 ms/op
+Iteration   4: 0.626 ms/op
+Iteration   5: 0.610 ms/op
+Iteration   6: 0.769 ms/op
+Iteration   7: 0.604 ms/op
+Iteration   8: 0.724 ms/op
+Iteration   9: 0.722 ms/op
+Iteration  10: 0.644 ms/op
+Iteration  11: 0.600 ms/op
+Iteration  12: 0.591 ms/op
+Iteration  13: 0.587 ms/op
+Iteration  14: 0.589 ms/op
+Iteration  15: 0.589 ms/op
+Iteration  16: 0.587 ms/op
+Iteration  17: 0.587 ms/op
+Iteration  18: 0.637 ms/op
+Iteration  19: 0.672 ms/op
+Iteration  20: 0.669 ms/op
+Iteration  21: 0.948 ms/op
+Iteration  22: 0.609 ms/op
+Iteration  23: 0.593 ms/op
+Iteration  24: 0.635 ms/op
+Iteration  25: 0.684 ms/op
+Iteration  26: 0.799 ms/op
+Iteration  27: 0.667 ms/op
+Iteration  28: 0.650 ms/op
+Iteration  29: 0.645 ms/op
+Iteration  30: 0.672 ms/op
+Iteration  31: 0.717 ms/op
+Iteration  32: 0.869 ms/op
+Iteration  33: 0.722 ms/op
+Iteration  34: 0.869 ms/op
+Iteration  35: 0.841 ms/op
+Iteration  36: 1.161 ms/op
+Iteration  37: 2.146 ms/op
+Iteration  38: 0.797 ms/op
+Iteration  39: 0.641 ms/op
+Iteration  40: 0.612 ms/op
+Iteration  41: 0.685 ms/op
+Iteration  42: 0.752 ms/op
+Iteration  43: 0.758 ms/op
+Iteration  44: 0.830 ms/op
+Iteration  45: 0.863 ms/op
+Iteration  46: 0.684 ms/op
+Iteration  47: 0.718 ms/op
+Iteration  48: 0.755 ms/op
+Iteration  49: 0.676 ms/op
+Iteration  50: 0.697 ms/op
+Iteration  51: 0.763 ms/op
+Iteration  52: 0.731 ms/op
+Iteration  53: 0.679 ms/op
+Iteration  54: 0.830 ms/op
+Iteration  55: 0.735 ms/op
+Iteration  56: 0.880 ms/op
+Iteration  57: 0.660 ms/op
+Iteration  58: 0.864 ms/op
+Iteration  59: 0.658 ms/op
+Iteration  60: 0.613 ms/op
+Iteration  61: 0.605 ms/op
+Iteration  62: 0.606 ms/op
+Iteration  63: 0.608 ms/op
+Iteration  64: 0.606 ms/op
+Iteration  65: 0.601 ms/op
+Iteration  66: 0.743 ms/op
+Iteration  67: 0.704 ms/op
+Iteration  68: 0.670 ms/op
+Iteration  69: 0.609 ms/op
+Iteration  70: 0.612 ms/op
+Iteration  71: 0.607 ms/op
+Iteration  72: 0.731 ms/op
+Iteration  73: 0.763 ms/op
+Iteration  74: 0.701 ms/op
+Iteration  75: 0.739 ms/op
+Iteration  76: 0.650 ms/op
+Iteration  77: 0.807 ms/op
+Iteration  78: 0.644 ms/op
+Iteration  79: 0.642 ms/op
+Iteration  80: 0.604 ms/op
+Iteration  81: 0.609 ms/op
+Iteration  82: 0.623 ms/op
+Iteration  83: 0.602 ms/op
+Iteration  84: 0.602 ms/op
+Iteration  85: 0.601 ms/op
+Iteration  86: 0.600 ms/op
+Iteration  87: 0.594 ms/op
+Iteration  88: 0.602 ms/op
+Iteration  89: 0.602 ms/op
+Iteration  90: 0.604 ms/op
+Iteration  91: 0.604 ms/op
+Iteration  92: 0.605 ms/op
+Iteration  93: 0.597 ms/op
+Iteration  94: 0.607 ms/op
+Iteration  95: 0.615 ms/op
+Iteration  96: 0.606 ms/op
+Iteration  97: 0.599 ms/op
+Iteration  98: 0.603 ms/op
+Iteration  99: 0.622 ms/op
+Iteration 100: 0.619 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.691 ±(99.9%) 0.060 ms/op [Average]
+  (min, avg, max) = (0.581, 0.691, 2.146), stdev = 0.177
+  CI (99.9%): [0.631, 0.751] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>20</p>)
+
+# Run progress: 90.91% complete, ETA 00:03:33
+# Fork: 1 of 1
+objc[14376]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x106df74c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x106e774e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 5.152 ms/op
+# Warmup Iteration   2: 1.267 ms/op
+# Warmup Iteration   3: 0.662 ms/op
+# Warmup Iteration   4: 0.751 ms/op
+# Warmup Iteration   5: 0.593 ms/op
+Iteration   1: 0.676 ms/op
+Iteration   2: 1.725 ms/op
+Iteration   3: 1.704 ms/op
+Iteration   4: 0.665 ms/op
+Iteration   5: 0.654 ms/op
+Iteration   6: 0.631 ms/op
+Iteration   7: 0.609 ms/op
+Iteration   8: 0.825 ms/op
+Iteration   9: 0.718 ms/op
+Iteration  10: 0.781 ms/op
+Iteration  11: 1.958 ms/op
+Iteration  12: 1.404 ms/op
+Iteration  13: 0.650 ms/op
+Iteration  14: 0.600 ms/op
+Iteration  15: 0.617 ms/op
+Iteration  16: 0.617 ms/op
+Iteration  17: 0.621 ms/op
+Iteration  18: 0.612 ms/op
+Iteration  19: 0.614 ms/op
+Iteration  20: 0.629 ms/op
+Iteration  21: 0.618 ms/op
+Iteration  22: 0.615 ms/op
+Iteration  23: 0.605 ms/op
+Iteration  24: 0.608 ms/op
+Iteration  25: 0.657 ms/op
+Iteration  26: 0.802 ms/op
+Iteration  27: 0.763 ms/op
+Iteration  28: 0.652 ms/op
+Iteration  29: 0.621 ms/op
+Iteration  30: 0.621 ms/op
+Iteration  31: 0.678 ms/op
+Iteration  32: 0.646 ms/op
+Iteration  33: 0.687 ms/op
+Iteration  34: 0.676 ms/op
+Iteration  35: 0.604 ms/op
+Iteration  36: 0.607 ms/op
+Iteration  37: 0.608 ms/op
+Iteration  38: 0.613 ms/op
+Iteration  39: 0.605 ms/op
+Iteration  40: 0.605 ms/op
+Iteration  41: 0.608 ms/op
+Iteration  42: 0.601 ms/op
+Iteration  43: 0.601 ms/op
+Iteration  44: 0.602 ms/op
+Iteration  45: 0.599 ms/op
+Iteration  46: 0.604 ms/op
+Iteration  47: 0.606 ms/op
+Iteration  48: 0.607 ms/op
+Iteration  49: 0.612 ms/op
+Iteration  50: 0.599 ms/op
+Iteration  51: 0.598 ms/op
+Iteration  52: 0.606 ms/op
+Iteration  53: 0.605 ms/op
+Iteration  54: 0.603 ms/op
+Iteration  55: 0.598 ms/op
+Iteration  56: 0.598 ms/op
+Iteration  57: 0.610 ms/op
+Iteration  58: 0.601 ms/op
+Iteration  59: 0.608 ms/op
+Iteration  60: 0.611 ms/op
+Iteration  61: 0.605 ms/op
+Iteration  62: 0.603 ms/op
+Iteration  63: 0.598 ms/op
+Iteration  64: 0.613 ms/op
+Iteration  65: 0.609 ms/op
+Iteration  66: 0.609 ms/op
+Iteration  67: 0.608 ms/op
+Iteration  68: 0.600 ms/op
+Iteration  69: 0.600 ms/op
+Iteration  70: 0.608 ms/op
+Iteration  71: 0.608 ms/op
+Iteration  72: 0.607 ms/op
+Iteration  73: 0.601 ms/op
+Iteration  74: 0.595 ms/op
+Iteration  75: 0.753 ms/op
+Iteration  76: 0.661 ms/op
+Iteration  77: 1.088 ms/op
+Iteration  78: 2.363 ms/op
+Iteration  79: 1.067 ms/op
+Iteration  80: 0.708 ms/op
+Iteration  81: 0.788 ms/op
+Iteration  82: 1.126 ms/op
+Iteration  83: 0.725 ms/op
+Iteration  84: 0.597 ms/op
+Iteration  85: 0.590 ms/op
+Iteration  86: 0.621 ms/op
+Iteration  87: 0.648 ms/op
+Iteration  88: 0.594 ms/op
+Iteration  89: 0.589 ms/op
+Iteration  90: 0.608 ms/op
+Iteration  91: 0.590 ms/op
+Iteration  92: 0.586 ms/op
+Iteration  93: 0.597 ms/op
+Iteration  94: 0.595 ms/op
+Iteration  95: 0.599 ms/op
+Iteration  96: 0.591 ms/op
+Iteration  97: 0.593 ms/op
+Iteration  98: 0.619 ms/op
+Iteration  99: 0.605 ms/op
+Iteration 100: 0.588 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.702 ±(99.9%) 0.097 ms/op [Average]
+  (min, avg, max) = (0.586, 0.702, 2.363), stdev = 0.286
+  CI (99.9%): [0.605, 0.799] (assumes normal distribution)
+
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_121, Java HotSpot(TM) 64-Bit Server VM, 25.121-b13
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64349:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 100 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime
+# Parameters: (html = <p>21</p>)
+
+# Run progress: 95.45% complete, ETA 00:01:46
+# Fork: 1 of 1
+objc[14394]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/bin/java (0x109c744c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x109cf44e0). One of the two will be used. Which one is undefined.
+# Warmup Iteration   1: 3.656 ms/op
+# Warmup Iteration   2: 0.804 ms/op
+# Warmup Iteration   3: 0.883 ms/op
+# Warmup Iteration   4: 0.963 ms/op
+# Warmup Iteration   5: 0.768 ms/op
+Iteration   1: 0.613 ms/op
+Iteration   2: 0.583 ms/op
+Iteration   3: 0.624 ms/op
+Iteration   4: 0.796 ms/op
+Iteration   5: 0.604 ms/op
+Iteration   6: 0.684 ms/op
+Iteration   7: 0.701 ms/op
+Iteration   8: 0.620 ms/op
+Iteration   9: 0.602 ms/op
+Iteration  10: 0.629 ms/op
+Iteration  11: 0.677 ms/op
+Iteration  12: 0.639 ms/op
+Iteration  13: 0.597 ms/op
+Iteration  14: 0.596 ms/op
+Iteration  15: 0.599 ms/op
+Iteration  16: 0.584 ms/op
+Iteration  17: 0.612 ms/op
+Iteration  18: 0.602 ms/op
+Iteration  19: 0.592 ms/op
+Iteration  20: 0.654 ms/op
+Iteration  21: 0.635 ms/op
+Iteration  22: 0.633 ms/op
+Iteration  23: 0.635 ms/op
+Iteration  24: 0.642 ms/op
+Iteration  25: 0.687 ms/op
+Iteration  26: 0.660 ms/op
+Iteration  27: 0.640 ms/op
+Iteration  28: 0.595 ms/op
+Iteration  29: 0.595 ms/op
+Iteration  30: 0.581 ms/op
+Iteration  31: 0.630 ms/op
+Iteration  32: 0.625 ms/op
+Iteration  33: 0.766 ms/op
+Iteration  34: 0.764 ms/op
+Iteration  35: 1.968 ms/op
+Iteration  36: 1.344 ms/op
+Iteration  37: 0.675 ms/op
+Iteration  38: 0.633 ms/op
+Iteration  39: 0.809 ms/op
+Iteration  40: 0.702 ms/op
+Iteration  41: 0.611 ms/op
+Iteration  42: 0.625 ms/op
+Iteration  43: 0.650 ms/op
+Iteration  44: 0.662 ms/op
+Iteration  45: 0.671 ms/op
+Iteration  46: 0.631 ms/op
+Iteration  47: 0.608 ms/op
+Iteration  48: 0.601 ms/op
+Iteration  49: 0.603 ms/op
+Iteration  50: 0.613 ms/op
+Iteration  51: 0.669 ms/op
+Iteration  52: 0.659 ms/op
+Iteration  53: 0.651 ms/op
+Iteration  54: 0.678 ms/op
+Iteration  55: 0.764 ms/op
+Iteration  56: 1.460 ms/op
+Iteration  57: 2.213 ms/op
+Iteration  58: 1.003 ms/op
+Iteration  59: 0.670 ms/op
+Iteration  60: 0.618 ms/op
+Iteration  61: 0.710 ms/op
+Iteration  62: 0.766 ms/op
+Iteration  63: 0.846 ms/op
+Iteration  64: 0.699 ms/op
+Iteration  65: 0.686 ms/op
+Iteration  66: 0.629 ms/op
+Iteration  67: 0.669 ms/op
+Iteration  68: 0.771 ms/op
+Iteration  69: 0.681 ms/op
+Iteration  70: 0.660 ms/op
+Iteration  71: 0.638 ms/op
+Iteration  72: 1.215 ms/op
+Iteration  73: 1.609 ms/op
+Iteration  74: 2.426 ms/op
+Iteration  75: 0.892 ms/op
+Iteration  76: 0.802 ms/op
+Iteration  77: 0.784 ms/op
+Iteration  78: 0.711 ms/op
+Iteration  79: 0.590 ms/op
+Iteration  80: 0.590 ms/op
+Iteration  81: 0.591 ms/op
+Iteration  82: 0.591 ms/op
+Iteration  83: 0.598 ms/op
+Iteration  84: 0.600 ms/op
+Iteration  85: 0.596 ms/op
+Iteration  86: 0.600 ms/op
+Iteration  87: 0.590 ms/op
+Iteration  88: 0.600 ms/op
+Iteration  89: 0.599 ms/op
+Iteration  90: 0.602 ms/op
+Iteration  91: 0.596 ms/op
+Iteration  92: 0.599 ms/op
+Iteration  93: 0.603 ms/op
+Iteration  94: 0.595 ms/op
+Iteration  95: 0.598 ms/op
+Iteration  96: 0.603 ms/op
+Iteration  97: 0.609 ms/op
+Iteration  98: 0.623 ms/op
+Iteration  99: 0.606 ms/op
+Iteration 100: 0.591 ms/op
+
+
+Result "com.cxd.html.HTMLEditorKitBenchmark.measureSampleTime":
+  0.729 ±(99.9%) 0.106 ms/op [Average]
+  (min, avg, max) = (0.581, 0.729, 2.426), stdev = 0.312
+  CI (99.9%): [0.623, 0.834] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:39:10
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                 Mode  Cnt  Score   Error  Units
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.672 ± 0.032  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.618 ± 0.010  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.635 ± 0.016  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.594 ± 0.009  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.612 ± 0.023  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.654 ± 0.052  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.763 ± 0.047  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.818 ± 0.060  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.785 ± 0.092  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.741 ± 0.103  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.694 ± 0.065  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.684 ± 0.068  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.761 ± 0.067  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.763 ± 0.070  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.807 ± 0.075  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.680 ± 0.028  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.653 ± 0.067  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.635 ± 0.058  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.666 ± 0.028  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.691 ± 0.060  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.702 ± 0.097  ms/op
+HTMLEditorKitBenchmark.measureSampleTime  avgt  100  0.729 ± 0.106  ms/op
