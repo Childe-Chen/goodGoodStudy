@@ -24,6 +24,9 @@ public class HtmlparserTest {
 
         Parser parser = Parser.createParser(new String(inputHtml.getBytes(),
                 StandardCharsets.UTF_8.name()), StandardCharsets.UTF_8.name());
+
+        NodeList nodeList = parser.extractAllNodesThatMatch(node -> true);
+
         // 遍历所有的节点
         TextExtractingVisitor visitor = new TextExtractingVisitor();
         parser.visitAllNodesWith(visitor);
@@ -33,15 +36,12 @@ public class HtmlparserTest {
     public static void main(String[] args) throws Exception {
         String testText = null;
 
-        FileReader in = new FileReader("/Users/childe/Desktop/case0.html");
+        FileReader in = new FileReader("/Users/childe/Desktop/case-pro.html");
         BufferedReader bufferedReader = new BufferedReader(in);
 
         testText = bufferedReader.readLine();
 
-        testText = StringEscapeUtils.escapeHtml(testText);
         String unText = StringEscapeUtils.unescapeHtml(testText);
-
-        System.out.println(unText);
 
         //for (int i = 0; i<20;i++) {
             long start = System.currentTimeMillis();
@@ -49,6 +49,6 @@ public class HtmlparserTest {
             testText = t.extractText(unText);
             System.out.println(System.currentTimeMillis() - start);
         //}
-        System.out.println(testText);
+        System.out.print(testText);
     }
 }

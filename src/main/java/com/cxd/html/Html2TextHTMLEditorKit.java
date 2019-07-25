@@ -15,7 +15,8 @@ import java.io.Reader;
 public class Html2TextHTMLEditorKit extends HTMLEditorKit.ParserCallback {
     StringBuilder s;
 
-    public Html2TextHTMLEditorKit() {}
+    public Html2TextHTMLEditorKit() {
+    }
 
     public void parse(Reader in) throws IOException {
         s = new StringBuilder();
@@ -35,16 +36,18 @@ public class Html2TextHTMLEditorKit extends HTMLEditorKit.ParserCallback {
         }
 
         s.append(textFilterWhitespace);
+        String s1 = new String(text).trim();
+        System.out.println(s1);
     }
 
     public String getText() {
         return s.toString();
     }
 
-    public static void main (String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         try {
             // the HTML to convert
-            FileReader in = new FileReader("/Users/childe/Desktop/case0.html");
+            FileReader in = new FileReader("/Users/childe/Desktop/case-pro.html");
 
 
             long start = System.currentTimeMillis();
@@ -54,7 +57,7 @@ public class Html2TextHTMLEditorKit extends HTMLEditorKit.ParserCallback {
             in.close();
 
             System.out.println(System.currentTimeMillis() - start);
-            System.out.println(parser.getText());
+//            System.out.println(parser.getText());
         } catch (Exception e) {
             e.printStackTrace();
         }
