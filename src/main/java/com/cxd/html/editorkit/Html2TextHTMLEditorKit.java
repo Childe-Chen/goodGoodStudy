@@ -1,4 +1,4 @@
-package com.cxd.html;
+package com.cxd.html.editorkit;
 
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.parser.ParserDelegator;
@@ -36,8 +36,6 @@ public class Html2TextHTMLEditorKit extends HTMLEditorKit.ParserCallback {
         }
 
         s.append(textFilterWhitespace);
-        String s1 = new String(text).trim();
-        System.out.println(s1);
     }
 
     public String getText() {
@@ -57,7 +55,7 @@ public class Html2TextHTMLEditorKit extends HTMLEditorKit.ParserCallback {
             in.close();
 
             System.out.println(System.currentTimeMillis() - start);
-//            System.out.println(parser.getText());
+            System.out.println(parser.getText());
         } catch (Exception e) {
             e.printStackTrace();
         }

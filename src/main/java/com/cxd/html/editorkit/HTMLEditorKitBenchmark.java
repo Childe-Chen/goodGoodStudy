@@ -1,4 +1,4 @@
-package com.cxd.html;
+package com.cxd.html.editorkit;
 
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.runner.Runner;

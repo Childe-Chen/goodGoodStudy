@@ -1,9 +1,9 @@
-package com.cxd.html;
+package com.cxd.html.htmlparser;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.htmlparser.Node;
-import org.htmlparser.NodeFilter;
 import org.htmlparser.Parser;
+import org.htmlparser.nodes.TextNode;
 import org.htmlparser.util.NodeList;
 import org.htmlparser.visitors.TextExtractingVisitor;
 
@@ -25,8 +25,16 @@ public class HtmlparserTest {
         Parser parser = Parser.createParser(new String(inputHtml.getBytes(),
                 StandardCharsets.UTF_8.name()), StandardCharsets.UTF_8.name());
 
-        NodeList nodeList = parser.extractAllNodesThatMatch(node -> true);
-
+//        NodeList nodeList = parser.extractAllNodesThatMatch(node -> true);
+//
+//        for (int i = 0; i < nodeList.size(); i++) {
+//            Node node = nodeList.elementAt(i);
+//            if (node instanceof TextNode) {
+//
+//                System.out.println(node.toPlainTextString());
+//            }
+//        }
+//        System.out.println("-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>---------");
         // 遍历所有的节点
         TextExtractingVisitor visitor = new TextExtractingVisitor();
         parser.visitAllNodesWith(visitor);
@@ -41,14 +49,12 @@ public class HtmlparserTest {
 
         testText = bufferedReader.readLine();
 
-        String unText = StringEscapeUtils.unescapeHtml(testText);
-
         //for (int i = 0; i<20;i++) {
             long start = System.currentTimeMillis();
             HtmlparserTest t = new HtmlparserTest();
-            testText = t.extractText(unText);
-            System.out.println(System.currentTimeMillis() - start);
+
         //}
-        System.out.print(testText);
+        System.out.println(t.extractText(testText));
+
     }
 }
