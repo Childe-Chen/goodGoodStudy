@@ -1,10 +1,9 @@
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * desc
@@ -82,9 +81,21 @@ public class DDD {
 //
 //        System.out.println(map);
 
-        List<Integer> a= new ArrayList<>();
-        a.add(1);
-        System.out.println(JSONArray.toJSONString(a));
+        DDD s = new DDD();
+        s.setGmvType(1);
+
+        DDD s1 = new DDD();
+        s1.setGmvType(100);
+
+        DDD s2 = new DDD();
+        s2.setGmvType(50);
+
+        List<DDD> a= new ArrayList<>();
+        a.add(s);
+        a.add(s1);
+        a.add(s2);
+        List<DDD> dd = a.stream().sorted(Comparator.comparingInt(DDD::getGmvType)).collect(Collectors.toList());
+        System.out.println(JSONArray.toJSONString(dd));
     }
 
 
