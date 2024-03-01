@@ -160,12 +160,6 @@
             <version>0.2.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>4.3.2</version>
-        </dependency>
-
         <!-- 基准测试 -->
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
@@ -205,6 +199,12 @@
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.3.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client-java</artifactId>
+            <version>5.0.5</version>
         </dependency>
 
     </dependencies>

@@ -1,7 +1,7 @@
 package com.cxd.javaSourceCode;
 
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
+//import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +30,6 @@ public class ArraysCopyTest {
         String[] ss = new String[]{"sss","sss","444"};
         String[] ss1 = new String[ss.length];
         System.arraycopy(ss,0,ss1,0,ss.length);
-        System.out.println(ToStringBuilder.reflectionToString(ss1));
+//        System.out.println(ToStringBuilder.reflectionToString(ss1));
     }
 }

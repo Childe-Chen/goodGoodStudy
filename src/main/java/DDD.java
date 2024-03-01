@@ -81,21 +81,25 @@ public class DDD {
 //
 //        System.out.println(map);
 
-        DDD s = new DDD();
-        s.setGmvType(1);
+//        DDD s = new DDD();
+//        s.setGmvType(1);
+//
+//        DDD s1 = new DDD();
+//        s1.setGmvType(100);
+//
+//        DDD s2 = new DDD();
+//        s2.setGmvType(50);
+//
+//        List<DDD> a= new ArrayList<>();
+//        a.add(s);
+//        a.add(s1);
+//        a.add(s2);
+//        List<DDD> dd = a.stream().sorted(Comparator.comparingInt(DDD::getGmvType)).collect(Collectors.toList());
+//        System.out.println(JSONArray.toJSONString(dd));
 
-        DDD s1 = new DDD();
-        s1.setGmvType(100);
-
-        DDD s2 = new DDD();
-        s2.setGmvType(50);
-
-        List<DDD> a= new ArrayList<>();
-        a.add(s);
-        a.add(s1);
-        a.add(s2);
-        List<DDD> dd = a.stream().sorted(Comparator.comparingInt(DDD::getGmvType)).collect(Collectors.toList());
-        System.out.println(JSONArray.toJSONString(dd));
+        String a = "0023408000023240";
+        String b = null;
+        System.out.println(a + "_" + b);
     }
 
 
